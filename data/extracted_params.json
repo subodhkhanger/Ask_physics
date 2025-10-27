@@ -1,0 +1,202 @@
+[
+  {
+    "paper_id": "2510.21676v1",
+    "title": "Constructing Field Aligned Coordinate Systems for Gyrokinetic Simulations of Tokamaks in X-point Geometries",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-27T12:39:37.963318",
+    "extraction_method": "regex_only"
+  },
+  {
+    "paper_id": "2510.21675v1",
+    "title": "Counter-Streaming Beams in Collisionless Pair Plasma Instability Systems III: Collisionless Heating, Acceleration, and Radiation",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-27T12:39:37.963433",
+    "extraction_method": "regex_only"
+  },
+  {
+    "paper_id": "2510.21666v1",
+    "title": "Counter-Streaming Beams in Collisionless Pair Plasma Instability Systems II: Spectral Cone and Spectral Wave Mode Analysis",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-27T12:39:37.963533",
+    "extraction_method": "regex_only"
+  },
+  {
+    "paper_id": "2510.21261v1",
+    "title": "Benchmark for two-dimensional large scale coherent structures in partially magnetized ExB plasmas -- Community collaboration & lessons learned",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-27T12:39:37.963755",
+    "extraction_method": "regex_only"
+  },
+  {
+    "paper_id": "2510.21239v1",
+    "title": "Laboratory formation of scaled astrophysical outflows",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-27T12:39:37.963916",
+    "extraction_method": "regex_only"
+  },
+  {
+    "paper_id": "2510.21187v1",
+    "title": "Dissipation and particle acceleration at intermittent structures with velocity and magnetic shear: Interaction of Kelvin-Helmholtz and Drift-Kink instabilities",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-27T12:39:37.964175",
+    "extraction_method": "regex_only"
+  },
+  {
+    "paper_id": "2510.21170v1",
+    "title": "Inhomogeneous mixing: From microscopic dynamics to mesoscopic staircases",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-27T12:39:37.964357",
+    "extraction_method": "regex_only"
+  },
+  {
+    "paper_id": "2510.20977v1",
+    "title": "Significant Amplification of Turbulent Energy Dissipation through the Shock Transition at Mars",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-27T12:39:37.964520",
+    "extraction_method": "regex_only"
+  },
+  {
+    "paper_id": "2510.20775v1",
+    "title": "The Opacity Project: R-Matrix Calculations for Opacities of High-Energy-Density Astrophysical and Laboratory Plasmas",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-27T12:39:37.964767",
+    "extraction_method": "regex_only"
+  },
+  {
+    "paper_id": "2510.20628v1",
+    "title": "Magnetic Field-Line Curvature and Its Role in Particle Acceleration by Magnetically Dominated Turbulence",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-27T12:39:37.965019",
+    "extraction_method": "regex_only"
+  },
+  {
+    "paper_id": "2510.20105v1",
+    "title": "High Gain Fusion Target Design using Generative Artificial Intelligence",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-27T12:39:37.965197",
+    "extraction_method": "regex_only"
+  },
+  {
+    "paper_id": "2510.19786v1",
+    "title": "First Observation of Dispersive Shock Waves in an Electron Beam",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-27T12:39:37.965363",
+    "extraction_method": "regex_only"
+  },
+  {
+    "paper_id": "2510.19729v1",
+    "title": "Coupling of neutrino beam-driven MHD waves and resonant instabilities in rotating magnetoplasmas with neutrino two-flavor oscillations",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-27T12:39:37.965501",
+    "extraction_method": "regex_only"
+  },
+  {
+    "paper_id": "2510.19690v1",
+    "title": "Modification of ion-temperature-gradient turbulence by impurities in stellarator plasmas",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-27T12:39:37.965666",
+    "extraction_method": "regex_only"
+  },
+  {
+    "paper_id": "2510.19543v1",
+    "title": "Microtearing Turbulence and Its Role in High-Density-Gradient Plasmas in Wendelstein 7-X",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-27T12:39:37.965803",
+    "extraction_method": "regex_only"
+  },
+  {
+    "paper_id": "2510.18487v1",
+    "title": "Experimental and numerical investigation of suprathermal electron dynamics using vertical electron cyclotron emission",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-27T12:39:37.966033",
+    "extraction_method": "regex_only"
+  },
+  {
+    "paper_id": "2510.18384v1",
+    "title": "Diagnostics of a Multicusp-Assisted Inductively-Coupled Radio-Frequency Plasma Source for Plasma Immersion Ion Implantation",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-27T12:39:37.966176",
+    "extraction_method": "regex_only"
+  },
+  {
+    "paper_id": "2510.18182v1",
+    "title": "Electron Acceleration via Lower-Hybrid Drift Instability in Astrophysical Plasmas: Dependence on Plasma Beta and Suprathermal Electron Distributions",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-27T12:39:37.966459",
+    "extraction_method": "regex_only"
+  },
+  {
+    "paper_id": "2510.17531v1",
+    "title": "Plasma Shape Control via Zero-shot Generative Reinforcement Learning",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-27T12:39:37.966639",
+    "extraction_method": "regex_only"
+  },
+  {
+    "paper_id": "2510.16542v1",
+    "title": "Extended phase-space symplectic integration for electron dynamics",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-27T12:39:37.966918",
+    "extraction_method": "regex_only"
+  }
+]

@@ -1,0 +1,282 @@
+@prefix : <http://example.org/plasma#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+# ============================================
+# Ontology Metadata
+# ============================================
+
+<http://example.org/plasma> a owl:Ontology ;
+    dcterms:title "Plasma Physics Literature Knowledge Graph Ontology"@en ;
+    dcterms:description "An ontology for representing plasma physics experiments, measurements, and parameters extracted from scientific literature"@en ;
+    dcterms:created "2025-10-27"^^xsd:date ;
+    dcterms:creator "Plasma Search Project"@en ;
+    owl:versionInfo "1.0" .
+
+# ============================================
+# Classes
+# ============================================
+
+## Core Classes
+
+:Paper a owl:Class ;
+    rdfs:label "Scientific Paper"@en ;
+    rdfs:comment "A scientific publication from arXiv or other sources"@en .
+
+:Experiment a owl:Class ;
+    rdfs:label "Experiment"@en ;
+    rdfs:comment "A plasma physics experiment or experimental setup"@en .
+
+:Measurement a owl:Class ;
+    rdfs:label "Measurement"@en ;
+    rdfs:comment "A physical measurement or observation from an experiment"@en .
+
+:Parameter a owl:Class ;
+    rdfs:label "Physical Parameter"@en ;
+    rdfs:comment "A measurable physical quantity in plasma physics"@en .
+
+## Parameter Subclasses
+
+:Temperature a owl:Class ;
+    rdfs:subClassOf :Parameter ;
+    rdfs:label "Temperature"@en ;
+    rdfs:comment "Plasma temperature measurement (electron, ion, or general)"@en .
+
+:ElectronTemperature a owl:Class ;
+    rdfs:subClassOf :Temperature ;
+    rdfs:label "Electron Temperature"@en ;
+    rdfs:comment "Temperature of electrons in the plasma"@en .
+
+:IonTemperature a owl:Class ;
+    rdfs:subClassOf :Temperature ;
+    rdfs:label "Ion Temperature"@en ;
+    rdfs:comment "Temperature of ions in the plasma"@en .
+
+:Density a owl:Class ;
+    rdfs:subClassOf :Parameter ;
+    rdfs:label "Density"@en ;
+    rdfs:comment "Plasma density measurement (electron, ion, or general)"@en .
+
+:ElectronDensity a owl:Class ;
+    rdfs:subClassOf :Density ;
+    rdfs:label "Electron Density"@en ;
+    rdfs:comment "Number density of electrons in the plasma"@en .
+
+:IonDensity a owl:Class ;
+    rdfs:subClassOf :Density ;
+    rdfs:label "Ion Density"@en ;
+    rdfs:comment "Number density of ions in the plasma"@en .
+
+## Facility/Device Classes
+
+:PlasmaDevice a owl:Class ;
+    rdfs:label "Plasma Device"@en ;
+    rdfs:comment "A device or facility used for plasma experiments"@en .
+
+:Tokamak a owl:Class ;
+    rdfs:subClassOf :PlasmaDevice ;
+    rdfs:label "Tokamak"@en ;
+    rdfs:comment "Toroidal magnetic confinement fusion device"@en .
+
+:Stellarator a owl:Class ;
+    rdfs:subClassOf :PlasmaDevice ;
+    rdfs:label "Stellarator"@en ;
+    rdfs:comment "Twisted toroidal magnetic confinement device"@en .
+
+:InertialConfinementFacility a owl:Class ;
+    rdfs:subClassOf :PlasmaDevice ;
+    rdfs:label "Inertial Confinement Facility"@en ;
+    rdfs:comment "Laser-driven inertial confinement fusion facility"@en .
+
+## Measurement Context
+
+:ExperimentalCondition a owl:Class ;
+    rdfs:label "Experimental Condition"@en ;
+    rdfs:comment "Specific conditions under which measurements were taken"@en .
+
+:Unit a owl:Class ;
+    rdfs:label "Unit of Measurement"@en ;
+    rdfs:comment "A unit for expressing physical quantities"@en .
+
+# ============================================
+# Object Properties (Relations)
+# ============================================
+
+:describes a owl:ObjectProperty ;
+    rdfs:label "describes"@en ;
+    rdfs:comment "A paper describes an experiment"@en ;
+    rdfs:domain :Paper ;
+    rdfs:range :Experiment .
+
+:reports a owl:ObjectProperty ;
+    rdfs:label "reports"@en ;
+    rdfs:comment "A paper reports a measurement or parameter"@en ;
+    rdfs:domain :Paper ;
+    rdfs:range :Measurement .
+
+:hasMeasurement a owl:ObjectProperty ;
+    rdfs:label "has measurement"@en ;
+    rdfs:comment "An experiment has associated measurements"@en ;
+    rdfs:domain :Experiment ;
+    rdfs:range :Measurement .
+
+:measuresParameter a owl:ObjectProperty ;
+    rdfs:label "measures parameter"@en ;
+    rdfs:comment "A measurement quantifies a specific parameter"@en ;
+    rdfs:domain :Measurement ;
+    rdfs:range :Parameter .
+
+:usesDevice a owl:ObjectProperty ;
+    rdfs:label "uses device"@en ;
+    rdfs:comment "An experiment uses a specific plasma device"@en ;
+    rdfs:domain :Experiment ;
+    rdfs:range :PlasmaDevice .
+
+:hasCondition a owl:ObjectProperty ;
+    rdfs:label "has condition"@en ;
+    rdfs:comment "A measurement was taken under specific conditions"@en ;
+    rdfs:domain :Measurement ;
+    rdfs:range :ExperimentalCondition .
+
+:hasUnit a owl:ObjectProperty ;
+    rdfs:label "has unit"@en ;
+    rdfs:comment "A parameter value has an associated unit"@en ;
+    rdfs:domain :Parameter ;
+    rdfs:range :Unit .
+
+:cites a owl:ObjectProperty ;
+    rdfs:label "cites"@en ;
+    rdfs:comment "A paper cites another paper"@en ;
+    rdfs:domain :Paper ;
+    rdfs:range :Paper .
+
+# ============================================
+# Data Properties (Attributes)
+# ============================================
+
+## Paper Properties
+
+:arxivId a owl:DatatypeProperty ;
+    rdfs:label "arXiv ID"@en ;
+    rdfs:comment "The arXiv identifier for a paper"@en ;
+    rdfs:domain :Paper ;
+    rdfs:range xsd:string .
+
+:title a owl:DatatypeProperty ;
+    rdfs:label "title"@en ;
+    rdfs:comment "The title of a paper"@en ;
+    rdfs:domain :Paper ;
+    rdfs:range xsd:string .
+
+:abstract a owl:DatatypeProperty ;
+    rdfs:label "abstract"@en ;
+    rdfs:comment "The abstract text of a paper"@en ;
+    rdfs:domain :Paper ;
+    rdfs:range xsd:string .
+
+:publicationDate a owl:DatatypeProperty ;
+    rdfs:label "publication date"@en ;
+    rdfs:comment "The publication or submission date"@en ;
+    rdfs:domain :Paper ;
+    rdfs:range xsd:dateTime .
+
+:authors a owl:DatatypeProperty ;
+    rdfs:label "authors"@en ;
+    rdfs:comment "Authors of the paper"@en ;
+    rdfs:domain :Paper ;
+    rdfs:range xsd:string .
+
+:pdfUrl a owl:DatatypeProperty ;
+    rdfs:label "PDF URL"@en ;
+    rdfs:comment "URL to the PDF version of the paper"@en ;
+    rdfs:domain :Paper ;
+    rdfs:range xsd:anyURI .
+
+## Measurement Properties
+
+:value a owl:DatatypeProperty ;
+    rdfs:label "value"@en ;
+    rdfs:comment "The numeric value of a measurement"@en ;
+    rdfs:domain :Parameter ;
+    rdfs:range xsd:decimal .
+
+:normalizedValue a owl:DatatypeProperty ;
+    rdfs:label "normalized value"@en ;
+    rdfs:comment "Value normalized to standard units (SI)"@en ;
+    rdfs:domain :Parameter ;
+    rdfs:range xsd:decimal .
+
+:unitString a owl:DatatypeProperty ;
+    rdfs:label "unit string"@en ;
+    rdfs:comment "The unit as a string (e.g., 'keV', 'm^-3')"@en ;
+    rdfs:domain :Parameter ;
+    rdfs:range xsd:string .
+
+:confidence a owl:DatatypeProperty ;
+    rdfs:label "confidence"@en ;
+    rdfs:comment "Confidence level of the extraction (high/medium/low)"@en ;
+    rdfs:domain :Measurement ;
+    rdfs:range xsd:string .
+
+:context a owl:DatatypeProperty ;
+    rdfs:label "context"@en ;
+    rdfs:comment "Textual context where the parameter was found"@en ;
+    rdfs:domain :Measurement ;
+    rdfs:range xsd:string .
+
+:extractionMethod a owl:DatatypeProperty ;
+    rdfs:label "extraction method"@en ;
+    rdfs:comment "Method used to extract the parameter (regex/llm/manual)"@en ;
+    rdfs:domain :Measurement ;
+    rdfs:range xsd:string .
+
+## Device Properties
+
+:deviceName a owl:DatatypeProperty ;
+    rdfs:label "device name"@en ;
+    rdfs:comment "Name of the plasma device (e.g., 'DIII-D', 'JET')"@en ;
+    rdfs:domain :PlasmaDevice ;
+    rdfs:range xsd:string .
+
+:location a owl:DatatypeProperty ;
+    rdfs:label "location"@en ;
+    rdfs:comment "Physical location of the device"@en ;
+    rdfs:domain :PlasmaDevice ;
+    rdfs:range xsd:string .
+
+# ============================================
+# Instances (Example Units)
+# ============================================
+
+:keV a :Unit ;
+    rdfs:label "kiloelectronvolt"@en ;
+    :unitString "keV" ;
+    rdfs:comment "Energy unit, commonly used for plasma temperature" .
+
+:eV a :Unit ;
+    rdfs:label "electronvolt"@en ;
+    :unitString "eV" ;
+    rdfs:comment "Energy unit for lower temperature plasmas" .
+
+:kelvin a :Unit ;
+    rdfs:label "Kelvin"@en ;
+    :unitString "K" ;
+    rdfs:comment "SI unit of temperature" .
+
+:perCubicMeter a :Unit ;
+    rdfs:label "per cubic meter"@en ;
+    :unitString "m^-3" ;
+    rdfs:comment "SI unit for number density" .
+
+:perCubicCentimeter a :Unit ;
+    rdfs:label "per cubic centimeter"@en ;
+    :unitString "cm^-3" ;
+    rdfs:comment "Number density in cgs units" .
+
+# ============================================
+# End of Ontology
+# ============================================

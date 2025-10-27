@@ -1,0 +1,457 @@
+@prefix : <http://example.org/plasma#> .
+@prefix paper: <http://example.org/plasma/paper/> .
+@prefix meas: <http://example.org/plasma/measurement/> .
+@prefix param: <http://example.org/plasma/parameter/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# ============================================
+# Plasma Physics Knowledge Graph Data
+# Generated: 2025-10-27T12:57:17.510452
+# Papers: 10
+# ============================================
+
+# Paper: High confinement plasma experiments in DIII-D tokamak
+<http://example.org/plasma/paper/unknown> a :Paper ;
+    :arxivId "unknown" ;
+    :title "High confinement plasma experiments in DIII-D tokamak" ;
+    :reports <http://example.org/plasma/measurement/m1> ;
+    :reports <http://example.org/plasma/measurement/m2> ;
+    :reports <http://example.org/plasma/measurement/m3> .
+
+<http://example.org/plasma/measurement/m1> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p1> ;
+    :confidence "medium" ;
+    :extractionMethod "regex" ;
+    :context "elevant conditions with ne = 7.2 × 10^19 m^-3 and Te = 5.2 keV sustained for 3.5 seconds." ;
+    .
+
+<http://example.org/plasma/parameter/p1> a :Temperature ;
+    :value 5.2 ;
+    :unitString "keV" ;
+    :normalizedValue 5.2 ;
+    .
+
+<http://example.org/plasma/measurement/m2> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p2> ;
+    :confidence "medium" ;
+    :extractionMethod "regex" ;
+    :context "The central ion temperature reached approximately 4.8 keV. These results demonstrate significant progress t" ;
+    .
+
+<http://example.org/plasma/parameter/p2> a :Temperature ;
+    :value 4.8 ;
+    :unitString "keV" ;
+    :normalizedValue 4.8 ;
+    .
+
+<http://example.org/plasma/measurement/m3> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p3> ;
+    :confidence "medium" ;
+    :extractionMethod "regex" ;
+    :context "t progress toward fusion-relevant conditions with ne = 7.2 × 10^19 m^-3 and Te = 5.2 keV sustained for 3.5 seconds." ;
+    .
+
+<http://example.org/plasma/parameter/p3> a :Density ;
+    :value 7.2e+19 ;
+    :unitString "m^-3" ;
+    :normalizedValue 7.2e+19 ;
+    .
+
+# Paper: Advanced tokamak scenarios with improved energy confinement
+<http://example.org/plasma/paper/unknown> a :Paper ;
+    :arxivId "unknown" ;
+    :title "Advanced tokamak scenarios with improved energy confinement" ;
+    :reports <http://example.org/plasma/measurement/m4> ;
+    :reports <http://example.org/plasma/measurement/m5> ;
+    :reports <http://example.org/plasma/measurement/m6> ;
+    :reports <http://example.org/plasma/measurement/m7> .
+
+<http://example.org/plasma/measurement/m4> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p4> ;
+    :confidence "high" ;
+    :extractionMethod "regex" ;
+    :context "e demonstrated record plasma performance. Central electron temperature of 8.5 keV and ion temperature of 7.2 keV were measured simu" ;
+    .
+
+<http://example.org/plasma/parameter/p4> a :Temperature ;
+    :value 8.5 ;
+    :unitString "keV" ;
+    :normalizedValue 8.5 ;
+    .
+
+<http://example.org/plasma/measurement/m5> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p5> ;
+    :confidence "medium" ;
+    :extractionMethod "regex" ;
+    :context "ance. Central electron temperature of 8.5 keV and ion temperature of 7.2 keV were measured simultaneously. The plasma density" ;
+    .
+
+<http://example.org/plasma/parameter/p5> a :Temperature ;
+    :value 7.2 ;
+    :unitString "keV" ;
+    :normalizedValue 7.2 ;
+    .
+
+<http://example.org/plasma/measurement/m6> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p6> ;
+    :confidence "medium" ;
+    :extractionMethod "regex" ;
+    :context "high-performance phase. Edge temperatures around 0.8 keV with density approximately 4×10^19 m^-3 were obse" ;
+    .
+
+<http://example.org/plasma/parameter/p6> a :Temperature ;
+    :value 0.8 ;
+    :unitString "keV" ;
+    :normalizedValue 0.8 ;
+    .
+
+<http://example.org/plasma/measurement/m7> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p7> ;
+    :confidence "medium" ;
+    :extractionMethod "regex" ;
+    :context "ance phase. Edge temperatures around 0.8 keV with density approximately 4×10^19 m^-3 were observed in the pedestal region." ;
+    .
+
+<http://example.org/plasma/parameter/p7> a :Density ;
+    :value 4e+19 ;
+    :unitString "m^-3" ;
+    :normalizedValue 4e+19 ;
+    .
+
+# Paper: Low-density plasma experiments in Wendelstein 7-X stellarator
+<http://example.org/plasma/paper/unknown> a :Paper ;
+    :arxivId "unknown" ;
+    :title "Low-density plasma experiments in Wendelstein 7-X stellarator" ;
+    :reports <http://example.org/plasma/measurement/m8> ;
+    :reports <http://example.org/plasma/measurement/m9> .
+
+<http://example.org/plasma/measurement/m8> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p8> ;
+    :confidence "medium" ;
+    :extractionMethod "regex" ;
+    :context "nsity ne of 2.5×10¹⁹ m⁻³ and electron temperature Te around 3.0 keV. Ion temperatures remained moderate at approximat" ;
+    .
+
+<http://example.org/plasma/parameter/p8> a :Temperature ;
+    :value 3.0 ;
+    :unitString "keV" ;
+    :normalizedValue 3.0 ;
+    .
+
+<http://example.org/plasma/measurement/m9> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p9> ;
+    :confidence "medium" ;
+    :extractionMethod "regex" ;
+    :context "n temperatures remained moderate at approximately 2.1 keV. The plasma demonstrated good confinement propert" ;
+    .
+
+<http://example.org/plasma/parameter/p9> a :Temperature ;
+    :value 2.1 ;
+    :unitString "keV" ;
+    :normalizedValue 2.1 ;
+    .
+
+# Paper: Record temperatures in fusion plasma confinement
+<http://example.org/plasma/paper/unknown> a :Paper ;
+    :arxivId "unknown" ;
+    :title "Record temperatures in fusion plasma confinement" ;
+    :reports <http://example.org/plasma/measurement/m10> ;
+    :reports <http://example.org/plasma/measurement/m11> ;
+    :reports <http://example.org/plasma/measurement/m12> .
+
+<http://example.org/plasma/measurement/m10> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p10> ;
+    :confidence "medium" ;
+    :extractionMethod "regex" ;
+    :context "ratures. The central electron temperature reached 12.3 keV, the highest ever recorded in this device. Ion te" ;
+    .
+
+<http://example.org/plasma/parameter/p10> a :Temperature ;
+    :value 12.3 ;
+    :unitString "keV" ;
+    :normalizedValue 12.3 ;
+    .
+
+<http://example.org/plasma/measurement/m11> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p11> ;
+    :confidence "medium" ;
+    :extractionMethod "regex" ;
+    :context "is device. Ion temperature simultaneously reached 10.8 keV with density n_e = 8.9 × 10^19 m^-3, demonstratin" ;
+    .
+
+<http://example.org/plasma/parameter/p11> a :Temperature ;
+    :value 10.8 ;
+    :unitString "keV" ;
+    :normalizedValue 10.8 ;
+    .
+
+<http://example.org/plasma/measurement/m12> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p12> ;
+    :confidence "medium" ;
+    :extractionMethod "regex" ;
+    :context "ture simultaneously reached 10.8 keV with density n_e = 8.9 × 10^19 m^-3, demonstrating fusion-relevant triple product val" ;
+    .
+
+<http://example.org/plasma/parameter/p12> a :Density ;
+    :value 8.9e+19 ;
+    :unitString "m^-3" ;
+    :normalizedValue 8.9e+19 ;
+    .
+
+# Paper: High-density regimes in compact tokamak operations
+<http://example.org/plasma/paper/unknown> a :Paper ;
+    :arxivId "unknown" ;
+    :title "High-density regimes in compact tokamak operations" ;
+    :reports <http://example.org/plasma/measurement/m13> ;
+    :reports <http://example.org/plasma/measurement/m14> .
+
+<http://example.org/plasma/measurement/m13> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p13> ;
+    :confidence "high" ;
+    :extractionMethod "regex" ;
+    :context "a density exceeded 1.8×10²⁰ m⁻³ while maintaining electron temperature of 2.5 keV. These high-density discharges with ne up to 2.1" ;
+    .
+
+<http://example.org/plasma/parameter/p13> a :Temperature ;
+    :value 2.5 ;
+    :unitString "keV" ;
+    :normalizedValue 2.5 ;
+    .
+
+<http://example.org/plasma/measurement/m14> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p14> ;
+    :confidence "medium" ;
+    :extractionMethod "regex" ;
+    :context "2.1 × 10^20 m^-3 and moderate temperatures around T_e = 2.2 keV showed promising stability properties for future" ;
+    .
+
+<http://example.org/plasma/parameter/p14> a :Temperature ;
+    :value 2.2 ;
+    :unitString "keV" ;
+    :normalizedValue 2.2 ;
+    .
+
+# Paper: Temperature and density profiles in EAST tokamak H-mode
+<http://example.org/plasma/paper/unknown> a :Paper ;
+    :arxivId "unknown" ;
+    :title "Temperature and density profiles in EAST tokamak H-mode" ;
+    :reports <http://example.org/plasma/measurement/m15> ;
+    :reports <http://example.org/plasma/measurement/m16> ;
+    :reports <http://example.org/plasma/measurement/m17> .
+
+<http://example.org/plasma/measurement/m15> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p15> ;
+    :confidence "medium" ;
+    :extractionMethod "regex" ;
+    :context "h density of 5.5×10¹⁹ m⁻³. The edge region showed Te around 1.2 keV and ne approximately 3.2 × 10^19 cm^-3. These mea" ;
+    .
+
+<http://example.org/plasma/parameter/p15> a :Temperature ;
+    :value 1.2 ;
+    :unitString "keV" ;
+    :normalizedValue 1.2 ;
+    .
+
+<http://example.org/plasma/measurement/m16> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p16> ;
+    :confidence "medium" ;
+    :extractionMethod "regex" ;
+    :context "ity profiles. Core electron temperature peaked at 6.8 keV with density of 5.5×10¹⁹ m⁻³. The edge region sho" ;
+    .
+
+<http://example.org/plasma/parameter/p16> a :Temperature ;
+    :value 6.8 ;
+    :unitString "keV" ;
+    :normalizedValue 6.8 ;
+    .
+
+<http://example.org/plasma/measurement/m17> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p17> ;
+    :confidence "medium" ;
+    :extractionMethod "regex" ;
+    :context "m⁻³. The edge region showed Te around 1.2 keV and ne approximately 3.2 × 10^19 cm^-3. These measurements provide valuable benchmarks f" ;
+    .
+
+<http://example.org/plasma/parameter/p17> a :Density ;
+    :value 3.2e+19 ;
+    :unitString "cm^-3" ;
+    :normalizedValue 3.2e+19 ;
+    .
+
+# Paper: Ultra-high temperature plasma regime in laser-fusion experiments
+<http://example.org/plasma/paper/unknown> a :Paper ;
+    :arxivId "unknown" ;
+    :title "Ultra-high temperature plasma regime in laser-fusion experiments" ;
+    :reports <http://example.org/plasma/measurement/m18> ;
+    :reports <http://example.org/plasma/measurement/m19> ;
+    :reports <http://example.org/plasma/measurement/m20> .
+
+<http://example.org/plasma/measurement/m18> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p18> ;
+    :confidence "medium" ;
+    :extractionMethod "regex" ;
+    :context "temperatures. Peak electron temperature exceeded 15 keV in the hotspot with ion temperature reaching 14.5" ;
+    .
+
+<http://example.org/plasma/parameter/p18> a :Temperature ;
+    :value 15.0 ;
+    :unitString "keV" ;
+    :normalizedValue 15.0 ;
+    .
+
+<http://example.org/plasma/measurement/m19> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p19> ;
+    :confidence "medium" ;
+    :extractionMethod "regex" ;
+    :context "keV in the hotspot with ion temperature reaching 14.5 keV. The compressed fuel achieved density of 3.5×10²⁵" ;
+    .
+
+<http://example.org/plasma/parameter/p19> a :Temperature ;
+    :value 14.5 ;
+    :unitString "keV" ;
+    :normalizedValue 14.5 ;
+    .
+
+<http://example.org/plasma/measurement/m20> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p20> ;
+    :confidence "medium" ;
+    :extractionMethod "regex" ;
+    :context "g/cm³) at maximum compression. Temperatures above 10 keV were sustained for approximately 100 picoseconds." ;
+    .
+
+<http://example.org/plasma/parameter/p20> a :Temperature ;
+    :value 10.0 ;
+    :unitString "keV" ;
+    :normalizedValue 10.0 ;
+    .
+
+# Paper: Moderate temperature plasmas for materials processing applications
+<http://example.org/plasma/paper/unknown> a :Paper ;
+    :arxivId "unknown" ;
+    :title "Moderate temperature plasmas for materials processing applications" ;
+    :reports <http://example.org/plasma/measurement/m21> ;
+    :reports <http://example.org/plasma/measurement/m22> ;
+    :reports <http://example.org/plasma/measurement/m23> .
+
+<http://example.org/plasma/measurement/m21> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p21> ;
+    :confidence "high" ;
+    :extractionMethod "regex" ;
+    :context "experiments for materials processing operated at electron temperature of 3 eV (approximately 34,800 K) with density 5×10¹⁷ m⁻³." ;
+    .
+
+<http://example.org/plasma/parameter/p21> a :Temperature ;
+    :value 3.0 ;
+    :unitString "eV" ;
+    :normalizedValue 0.003 ;
+    .
+
+<http://example.org/plasma/measurement/m22> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p22> ;
+    :confidence "medium" ;
+    :extractionMethod "regex" ;
+    :context "at electron temperature of 3 eV (approximately 34,800 K) with density 5×10¹⁷ m⁻³. Ion temperatures remain" ;
+    .
+
+<http://example.org/plasma/parameter/p22> a :Temperature ;
+    :value 800.0 ;
+    :unitString "K" ;
+    :normalizedValue 6.8938664e-05 ;
+    .
+
+<http://example.org/plasma/measurement/m23> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p23> ;
+    :confidence "medium" ;
+    :extractionMethod "regex" ;
+    :context "sity 5×10¹⁷ m⁻³. Ion temperatures remained around 0.5 eV. These low-temperature high-density plasmas are o" ;
+    .
+
+<http://example.org/plasma/parameter/p23> a :Temperature ;
+    :value 0.5 ;
+    :unitString "eV" ;
+    :normalizedValue 0.0005 ;
+    .
+
+# Paper: Comparative study of plasma parameters in multiple tokamak devices
+<http://example.org/plasma/paper/unknown> a :Paper ;
+    :arxivId "unknown" ;
+    :title "Comparative study of plasma parameters in multiple tokamak devices" ;
+    :reports <http://example.org/plasma/measurement/m24> ;
+    :reports <http://example.org/plasma/measurement/m25> ;
+    :reports <http://example.org/plasma/measurement/m26> .
+
+<http://example.org/plasma/measurement/m24> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p24> ;
+    :confidence "medium" ;
+    :extractionMethod "regex" ;
+    :context "reveals parameter scaling trends. DIII-D achieved 5.2 keV at 6.7×10¹⁹ m⁻³, JET reached 8.5 keV at 1.2×10²⁰" ;
+    .
+
+<http://example.org/plasma/parameter/p24> a :Temperature ;
+    :value 5.2 ;
+    :unitString "keV" ;
+    :normalizedValue 5.2 ;
+    .
+
+<http://example.org/plasma/measurement/m25> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p25> ;
+    :confidence "medium" ;
+    :extractionMethod "regex" ;
+    :context "I-D achieved 5.2 keV at 6.7×10¹⁹ m⁻³, JET reached 8.5 keV at 1.2×10²⁰ m⁻³, while EAST maintained 6.8 keV at" ;
+    .
+
+<http://example.org/plasma/parameter/p25> a :Temperature ;
+    :value 8.5 ;
+    :unitString "keV" ;
+    :normalizedValue 8.5 ;
+    .
+
+<http://example.org/plasma/measurement/m26> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p26> ;
+    :confidence "medium" ;
+    :extractionMethod "regex" ;
+    :context "ed 8.5 keV at 1.2×10²⁰ m⁻³, while EAST maintained 6.8 keV at 5.5×10¹⁹ m⁻³. These datasets enable empirical" ;
+    .
+
+<http://example.org/plasma/parameter/p26> a :Temperature ;
+    :value 6.8 ;
+    :unitString "keV" ;
+    :normalizedValue 6.8 ;
+    .
+
+# Paper: Plasma heating mechanisms and temperature evolution in magnetic confinement
+<http://example.org/plasma/paper/unknown> a :Paper ;
+    :arxivId "unknown" ;
+    :title "Plasma heating mechanisms and temperature evolution in magnetic confinement" ;
+    :reports <http://example.org/plasma/measurement/m27> ;
+    :reports <http://example.org/plasma/measurement/m28> .
+
+<http://example.org/plasma/measurement/m27> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p27> ;
+    :confidence "medium" ;
+    :extractionMethod "regex" ;
+    :context "jection increased plasma temperature from initial 1.5 keV to peak values of 7.5 keV. Density evolution show" ;
+    .
+
+<http://example.org/plasma/parameter/p27> a :Temperature ;
+    :value 1.5 ;
+    :unitString "keV" ;
+    :normalizedValue 1.5 ;
+    .
+
+<http://example.org/plasma/measurement/m28> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p28> ;
+    :confidence "medium" ;
+    :extractionMethod "regex" ;
+    :context "emperature from initial 1.5 keV to peak values of 7.5 keV. Density evolution showed increase from 3×10¹⁹ m⁻" ;
+    .
+
+<http://example.org/plasma/parameter/p28> a :Temperature ;
+    :value 7.5 ;
+    :unitString "keV" ;
+    :normalizedValue 7.5 ;
+    .
+
+# End of data

@@ -46,7 +46,8 @@ class ParameterExtractor:
         r'(\d+\.?\d*)[\s]*([×x]\s*10\^?[+-]?\d+)?[\s]*(keV|eV|K)',
 
         # Pattern with context words
-        r'(?:peak|maximum|central|average|typical)\s+temperature[\s:=~]*'
+        r'(?:peak|maximum|central|average|typical)\s+temperatures?[\s:=~]*'
+        r'(?:of|about|approximately|around)?[\s]*'
         r'(\d+\.?\d*)[\s]*([×x]\s*10\^?[+-]?\d+)?[\s]*(keV|eV|K)',
 
         # Generic temperature with units (least specific, most false positives)
@@ -54,11 +55,15 @@ class ParameterExtractor:
     ]
 
     DENSITY_PATTERNS = [
+        # Explicit density with scientific notation and units
         r'(?:electron density|n_?e|ion density|n_?i|plasma density)[\s:=~]*'
-        r'(\d+\.?\d*)[\s]*[×x]\s*10\^?([+-]?\d+)[\s]*(m\^?-?3|cm\^?-?3)',
+        r'(?:of|about|approximately|around)?[\s]*'
+        r'(\d+\.?\d*)[\s]*[×x]\s*10[¹²³⁴⁵⁶⁷⁸⁹⁰\^]?([+-]?\d+)[\s]*(m\^?-?3|cm\^?-?3|per cubic meter|per cubic centimeter)',
 
+        # Density with scientific notation (more permissive)
         r'density[\s:=~]*'
-        r'(\d+\.?\d*)[\s]*[×x]\s*10\^?([+-]?\d+)[\s]*(m\^?-?3|cm\^?-?3)',
+        r'(?:of|about|approximately|around)?[\s]*'
+        r'(\d+\.?\d*)[\s]*[×x]\s*10[¹²³⁴⁵⁶⁷⁸⁹⁰\^]?([+-]?\d+)[\s]*(m\^?-?3|cm\^?-?3)',
     ]
 
     def __init__(self, use_llm: bool = True, api_key: Optional[str] = None):
@@ -97,15 +102,21 @@ class ParameterExtractor:
 
                 # Parse value
                 try:
-                    value = float(match.group(1))
+                    groups = match.groups()
+                    value = float(groups[0])
 
-                    # Handle scientific notation if present
-                    if len(match.groups()) > 1 and match.group(2):
-                        exponent_str = match.group(2).replace('×', '').replace('x', '').replace('10^', '').replace('10', '')
-                        exponent = float(exponent_str)
-                        value = value * (10 ** exponent)
+                    # Handle scientific notation if present (group 2)
+                    if len(groups) > 1 and groups[1]:
+                        exponent_str = groups[1].replace('×', '').replace('x', '').replace('10^', '').replace('10', '').strip()
+                        if exponent_str:
+                            try:
+                                exponent = float(exponent_str)
+                                value = value * (10 ** exponent)
+                            except ValueError:
+                                pass  # Keep original value if exponent parsing fails
 
-                    unit = match.group(-1)  # Last group is always the unit
+                    # Unit is the last captured group
+                    unit = groups[-1]
 
                     matches.append({
                         'value': value,
@@ -113,7 +124,7 @@ class ParameterExtractor:
                         'context': context,
                         'confidence': 'high' if 'electron' in match.group(0).lower() else 'medium'
                     })
-                except (ValueError, IndexError) as e:
+                except (ValueError, IndexError, AttributeError) as e:
                     continue  # Skip malformed matches
 
         # Remove duplicates based on value and context similarity

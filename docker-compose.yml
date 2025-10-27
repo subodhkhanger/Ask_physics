@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  # Apache Jena Fuseki - Triple Store for SPARQL queries
+  fuseki:
+    image: stain/jena-fuseki:latest
+    container_name: plasma-fuseki
+    ports:
+      - "3030:3030"
+    environment:
+      ADMIN_PASSWORD: admin123  # Change in production!
+      JVM_ARGS: -Xmx2g  # Allocate 2GB RAM for better performance
+    volumes:
+      - ./fuseki-data:/fuseki  # Persist data across restarts
+      - ./data:/staging  # Mount data directory for loading TTL files
+      - ./ontology:/ontology  # Mount ontology directory
+    restart: unless-stopped
+    networks:
+      - plasma-network
+
+networks:
+  plasma-network:
+    driver: bridge
+
+# Usage Instructions:
+# 1. Start Fuseki: docker-compose up -d
+# 2. Access web UI: http://localhost:3030
+# 3. Create dataset named "plasma" via UI or:
+#    curl -X POST http://localhost:3030/$/datasets \
+#      --data "dbName=plasma&dbType=tdb2" \
+#      -u admin:admin123
+# 4. Load data:
+#    docker exec -it plasma-fuseki /jena-fuseki/bin/tdbloader \
+#      --loc=/fuseki/databases/plasma \
+#      /staging/plasma_data.ttl
+# 5. Query endpoint: http://localhost:3030/plasma/query
+# 6. Stop: docker-compose down

@@ -1,0 +1,263 @@
+# ============================================
+# Plasma Physics Knowledge Graph - Example SPARQL Queries
+# ============================================
+# Use these queries in Fuseki: http://localhost:3030/plasma/query
+# Or via curl:
+#   curl -X POST http://localhost:3030/plasma/query \
+#     --data-urlencode "query=<QUERY>" \
+#     -H "Accept: application/sparql-results+json" \
+#     -u admin:admin123
+
+# Prefixes (include these in every query)
+PREFIX : <http://example.org/plasma#>
+PREFIX paper: <http://example.org/plasma/paper/>
+PREFIX meas: <http://example.org/plasma/measurement/>
+PREFIX param: <http://example.org/plasma/parameter/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# ============================================
+# Query 1: List all papers with their titles
+# ============================================
+
+SELECT ?paper ?title ?authors
+WHERE {
+  ?paper a :Paper ;
+         :title ?title ;
+         :authors ?authors .
+}
+LIMIT 10
+
+# ============================================
+# Query 2: Find papers with temperature measurements
+# ============================================
+
+SELECT ?paper ?title ?tempValue ?unit
+WHERE {
+  ?paper a :Paper ;
+         :title ?title ;
+         :reports ?measurement .
+
+  ?measurement :measuresParameter ?param .
+
+  ?param a :Temperature ;
+         :value ?tempValue ;
+         :unitString ?unit .
+}
+ORDER BY DESC(?tempValue)
+
+# ============================================
+# Query 3: Find high-temperature plasmas (> 10 keV)
+# ============================================
+
+SELECT ?paper ?title ?tempValue ?unit
+WHERE {
+  ?paper a :Paper ;
+         :title ?title ;
+         :reports ?measurement .
+
+  ?measurement :measuresParameter ?param .
+
+  ?param a :Temperature ;
+         :value ?tempValue ;
+         :unitString ?unit ;
+         :normalizedValue ?normTemp .
+
+  FILTER(?normTemp > 10)
+}
+ORDER BY DESC(?normTemp)
+
+# ============================================
+# Query 4: Find papers with both temperature AND density
+# ============================================
+
+SELECT ?paper ?title ?tempValue ?tempUnit ?densValue ?densUnit
+WHERE {
+  ?paper a :Paper ;
+         :title ?title ;
+         :reports ?meas1 ;
+         :reports ?meas2 .
+
+  ?meas1 :measuresParameter ?temp .
+  ?temp a :Temperature ;
+        :value ?tempValue ;
+        :unitString ?tempUnit .
+
+  ?meas2 :measuresParameter ?dens .
+  ?dens a :Density ;
+        :value ?densValue ;
+        :unitString ?densUnit .
+}
+
+# ============================================
+# Query 5: Get statistics on temperature measurements
+# ============================================
+
+SELECT
+  (COUNT(?temp) as ?count)
+  (AVG(?normValue) as ?avgTemp)
+  (MAX(?normValue) as ?maxTemp)
+  (MIN(?normValue) as ?minTemp)
+WHERE {
+  ?temp a :Temperature ;
+        :normalizedValue ?normValue .
+}
+
+# ============================================
+# Query 6: Find measurements with high confidence
+# ============================================
+
+SELECT ?paper ?title ?paramType ?value ?unit ?confidence ?context
+WHERE {
+  ?paper a :Paper ;
+         :title ?title ;
+         :reports ?measurement .
+
+  ?measurement :measuresParameter ?param ;
+               :confidence ?confidence ;
+               :context ?context .
+
+  ?param :value ?value ;
+         :unitString ?unit .
+
+  BIND(
+    IF(EXISTS { ?param a :Temperature }, "Temperature",
+    IF(EXISTS { ?param a :Density }, "Density", "Unknown"))
+    as ?paramType
+  )
+
+  FILTER(?confidence = "high")
+}
+LIMIT 20
+
+# ============================================
+# Query 7: Find papers by temperature range (5-10 keV)
+# ============================================
+
+SELECT DISTINCT ?paper ?title ?tempValue ?unit
+WHERE {
+  ?paper a :Paper ;
+         :title ?title ;
+         :reports ?measurement .
+
+  ?measurement :measuresParameter ?param .
+
+  ?param a :Temperature ;
+         :value ?tempValue ;
+         :unitString ?unit ;
+         :normalizedValue ?normTemp .
+
+  FILTER(?normTemp >= 5 && ?normTemp <= 10)
+}
+ORDER BY ?normTemp
+
+# ============================================
+# Query 8: Count papers, measurements, and parameters
+# ============================================
+
+SELECT
+  (COUNT(DISTINCT ?paper) as ?paperCount)
+  (COUNT(DISTINCT ?measurement) as ?measurementCount)
+  (COUNT(DISTINCT ?param) as ?paramCount)
+WHERE {
+  ?paper a :Paper .
+  OPTIONAL { ?paper :reports ?measurement }
+  OPTIONAL { ?measurement :measuresParameter ?param }
+}
+
+# ============================================
+# Query 9: Find all temperature types (electron vs ion)
+# ============================================
+
+SELECT ?paper ?title ?tempType ?value ?unit
+WHERE {
+  ?paper a :Paper ;
+         :title ?title ;
+         :reports ?measurement .
+
+  ?measurement :measuresParameter ?param .
+
+  ?param :value ?value ;
+         :unitString ?unit .
+
+  {
+    ?param a :ElectronTemperature .
+    BIND("Electron" as ?tempType)
+  }
+  UNION
+  {
+    ?param a :IonTemperature .
+    BIND("Ion" as ?tempType)
+  }
+  UNION
+  {
+    ?param a :Temperature .
+    FILTER NOT EXISTS { ?param a :ElectronTemperature }
+    FILTER NOT EXISTS { ?param a :IonTemperature }
+    BIND("General" as ?tempType)
+  }
+}
+
+# ============================================
+# Query 10: Full-text search in contexts (if supported)
+# ============================================
+
+SELECT ?paper ?title ?value ?unit ?context
+WHERE {
+  ?paper a :Paper ;
+         :title ?title ;
+         :reports ?measurement .
+
+  ?measurement :measuresParameter ?param ;
+               :context ?context .
+
+  ?param :value ?value ;
+         :unitString ?unit .
+
+  FILTER(REGEX(?context, "tokamak", "i"))
+}
+LIMIT 10
+
+# ============================================
+# Query 11: Export data for visualization
+# ============================================
+
+SELECT ?paperId ?tempNorm ?densNorm
+WHERE {
+  ?paper a :Paper ;
+         :arxivId ?paperId .
+
+  OPTIONAL {
+    ?paper :reports ?meas1 .
+    ?meas1 :measuresParameter ?temp .
+    ?temp a :Temperature ;
+          :normalizedValue ?tempNorm .
+  }
+
+  OPTIONAL {
+    ?paper :reports ?meas2 .
+    ?meas2 :measuresParameter ?dens .
+    ?dens a :Density ;
+          :normalizedValue ?densNorm .
+  }
+}
+
+# ============================================
+# Query 12: Find papers missing density measurements
+# ============================================
+
+SELECT ?paper ?title
+WHERE {
+  ?paper a :Paper ;
+         :title ?title .
+
+  FILTER NOT EXISTS {
+    ?paper :reports ?measurement .
+    ?measurement :measuresParameter ?param .
+    ?param a :Density .
+  }
+}
+
+# ============================================
+# End of example queries
+# ============================================

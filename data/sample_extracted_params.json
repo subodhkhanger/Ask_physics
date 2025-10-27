@@ -1,0 +1,284 @@
+[
+  {
+    "paper_id": "sample_2401.12345",
+    "title": "High confinement plasma experiments in DIII-D tokamak",
+    "parameters": {
+      "temperature": [
+        {
+          "value": 5.2,
+          "unit": "keV",
+          "context": "elevant conditions with ne = 7.2 \u00d7 10^19 m^-3 and Te = 5.2 keV sustained for 3.5 seconds.",
+          "confidence": "medium"
+        },
+        {
+          "value": 4.8,
+          "unit": "keV",
+          "context": "The central ion temperature reached approximately 4.8 keV. These results demonstrate significant progress t",
+          "confidence": "medium"
+        }
+      ],
+      "density": [
+        {
+          "value": 7.2e+19,
+          "unit": "m^-3",
+          "context": "t progress toward fusion-relevant conditions with ne = 7.2 \u00d7 10^19 m^-3 and Te = 5.2 keV sustained for 3.5 seconds.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    "extraction_date": "2025-10-27T12:41:43.728930",
+    "extraction_method": "regex_only"
+  },
+  {
+    "paper_id": "sample_2402.23456",
+    "title": "Advanced tokamak scenarios with improved energy confinement",
+    "parameters": {
+      "temperature": [
+        {
+          "value": 8.5,
+          "unit": "keV",
+          "context": "e demonstrated record plasma performance. Central electron temperature of 8.5 keV and ion temperature of 7.2 keV were measured simu",
+          "confidence": "high"
+        },
+        {
+          "value": 7.2,
+          "unit": "keV",
+          "context": "ance. Central electron temperature of 8.5 keV and ion temperature of 7.2 keV were measured simultaneously. The plasma density",
+          "confidence": "medium"
+        },
+        {
+          "value": 0.8,
+          "unit": "keV",
+          "context": "high-performance phase. Edge temperatures around 0.8 keV with density approximately 4\u00d710^19 m^-3 were obse",
+          "confidence": "medium"
+        }
+      ],
+      "density": [
+        {
+          "value": 4e+19,
+          "unit": "m^-3",
+          "context": "ance phase. Edge temperatures around 0.8 keV with density approximately 4\u00d710^19 m^-3 were observed in the pedestal region.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    "extraction_date": "2025-10-27T12:41:43.729022",
+    "extraction_method": "regex_only"
+  },
+  {
+    "paper_id": "sample_2403.34567",
+    "title": "Low-density plasma experiments in Wendelstein 7-X stellarator",
+    "parameters": {
+      "temperature": [
+        {
+          "value": 3.0,
+          "unit": "keV",
+          "context": "nsity ne of 2.5\u00d710\u00b9\u2079 m\u207b\u00b3 and electron temperature Te around 3.0 keV. Ion temperatures remained moderate at approximat",
+          "confidence": "medium"
+        },
+        {
+          "value": 2.1,
+          "unit": "keV",
+          "context": "n temperatures remained moderate at approximately 2.1 keV. The plasma demonstrated good confinement propert",
+          "confidence": "medium"
+        }
+      ],
+      "density": []
+    },
+    "extraction_date": "2025-10-27T12:41:43.729085",
+    "extraction_method": "regex_only"
+  },
+  {
+    "paper_id": "sample_2404.45678",
+    "title": "Record temperatures in fusion plasma confinement",
+    "parameters": {
+      "temperature": [
+        {
+          "value": 12.3,
+          "unit": "keV",
+          "context": "ratures. The central electron temperature reached 12.3 keV, the highest ever recorded in this device. Ion te",
+          "confidence": "medium"
+        },
+        {
+          "value": 10.8,
+          "unit": "keV",
+          "context": "is device. Ion temperature simultaneously reached 10.8 keV with density n_e = 8.9 \u00d7 10^19 m^-3, demonstratin",
+          "confidence": "medium"
+        }
+      ],
+      "density": [
+        {
+          "value": 8.9e+19,
+          "unit": "m^-3",
+          "context": "ture simultaneously reached 10.8 keV with density n_e = 8.9 \u00d7 10^19 m^-3, demonstrating fusion-relevant triple product val",
+          "confidence": "medium"
+        }
+      ]
+    },
+    "extraction_date": "2025-10-27T12:41:43.729151",
+    "extraction_method": "regex_only"
+  },
+  {
+    "paper_id": "sample_2405.56789",
+    "title": "High-density regimes in compact tokamak operations",
+    "parameters": {
+      "temperature": [
+        {
+          "value": 2.5,
+          "unit": "keV",
+          "context": "a density exceeded 1.8\u00d710\u00b2\u2070 m\u207b\u00b3 while maintaining electron temperature of 2.5 keV. These high-density discharges with ne up to 2.1",
+          "confidence": "high"
+        },
+        {
+          "value": 2.2,
+          "unit": "keV",
+          "context": "2.1 \u00d7 10^20 m^-3 and moderate temperatures around T_e = 2.2 keV showed promising stability properties for future",
+          "confidence": "medium"
+        }
+      ],
+      "density": []
+    },
+    "extraction_date": "2025-10-27T12:41:43.729219",
+    "extraction_method": "regex_only"
+  },
+  {
+    "paper_id": "sample_2406.67890",
+    "title": "Temperature and density profiles in EAST tokamak H-mode",
+    "parameters": {
+      "temperature": [
+        {
+          "value": 1.2,
+          "unit": "keV",
+          "context": "h density of 5.5\u00d710\u00b9\u2079 m\u207b\u00b3. The edge region showed Te around 1.2 keV and ne approximately 3.2 \u00d7 10^19 cm^-3. These mea",
+          "confidence": "medium"
+        },
+        {
+          "value": 6.8,
+          "unit": "keV",
+          "context": "ity profiles. Core electron temperature peaked at 6.8 keV with density of 5.5\u00d710\u00b9\u2079 m\u207b\u00b3. The edge region sho",
+          "confidence": "medium"
+        }
+      ],
+      "density": [
+        {
+          "value": 3.2e+19,
+          "unit": "cm^-3",
+          "context": "m\u207b\u00b3. The edge region showed Te around 1.2 keV and ne approximately 3.2 \u00d7 10^19 cm^-3. These measurements provide valuable benchmarks f",
+          "confidence": "medium"
+        }
+      ]
+    },
+    "extraction_date": "2025-10-27T12:41:43.729282",
+    "extraction_method": "regex_only"
+  },
+  {
+    "paper_id": "sample_2407.78901",
+    "title": "Ultra-high temperature plasma regime in laser-fusion experiments",
+    "parameters": {
+      "temperature": [
+        {
+          "value": 15.0,
+          "unit": "keV",
+          "context": "temperatures. Peak electron temperature exceeded 15 keV in the hotspot with ion temperature reaching 14.5",
+          "confidence": "medium"
+        },
+        {
+          "value": 14.5,
+          "unit": "keV",
+          "context": "keV in the hotspot with ion temperature reaching 14.5 keV. The compressed fuel achieved density of 3.5\u00d710\u00b2\u2075",
+          "confidence": "medium"
+        },
+        {
+          "value": 10.0,
+          "unit": "keV",
+          "context": "g/cm\u00b3) at maximum compression. Temperatures above 10 keV were sustained for approximately 100 picoseconds.",
+          "confidence": "medium"
+        }
+      ],
+      "density": []
+    },
+    "extraction_date": "2025-10-27T12:41:43.729351",
+    "extraction_method": "regex_only"
+  },
+  {
+    "paper_id": "sample_2408.89012",
+    "title": "Moderate temperature plasmas for materials processing applications",
+    "parameters": {
+      "temperature": [
+        {
+          "value": 3.0,
+          "unit": "eV",
+          "context": "experiments for materials processing operated at electron temperature of 3 eV (approximately 34,800 K) with density 5\u00d710\u00b9\u2077 m\u207b\u00b3.",
+          "confidence": "high"
+        },
+        {
+          "value": 800.0,
+          "unit": "K",
+          "context": "at electron temperature of 3 eV (approximately 34,800 K) with density 5\u00d710\u00b9\u2077 m\u207b\u00b3. Ion temperatures remain",
+          "confidence": "medium"
+        },
+        {
+          "value": 0.5,
+          "unit": "eV",
+          "context": "sity 5\u00d710\u00b9\u2077 m\u207b\u00b3. Ion temperatures remained around 0.5 eV. These low-temperature high-density plasmas are o",
+          "confidence": "medium"
+        }
+      ],
+      "density": []
+    },
+    "extraction_date": "2025-10-27T12:41:43.729407",
+    "extraction_method": "regex_only"
+  },
+  {
+    "paper_id": "sample_2409.90123",
+    "title": "Comparative study of plasma parameters in multiple tokamak devices",
+    "parameters": {
+      "temperature": [
+        {
+          "value": 5.2,
+          "unit": "keV",
+          "context": "reveals parameter scaling trends. DIII-D achieved 5.2 keV at 6.7\u00d710\u00b9\u2079 m\u207b\u00b3, JET reached 8.5 keV at 1.2\u00d710\u00b2\u2070",
+          "confidence": "medium"
+        },
+        {
+          "value": 8.5,
+          "unit": "keV",
+          "context": "I-D achieved 5.2 keV at 6.7\u00d710\u00b9\u2079 m\u207b\u00b3, JET reached 8.5 keV at 1.2\u00d710\u00b2\u2070 m\u207b\u00b3, while EAST maintained 6.8 keV at",
+          "confidence": "medium"
+        },
+        {
+          "value": 6.8,
+          "unit": "keV",
+          "context": "ed 8.5 keV at 1.2\u00d710\u00b2\u2070 m\u207b\u00b3, while EAST maintained 6.8 keV at 5.5\u00d710\u00b9\u2079 m\u207b\u00b3. These datasets enable empirical",
+          "confidence": "medium"
+        }
+      ],
+      "density": []
+    },
+    "extraction_date": "2025-10-27T12:41:43.729463",
+    "extraction_method": "regex_only"
+  },
+  {
+    "paper_id": "sample_2410.01234",
+    "title": "Plasma heating mechanisms and temperature evolution in magnetic confinement",
+    "parameters": {
+      "temperature": [
+        {
+          "value": 1.5,
+          "unit": "keV",
+          "context": "jection increased plasma temperature from initial 1.5 keV to peak values of 7.5 keV. Density evolution show",
+          "confidence": "medium"
+        },
+        {
+          "value": 7.5,
+          "unit": "keV",
+          "context": "emperature from initial 1.5 keV to peak values of 7.5 keV. Density evolution showed increase from 3\u00d710\u00b9\u2079 m\u207b",
+          "confidence": "medium"
+        }
+      ],
+      "density": []
+    },
+    "extraction_date": "2025-10-27T12:41:43.729523",
+    "extraction_method": "regex_only"
+  }
+]

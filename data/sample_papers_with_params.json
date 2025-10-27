@@ -1,0 +1,102 @@
+[
+  {
+    "id": "sample_2401.12345",
+    "title": "High confinement plasma experiments in DIII-D tokamak",
+    "abstract": "We report on recent experiments conducted at the DIII-D tokamak facility achieving improved confinement in H-mode plasmas. Peak electron temperatures of 5.2 keV were achieved in the plasma core with line-averaged electron density of 6.7×10¹⁹ m⁻³. The central ion temperature reached approximately 4.8 keV. These results demonstrate significant progress toward fusion-relevant conditions with ne = 7.2 × 10^19 m^-3 and Te = 5.2 keV sustained for 3.5 seconds.",
+    "authors": ["J. Smith", "A. Johnson", "M. Chen"],
+    "published": "2024-01-15T10:00:00+00:00",
+    "pdf_url": "http://arxiv.org/pdf/sample_2401.12345",
+    "categories": ["physics.plasm-ph"],
+    "collected_at": "2025-10-27T00:00:00"
+  },
+  {
+    "id": "sample_2402.23456",
+    "title": "Advanced tokamak scenarios with improved energy confinement",
+    "abstract": "Advanced operating scenarios in JET have demonstrated record plasma performance. Central electron temperature of 8.5 keV and ion temperature of 7.2 keV were measured simultaneously. The plasma density reached 1.2×10²⁰ m⁻³ during the high-performance phase. Edge temperatures around 0.8 keV with density approximately 4×10^19 m^-3 were observed in the pedestal region.",
+    "authors": ["L. Wilson", "K. Zhang", "R. Patel"],
+    "published": "2024-02-20T14:30:00+00:00",
+    "pdf_url": "http://arxiv.org/pdf/sample_2402.23456",
+    "categories": ["physics.plasm-ph"],
+    "collected_at": "2025-10-27T00:00:00"
+  },
+  {
+    "id": "sample_2403.34567",
+    "title": "Low-density plasma experiments in Wendelstein 7-X stellarator",
+    "abstract": "Wendelstein 7-X stellarator experiments explored the low-density regime with electron density ne of 2.5×10¹⁹ m⁻³ and electron temperature Te around 3.0 keV. Ion temperatures remained moderate at approximately 2.1 keV. The plasma demonstrated good confinement properties even at these lower densities.",
+    "authors": ["T. Mueller", "S. Schmidt", "F. Wagner"],
+    "published": "2024-03-10T09:15:00+00:00",
+    "pdf_url": "http://arxiv.org/pdf/sample_2403.34567",
+    "categories": ["physics.plasm-ph"],
+    "collected_at": "2025-10-27T00:00:00"
+  },
+  {
+    "id": "sample_2404.45678",
+    "title": "Record temperatures in fusion plasma confinement",
+    "abstract": "Breakthrough experiments at ITER prototype facility achieved unprecedented plasma temperatures. The central electron temperature reached 12.3 keV, the highest ever recorded in this device. Ion temperature simultaneously reached 10.8 keV with density n_e = 8.9 × 10^19 m^-3, demonstrating fusion-relevant triple product values.",
+    "authors": ["D. Brown", "N. Yamamoto", "C. Rodriguez"],
+    "published": "2024-04-05T16:45:00+00:00",
+    "pdf_url": "http://arxiv.org/pdf/sample_2404.45678",
+    "categories": ["physics.plasm-ph"],
+    "collected_at": "2025-10-27T00:00:00"
+  },
+  {
+    "id": "sample_2405.56789",
+    "title": "High-density regimes in compact tokamak operations",
+    "abstract": "Compact spherical tokamak NSTX-U explored high-density operational regimes. Plasma density exceeded 1.8×10²⁰ m⁻³ while maintaining electron temperature of 2.5 keV. These high-density discharges with ne up to 2.1 × 10^20 m^-3 and moderate temperatures around T_e = 2.2 keV showed promising stability properties for future reactor designs.",
+    "authors": ["G. Taylor", "B. Anderson", "V. Petrov"],
+    "published": "2024-05-12T11:20:00+00:00",
+    "pdf_url": "http://arxiv.org/pdf/sample_2405.56789",
+    "categories": ["physics.plasm-ph"],
+    "collected_at": "2025-10-27T00:00:00"
+  },
+  {
+    "id": "sample_2406.67890",
+    "title": "Temperature and density profiles in EAST tokamak H-mode",
+    "abstract": "EAST tokamak H-mode experiments revealed detailed temperature and density profiles. Core electron temperature peaked at 6.8 keV with density of 5.5×10¹⁹ m⁻³. The edge region showed Te around 1.2 keV and ne approximately 3.2 × 10^19 cm^-3. These measurements provide valuable benchmarks for transport modeling.",
+    "authors": ["X. Li", "Q. Wang", "H. Liu"],
+    "published": "2024-06-18T13:50:00+00:00",
+    "pdf_url": "http://arxiv.org/pdf/sample_2406.67890",
+    "categories": ["physics.plasm-ph"],
+    "collected_at": "2025-10-27T00:00:00"
+  },
+  {
+    "id": "sample_2407.78901",
+    "title": "Ultra-high temperature plasma regime in laser-fusion experiments",
+    "abstract": "Inertial confinement fusion experiments at NIF achieved ultra-high temperatures. Peak electron temperature exceeded 15 keV in the hotspot with ion temperature reaching 14.5 keV. The compressed fuel achieved density of 3.5×10²⁵ cm⁻³ (350 g/cm³) at maximum compression. Temperatures above 10 keV were sustained for approximately 100 picoseconds.",
+    "authors": ["M. Clark", "J. Edwards", "R. Town"],
+    "published": "2024-07-22T10:30:00+00:00",
+    "pdf_url": "http://arxiv.org/pdf/sample_2407.78901",
+    "categories": ["physics.plasm-ph"],
+    "collected_at": "2025-10-27T00:00:00"
+  },
+  {
+    "id": "sample_2408.89012",
+    "title": "Moderate temperature plasmas for materials processing applications",
+    "abstract": "Industrial plasma experiments for materials processing operated at electron temperature of 3 eV (approximately 34,800 K) with density 5×10¹⁷ m⁻³. Ion temperatures remained around 0.5 eV. These low-temperature high-density plasmas are optimal for surface treatment applications.",
+    "authors": ["K. Nakamura", "Y. Sato", "T. Ishida"],
+    "published": "2024-08-08T15:10:00+00:00",
+    "pdf_url": "http://arxiv.org/pdf/sample_2408.89012",
+    "categories": ["physics.plasm-ph"],
+    "collected_at": "2025-10-27T00:00:00"
+  },
+  {
+    "id": "sample_2409.90123",
+    "title": "Comparative study of plasma parameters in multiple tokamak devices",
+    "abstract": "Comprehensive comparison across five major tokamaks reveals parameter scaling trends. DIII-D achieved 5.2 keV at 6.7×10¹⁹ m⁻³, JET reached 8.5 keV at 1.2×10²⁰ m⁻³, while EAST maintained 6.8 keV at 5.5×10¹⁹ m⁻³. These datasets enable empirical scaling law development for future reactor prediction.",
+    "authors": ["International Tokamak Consortium"],
+    "published": "2024-09-14T09:00:00+00:00",
+    "pdf_url": "http://arxiv.org/pdf/sample_2409.90123",
+    "categories": ["physics.plasm-ph"],
+    "collected_at": "2025-10-27T00:00:00"
+  },
+  {
+    "id": "sample_2410.01234",
+    "title": "Plasma heating mechanisms and temperature evolution in magnetic confinement",
+    "abstract": "Auxiliary heating experiments with neutral beam injection increased plasma temperature from initial 1.5 keV to peak values of 7.5 keV. Density evolution showed increase from 3×10¹⁹ m⁻³ to 5.5×10¹⁹ m⁻³ during the heating phase. Time-resolved measurements captured the temperature ramp with heating power of 8 MW applied.",
+    "authors": ["P. Martin", "A. Fasoli", "S. Coda"],
+    "published": "2024-10-19T12:40:00+00:00",
+    "pdf_url": "http://arxiv.org/pdf/sample_2410.01234",
+    "categories": ["physics.plasm-ph"],
+    "collected_at": "2025-10-27T00:00:00"
+  }
+]

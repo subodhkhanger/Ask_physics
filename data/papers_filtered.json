@@ -1,0 +1,402 @@
+[
+  {
+    "id": "2510.21676v1",
+    "title": "Constructing Field Aligned Coordinate Systems for Gyrokinetic Simulations of Tokamaks in X-point Geometries",
+    "abstract": "Structures in tokamak plasmas are elongated along the direction of the magnetic field and short in the directions perpendicular to the magnetic field. Many tokamak simulation codes take advantage of this by using a field aligned coordinate system. However, field aligned coordinate systems have a coordinate singularity at magnetic X-points where the poloidal magnetic field vanishes, which makes it difficult to use field aligned coordinate systems when simulating the core and scrape-off layer (SOL) simultaneously. Here we present an algorithm for computing geometric quantities in a standard field aligned coordinate system that avoids the singularity and allows one to conduct 2D axisymmetric simulations in X-point geometries. We demonstrate the efficacy of this algorithm with an example simulation of the Spherical Tokamak for Energy Production (STEP).",
+    "authors": [
+      "Akash Shukla",
+      "Ammar Hakim",
+      "James Juno",
+      "Gregory Hammett",
+      "Manaure Francisquez"
+    ],
+    "published": "2025-10-24T17:31:59+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.21676v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-27T12:39:20.239153"
+  },
+  {
+    "id": "2510.21675v1",
+    "title": "Counter-Streaming Beams in Collisionless Pair Plasma Instability Systems III: Collisionless Heating, Acceleration, and Radiation",
+    "abstract": "Energetic astrophysical phenomena, such as $\\gamma$-ray bursts and supernova explosion-driven shocks in collisionless plasmas, involve various plasma kinetic instabilities, such as the Weibel instability. These systems support various types of particle acceleration and radiation through a variety of mechanisms. In this paper, we explore the energy transformations and dynamical effects of violent filament mergers seen between the large current filaments formed by the Weibel instability. The radiative processes involved in the Weibel instability filament building are also discussed in relation to jitter and synchrotron radiation.",
+    "authors": [
+      "Michael C. Sitarz"
+    ],
+    "published": "2025-10-24T17:30:14+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.21675v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-27T12:39:20.744611"
+  },
+  {
+    "id": "2510.21666v1",
+    "title": "Counter-Streaming Beams in Collisionless Pair Plasma Instability Systems II: Spectral Cone and Spectral Wave Mode Analysis",
+    "abstract": "Energetic astrophysical phenomena, such as $\\gamma$-ray bursts, supernova explosions, and magnetar flares occur in collisionless plasmas and involve various plasma kinetic and magnetohydrodynamic instabilities. In this paper, we explore the spectral trends of the Weibel instability using spectral analysis of particle-in-cell simulations. Power dependence on viewing angle and frequency are explored and the relation to the results of the first paper in this series is discussed.",
+    "authors": [
+      "Michael C. Sitarz"
+    ],
+    "published": "2025-10-24T17:24:02+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.21666v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-27T12:39:21.250021"
+  },
+  {
+    "id": "2510.21261v1",
+    "title": "Benchmark for two-dimensional large scale coherent structures in partially magnetized ExB plasmas -- Community collaboration & lessons learned",
+    "abstract": "Low-temperature plasmas are essential to both fundamental scientific research and critical industrial applications. As in many areas of science, numerical simulations have become a vital tool for uncovering new physical phenomena and guiding technological development. Code benchmarking remains crucial for verifying implementations and evaluating performance. This work continues the Landmark benchmark initiative, a series specifically designed to support the verification of low-temperature plasma codes. In this study, seventeen simulation codes from a collaborative community of nineteen international institutions modeled a partially magnetized ExB Penning discharge. The emergence of large scale coherent structures, or rotating plasma spokes, endows this configuration with an enormous range of time scales, making it particularly challenging to simulate. The codes showed excellent agreement on the rotation frequency of the spoke as well as key plasma properties, including time-averaged ion density, plasma potential, and electron temperature profiles. Achieving this level of agreement came with challenges, and we share lessons learned on how to conduct future benchmarking campaigns. Comparing code implementations, computational hardware, and simulation runtimes also revealed interesting trends, which are summarized with the aim of guiding future plasma simulation software development.",
+    "authors": [
+      "Andrew T. Powis",
+      "Eduardo Ahedo",
+      "Alejandro \u00c1lvarez Laguna",
+      "Nicolas Barl\u00e9on",
+      "Enrique Bello-Ben\u00edtez",
+      "Lucas Beving",
+      "Jean-Pierre Boeuf",
+      "Guillaume Bogopolsky",
+      "Anne Bourdon",
+      "Filippo Cichocki",
+      "B\u00e9n\u00e9dicte Cuenot",
+      "Andrew Denig",
+      "Zolt\u00e1n Donk\u00f3",
+      "Paul-Quentin Elias",
+      "Miguel P. Encinar",
+      "Denis Eremin",
+      "Pablo Fajardo",
+      "Farbod Faraji",
+      "Gwenael Fubiani",
+      "Laurent Garrigues",
+      "Kentaro Hara",
+      "Peter Hartmann",
+      "Matthew Hopkins",
+      "Igor D. Kaganovich",
+      "Aaron Knoll",
+      "Giovanni Lapenta",
+      "Thierry E. Magin",
+      "Alberto Mar\u00edn-Cebri\u00e1n",
+      "Mario Merino",
+      "Pierpaolo Minelli",
+      "Mina Papahn Zadeh",
+      "Pietro Parodi",
+      "Federico Petronio",
+      "Maryam Reza",
+      "Andrei I. Smolyakov",
+      "Dmytro Sydorenko",
+      "Francesco Taccogna",
+      "Miles M. Turner",
+      "Olivier Vermorel",
+      "Willca Villafana",
+      "Liang Xu"
+    ],
+    "published": "2025-10-24T08:47:57+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.21261v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-27T12:39:21.755872"
+  },
+  {
+    "id": "2510.21239v1",
+    "title": "Laboratory formation of scaled astrophysical outflows",
+    "abstract": "Astrophysical systems exhibit a rich diversity of outflow morphologies, yet their mechanisms and existence conditions remain among the most persistent puzzles in the field. Here we present scaled laboratory experiments based on laser-driven plasma outflow into magnetized ambient gas, which mimic five basic astrophysical outflows regulated by interstellar medium, namely collimated jets, blocked jets, elliptical bubbles, as well as spherical winds and bubbles. Their morphologies and existence conditions are found to be uniquely determined by the external Alfvenic and sonic Mach numbers Me-a and Me-s, i.e. the relative strengths of the outflow ram pressure against the magnetic/thermal pressures in the interstellar medium, with transitions occurring at Me-a ~ 2 and 0.5, as well as Me-s ~ 1. These results are confirmed by magnetohydrodynamics simulations and should also be verifiable from existing and future astronomical observations. Our findings provide a quantitative framework for understanding astrophysical outflows.",
+    "authors": [
+      "Shun-yi Yang",
+      "Tao Tao",
+      "Guang-yue Hu",
+      "Chao Xiong",
+      "Tian-yi Li",
+      "Xue-cheng Li",
+      "Hui-bo Tang",
+      "Shuo-ting Shao",
+      "Xiang Lv",
+      "Chen Zhang",
+      "Ming-yang Yang"
+    ],
+    "published": "2025-10-24T08:20:07+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.21239v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-27T12:39:22.258176"
+  },
+  {
+    "id": "2510.21187v1",
+    "title": "Dissipation and particle acceleration at intermittent structures with velocity and magnetic shear: Interaction of Kelvin-Helmholtz and Drift-Kink instabilities",
+    "abstract": "We present two-dimensional (2D) particle-in-cell simulations of a magnetized, collisionless, relativistic pair plasma subjected to combined velocity and magnetic-field shear, a scenario typical at intermittent structures in plasma turbulence. We create conditions where only the Kelvin-Helmholtz (KH) and Drift-Kink (DK) instabilities can develop, while tearing modes are forbidden. The interaction of DKI and KHI generates qualitatively new structures, marked by a thickened shear layer with very weak electromagnetic field, modulated by KH vortices. Over a range of moderately strong velocity shears explored, the interaction of DKI and KHI results in a significant enhancement of dissipation over cases with only velocity shear or only magnetic shear. Moreover, we observe a new and efficient way of particle acceleration where particles are stochastically accelerated by the motional electric field exterior to the shear layer as they meander in an S-shaped pattern in and out of it. This process takes advantage of the bent geometry of the shear layer caused by the DK-KHI interaction and is responsible for most of the highest-energy particles produced in our simulations. These results further our understanding of dissipation and particle acceleration at intermittent structures, which are present in plasma turbulence across a wide range of astrophysical contexts such as in AGN jet sheaths, potentially relevant to limb-brightened emission, etc., and highlight the sensitivity of dissipation to multiple interacting instabilities, thus providing a strong motivation for further studies of their nonlinear interaction at the kinetic level.",
+    "authors": [
+      "Tsun Hin Navin Tsung",
+      "Gregory R. Werner",
+      "Dmitri A. Uzdensky",
+      "Mitchell C. Begelman"
+    ],
+    "published": "2025-10-24T06:32:30+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.21187v1",
+    "categories": [
+      "astro-ph.HE",
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-27T12:39:22.763900"
+  },
+  {
+    "id": "2510.21170v1",
+    "title": "Inhomogeneous mixing: From microscopic dynamics to mesoscopic staircases",
+    "abstract": "Inhomogeneous mixing and the consequent mesoscopic layered structure have been observed in many physical systems, including magnetically confined fusion plasmas. Especially, in plasmas, mixing can be enhanced through turbulence spreading by intermittent coherent structures (blobs/voids), or suppressed due to the formation of transport barriers (sheared zonal flows). Interestingly, blobs/voids and zonal flows are not independent, and they can co-exist in a state of inhomogeneous mixing, often called the E x B staircase. In this paper, we first introduce recent experimental progress on the physics of blobs/voids: how turbulence spreading by blobs/voids occurs, the consequences of enhanced turbulence spreading for the power decay length, and the interaction between blobs/voids and zonal flows. Then, we provide a brief review of experimental results on staircases, or more generally layered mesoscopic transport barriers. Staircases are often elusive and different complementary methods have been utilized to identify them, but our understanding is still incomplete. This paper serves as an initial step toward applying insights gained from inhomogeneous mixing due to blobs/voids to the understanding of a staircase.",
+    "authors": [
+      "T. Long",
+      "M. J. Choi",
+      "P. H. Diamond"
+    ],
+    "published": "2025-10-24T05:50:33+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.21170v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-27T12:39:23.269065"
+  },
+  {
+    "id": "2510.20977v1",
+    "title": "Significant Amplification of Turbulent Energy Dissipation through the Shock Transition at Mars",
+    "abstract": "Turbulence is fundamental to energy transfer across scales in space and astrophysical plasmas. Bow shock interactions have long been hypothesized to significantly modify turbulence in planetary environments, yet the quantification of such effects and their parametric dependencies remain largely unaddressed. Using in situ long-term high-time resolution measurements from NASA's MAVEN mission, we report the first observational characterization of the evolution and parametric dependence of the turbulence energy cascade rate $\\varepsilon_C$ at magnetohydrodynamic (MHD) scales. Key findings reveal an averaged three-order-of-magnitude enhancement in $\\varepsilon_C$ when transitioning from the solar wind to the magnetosheath. Notably, downstream measurements of oblique and quasi-perpendicular shocks exhibit higher energy dissipation rates than those of quasi-parallel configurations. These results provide the first direct evidence linking shock obliquity to turbulence amplification, offering key insights into shock-mediated turbulence in similar but inaccessible systems.",
+    "authors": [
+      "Wence Jiang",
+      "Hui Li",
+      "Nahuel Andr\u00e9s",
+      "Lina Hadid",
+      "Daniel Verscharen",
+      "Chi Wang"
+    ],
+    "published": "2025-10-23T20:14:41+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.20977v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-27T12:39:26.500420"
+  },
+  {
+    "id": "2510.20775v1",
+    "title": "The Opacity Project: R-Matrix Calculations for Opacities of High-Energy-Density Astrophysical and Laboratory Plasmas",
+    "abstract": "Accurate determination of opacity is critical for understanding radiation transport in both astrophysical and laboratory plasmas. We employ atomic data from R-Matrix calculations to investigate radiative properties in high-energy-density (HED) plasma sources. Specifically, we analyze environments such as the base of the convective zone (BCZ) of the Sun 2 x 10^6$ K, N_e = 10^{23}/cc and the inertial confinement fusion (ICF) device at the Sandia Z facility 2.11 x 10^6 K, N_e = 3.16 x 10^{22}/cc. We calculate Rosseland Mean Opacities (RMO) within a range of temperatures and densities and analyze how they vary under different plasma conditions. In this study, we specifically focus on electron collisional and Stark ion microfield broadening effects on autoionizing resonances in photoabsorption cross sections. Our results are relevant to astrophysical models, particularly in the context of the solar opacity problem, and provide insights into discrepancies between theoretical calculations and experimental measurements. In addition, we investigate the equation-of-state (EOS) and its impact on opacities. In addition, we examine the equation-of-state (EOS) and its impact on opacities of the \"chemical picture\" Mihalas-Hummer-Dappen EOS with respect to level populations of excited levels included in the R-matrix calculations. This study should contribute to improving opacity models of HED sources such as stellar interiors adn laboratory fusion plasma experiments.",
+    "authors": [
+      "Anil K. Pradhan",
+      "Sultana N. Nahar"
+    ],
+    "published": "2025-10-23T17:47:36+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.20775v1",
+    "categories": [
+      "astro-ph.HE",
+      "astro-ph.SR",
+      "physics.atom-ph",
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-27T12:39:27.005717"
+  },
+  {
+    "id": "2510.20628v1",
+    "title": "Magnetic Field-Line Curvature and Its Role in Particle Acceleration by Magnetically Dominated Turbulence",
+    "abstract": "We employ first-principles, fully kinetic particle-in-cell simulations to investigate magnetic field-line curvature in magnetically dominated turbulent plasmas and its role in particle acceleration through curvature-drift motion along the motional electric field. By varying the fluctuation-to-mean magnetic-field ratio $\\delta B_0/B_0$, we examine curvature $\\kappa$ statistics and their connection to particle acceleration. The curvature probability densities display broad power-law wings, scaling linearly in $\\kappa$ below the peak and developing hard high-$\\kappa$ tails for $\\delta B_0/B_0 \\gtrsim 1$. As the mean field strengthens, the high-$\\kappa$ tails steepen, and large-curvature events are suppressed when $\\delta B_0/B_0 \\ll 1$. The probability density functions of magnetic field-line contraction, ${\\bf v}_E \\cdot {\\bf \\kappa}$, with ${\\bf v}_E$ the field-line velocity, develop power-law tails well described by a symmetric Pareto distribution, characteristic of stochastic energy exchanges, with the tails becoming harder as $\\delta B_0/B_0$ increases. Our guiding-center analysis shows that curvature-drift acceleration accounts for a substantial fraction of the energization via the motional electric field, and that it strengthens with increasing $\\delta B_0/B_0$. For well-magnetized particles, curvature-drift acceleration typically exceeds ${\\bf\\nabla}B$ drift, polarization drift, and betatron contributions. These results identify curvature-drift acceleration as a principal pathway through which magnetized turbulence transfers energy to nonthermal particles in astrophysical plasmas.",
+    "authors": [
+      "Samuel Sebastian",
+      "Luca Comisso"
+    ],
+    "published": "2025-10-23T15:02:34+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.20628v1",
+    "categories": [
+      "astro-ph.HE",
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-27T12:39:27.511305"
+  },
+  {
+    "id": "2510.20105v1",
+    "title": "High Gain Fusion Target Design using Generative Artificial Intelligence",
+    "abstract": "By returning to the topological basics of fusion target design, Generative Artificial Intelligence (genAI) is used to specify how to initially configure and drive the optimally entangled topological state, and stabilize that topological state from disruption. This can be applied to all methods; including tokamaks, laser-driven schemes, and pulsed-power driven schemes. The result is practical, room temperature targets that can yield up to 10 GJ of energy, driven by as little as 3 MJ of absorbed energy. The genAI is based on the concept of Ubuntu that replaces the Deep Convolutional Neural Network approximation of a functional, with the formula for the generating functional of a canonical transformation from the domain of the canonical field momentums and fields, to the domain of the canonical momentums and coordinates, that is the Reduced Order Model. This formula is a logical process of renormalization, enabling Heisenberg's canonical approach to field theory, via calculation of the S-matrix, given observation of the fields. This can be viewed as topological characterization and control of collective, that is complex, systems.",
+    "authors": [
+      "Michael E. Glinsky"
+    ],
+    "published": "2025-10-23T01:17:29+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.20105v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-27T12:39:28.016652"
+  },
+  {
+    "id": "2510.19786v1",
+    "title": "First Observation of Dispersive Shock Waves in an Electron Beam",
+    "abstract": "Dispersive shock waves (DSWs) are expanding nonlinear wave trains that arise when dispersion regularizes a steepening front, a phenomenon observed in fluids, plasmas, optics, and superfluids. Here we report the first experimental observation of DSWs in an intense electron beam, using the University of Maryland Electron Ring (UMER). A localized induction-cell perturbation produced a negative density pulse that evolved into a leading soliton-like peak followed by an expanding train of oscillations. The leading peak satisfied soliton scaling laws for width^2 vs inverse amplitude and velocity vs amplitude, while the total wave-train width increased linearly with time, consistent with Korteweg--de Vries (KdV) predictions. Successive peaks showed decreasing amplitude and velocity toward the trailing edge, in agreement with dispersive shock ordering. These results demonstrate that intense charged particle beams provide a new laboratory platform for studying dispersive hydrodynamics, extending nonlinear wave physics into the high-intensity beam regime.",
+    "authors": [
+      "H. McCright",
+      "I. G. Abel",
+      "I. Haber",
+      "P. G. O'Shea",
+      "B. L. Beaudoin"
+    ],
+    "published": "2025-10-22T17:21:26+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.19786v1",
+    "categories": [
+      "physics.acc-ph",
+      "nlin.PS",
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-27T12:39:28.520054"
+  },
+  {
+    "id": "2510.19729v1",
+    "title": "Coupling of neutrino beam-driven MHD waves and resonant instabilities in rotating magnetoplasmas with neutrino two-flavor oscillations",
+    "abstract": "We present an analysis of neutrino-driven magnetohydrodynamic (MHD) waves and instabilities in a rotating magnetoplasma with weak neutrino interactions. We show, for the first time, that neutrino-driven shear Alfv{\\'e}n and oblique magnetosonic waves can be coupled by the Coriolis force, forming new wave modes affected by this force, as well as neutrino beam and two neutrino flavor oscillations. Our work extends previous theories by demonstrating that shear Alfv{\\'e}n waves are influenced by neutrino effects and by identifying instabilities resulting from resonant interactions with both a streaming neutrino beam and flavor oscillations. We find that the Coriolis force, as well as plasma density and magnetic field strength, have a significant impact on the profiles of the instability growth rates. Our findings may shed new light on the physical mechanisms underlying core-collapse supernovae.",
+    "authors": [
+      "Jyoti Turi",
+      "Amar P. Misra"
+    ],
+    "published": "2025-10-22T16:17:32+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.19729v1",
+    "categories": [
+      "astro-ph.HE",
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-27T12:39:29.025936"
+  },
+  {
+    "id": "2510.19690v1",
+    "title": "Modification of ion-temperature-gradient turbulence by impurities in stellarator plasmas",
+    "abstract": "Recent nonlinear gyrokinetic simulations have shown that impurities can strongly modify the turbulent heat flux in stellarator plasmas. Here, the ion-temperature-gradient (ITG) dispersion relation in a plasma containing impurities is analytically solved in certain limits and an expression for the modification of the ITG growth rate by impurities is derived. The analytical expression is the sum of three terms corresponding to three different physical causes (impurity density gradient, impurity temperature gradient and dilution) of the change in the growth rate. The scalings predicted analytically for the modification of the growth rate are shown to be reproduced by linear gyrokinetic simulations. The conditions for reduction or increase of the ITG growth by impurities are also correctly predicted by the analytical solution to the dispersion relation. Finally, a remarkable correlation is found between the analytical expression for the modification of the growth rate and the modification of the turbulent heat flux obtained from nonlinear gyrokinetic simulations.",
+    "authors": [
+      "Ivan Calvo",
+      "Felix I. Parra",
+      "Hanne Thienpondt",
+      "Jose Manuel Garcia-Rega\u00f1a"
+    ],
+    "published": "2025-10-22T15:38:02+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.19690v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-27T12:39:29.530743"
+  },
+  {
+    "id": "2510.19543v1",
+    "title": "Microtearing Turbulence and Its Role in High-Density-Gradient Plasmas in Wendelstein 7-X",
+    "abstract": "Gyrokinetic simulations reveal that microtearing mode (MTM) turbulence dominates transport in a Wendelstein 7-X (W7-X) discharge characterized by large density gradients, moderate temperature gradients, and low plasma beta. This conclusion is supported by the close agreement between simulated and experimentally measured heat and particle fluxes. The emergence of MTMs is attributed to the absence of competing instabilities -- such as ion temperature gradient modes and density-gradient-driven trapped-electron modes -- under these plasma conditions, together with the stabilizing influence of the W7-X max-J magnetic configuration. Furthermore, moderate collisionality and low magnetic shear are found to facilitate MTM onset. These findings advance the understanding of high-density-gradient regimes, which are essential for achieving high-performance operation in W7-X plasmas.",
+    "authors": [
+      "H. Cu-Castillo",
+      "A. Ba\u00f1\u00f3n Navarro",
+      "G. Merlo",
+      "F. Reimold",
+      "T. Romba",
+      "O. Ford",
+      "S. Bannmann",
+      "L. Van\u00f3",
+      "M. Wappl",
+      "J. Geiger",
+      "A. Zocco",
+      "F. Jenko",
+      "the W7-X team"
+    ],
+    "published": "2025-10-22T12:50:15+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.19543v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-27T12:39:30.032656"
+  },
+  {
+    "id": "2510.18487v1",
+    "title": "Experimental and numerical investigation of suprathermal electron dynamics using vertical electron cyclotron emission",
+    "abstract": "The Tokamak \\`a Configuration Variable (TCV) is equipped with an advanced set of diagnostics for studying suprathermal electron dynamics. Among these, the vertical electron cyclotron emission (VECE) diagnostic offers valuable insights into the electron energy distribution by measuring electron cyclotron emission (ECE) along a vertical line-of-sight. However, reconstructing the electron distribution from ECE measurements is inherently challenging due to harmonic overlap and thermal radiation noise. A more practical approach leverages forward modeling of ECE based on kinetic simulations. To this end, we introduce YODA, a novel synthetic ECE diagnostic framework that simulates emission and (re)absorption of electron cyclotron radiation for arbitrary electron distributions and antenna geometries. The framework is validated against the well-established synthetic ECE code SPECE, using an ohmic TCV discharge as a reference case. In this study, the 3D bounce-averaged Fokker-Planck code LUKE is used to model electron distributions in two electron cyclotron current drive (ECCD) experiments. The synthetic spectra generated using the combined LUKE-YODA framework successfully reproduce the main features of the experimental VECE measurements in both simulated discharges. The combination of kinetic and synthetic ECE simulations allow the identification of the features in the electron distribution function which give rise to certain signatures in the VECE signal.",
+    "authors": [
+      "L. Votta",
+      "M. Hoppe",
+      "J. Decker",
+      "E. Devlaminck",
+      "A. S. Tema Biwol\u00e9",
+      "L. Porte",
+      "J. Cazabonne",
+      "Y. Savoye-Peysson",
+      "the TCV team"
+    ],
+    "published": "2025-10-21T10:07:58+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.18487v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-27T12:39:30.537761"
+  },
+  {
+    "id": "2510.18384v1",
+    "title": "Diagnostics of a Multicusp-Assisted Inductively-Coupled Radio-Frequency Plasma Source for Plasma Immersion Ion Implantation",
+    "abstract": "In this article, we present a detailed characterisation of a multicusp-assisted inductively coupled RF plasma source for plasma immersion ion implantation (PIII). Using laser-induced fluorescence (LIF) and RF-compensated Langmuir probe diagnostics, we measured ion temperature T i and drift velocity v z in argon plasmas near an immersed electrode. The multicusp configuration enhances plasma density at low pressure, enabling stable operation down to 0.8 mTorr. Timeaveraged measurements show no detectable perturbation near the pulsed electrode, indicating full plasma recovery between high-voltage pulses. LIF-derived potential profiles match Riemann's presheath theory, and ion velocity distributions reveal acceleration consistent with sheath dynamics. These results support the use of LIF for steady-state characterisation of the bulk and presheath regions in PIII systems.",
+    "authors": [
+      "Moreno Joel",
+      "Jimenez Marilyn",
+      "Okerstrom Daniel",
+      "Bradley Michael P.",
+      "Cou\u00ebdel L\u00e9na\u00efc"
+    ],
+    "published": "2025-10-21T08:03:30+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.18384v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-27T12:39:31.043315"
+  },
+  {
+    "id": "2510.18182v1",
+    "title": "Electron Acceleration via Lower-Hybrid Drift Instability in Astrophysical Plasmas: Dependence on Plasma Beta and Suprathermal Electron Distributions",
+    "abstract": "Density inhomogeneities are ubiquitous in space and astrophysical plasmas, particularly at magnetic reconnection sites, shock fronts, and within compressible turbulence. The gradients associated with these inhomogeneous plasma regions serve as free energy sources that can drive plasma instabilities, including the lower-hybrid drift instability (LHDI). Notably, lower-hybrid waves are frequently observed in magnetized space plasma environments, such as Earth's magnetotail and magnetopause. Previous studies have primarily focused on modeling particle acceleration via LHDI in these regions using a quasilinear approach. This study expands the investigation of LHDI to a broader range of environments, spanning weakly to strongly magnetized media, including interplanetary, interstellar, intergalactic, and intracluster plasmas. To explore the applicability of LHDI in various astrophysical settings, we employ two key parameters: (1) plasma magnetization, characterized by the plasma beta parameter, and (2) the spectral slope of suprathermal electrons following a power-law distribution. Using a quasilinear model, we determine the critical values of plasma beta and spectral slope that enable efficient electron acceleration via LHDI by comparing the rate of growth of instability and the damping rate of the resulting fluctuations. We further analyze the time evolution of the electron distribution function to confirm these critical conditions. Our results indicate that electron acceleration is generally most efficient in low-beta plasmas ($\\beta < 1$). However, the presence of suprathermal electrons significantly enhances electron acceleration via LHDI, even in high-beta plasmas ($\\beta > 1$). Finally, we discuss the astrophysical implications of our findings, highlighting the role of LHDI in electron acceleration across diverse plasma environments.",
+    "authors": [
+      "Ji-Hoon Ha",
+      "Elena S. Volnova"
+    ],
+    "published": "2025-10-21T00:12:10+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.18182v1",
+    "categories": [
+      "astro-ph.HE",
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-27T12:39:31.548956"
+  },
+  {
+    "id": "2510.17531v1",
+    "title": "Plasma Shape Control via Zero-shot Generative Reinforcement Learning",
+    "abstract": "Traditional PID controllers have limited adaptability for plasma shape control, and task-specific reinforcement learning (RL) methods suffer from limited generalization and the need for repetitive retraining. To overcome these challenges, this paper proposes a novel framework for developing a versatile, zero-shot control policy from a large-scale offline dataset of historical PID-controlled discharges. Our approach synergistically combines Generative Adversarial Imitation Learning (GAIL) with Hilbert space representation learning to achieve dual objectives: mimicking the stable operational style of the PID data and constructing a geometrically structured latent space for efficient, goal-directed control. The resulting foundation policy can be deployed for diverse trajectory tracking tasks in a zero-shot manner without any task-specific fine-tuning. Evaluations on the HL-3 tokamak simulator demonstrate that the policy excels at precisely and stably tracking reference trajectories for key shape parameters across a range of plasma scenarios. This work presents a viable pathway toward developing highly flexible and data-efficient intelligent control systems for future fusion reactors.",
+    "authors": [
+      "Niannian Wu",
+      "Rongpeng Li",
+      "Zongyu Yang",
+      "Yong Xiao",
+      "Ning Wei",
+      "Yihang Chen",
+      "Bo Li",
+      "Zhifeng Zhao",
+      "Wulyu Zhong"
+    ],
+    "published": "2025-10-20T13:34:51+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.17531v1",
+    "categories": [
+      "physics.plasm-ph",
+      "cs.LG"
+    ],
+    "collected_at": "2025-10-27T12:39:32.055617"
+  },
+  {
+    "id": "2510.16542v1",
+    "title": "Extended phase-space symplectic integration for electron dynamics",
+    "abstract": "We investigate the use of extended phase-space symplectic integration [M. Tao, Phys. Rev. E 94, 043303 (2016)] for simulating two different classes of electron dynamics. The first one, with one and a half degrees of freedom, comes from plasma physics and describes the classical dynamics of a charged particle in a strong, constant, and uniform magnetic field perturbed by a turbulent electrostatic potential. The second one, with an infinite number of degrees of freedom, comes from physical chemistry and corresponds to Kohn-Sham time-dependent density-functional theory. For both we lay out the extension procedure and stability condition for numerical integration of the dynamics using high-order symplectic split-operator schemes. We also identify a computationally inexpensive metric that can be used for on-the-fly estimation of the accuracy of simulations. Our work paves the way for broad application of symplectic split-operator integration of classical and quantum Hamiltonian systems with finite and infinite number of degrees of freedom.",
+    "authors": [
+      "Francois Mauger",
+      "Cristel Chandre"
+    ],
+    "published": "2025-10-18T15:36:22+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.16542v1",
+    "categories": [
+      "physics.comp-ph",
+      "physics.chem-ph",
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-27T12:39:32.559359"
+  }
+]
