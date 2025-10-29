@@ -4,9 +4,9 @@ openai>=1.0.0
 python-dotenv==1.0.0
 
 # Data processing
-numpy==1.24.0; python_version < "3.13"
+numpy>=1.26.0,<2.0; python_version < "3.13"
 numpy>=2.1.0; python_version >= "3.13"
-pandas==2.1.0; python_version < "3.13"
+pandas>=2.1.0,<3.0; python_version < "3.13"
 pandas @ git+https://github.com/pandas-dev/pandas.git@main ; python_version >= "3.13"
 
 # RDF and SPARQL (Phase 2)
@@ -16,7 +16,7 @@ SPARQLWrapper==2.0.0
 # Web framework (Phase 4)
 fastapi==0.115.0
 uvicorn==0.24.0
-streamlit>=1.39.0  # NOT compatible with Python 3.13 - use Python 3.12 for streamlit
+streamlit>=1.39.0
 requests==2.31.0
 
 # ML/LLM (Phase 3 - Optional)
