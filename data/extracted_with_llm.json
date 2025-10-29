@@ -1,0 +1,52 @@
+[
+  {
+    "paper_id": "2510.24567v1",
+    "title": "Phase-Space Shaping in Wakefield Accelerators due to Betatron Cooling",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T19:47:16.261805",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.24347v1",
+    "title": "Physics-Informed Visual MARFE Prediction on the HL-3 Tokamak",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T19:47:16.262026",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.24121v1",
+    "title": "Effect of flow-aligned external magnetic fields on mushroom instability",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T19:47:16.262185",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.23690v1",
+    "title": "Quantum Kinetic Modeling of KEEN waves in a Warm-Dense Regime",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T19:47:16.262388",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.23562v1",
+    "title": "Design of Backscatter Tailored Optical Fibers for distributed magnetic field sensing using Fiber Optic Pulsed Polarimetry",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T19:47:16.262550",
+    "extraction_method": "regex+llm"
+  }
+]
