@@ -86,7 +86,8 @@ class RDFConverter:
         param_counter = 0
 
         for paper_data in papers:
-            paper_id = paper_data.get('id', 'unknown')
+            # Try both 'id' (from collect_papers.py) and 'paper_id' (from extract_parameters.py)
+            paper_id = paper_data.get('id') or paper_data.get('paper_id', 'unknown')
             paper_uri = self.create_uri(self.paper_ns, paper_id)
 
             # Paper entity
@@ -110,8 +111,10 @@ class RDFConverter:
             if 'pdf_url' in paper_data:
                 lines.append(f'    :pdfUrl <{paper_data["pdf_url"]}> ;')
 
-            if 'summary' in paper_data:
-                abstract = paper_data['summary'][:500]  # Limit length
+            # Try both 'abstract' and 'summary' for compatibility
+            abstract_text = paper_data.get('abstract') or paper_data.get('summary')
+            if abstract_text:
+                abstract = abstract_text[:500]  # Limit length
                 lines.append(f'    :abstract "{self.escape_string(abstract)}" ;')
 
             # Process parameters

@@ -153,13 +153,15 @@ class Queries:
     def list_papers(limit: int = 20, offset: int = 0) -> str:
         """List all papers with metadata."""
         return f"""
-        SELECT ?arxivId ?title ?authors ?publicationDate
+        SELECT ?arxivId ?title ?authors ?abstract ?publicationDate ?pdfUrl
         WHERE {{
           ?paper a :Paper ;
                  :arxivId ?arxivId ;
                  :title ?title .
           OPTIONAL {{ ?paper :authors ?authors }}
+          OPTIONAL {{ ?paper :abstract ?abstract }}
           OPTIONAL {{ ?paper :publicationDate ?publicationDate }}
+          OPTIONAL {{ ?paper :pdfUrl ?pdfUrl }}
         }}
         ORDER BY DESC(?publicationDate)
         LIMIT {limit}

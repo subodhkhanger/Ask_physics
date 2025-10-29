@@ -1,0 +1,2604 @@
+[
+  {
+    "id": "2510.24567v1",
+    "title": "Phase-Space Shaping in Wakefield Accelerators due to Betatron Cooling",
+    "abstract": "Plasma-based accelerators are beginning to employ relativistic beams with unprecedented charge and ultrashort durations. These dense driver beams can drive wakes even in high-density plasmas ($\\gtrsim10^{19}$ cm$^{-3}$), where betatron radiation becomes increasingly important and begins to affect the dynamics of the accelerated beam. In this Letter, we show that betatron cooling leads to a strong, structuring of the phase space of the beam. This gives rise to bunched, ring-like structures with positive radial position and momentum gradients, \\emph{i.e.}, population inversion of the amplitude of oscillation. We derive the characteristic timescales for this process analytically and confirm our predictions with multi-dimensional Particle-in-Cell simulations. The radiation-dominated regime of beam dynamics fundamentally alters the acceleration process and produces self-structured beams capable of triggering coherent betatron emission in ion channels.",
+    "authors": [
+      "Pablo J. Bilbao",
+      "Thales Silva",
+      "Luis O. Silva"
+    ],
+    "published": "2025-10-28T15:58:10+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.24567v1",
+    "categories": [
+      "physics.acc-ph",
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:32:42.381926",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:47.964972",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.24347v1",
+    "title": "Physics-Informed Visual MARFE Prediction on the HL-3 Tokamak",
+    "abstract": "The Multifaceted Asymmetric Radiation From the Edge (MARFE) is a critical plasma instability that often precedes density-limit disruptions in tokamaks, posing a significant risk to machine integrity and operational efficiency. Early and reliable alert of MARFE formation is therefore essential for developing effective disruption mitigation strategies, particularly for next-generation devices like ITER. This paper presents a novel, physics-informed indicator for early MARFE prediction and disruption warning developed for the HL-3 tokamak. Our framework integrates two core innovations: (1) a high-fidelity label refinement pipeline that employs a physics-scored, weighted Expectation-Maximization (EM) algorithm to systematically correct noise and artifacts in raw visual data from cameras, and (2) a continuous-time, physics-constrained Neural Ordinary Differential Equation (Neural ODE) model that predicts the short-horizon ``worsening\" of a MARFE. By conditioning the model's dynamics on key plasma parameters such as normalized density ($f_G$, derived from core electron density) and core electron temperature ($T_e$), the predictor achieves superior performance in the low-false-alarm regime crucial for control. On a large experimental dataset from HL-3, our model demonstrates high predictive accuracy, achieving an Area Under the Curve (AUC) of 0.969 for 40ms-ahead prediction. The indicator has been successfully deployed for real-time operation with updates every 1 ms. This work lays a very foundation for future proactive MARFE mitigation.",
+    "authors": [
+      "Qianyun Dong",
+      "Rongpeng Li",
+      "Zongyu Yang",
+      "Fan Xia",
+      "Liang Liu",
+      "Zhifeng Zhao",
+      "Wulyu Zhong"
+    ],
+    "published": "2025-10-28T12:11:26+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.24347v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:32:42.887201",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:47.965177",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.24121v1",
+    "title": "Effect of flow-aligned external magnetic fields on mushroom instability",
+    "abstract": "Mushroom instability (MI) is a shear instability considered responsible for generating and amplifying magnetic fields in relativistic jets. While astrophysical jets are usually considered to be magnetized, how MI acts in magnetized jets remains poorly understood. In this paper, we investigate the effect of a flow-aligned external magnetic field on MI, with both theoretical analyses and particle-in-cell (PIC) simulations. In the limit of a cold and collisionless plasma, we derive a generalized dispersion relation for linear growth rates of the magnetized MIs. Numerical solutions of the dispersion relation reveal that the external magnetic field always suppresses the growth of MI, though MIs are much more robust to the external magnetic field than electron-scale Kelvin-Helmholtz instabilities (ESKHIs). Analyses are also extended to instabilities with an arbitrary wavevector in the shear interface plane. Two-dimensional PIC simulations of single-mode MIs reach a good agreement with our analytical predictions. In simulations with finite temperatures, we observe the competition and cooperation between MIs and a diffusion-induced DC magnetic field.",
+    "authors": [
+      "Y. Guo",
+      "D. Wu",
+      "J. Zhang"
+    ],
+    "published": "2025-10-28T06:47:49+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.24121v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:32:43.388308",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:47.965321",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.23690v1",
+    "title": "Quantum Kinetic Modeling of KEEN waves in a Warm-Dense Regime",
+    "abstract": "We report a fully kinetic, quantum study of Kinetic Electrostatic Electron Nonlinear (KEEN) waves, showing that quantum diffraction systematically erodes the classical trapping mechanism, narrow harmonic locking to the fundamental, and hasten post-drive decay. Electrons are evolved with a second-order Strang-split 1D1V Wigner-Poisson solver that couples conservative semi-Lagrangian WENO advection to an analytic Fourier space update for the non-local Wigner term, while ions remain classical. Short, frequency-tuned ponderomotive pulses drive KEEN formation in a uniform Maxwellian plasma; as the dimensionless quantum parameter H rises from the classical limit to values relevant to warm-dense matter, doped semiconductors, and 2D electron systems, the drive threshold increases, higher harmonics are damped, trapped electron vortices diffuse, and the subplasma electrostatic energy relaxes to a lower stationary level, as confirmed by continuous wavelet analysis. These microscopic changes carry macroscopic weight. Ignition-scale capsules now compress matter to regimes where the electron de Broglie wavelength rivals the Debye length, making classical kinetic descriptions insufficient. By extending KEEN physics into this quantum domain, our results offer a potential diagnostic of nonequilibrium electron dynamics for next-generation inertial-confinement designs and high-energy-density platforms, indicating that predictive fusion modeling may benefit from the integration of kinetic fidelity with quantum effects.",
+    "authors": [
+      "F. Alejandro Padilla-Gomez",
+      "Sining Gong",
+      "Michael S. Murillo",
+      "F. R. Graziani",
+      "Andrew J. Christlieb"
+    ],
+    "published": "2025-10-27T17:34:42+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.23690v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:32:43.890469",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:47.965507",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.23562v1",
+    "title": "Design of Backscatter Tailored Optical Fibers for distributed magnetic field sensing using Fiber Optic Pulsed Polarimetry",
+    "abstract": "Fiber optic pulsed polarimetry is a LIDAR-like fiber sensing technique that uses a backscatter enhanced single mode backscatter-tailored optical fiber(BTOF) to measure the distributed B fields on all Magnetic Fusion Energy devices. The BTOF has a series of wavelength resonant reflection fiber Bragg gratings written uniformly along its length. The fiber's Verdet constant determines the strength of the Faraday effect which effectuates the measurement of local B along the fiber placed intimately next to or within a magnetized plasma volume. A robust measurement of the field distribution along the fiber is obtained at high rep rates, 5 MHz, high spatial resolution(1-10cm), high B field accuracy(<1%) and temporal response (ns). Multipathing in the BTOF produces 3rd order reflections that contaminate the LIDAR signal. Algorithms are given for calculating the level of contamination for uniform and flat reflection designs, in particular and any reflection series in general. The contamination is bracketed giving confidence in designing and implementing a BTOF. Applications include magnetic fusion devices, rail guns, high temperature superconducting magnets and magnetized target fusion research.",
+    "authors": [
+      "Roger J Smith"
+    ],
+    "published": "2025-10-27T17:33:05+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.23562v1",
+    "categories": [
+      "physics.plasm-ph",
+      "physics.acc-ph"
+    ],
+    "collected_at": "2025-10-29T20:32:44.392337",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:47.965656",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.23088v1",
+    "title": "Machine Learning approach to modeling of neutral particles transport in plasma",
+    "abstract": "A propagator-based approach is investigated for Monte-Carlo (MC) modeling of neutral particles transport in fusion boundary plasmas. The propagator is essentially a Green function for the neutral kinetic equation, which depends on the plasma profiles. A Neural Network (NN) based model for the propagator provides a fast and accurate solution for the neutral distribution function in plasma. Furthermore, continuous and smooth dependence of NN-based reconstruction of the propagator on the plasma parameters opens the possibility for using this approach with Jacobian-based methods for time-integration and root finding. Initial results from a small 1D test problem look promising; however, important research questions are concerned with the scaling of the algorithm to larger systems.",
+    "authors": [
+      "M. V. Umansky",
+      "G. J. Parker",
+      "R. D. Smirnov"
+    ],
+    "published": "2025-10-27T07:51:04+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.23088v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:32:44.897876",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:47.965757",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.22226v1",
+    "title": "A DSMC-PIC coupling method for the Vlasov-Maxwell-Landau system",
+    "abstract": "We present a numerical framework for the simulation of collisional plasma dynamics, based on a coupling between Direct Simulation Monte Carlo (DSMC) and Particle-in-Cell (PIC) methods for the Vlasov-Maxwell-Landau system. The approach extends previously developed DSMC techniques for the homogeneous Landau equation to the fully inhomogeneous, electromagnetic regime. The Landau collision operator is treated through a stochastic particle formulation inspired by the grazing-collision limit of the Boltzmann equation, which enables an efficient and physically consistent representation of Coulomb interactions without relying on the full Boltzmann structure. The resulting collisional solver is combined, via operator splitting, with standard PIC schemes for the Vlasov-Maxwell dynamics, providing flexibility in the choice of field discretisation and time integration. The overall method preserves the main physical invariants of the system while maintaining computational efficiency and simplicity of implementation. Numerical experiments on benchmark problems demonstrate the accuracy, robustness, and effectiveness of the coupled DSMC-PIC approach across a wide range of collisional regimes.",
+    "authors": [
+      "Andrea Medaglia",
+      "Lorenzo Pareschi",
+      "Mattia Zanella"
+    ],
+    "published": "2025-10-25T09:14:49+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.22226v1",
+    "categories": [
+      "physics.comp-ph",
+      "cs.NA",
+      "math.NA",
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:32:45.400310",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:47.965909",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.22203v1",
+    "title": "Revealing Liquid-Gas Transitions with Finite-Size Scaling in Confined Systems",
+    "abstract": "The application of an external field often renders empirical criteria for identifying liquid-gas phase transitions ambiguous. Here, we demonstrate that the finite-size scaling of the density profile provides a definitive criterion to distinguish liquid-gas coexistence from a single fluid phase in field-confined systems. Our scaling method collapses the density profiles of different system sizes onto a single master curve for a one-phase system, while causing the profiles to intersect at the interface in a two-phase system. We validate this theoretical proposal through experiments and simulations of two model systems: colloidal suspensions under gravity and/or two-dimensional complex plasmas confined by a central potential. Our method is broadly applicable for detecting liquid-gas phase transitions in laboratory systems where external fields are inherent.",
+    "authors": [
+      "Chong Zha",
+      "Yanshuang Chen",
+      "Cheng-Ran Du",
+      "Peng Tan",
+      "Yuliang Jin"
+    ],
+    "published": "2025-10-25T08:05:26+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.22203v1",
+    "categories": [
+      "cond-mat.stat-mech",
+      "cond-mat.soft",
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:32:45.905712",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:47.966023",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.22091v1",
+    "title": "High-Harmonic Optical Vortex Generation from a Plasma Aperture",
+    "abstract": "When a high-power, femtosecond, circularly polarized (CP) laser pulse is incident on a micrometer-scale aperture in a solid foil target, it drives surface plasma oscillation, generating high-order harmonic vortices in the diffracted light. However, this mechanism has so far only been studied theoretically under ideal conditions. In this work, we perform numerical studies on more realistic situations. In particular, we focus on a scenario where the laser is obliquely incident on the target surface to avoid the potential damage of the optics by the reflected light. We demonstrate that increasing oblique incidence angle, reducing target thickness, and improving laser contrast can enhance the harmonic conversion efficiency. However, the generated harmonic beams may contain both Laguerre-Gaussian (LG) (vortex) and non-LG components under non-ideal conditions. We show that they can be separated by their divergence, as the vortex components has smaller diverging angle. In addition, we have performed computational analyses on the harmonic divergence angles and topological charge spectra of vortex high-order harmonics under different conditions. These high-order harmonic pure LG modes can potentially be filtered out for wide range of fundamental and applied physics researches. This study provides valuable insights for the design and implementation of future experiments.",
+    "authors": [
+      "Runze Li",
+      "Wenchao Yan",
+      "Longqing Yi"
+    ],
+    "published": "2025-10-25T00:11:57+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.22091v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:32:46.406568",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:47.966199",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.22061v1",
+    "title": "Quasi-Biennial Oscillations and Rieger-type Periodicities in a Babcock-Leighton Solar Dynamo",
+    "abstract": "The Sun's magnetic field shows the 11-year solar cycle and shorter periodicities, popularly known as the quasi-biennial oscillations (QBOs) and Rieger-type periods, or ``season of the Sun.\" Although several theories have been proposed to explain the origin of QBOs and Rieger-type periods, no single theory has widespread acceptance. We explore whether the \\bl\\ dynamo can produce Rieger-type periodicity and QBOs and investigate their underlying physical mechanisms. We use the observationally guided three-dimensional kinematic \\bl\\ dynamo model, which has emerged as a successful model for reproducing many characteristic features of the solar cycle. We use Morlet wavelet and global wavelet power spectrum techniques to analyze the data obtained from the model. In our model, we report QBOs and Rieger-type periods for the first time. Further, we investigate the individual \\bl\\ parameters (fluctuations in flux, latitude, time delay and tilt scatter) role in the occurrence of QBOs and Rieger-type periods. We find that while fluctuations in the individual parameters of the \\bl\\ process can produce QBOs and Rieger-type periodicity, their occurrence probability is enhanced when we consider combined fluctuations of all parameters in the \\bl\\ process. Finally, we find that with the increase of dynamo supercriticality, the model tends to suppress the generation of Rieger-type periodicity. Thus, this result supports earlier studies that suggest the solar dynamo is not highly supercritical.",
+    "authors": [
+      "Pawan Kumar",
+      "Belur Ravindra",
+      "Partha Chowdhury",
+      "Bidya Binay Karak"
+    ],
+    "published": "2025-10-24T22:52:03+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.22061v1",
+    "categories": [
+      "astro-ph.SR",
+      "physics.plasm-ph",
+      "physics.space-ph"
+    ],
+    "collected_at": "2025-10-29T20:32:46.909641",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:47.966388",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.21676v1",
+    "title": "Constructing Field Aligned Coordinate Systems for Gyrokinetic Simulations of Tokamaks in X-point Geometries",
+    "abstract": "Structures in tokamak plasmas are elongated along the direction of the magnetic field and short in the directions perpendicular to the magnetic field. Many tokamak simulation codes take advantage of this by using a field aligned coordinate system. However, field aligned coordinate systems have a coordinate singularity at magnetic X-points where the poloidal magnetic field vanishes, which makes it difficult to use field aligned coordinate systems when simulating the core and scrape-off layer (SOL) simultaneously. Here we present an algorithm for computing geometric quantities in a standard field aligned coordinate system that avoids the singularity and allows one to conduct 2D axisymmetric simulations in X-point geometries. We demonstrate the efficacy of this algorithm with an example simulation of the Spherical Tokamak for Energy Production (STEP).",
+    "authors": [
+      "Akash Shukla",
+      "Ammar Hakim",
+      "James Juno",
+      "Gregory Hammett",
+      "Manaure Francisquez"
+    ],
+    "published": "2025-10-24T17:31:59+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.21676v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:32:47.418972",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:47.966495",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.21675v1",
+    "title": "Counter-Streaming Beams in Collisionless Pair Plasma Instability Systems III: Collisionless Heating, Acceleration, and Radiation",
+    "abstract": "Energetic astrophysical phenomena, such as $\\gamma$-ray bursts and supernova explosion-driven shocks in collisionless plasmas, involve various plasma kinetic instabilities, such as the Weibel instability. These systems support various types of particle acceleration and radiation through a variety of mechanisms. In this paper, we explore the energy transformations and dynamical effects of violent filament mergers seen between the large current filaments formed by the Weibel instability. The radiative processes involved in the Weibel instability filament building are also discussed in relation to jitter and synchrotron radiation.",
+    "authors": [
+      "Michael C. Sitarz"
+    ],
+    "published": "2025-10-24T17:30:14+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.21675v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:32:47.924194",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:47.966572",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.21666v1",
+    "title": "Counter-Streaming Beams in Collisionless Pair Plasma Instability Systems II: Spectral Cone and Spectral Wave Mode Analysis",
+    "abstract": "Energetic astrophysical phenomena, such as $\\gamma$-ray bursts, supernova explosions, and magnetar flares occur in collisionless plasmas and involve various plasma kinetic and magnetohydrodynamic instabilities. In this paper, we explore the spectral trends of the Weibel instability using spectral analysis of particle-in-cell simulations. Power dependence on viewing angle and frequency are explored and the relation to the results of the first paper in this series is discussed.",
+    "authors": [
+      "Michael C. Sitarz"
+    ],
+    "published": "2025-10-24T17:24:02+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.21666v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:32:48.429346",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:47.966632",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.21261v1",
+    "title": "Benchmark for two-dimensional large scale coherent structures in partially magnetized ExB plasmas -- Community collaboration & lessons learned",
+    "abstract": "Low-temperature plasmas are essential to both fundamental scientific research and critical industrial applications. As in many areas of science, numerical simulations have become a vital tool for uncovering new physical phenomena and guiding technological development. Code benchmarking remains crucial for verifying implementations and evaluating performance. This work continues the Landmark benchmark initiative, a series specifically designed to support the verification of low-temperature plasma codes. In this study, seventeen simulation codes from a collaborative community of nineteen international institutions modeled a partially magnetized ExB Penning discharge. The emergence of large scale coherent structures, or rotating plasma spokes, endows this configuration with an enormous range of time scales, making it particularly challenging to simulate. The codes showed excellent agreement on the rotation frequency of the spoke as well as key plasma properties, including time-averaged ion density, plasma potential, and electron temperature profiles. Achieving this level of agreement came with challenges, and we share lessons learned on how to conduct future benchmarking campaigns. Comparing code implementations, computational hardware, and simulation runtimes also revealed interesting trends, which are summarized with the aim of guiding future plasma simulation software development.",
+    "authors": [
+      "Andrew T. Powis",
+      "Eduardo Ahedo",
+      "Alejandro \u00c1lvarez Laguna",
+      "Nicolas Barl\u00e9on",
+      "Enrique Bello-Ben\u00edtez",
+      "Lucas Beving",
+      "Jean-Pierre Boeuf",
+      "Guillaume Bogopolsky",
+      "Anne Bourdon",
+      "Filippo Cichocki",
+      "B\u00e9n\u00e9dicte Cuenot",
+      "Andrew Denig",
+      "Zolt\u00e1n Donk\u00f3",
+      "Paul-Quentin Elias",
+      "Miguel P. Encinar",
+      "Denis Eremin",
+      "Pablo Fajardo",
+      "Farbod Faraji",
+      "Gwenael Fubiani",
+      "Laurent Garrigues",
+      "Kentaro Hara",
+      "Peter Hartmann",
+      "Matthew Hopkins",
+      "Igor D. Kaganovich",
+      "Aaron Knoll",
+      "Giovanni Lapenta",
+      "Thierry E. Magin",
+      "Alberto Mar\u00edn-Cebri\u00e1n",
+      "Mario Merino",
+      "Pierpaolo Minelli",
+      "Mina Papahn Zadeh",
+      "Pietro Parodi",
+      "Federico Petronio",
+      "Maryam Reza",
+      "Andrei I. Smolyakov",
+      "Dmytro Sydorenko",
+      "Francesco Taccogna",
+      "Miles M. Turner",
+      "Olivier Vermorel",
+      "Willca Villafana",
+      "Liang Xu"
+    ],
+    "published": "2025-10-24T08:47:57+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.21261v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:32:48.929774",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:47.966801",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.21239v2",
+    "title": "Laboratory formation of scaled astrophysical outflows",
+    "abstract": "Astrophysical systems exhibit a rich diversity of outflow morphologies, yet their mechanisms and existence conditions remain among the most persistent puzzles in the field. Here we present scaled laboratory experiments based on laser-driven plasma outflow into magnetized ambient gas, which mimic five basic astrophysical outflows regulated by interstellar medium, namely collimated jets, blocked jets, elliptical bubbles, as well as spherical winds and bubbles. Their morphologies and existence conditions are found to be uniquely determined by the external Alfvenic and sonic Mach numbers Me-a and Me-s, i.e. the relative strengths of the outflow ram pressure against the magnetic/thermal pressures in the interstellar medium, with transitions occurring at Me-a ~ 2 and 0.5, as well as Me-s ~ 1. These results are confirmed by magnetohydrodynamics simulations and should also be verifiable from existing and future astronomical observations. Our findings provide a quantitative framework for understanding astrophysical outflows.",
+    "authors": [
+      "Shun-yi Yang",
+      "Tao Tao",
+      "Guang-yue Hu",
+      "Chao Xiong",
+      "Tian-yi Li",
+      "Xue-cheng Li",
+      "Hui-bo Tang",
+      "Shuo-ting Shao",
+      "Xiang Lv",
+      "Chen Zhang",
+      "Ming-yang Yu"
+    ],
+    "published": "2025-10-24T08:20:07+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.21239v2",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:32:49.435198",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:47.966926",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.21187v1",
+    "title": "Dissipation and particle acceleration at intermittent structures with velocity and magnetic shear: Interaction of Kelvin-Helmholtz and Drift-Kink instabilities",
+    "abstract": "We present two-dimensional (2D) particle-in-cell simulations of a magnetized, collisionless, relativistic pair plasma subjected to combined velocity and magnetic-field shear, a scenario typical at intermittent structures in plasma turbulence. We create conditions where only the Kelvin-Helmholtz (KH) and Drift-Kink (DK) instabilities can develop, while tearing modes are forbidden. The interaction of DKI and KHI generates qualitatively new structures, marked by a thickened shear layer with very weak electromagnetic field, modulated by KH vortices. Over a range of moderately strong velocity shears explored, the interaction of DKI and KHI results in a significant enhancement of dissipation over cases with only velocity shear or only magnetic shear. Moreover, we observe a new and efficient way of particle acceleration where particles are stochastically accelerated by the motional electric field exterior to the shear layer as they meander in an S-shaped pattern in and out of it. This process takes advantage of the bent geometry of the shear layer caused by the DK-KHI interaction and is responsible for most of the highest-energy particles produced in our simulations. These results further our understanding of dissipation and particle acceleration at intermittent structures, which are present in plasma turbulence across a wide range of astrophysical contexts such as in AGN jet sheaths, potentially relevant to limb-brightened emission, etc., and highlight the sensitivity of dissipation to multiple interacting instabilities, thus providing a strong motivation for further studies of their nonlinear interaction at the kinetic level.",
+    "authors": [
+      "Tsun Hin Navin Tsung",
+      "Gregory R. Werner",
+      "Dmitri A. Uzdensky",
+      "Mitchell C. Begelman"
+    ],
+    "published": "2025-10-24T06:32:30+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.21187v1",
+    "categories": [
+      "astro-ph.HE",
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:32:49.935957",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:47.967125",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.21170v1",
+    "title": "Inhomogeneous mixing: From microscopic dynamics to mesoscopic staircases",
+    "abstract": "Inhomogeneous mixing and the consequent mesoscopic layered structure have been observed in many physical systems, including magnetically confined fusion plasmas. Especially, in plasmas, mixing can be enhanced through turbulence spreading by intermittent coherent structures (blobs/voids), or suppressed due to the formation of transport barriers (sheared zonal flows). Interestingly, blobs/voids and zonal flows are not independent, and they can co-exist in a state of inhomogeneous mixing, often called the E x B staircase. In this paper, we first introduce recent experimental progress on the physics of blobs/voids: how turbulence spreading by blobs/voids occurs, the consequences of enhanced turbulence spreading for the power decay length, and the interaction between blobs/voids and zonal flows. Then, we provide a brief review of experimental results on staircases, or more generally layered mesoscopic transport barriers. Staircases are often elusive and different complementary methods have been utilized to identify them, but our understanding is still incomplete. This paper serves as an initial step toward applying insights gained from inhomogeneous mixing due to blobs/voids to the understanding of a staircase.",
+    "authors": [
+      "T. Long",
+      "M. J. Choi",
+      "P. H. Diamond"
+    ],
+    "published": "2025-10-24T05:50:33+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.21170v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:32:50.441304",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:47.967270",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.20980v1",
+    "title": "Grain Boundary Diffusion in Yukawa Crystals",
+    "abstract": "We present calculations of diffusion coefficients in grain boundaries in Yukawa crystals for astrophysics. Our methods follow from our recent work calculating diffusion coefficients in perfect body-centered cubic crystals. These diffusion coefficients show only a weak dependence on the crystal orientations at the grain boundary and are consistent with those expected for a supercooled liquid scaled down by one to two orders of magnitude. We argue that the local disorder at the grain boundary produces a landscape of potential barriers similar to that of an amorphous liquid thin film, significantly reducing activation barriers to diffusive hops relative to the bulk solid. This also introduces a screening dependence, such that boundary diffusion does not exhibit the same universality as the bulk crystal. These diffusion coefficients suggest that grain boundaries may be a dominant source of viscous dissipation in neutron star crusts.",
+    "authors": [
+      "Matthew E. Caplan",
+      "Nevin T. Smith",
+      "Dany Yaacoub",
+      "Roberto F. Serrano",
+      "Elias Taira",
+      "Ashley Bransgrove"
+    ],
+    "published": "2025-10-23T20:17:51+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.20980v1",
+    "categories": [
+      "physics.plasm-ph",
+      "astro-ph.HE",
+      "cond-mat.mtrl-sci"
+    ],
+    "collected_at": "2025-10-29T20:32:50.945432",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:47.967382",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.20977v1",
+    "title": "Significant Amplification of Turbulent Energy Dissipation through the Shock Transition at Mars",
+    "abstract": "Turbulence is fundamental to energy transfer across scales in space and astrophysical plasmas. Bow shock interactions have long been hypothesized to significantly modify turbulence in planetary environments, yet the quantification of such effects and their parametric dependencies remain largely unaddressed. Using in situ long-term high-time resolution measurements from NASA's MAVEN mission, we report the first observational characterization of the evolution and parametric dependence of the turbulence energy cascade rate $\\varepsilon_C$ at magnetohydrodynamic (MHD) scales. Key findings reveal an averaged three-order-of-magnitude enhancement in $\\varepsilon_C$ when transitioning from the solar wind to the magnetosheath. Notably, downstream measurements of oblique and quasi-perpendicular shocks exhibit higher energy dissipation rates than those of quasi-parallel configurations. These results provide the first direct evidence linking shock obliquity to turbulence amplification, offering key insights into shock-mediated turbulence in similar but inaccessible systems.",
+    "authors": [
+      "Wence Jiang",
+      "Hui Li",
+      "Nahuel Andr\u00e9s",
+      "Lina Hadid",
+      "Daniel Verscharen",
+      "Chi Wang"
+    ],
+    "published": "2025-10-23T20:14:41+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.20977v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:32:51.450949",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:47.967511",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.20775v1",
+    "title": "The Opacity Project: R-Matrix Calculations for Opacities of High-Energy-Density Astrophysical and Laboratory Plasmas",
+    "abstract": "Accurate determination of opacity is critical for understanding radiation transport in both astrophysical and laboratory plasmas. We employ atomic data from R-Matrix calculations to investigate radiative properties in high-energy-density (HED) plasma sources. Specifically, we analyze environments such as the base of the convective zone (BCZ) of the Sun 2 x 10^6$ K, N_e = 10^{23}/cc and the inertial confinement fusion (ICF) device at the Sandia Z facility 2.11 x 10^6 K, N_e = 3.16 x 10^{22}/cc. We calculate Rosseland Mean Opacities (RMO) within a range of temperatures and densities and analyze how they vary under different plasma conditions. In this study, we specifically focus on electron collisional and Stark ion microfield broadening effects on autoionizing resonances in photoabsorption cross sections. Our results are relevant to astrophysical models, particularly in the context of the solar opacity problem, and provide insights into discrepancies between theoretical calculations and experimental measurements. In addition, we investigate the equation-of-state (EOS) and its impact on opacities. In addition, we examine the equation-of-state (EOS) and its impact on opacities of the \"chemical picture\" Mihalas-Hummer-Dappen EOS with respect to level populations of excited levels included in the R-matrix calculations. This study should contribute to improving opacity models of HED sources such as stellar interiors adn laboratory fusion plasma experiments.",
+    "authors": [
+      "Anil K. Pradhan",
+      "Sultana N. Nahar"
+    ],
+    "published": "2025-10-23T17:47:36+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.20775v1",
+    "categories": [
+      "astro-ph.HE",
+      "astro-ph.SR",
+      "physics.atom-ph",
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:32:51.955691",
+    "parameters": {
+      "temperature": [
+        {
+          "type": "temperature",
+          "value": 2110000.0,
+          "unit": "K",
+          "context": "ment fusion (ICF) device at the Sandia Z facility 2.11 x 10^6 K, N_e = 3.16 x 10^{22}/cc. We calculate Rosseland",
+          "confidence": "medium",
+          "is_correct": true
+        }
+      ],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:51.366476",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.20628v1",
+    "title": "Magnetic Field-Line Curvature and Its Role in Particle Acceleration by Magnetically Dominated Turbulence",
+    "abstract": "We employ first-principles, fully kinetic particle-in-cell simulations to investigate magnetic field-line curvature in magnetically dominated turbulent plasmas and its role in particle acceleration through curvature-drift motion along the motional electric field. By varying the fluctuation-to-mean magnetic-field ratio $\\delta B_0/B_0$, we examine curvature $\\kappa$ statistics and their connection to particle acceleration. The curvature probability densities display broad power-law wings, scaling linearly in $\\kappa$ below the peak and developing hard high-$\\kappa$ tails for $\\delta B_0/B_0 \\gtrsim 1$. As the mean field strengthens, the high-$\\kappa$ tails steepen, and large-curvature events are suppressed when $\\delta B_0/B_0 \\ll 1$. The probability density functions of magnetic field-line contraction, ${\\bf v}_E \\cdot {\\bf \\kappa}$, with ${\\bf v}_E$ the field-line velocity, develop power-law tails well described by a symmetric Pareto distribution, characteristic of stochastic energy exchanges, with the tails becoming harder as $\\delta B_0/B_0$ increases. Our guiding-center analysis shows that curvature-drift acceleration accounts for a substantial fraction of the energization via the motional electric field, and that it strengthens with increasing $\\delta B_0/B_0$. For well-magnetized particles, curvature-drift acceleration typically exceeds ${\\bf\\nabla}B$ drift, polarization drift, and betatron contributions. These results identify curvature-drift acceleration as a principal pathway through which magnetized turbulence transfers energy to nonthermal particles in astrophysical plasmas.",
+    "authors": [
+      "Samuel Sebastian",
+      "Luca Comisso"
+    ],
+    "published": "2025-10-23T15:02:34+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.20628v1",
+    "categories": [
+      "astro-ph.HE",
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:32:52.476202",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:51.367020",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.20105v1",
+    "title": "High Gain Fusion Target Design using Generative Artificial Intelligence",
+    "abstract": "By returning to the topological basics of fusion target design, Generative Artificial Intelligence (genAI) is used to specify how to initially configure and drive the optimally entangled topological state, and stabilize that topological state from disruption. This can be applied to all methods; including tokamaks, laser-driven schemes, and pulsed-power driven schemes. The result is practical, room temperature targets that can yield up to 10 GJ of energy, driven by as little as 3 MJ of absorbed energy. The genAI is based on the concept of Ubuntu that replaces the Deep Convolutional Neural Network approximation of a functional, with the formula for the generating functional of a canonical transformation from the domain of the canonical field momentums and fields, to the domain of the canonical momentums and coordinates, that is the Reduced Order Model. This formula is a logical process of renormalization, enabling Heisenberg's canonical approach to field theory, via calculation of the S-matrix, given observation of the fields. This can be viewed as topological characterization and control of collective, that is complex, systems.",
+    "authors": [
+      "Michael E. Glinsky"
+    ],
+    "published": "2025-10-23T01:17:29+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.20105v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:32:52.978078",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:51.367371",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.19786v1",
+    "title": "First Observation of Dispersive Shock Waves in an Electron Beam",
+    "abstract": "Dispersive shock waves (DSWs) are expanding nonlinear wave trains that arise when dispersion regularizes a steepening front, a phenomenon observed in fluids, plasmas, optics, and superfluids. Here we report the first experimental observation of DSWs in an intense electron beam, using the University of Maryland Electron Ring (UMER). A localized induction-cell perturbation produced a negative density pulse that evolved into a leading soliton-like peak followed by an expanding train of oscillations. The leading peak satisfied soliton scaling laws for width^2 vs inverse amplitude and velocity vs amplitude, while the total wave-train width increased linearly with time, consistent with Korteweg--de Vries (KdV) predictions. Successive peaks showed decreasing amplitude and velocity toward the trailing edge, in agreement with dispersive shock ordering. These results demonstrate that intense charged particle beams provide a new laboratory platform for studying dispersive hydrodynamics, extending nonlinear wave physics into the high-intensity beam regime.",
+    "authors": [
+      "H. McCright",
+      "I. G. Abel",
+      "I. Haber",
+      "P. G. O'Shea",
+      "B. L. Beaudoin"
+    ],
+    "published": "2025-10-22T17:21:26+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.19786v1",
+    "categories": [
+      "physics.acc-ph",
+      "nlin.PS",
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:32:53.483377",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:51.367696",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.19729v1",
+    "title": "Coupling of neutrino beam-driven MHD waves and resonant instabilities in rotating magnetoplasmas with neutrino two-flavor oscillations",
+    "abstract": "We present an analysis of neutrino-driven magnetohydrodynamic (MHD) waves and instabilities in a rotating magnetoplasma with weak neutrino interactions. We show, for the first time, that neutrino-driven shear Alfv{\\'e}n and oblique magnetosonic waves can be coupled by the Coriolis force, forming new wave modes affected by this force, as well as neutrino beam and two neutrino flavor oscillations. Our work extends previous theories by demonstrating that shear Alfv{\\'e}n waves are influenced by neutrino effects and by identifying instabilities resulting from resonant interactions with both a streaming neutrino beam and flavor oscillations. We find that the Coriolis force, as well as plasma density and magnetic field strength, have a significant impact on the profiles of the instability growth rates. Our findings may shed new light on the physical mechanisms underlying core-collapse supernovae.",
+    "authors": [
+      "Jyoti Turi",
+      "Amar P. Misra"
+    ],
+    "published": "2025-10-22T16:17:32+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.19729v1",
+    "categories": [
+      "astro-ph.HE",
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:32:53.988704",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:51.367961",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.19690v1",
+    "title": "Modification of ion-temperature-gradient turbulence by impurities in stellarator plasmas",
+    "abstract": "Recent nonlinear gyrokinetic simulations have shown that impurities can strongly modify the turbulent heat flux in stellarator plasmas. Here, the ion-temperature-gradient (ITG) dispersion relation in a plasma containing impurities is analytically solved in certain limits and an expression for the modification of the ITG growth rate by impurities is derived. The analytical expression is the sum of three terms corresponding to three different physical causes (impurity density gradient, impurity temperature gradient and dilution) of the change in the growth rate. The scalings predicted analytically for the modification of the growth rate are shown to be reproduced by linear gyrokinetic simulations. The conditions for reduction or increase of the ITG growth by impurities are also correctly predicted by the analytical solution to the dispersion relation. Finally, a remarkable correlation is found between the analytical expression for the modification of the growth rate and the modification of the turbulent heat flux obtained from nonlinear gyrokinetic simulations.",
+    "authors": [
+      "Ivan Calvo",
+      "Felix I. Parra",
+      "Hanne Thienpondt",
+      "Jose Manuel Garcia-Rega\u00f1a"
+    ],
+    "published": "2025-10-22T15:38:02+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.19690v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:32:54.493003",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:51.368254",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.19543v1",
+    "title": "Microtearing Turbulence and Its Role in High-Density-Gradient Plasmas in Wendelstein 7-X",
+    "abstract": "Gyrokinetic simulations reveal that microtearing mode (MTM) turbulence dominates transport in a Wendelstein 7-X (W7-X) discharge characterized by large density gradients, moderate temperature gradients, and low plasma beta. This conclusion is supported by the close agreement between simulated and experimentally measured heat and particle fluxes. The emergence of MTMs is attributed to the absence of competing instabilities -- such as ion temperature gradient modes and density-gradient-driven trapped-electron modes -- under these plasma conditions, together with the stabilizing influence of the W7-X max-J magnetic configuration. Furthermore, moderate collisionality and low magnetic shear are found to facilitate MTM onset. These findings advance the understanding of high-density-gradient regimes, which are essential for achieving high-performance operation in W7-X plasmas.",
+    "authors": [
+      "H. Cu-Castillo",
+      "A. Ba\u00f1\u00f3n Navarro",
+      "G. Merlo",
+      "F. Reimold",
+      "T. Romba",
+      "O. Ford",
+      "S. Bannmann",
+      "L. Van\u00f3",
+      "M. Wappl",
+      "J. Geiger",
+      "A. Zocco",
+      "F. Jenko",
+      "the W7-X team"
+    ],
+    "published": "2025-10-22T12:50:15+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.19543v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:32:54.994743",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:51.368506",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.18838v1",
+    "title": "PCMS: Parallel Coupler For Multimodel Simulations",
+    "abstract": "This paper presents the Parallel Coupler for Multimodel Simulations (PCMS), a new GPU accelerated generalized coupling framework for coupling simulation codes on leadership class supercomputers. PCMS includes distributed control and field mapping methods for up to five dimensions. For field mapping PCMS can utilize discretization and field information to accommodate physics constraints. PCMS is demonstrated with a coupling of the gyrokinetic microturbulence code XGC with a Monte Carlo neutral transport code DEGAS2 and with a 5D distribution function coupling of an energetic particle transport code (GNET) to a gyrokinetic microturbulence code (GTC). Weak scaling is also demonstrated on up to 2,080 GPUs of Frontier with a weak scaling efficiency of 85%.",
+    "authors": [
+      "Jacob S. Merson",
+      "Cameron W. Smith",
+      "Mark S. Shephard",
+      "Fuad Hasan",
+      "Abhiyan Paudel",
+      "Angel Castillo-Crooke",
+      "Joyal Mathew",
+      "Mohammad Elahi"
+    ],
+    "published": "2025-10-21T17:33:10+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.18838v1",
+    "categories": [
+      "cs.DC",
+      "physics.comp-ph",
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:32:55.500247",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:51.368713",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.18487v1",
+    "title": "Experimental and numerical investigation of suprathermal electron dynamics using vertical electron cyclotron emission",
+    "abstract": "The Tokamak \\`a Configuration Variable (TCV) is equipped with an advanced set of diagnostics for studying suprathermal electron dynamics. Among these, the vertical electron cyclotron emission (VECE) diagnostic offers valuable insights into the electron energy distribution by measuring electron cyclotron emission (ECE) along a vertical line-of-sight. However, reconstructing the electron distribution from ECE measurements is inherently challenging due to harmonic overlap and thermal radiation noise. A more practical approach leverages forward modeling of ECE based on kinetic simulations. To this end, we introduce YODA, a novel synthetic ECE diagnostic framework that simulates emission and (re)absorption of electron cyclotron radiation for arbitrary electron distributions and antenna geometries. The framework is validated against the well-established synthetic ECE code SPECE, using an ohmic TCV discharge as a reference case. In this study, the 3D bounce-averaged Fokker-Planck code LUKE is used to model electron distributions in two electron cyclotron current drive (ECCD) experiments. The synthetic spectra generated using the combined LUKE-YODA framework successfully reproduce the main features of the experimental VECE measurements in both simulated discharges. The combination of kinetic and synthetic ECE simulations allow the identification of the features in the electron distribution function which give rise to certain signatures in the VECE signal.",
+    "authors": [
+      "L. Votta",
+      "M. Hoppe",
+      "J. Decker",
+      "E. Devlaminck",
+      "A. S. Tema Biwol\u00e9",
+      "L. Porte",
+      "J. Cazabonne",
+      "Y. Savoye-Peysson",
+      "the TCV team"
+    ],
+    "published": "2025-10-21T10:07:58+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.18487v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:32:56.003784",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:51.369090",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.18384v1",
+    "title": "Diagnostics of a Multicusp-Assisted Inductively-Coupled Radio-Frequency Plasma Source for Plasma Immersion Ion Implantation",
+    "abstract": "In this article, we present a detailed characterisation of a multicusp-assisted inductively coupled RF plasma source for plasma immersion ion implantation (PIII). Using laser-induced fluorescence (LIF) and RF-compensated Langmuir probe diagnostics, we measured ion temperature T i and drift velocity v z in argon plasmas near an immersed electrode. The multicusp configuration enhances plasma density at low pressure, enabling stable operation down to 0.8 mTorr. Timeaveraged measurements show no detectable perturbation near the pulsed electrode, indicating full plasma recovery between high-voltage pulses. LIF-derived potential profiles match Riemann's presheath theory, and ion velocity distributions reveal acceleration consistent with sheath dynamics. These results support the use of LIF for steady-state characterisation of the bulk and presheath regions in PIII systems.",
+    "authors": [
+      "Moreno Joel",
+      "Jimenez Marilyn",
+      "Okerstrom Daniel",
+      "Bradley Michael P.",
+      "Cou\u00ebdel L\u00e9na\u00efc"
+    ],
+    "published": "2025-10-21T08:03:30+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.18384v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:32:56.509198",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:51.369324",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.18182v1",
+    "title": "Electron Acceleration via Lower-Hybrid Drift Instability in Astrophysical Plasmas: Dependence on Plasma Beta and Suprathermal Electron Distributions",
+    "abstract": "Density inhomogeneities are ubiquitous in space and astrophysical plasmas, particularly at magnetic reconnection sites, shock fronts, and within compressible turbulence. The gradients associated with these inhomogeneous plasma regions serve as free energy sources that can drive plasma instabilities, including the lower-hybrid drift instability (LHDI). Notably, lower-hybrid waves are frequently observed in magnetized space plasma environments, such as Earth's magnetotail and magnetopause. Previous studies have primarily focused on modeling particle acceleration via LHDI in these regions using a quasilinear approach. This study expands the investigation of LHDI to a broader range of environments, spanning weakly to strongly magnetized media, including interplanetary, interstellar, intergalactic, and intracluster plasmas. To explore the applicability of LHDI in various astrophysical settings, we employ two key parameters: (1) plasma magnetization, characterized by the plasma beta parameter, and (2) the spectral slope of suprathermal electrons following a power-law distribution. Using a quasilinear model, we determine the critical values of plasma beta and spectral slope that enable efficient electron acceleration via LHDI by comparing the rate of growth of instability and the damping rate of the resulting fluctuations. We further analyze the time evolution of the electron distribution function to confirm these critical conditions. Our results indicate that electron acceleration is generally most efficient in low-beta plasmas ($\\beta < 1$). However, the presence of suprathermal electrons significantly enhances electron acceleration via LHDI, even in high-beta plasmas ($\\beta > 1$). Finally, we discuss the astrophysical implications of our findings, highlighting the role of LHDI in electron acceleration across diverse plasma environments.",
+    "authors": [
+      "Ji-Hoon Ha",
+      "Elena S. Volnova"
+    ],
+    "published": "2025-10-21T00:12:10+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.18182v1",
+    "categories": [
+      "astro-ph.HE",
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:32:57.011987",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:51.369809",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.17531v1",
+    "title": "Plasma Shape Control via Zero-shot Generative Reinforcement Learning",
+    "abstract": "Traditional PID controllers have limited adaptability for plasma shape control, and task-specific reinforcement learning (RL) methods suffer from limited generalization and the need for repetitive retraining. To overcome these challenges, this paper proposes a novel framework for developing a versatile, zero-shot control policy from a large-scale offline dataset of historical PID-controlled discharges. Our approach synergistically combines Generative Adversarial Imitation Learning (GAIL) with Hilbert space representation learning to achieve dual objectives: mimicking the stable operational style of the PID data and constructing a geometrically structured latent space for efficient, goal-directed control. The resulting foundation policy can be deployed for diverse trajectory tracking tasks in a zero-shot manner without any task-specific fine-tuning. Evaluations on the HL-3 tokamak simulator demonstrate that the policy excels at precisely and stably tracking reference trajectories for key shape parameters across a range of plasma scenarios. This work presents a viable pathway toward developing highly flexible and data-efficient intelligent control systems for future fusion reactors.",
+    "authors": [
+      "Niannian Wu",
+      "Rongpeng Li",
+      "Zongyu Yang",
+      "Yong Xiao",
+      "Ning Wei",
+      "Yihang Chen",
+      "Bo Li",
+      "Zhifeng Zhao",
+      "Wulyu Zhong"
+    ],
+    "published": "2025-10-20T13:34:51+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.17531v1",
+    "categories": [
+      "physics.plasm-ph",
+      "cs.LG"
+    ],
+    "collected_at": "2025-10-29T20:32:57.522736",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:51.370115",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.16950v1",
+    "title": "Probing Flying-Focus Wakefields",
+    "abstract": "Flying-focus wakefields, which can propagate with a tunable velocity along the optical axis, are promising solutions to electron dephasing in laser-wakefield accelerators. This is accomplished by a combination of spatio-temporal couplings and focusing with an axiparabola, a specialized optical element which produces a quasi-Bessel beam. If implemented, dephasingless acceleration would allow for a hitherto unachievable mixture of high acceleration gradients and long acceleration lengths. Here, we conduct an in-depth study of the structure and behavior of such a flying-focus wakefield, through a combination of direct imaging and simulations. We show the stability of the wakefield structures, explore how the wakefield evolves with changes of density, study the effects of ionization on the wakefield structure with a variety of gases, and analyze the importance of the focusing position. These insights shed light onto this novel wakefield regime and bring understanding that is important to the realization of dephasingless acceleration.",
+    "authors": [
+      "Aaron Liberman",
+      "Anton Golovanov",
+      "Sheroy Tata",
+      "Anda-Maria Talposi",
+      "Victor Malka"
+    ],
+    "published": "2025-10-19T18:04:00+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.16950v1",
+    "categories": [
+      "physics.plasm-ph",
+      "physics.acc-ph",
+      "physics.app-ph",
+      "physics.optics"
+    ],
+    "collected_at": "2025-10-29T20:32:58.028134",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:51.370380",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.16542v1",
+    "title": "Extended phase-space symplectic integration for electron dynamics",
+    "abstract": "We investigate the use of extended phase-space symplectic integration [M. Tao, Phys. Rev. E 94, 043303 (2016)] for simulating two different classes of electron dynamics. The first one, with one and a half degrees of freedom, comes from plasma physics and describes the classical dynamics of a charged particle in a strong, constant, and uniform magnetic field perturbed by a turbulent electrostatic potential. The second one, with an infinite number of degrees of freedom, comes from physical chemistry and corresponds to Kohn-Sham time-dependent density-functional theory. For both we lay out the extension procedure and stability condition for numerical integration of the dynamics using high-order symplectic split-operator schemes. We also identify a computationally inexpensive metric that can be used for on-the-fly estimation of the accuracy of simulations. Our work paves the way for broad application of symplectic split-operator integration of classical and quantum Hamiltonian systems with finite and infinite number of degrees of freedom.",
+    "authors": [
+      "Francois Mauger",
+      "Cristel Chandre"
+    ],
+    "published": "2025-10-18T15:36:22+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.16542v1",
+    "categories": [
+      "physics.comp-ph",
+      "physics.chem-ph",
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:32:58.532306",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:51.370675",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.16362v1",
+    "title": "Relativistic Magnetohydrodynamic Wave Excitation by Laser Pulse in a Magnetized Plasma",
+    "abstract": "In the study of plasma, particularly in applications involving strong laser-plasma interactions, the propagation of a strong electromagnetic wave induces relativistic velocities in the electron flow. Given such conditions, the wave propagating through the plasma experiences modulational instability. In this paper, we investigate this instability using magnetohydrodynamic (MHD) equations. In the relativistic limit, the motion of ions can be neglected due to their significant inertia, allowing us to treat the ions as a background fluid. This simplification enables us to apply perturbation techniques to the electron fluid equations, leading to the derivation of the nonlinear wave equation in the form of the Nonlinear Schr\\\"odinger Equation (NLSE). We also explore the relationship between wave dispersion and the conditions for instability. We derive the maximum growth rate of the modulational instability and analyze its dependence on plasma parameters and wave intensity in the context of relativistic magnetized plasma, providing quantitative insights into the instability dynamics. Finally, we examine aspects of the perturbed NLSE using the Bogoliubov-Mitropolsky perturbation approach, treating real and imaginary coefficients separately, which explicitly incorporates both Nonlinear Landau Damping (NLLD) and growth-damping effects.",
+    "authors": [
+      "Zohreh Hashempour",
+      "Mehdi Nasri Nasrabadi",
+      "Nora Nassiri-Mofakham",
+      "Hamidreza Daniali"
+    ],
+    "published": "2025-10-18T06:07:04+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.16362v1",
+    "categories": [
+      "physics.plasm-ph",
+      "math-ph",
+      "math.MP"
+    ],
+    "collected_at": "2025-10-29T20:32:59.033003",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:51.371037",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.16361v1",
+    "title": "Hamiltonian estimation of island width threshold for stochasticity onset on edge pedestal top in presence of a resonant magnetic perturbation",
+    "abstract": "This study applies the Hamiltonian method to analyze the nonlinear magnetic topology induced by Resonant Magnetic Perturbations (RMPs) in tokamaks. We investigate the system's chaotic behavior by comparing three methods: the renormalization method, Lyapunov exponents (LE), and weighted Birkhoff average (WBA). A strong consistency is found among these methods in predicting the large scale stochasticity threshold. The magnetic island width threshold provides a quantitative criterion for optimizing RMP-based ELM control, bridging a critical gap in plasma control strategies.",
+    "authors": [
+      "Zhifei Gui",
+      "Ping Zhu",
+      "Dominique Franck Escande"
+    ],
+    "published": "2025-10-18T06:02:11+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.16361v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:32:59.539083",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:51.371201",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.16243v1",
+    "title": "A flexible and differentiable coil proxy for stellarator equilibrium optimization",
+    "abstract": "Balancing plasma performance and coil cost is a significant challenge when designing a stellarator power plant. Most present stellarator designs are produced by two-stage optimization: the first for the equilibrium and the second for a coil design reproducing its magnetic configuration. It is challenging to find a compromise between plasma and coils with this approach. In recent years, single-stage approaches have gained popularity, which attempt to optimize both the plasma and coils simultaneously to improve the plasma-coil balance. In exchange, it can substantially increase the problem's dimensionality and introduce the ill-posedness of filamentary coil optimization to equilibrium optimization. This paper introduces a new ``quasi-single-stage'' method representing a flexible and differentiable coil proxy that directly predicts coil complexity during equilibrium optimization. The proxy is based on the adjoint differentiation of a winding surface coil subproblem. Our proxy can balance coil and plasma performance without introducing new degrees of freedom or ill-posedness. We present initial numerical results that demonstrate the proxy's effectiveness for single-stage optimization.",
+    "authors": [
+      "Lanke Fu",
+      "Dario Panici",
+      "Elizabeth Paul",
+      "Alan Kaptanoglu",
+      "Amitava Bhattacharjee"
+    ],
+    "published": "2025-10-17T22:19:19+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.16243v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:00.044750",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:51.371524",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.16199v1",
+    "title": "Physics insights from a large-scale 2D UEDGE simulation database for detachment control in KSTAR",
+    "abstract": "A large-scale database of two-dimensional UEDGE simulations has been developed to study detachment physics in KSTAR and to support surrogate models for control applications. Nearly 70,000 steady-state solutions were generated, systematically scanning upstream density, input power, plasma current, impurity fraction, and anomalous transport coefficients, with magnetic and electric drifts across the magnetic field included. The database identifies robust detachment indicators, with strike-point electron temperature at detachment onset consistently Te around 3-4 eV, largely insensitive to upstream conditions. Scaling relations reveal weaker impurity sensitivity than one-dimensional models and show that heat flux widths follow Eich's scaling only for uniform, low D and Chi. Distinctive in-out divertor asymmetries are observed in KSTAR, differing qualitatively from DIII-D. Complementary time-dependent simulations quantify plasma response to gas puffing, with delays of 5-15 ms at the outer strike point and approximately 40 ms for the low-magnetic-field-side (LFS) radiation front. These dynamics are well captured by first-order-plus-dead-time (FOPDT) models and are consistent with experimentally observed detachment-control behavior in KSTAR [Gupta et al., submitted to Plasma Phys. Control. Fusion (2025)]",
+    "authors": [
+      "Menglong Zhao",
+      "Xueqiao Xu",
+      "Ben Zhu",
+      "Thomas Rognlien",
+      "Xinxing Ma",
+      "William Meyer",
+      "KyuBeen Kwon",
+      "David Eldon",
+      "Nami Li",
+      "Hyungho Lee",
+      "Junghoo Hwang"
+    ],
+    "published": "2025-10-17T20:24:28+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.16199v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:00.549675",
+    "parameters": {
+      "temperature": [
+        {
+          "type": "temperature",
+          "value": 4.0,
+          "unit": "eV",
+          "context": "ture at detachment onset consistently Te around 3-4 eV, largely insensitive to upstream conditions. Scal",
+          "confidence": "medium",
+          "is_correct": true
+        }
+      ],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:53.417534",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.15641v1",
+    "title": "Formation of a Tungsten Co-deposition Layer with Microparticles Using Pulsed Laser Deposition",
+    "abstract": "This study performed tungsten (W) co-deposition experiments using pulsed laser deposition under exposure to helium/argon plasma in a linear plasma device. Micron-sized spherical W particles formed under co-deposition conditions. It was suggested that these particles grew from nanoparticles via the electrostatic collection of W ions in the plasma plume before deposition.",
+    "authors": [
+      "S. Kodate",
+      "Y. Hayashi",
+      "S. Kajita"
+    ],
+    "published": "2025-10-17T13:32:48+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.15641v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:01.053668",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:53.417698",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.15504v1",
+    "title": "Modelling-driven requirements for Error Field Control Coil application to initial JT-60SA plasmas",
+    "abstract": "JT-60SA is a large superconducting tokamak built in Naka, Japan. After the successful achievement of its first MA-class plasma, the installation of several additional sub-systems, including a set of non-axisymmetric Error Field Correction Coils (EFCC), is ongoing. Optimization of future JT-60SA plasma scenarios will critically depend on the correct use of EFCC, including careful fulfillment of system specifications. In addition to that, preparation and risk mitigation of early ITER operations will greatly benefit from the experience gained by early EFCC application to JT-60SA experiments, in particular to optimize error field detection and control strategies. In this work, EFCC application in JT-60SA Initial Research Phase I perspective scenarios is modeled including plasma response. Impact of (Resonant) Magnetic Perturbations on the different plasma scenarios is assessed for both core and pedestal regions by the linear resistive MHD code MARS-F. The dominant core response to EFs is discussed case by case and compared to mode locking thresholds from literature. Typical current/voltage amplitudes and wave-forms are then compared to EFCC specifications in order to assess a safe operational space.",
+    "authors": [
+      "L. Pigatto",
+      "G. Frello",
+      "Y. Q. Liu",
+      "L. Novello",
+      "M. Takechi",
+      "E. Tomasina",
+      "T. Bolzonella"
+    ],
+    "published": "2025-10-17T10:17:14+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.15504v1",
+    "categories": [
+      "physics.plasm-ph",
+      "cs.SY",
+      "eess.SY"
+    ],
+    "collected_at": "2025-10-29T20:33:01.554598",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:53.417875",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.15156v1",
+    "title": "Magnetohydrodynamic-guiding-center-particle-in-cell Method for Multiscale Plasma Kinetic Simulations",
+    "abstract": "We present the formulation, algorithm and numerical tests of the magnetohydrodynamic-particle-in-cell (MHD-PIC) method with particles treated under the guiding center approximation, which we term the MHD-gPIC method, and it is implemented in the Athena++ MHD code. The new MHD-gPIC model consists of thermal (cold) fluid and high-energy particles whose dynamics are integrated through guiding center equations including drift motion, with carefully evaluated source terms as particle backreaction. The code is validated with a series of tests, and it is expected to be primarily applicable to study particle acceleration and transport in systems where gyro-resonance is considered insignificant. We also present preliminary studies of particle acceleration during non-relativistic magnetic reconnection.",
+    "authors": [
+      "Zitao Hu",
+      "Xue-Ning Bai",
+      "Xiaochen Sun"
+    ],
+    "published": "2025-10-16T21:30:31+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.15156v1",
+    "categories": [
+      "astro-ph.HE",
+      "astro-ph.SR",
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:02.060023",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:53.417996",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.15062v2",
+    "title": "Geometric scaling of laser-driven proton focusing from hemispherical foils",
+    "abstract": "We systematically characterize the focusing behavior of laser-driven proton beams from hemispherical targets of various diameters using mesh radiography. The proton focal location is inferred to be near the geometrical center for the smallest tested hemisphere ($\\Psi=D_{hemi}/D_{Laser}=6.1$). However, larger hemispheres ($\\Psi=14.6$) degrade the focusing behavior and behave more like flat foils with focal location significantly inside the hemisphere. We also infer a tight virtual focus of $9\\pm3~\\mu$m through a mesh transition analysis.",
+    "authors": [
+      "Jesse Griff-McMahon",
+      "Xavier Vaisseau",
+      "William Fox",
+      "Kirill Lezhnin",
+      "Krish Bhutwala",
+      "Ryan Nedbailo",
+      "Valeria Opsina-Boh\u00f3rquez",
+      "Timo Karpowski",
+      "Pravesh K. Patel",
+      "Sophia Malko"
+    ],
+    "published": "2025-10-16T18:23:18+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.15062v2",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:02.570207",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:53.418085",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.14575v1",
+    "title": "Linear damping of magneto-acoustic waves in two-fluid partially ionized plasmas",
+    "abstract": "Magneto-acoustic waves in partially ionized plasmas are damped due to elastic collisions between charged and neutral particles. Here, we use a linearized two-fluid model to describe the influence of this collisional interaction on the properties of small-amplitude waves propagating in a uniform and static background. Mainly focusing on the case of waves generated by a periodic driver, we perform a detailed study of the dependence of the wavenumbers and damping rates on the ionization degree of the plasma, the strength of the collisional coupling, and the angle of propagation. We describe how the different wave modes (fast, slow, acoustic) are related to the individual properties of each fluid in a wide range of physical conditions. In addition, we derive analytical approximations for the damping rates due to charge-neutral collisions in the limits of weak and strong coupling and check their range of validity in comparison with the exact numerical results. These approximations can be generally applied to a large variety of astrophysical and laboratory partially ionized plasmas, but here we also discuss the particular application to plasmas only composed of hydrogen.",
+    "authors": [
+      "David Mart\u00ednez-G\u00f3mez"
+    ],
+    "published": "2025-10-16T11:33:02+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.14575v1",
+    "categories": [
+      "physics.plasm-ph",
+      "astro-ph.SR"
+    ],
+    "collected_at": "2025-10-29T20:33:03.075504",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:53.418242",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.14521v1",
+    "title": "Influence of kinetic effects in large-scale magnetic reconnection with multi-hierarchy simulation code KAMMUY",
+    "abstract": "Magnetic reconnection is a multiscale phenomenon where fluid- and particle-scale processes interact. The particle-in-cell (PIC) method, capable of resolving kinetic (particle-scale) physics, is extensively used to study the kinetic effects in magnetic reconnection. Meanwhile, because of the high computational cost, PIC simulations cannot capture the interaction between kinetic and fluid dynamics, which poses a major obstacle to understanding magnetic reconnection in large-scale phenomena such as solar flares. A multi-hierarchy simulation that combines Magnetohydrodynamics (MHD) and PIC provides a promising means to overcome these spatial and temporal scale gaps. We developed a multi-hierarchy simulation code KAMMUY (Kinetic And Magnetohydrodynamic MUlti-hierarchY simulation code), in which an ideal MHD simulation for a large domain and a PIC simulation for a smaller domain are solved in parallel with mutual information exchange. To validate the code, we conducted test simulations of MHD wave propagation and the shock tube problem. The results demonstrate that short-wavelength, high-frequency waves generated in the PIC region do not propagate into the MHD region, whereas MHD-scale structures propagate smoothly into the PIC region, highlighting the capability of our code for numerical studies of magnetic reconnection. By applying the KAMMUY code to magnetic reconnection while varying the PIC domain size, we find that the reconnection rate remains unchanged, regardless of the extent of the PIC region where the Hall magnetic field is present. It suggests that the spatial extension of the Hall magnetic field on the scale of $10 \\sim 100 \\lambda_i$ does not influence the reconnection rate.",
+    "authors": [
+      "Keita Akutagawa",
+      "Shinsuke Imada",
+      "Munehito Shoda"
+    ],
+    "published": "2025-10-16T10:09:39+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.14521v1",
+    "categories": [
+      "astro-ph.SR",
+      "astro-ph.EP",
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:03.579532",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:53.418471",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.14324v1",
+    "title": "Dust-ion-acoustic solitons in an ion-beam-driven dusty magnetoplasma with adiabatic and nonadiabatic dust charge variations",
+    "abstract": "We study the characteristics of small-amplitude nonlinear dust-ion-acoustic (DIA) solitary waves in active magnetized positive-ion-beam-driven dusty plasmas with the effects of nonadiabatic and adiabatic dust charge variations. In the model, we consider the ion-neutral collision and thereby consider the collision enhanced ion current to the dust-charging process and dust charge fluctuations. We show that the streaming of the positive-ion beam significantly affects the dust-charging process in which the dust charge number decreases (increases) with an increased beam velocity (number density). Using the standard reductive perturbation technique, we derive the evolution equations in the form of Korteweg-de Vries (KdV) equations for DIA solitary waves for two different cases: nonadiabatic and adiabatic dust charge variations. We study the effect of positive ion beam, dust charge variation, magnetic field, ion creation, and ion-neutral collision enhanced current on the wave characteristics. We find that the soliton energy decays with time and is affected by the beam velocity. Also, the solitary waves get damped by the effects of ion creation, ion loss, ion-neutral collision enhanced current, and dust charge variation. Although the ion beam does not change the polarity of solitary waves in the case of adiabatic dust charge variation, a transition from rarefactive to compressive solitary waves occurs in the presence of an ion beam with nonadiabatic dust charge variation.",
+    "authors": [
+      "N. P. Acharya",
+      "S. Basnet",
+      "A. P. Misra",
+      "R. Khanal"
+    ],
+    "published": "2025-10-16T05:45:23+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.14324v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:04.082588",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:53.418661",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.14280v1",
+    "title": "Flux Jamming, Phase Transitions and Layering in Turbulent Magnetized Plasma",
+    "abstract": "This paper discusses transport barrier formation and layering as consequences of jam formation. Extensive use is made of analogies with the theory of traffic flow in one dimension. The relation of flux jamming to motility induced phase separation (MIPS) is explained. Two routes to heat flux jamming are identified. The first is due to a rollover in the heat flux-pulse size relation, i.e. $dQ_T(\\delta T)/d\\delta T<0$, and is similar to the condition of flux-gradient bistability. The second occurs when the delay time between pulse and heat flux exceeds a critical value. This does not require bistability and tends to occur near marginality. This analysis yields an estimate of the answer to the eternal question of 'how near is \"near\"?'. Staircase development is shown to follow jamiton train formation. The relation of jamming of avalanches to phase transitions in drift wave-zonal flow turbulence is elucidated. The formation of outward propagating blob trains and inward propagating void trains is demonstrated. The important role of turbulence spreading is identified.",
+    "authors": [
+      "P. H. Diamond",
+      "Y. Kosuga",
+      "P. L. Guillon",
+      "\u00d6. D. G\u00fcrcan"
+    ],
+    "published": "2025-10-16T04:05:26+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.14280v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:04.587942",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:53.418803",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.14258v1",
+    "title": "Kinetic Scale Energy Budget in Turbulent Plasmas: Role of Electron to Ion Temperature Ratio",
+    "abstract": "The dissipation mechanisms in weakly collisional plasmas have been a longstanding topic of investigation, where significant progress has been made in recent years. A recent promising development is the use of the \"scale-filtered\" Vlasov-Maxwell equations to fully quantify the scale-by-scale energy balance, a feature that was absent when using fluid models in kinetic plasmas. In particular, this method reveals that the energy transfer in kinetic scales is fully accounted for by the scale-filtered pressure-strain interaction. Despite this progress, the influence of ion-electron thermal disequilibrium on the kinetic-scale energy budget remains poorly understood. Using two-dimensional fully kinetic particle-in-cell simulations of decaying plasma turbulence, we systematically investigate the pressure-strain interaction and its components at sub-ion scales by varying electron-to-ion temperature ratios. Our analysis focuses on three key ingredients of the pressure-strain interaction: the normal and shear components of Pi-D and pressure dilatation. Our results demonstrate that the scale-filtered pressure-strain interaction is dominated by scale-filtered Pi-D across the kinetic range, with the shear component consistently providing the dominant contribution. We find that the scale-filtered normal and shear contributions of Pi-D exhibit persistent anticorrelation and opposite signs across all kinetic scales. We also discover that the amplitude of both anisotropic components for each species scales directly with their temperature and inversely with the temperature of the other species, while the scale-filtered pressure dilatation remains negligible compared to the Pi-D terms but shows enhanced compressibility effects as plasma temperatures decrease. We discuss the implications of these findings in thermally non-equilibrated plasmas, such as in the turbulent magnetosheath and solar wind.",
+    "authors": [
+      "Subash Adhikari",
+      "M. Hasan Barbhuiya"
+    ],
+    "published": "2025-10-16T03:16:31+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.14258v1",
+    "categories": [
+      "physics.plasm-ph",
+      "physics.space-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:05.089335",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:53.419055",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.14212v2",
+    "title": "Three-dimensional unmagnetized Mach probe analysis and initial flow measurements in reversed-field pinch experiments",
+    "abstract": "A novel matrix method of analyzing ion saturation current data from a general three-dimensional (3D) array of unmagnetized Mach probe tips is developed and used with data sets from two 3D Mach probes to make initial measurements of local plasma flow velocity in reversed-field pinch (RFP) experiments in the Madison Symmetric Torus (MST). The two 3D Mach probes are composed of regular polyhedral arrays of six and four tips, respectively, with the six-tip array composed of three orthogonal pairs of mutually opposite tips at the vertices of a regular octahedron and the four-tip array composed of non-opposite tips at the vertices of a regular tetrahedron, the analysis of which is specifically facilitated by the matrix method. Velocity measurement uncertainties for the Mach probes are derived based on uncertainties in probe machining and ion saturation current measurements, and typical relative uncertainties for the probes are estimated to be of order several percent, likely smaller than systematic uncertainties related to the Mach probe calibration constant and experimental uncertainties related to plasma and probe conditioning. Initial results for the octahedral probe show flow speeds of roughly the expected magnitudes based on previous MST measurements but with somes differences in flow direction, while those for the tetrahedron probe show similar flow directions to some previous measurements but also some larger than expected speeds. We consider possible causes for the unexpected results of these initial tests, with a focus on probe conditioning and fast electron issues.",
+    "authors": [
+      "K. J. McCollam",
+      "R. Reksoatmodjo",
+      "J. von der Linden",
+      "J. Sears",
+      "S. You",
+      "H. Himura",
+      "A. F. Almagri",
+      "M. Reyfman",
+      "C. C. Rouda",
+      "J. S. Sarff",
+      "A. M. Sellner"
+    ],
+    "published": "2025-10-16T01:39:12+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.14212v2",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:05.590819",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:53.419265",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.14195v1",
+    "title": "A Flying Focus with Arbitrary Directionality",
+    "abstract": "Flying focus techniques produce laser pulses whose focal points travel at arbitrary, controllable velocities. While this flexibility can enhance a broad range of laser-based applications, existing techniques constrain the motion of the focal point to the propagation direction of the pulse. Here, we introduce a flying focus configuration that decouples the motion of the focus from the propagation direction. A chirped laser pulse focused and diffracted by a diffractive lens and grating creates a focal point that can move both along and transverse to the propagation direction. The focal length of the lens, grating period, and chirp can be tuned to control the direction and velocity of the focus. Simulations demonstrate this control for a holographic configuration suited to high-power pulses, in which two off-axis pump beams with different focal lengths encode the equivalent phase of a chromatic lens and grating in a gas or plasma. For low-power pulses, conventional solid-state or adaptive optics can be used instead. Multi-dimensional control over the focal trajectory enables new configurations for applications, including laser wakefield acceleration of ions, steering of broadband THz radiation, and surface harmonic generation.",
+    "authors": [
+      "Sida Cao",
+      "Devdigvijay Singh",
+      "Lavonne S. Mack",
+      "John P. Palastro",
+      "Matthew R. Edwards"
+    ],
+    "published": "2025-10-16T01:03:37+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.14195v1",
+    "categories": [
+      "physics.optics",
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:06.094815",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:53.419440",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.14078v1",
+    "title": "Plasma Confinement State Classification via FPP Relevant Microwave Diagnostics",
+    "abstract": "We present a parsimonious and robust machine learning approach for identifying plasma confinement states in fusion power plants (FPPs) where reliable identification of the low-confinement (L-mode) and high-confinement (H-mode) regimes is critical for safe and efficient operation. Unlike research-oriented devices, FPPs must operate with a severely constrained set of diagnostics. To address this challenge, we demonstrate that a minimalist model, using only electron cyclotron emission (ECE) signals, can deliver accurate and reliable state classification. ECE provides electron temperature profiles without the engineering or survivability issues of in-vessel probes, making it a primary candidate for FPP-relevant diagnostics. Our framework employs ECE as input, extracts features with radial basis functions, and applies a gradient boosting classifier, achieving high accuracy with test accuracy averaging 96\\% correct predictions. Robustness analysis and feature importance study confirm the reliability of the approach. These results demonstrate that state-of-the-art performance is attainable from a restricted diagnostic set, paving the way for minimalist yet resilient plasma control architectures for FPPs.",
+    "authors": [
+      "Randall Clark",
+      "Vacslav Glukhov",
+      "Georgy Subbotin",
+      "Maxim Nurgaliev",
+      "Aleksandr Kachkin",
+      "Max Austin",
+      "Dmitri M. Orlov"
+    ],
+    "published": "2025-10-15T20:36:21+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.14078v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:06.600326",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:53.419601",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.14076v1",
+    "title": "Structure of self-generated magnetic fields in laser-solid interaction from proton tomography",
+    "abstract": "Strong magnetic fields are naturally self-generated in high-power, laser-solid interactions through the Biermann-battery mechanism. This work experimentally characterizes the 3D location and strength of these fields, rather than path-integrated quantities, through multi-view proton radiography and tomographic inversion on the OMEGA laser. We infer magnetic fields that extend several millimeters off the target surface into the hot, rarefied corona and are sufficient to strongly magnetize the plasma ($\\Omega_{e}\\tau_e \\gg 1$). The data is used to validate MHD simulations incorporating recent improvements in magnetic transport modeling; we achieve reasonable agreement only with models with re-localization of transport by magnetic fields. This work provides a key demonstration of tomographic inversion in proton radiography, offering a valuable tool for investigating magnetic fields in laser-produced plasmas.",
+    "authors": [
+      "Jesse Griff-McMahon",
+      "Christopher A. Walsh",
+      "Vicente Valenzuela-Villaseca",
+      "Sophia Malko",
+      "Brendan McCluskey",
+      "Kirill Lezhnin",
+      "Huws Landsberger",
+      "Laura Berzak Hopkins",
+      "Gennady Fiksel",
+      "Michael J. Rosenberg",
+      "Derek B. Schaeffer",
+      "William Fox"
+    ],
+    "published": "2025-10-15T20:32:51+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.14076v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:07.105543",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:53.419721",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.13956v1",
+    "title": "No cosmological constraints on dark photon dark matter from resonant conversion: Impact of nonlinear plasma dynamics",
+    "abstract": "We revisit and invalidate all dark photon dark matter constraints from resonant conversion of dark photons into photons (plasmons) in the early universe. These constraints rely on the resonant transfer of a substantial portion of the dark photon energy density into the SM plasma, heating the plasma in the process. We demonstrate that this resonant transfer saturates because of plasma nonlinearities. Dark photon dark matter resonantly converts into $k \\simeq 0$ Langmuir waves in the early universe electron-ion plasma. Once the Langmuir-wave energy approaches the thermal energy of the plasma, nonlinear effects driven by the ponderomotive force become significant. In particular, we show using dedicated Particle-in-Cell simulations that large-amplitude $k = 0$ Langmuir waves excite higher-k Langmuir and ion acoustic waves, producing strong spatial variations in density and plasma frequency. These inhomogeneities suppress further resonant conversion, limiting the deposited energy to about the thermal energy of the electrons at the time of conversion, orders of magnitude below observable cosmological thresholds. Consequently, the dark photon dark matter constraints are weaker by factors of $3000$ to $10^7$ across ten orders of magnitude in dark photon mass.",
+    "authors": [
+      "Anson Hook",
+      "Junwu Huang",
+      "Mohamad Shalaby"
+    ],
+    "published": "2025-10-15T18:00:03+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.13956v1",
+    "categories": [
+      "hep-ph",
+      "astro-ph.CO",
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:07.614156",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:53.419892",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.13946v1",
+    "title": "Bell Instability and Cosmic-Ray Acceleration in AGN Ultrafast Outflow Shocks",
+    "abstract": "We investigate magnetic-field amplification driven by the nonresonant hybrid (NRH or Bell) instability and its impact on cosmic-ray (CR) acceleration at reverse shocks of ultrafast outflows (UFOs) from active galactic nuclei (AGN). Previous kinetic studies by particle-in-cell simulations have demonstrated that when maximum CR energy is near the injection scale, NRH instability efficiently amplifies magnetic field up to the saturation level. However, the efficiency of NRH instability goes down as maximum energy increase since CR current is carried by escaping CRs near the maximum energy. We employ a one-dimensional MHD--CR framework solving telegraph-type diffusion--convection equations to trace the coupled evolution of CRs, magnetic fields, and shock dynamics under realistic parameters. We find a distinct transition with magnetic field strength: for weak background fields ($B_{0}\\!\\lesssim\\!10^{-4}\\,\\mathrm{G}$), NRH instability efficiently amplifies upstream turbulence, driving a self-regulated state where $E_{\\max}$ becomes independent of initial strength of magnetic turbulence. In contrast, for stronger background fields ($B_{0}\\!\\gtrsim\\!10^{-3}\\,\\mathrm{G}$), the escaping CR current is too weak to drive NRH instability, and magnetic turbulence further decays through parametric instabilities, potentially reducing the acceleration efficiency. We give the physical interpretation for the transition and discuss conditions for PeV--EeV acceleration at UFO reverse shocks.",
+    "authors": [
+      "Rei Nishiura",
+      "Tsuyoshi Inoue"
+    ],
+    "published": "2025-10-15T18:00:00+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.13946v1",
+    "categories": [
+      "astro-ph.HE",
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:08.118787",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:53.420089",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.13521v1",
+    "title": "Narrow Operator Models of Stellarator Equilibria in Fourier Zernike Basis",
+    "abstract": "Numerical computation of the ideal Magnetohydrodynamic (MHD) equilibrium magnetic field is at the base of stellarator optimisation and provides the starting point for solving more sophisticated Partial Differential Equations (PDEs) like transport or turbulence models. Conventional approaches solve for a single stationary point of the ideal MHD equations, which is fully defined by three invariants and the numerical scheme employed by the solver. We present the first numerical approach that can solve for a continuous distribution of equilibria with fixed boundary and rotational transform, varying only the pressure invariant. This approach minimises the force residual by optimising parameters of multilayer perceptrons (MLP) that map from a scalar pressure multiplier to the Fourier Zernike basis as implemented in the modern stellarator equilibrium solver DESC.",
+    "authors": [
+      "Timo Thun",
+      "Rory Conlin",
+      "Dario Panici",
+      "Daniel B\u00f6ckenhoff"
+    ],
+    "published": "2025-10-15T13:13:42+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.13521v1",
+    "categories": [
+      "physics.plasm-ph",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "collected_at": "2025-10-29T20:33:08.623386",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:53.420204",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.17856v1",
+    "title": "Carrier envelope phase and laser pulse shape effects on Schwinger vacuum pair production in super-Gaussian asymmetric electric fields",
+    "abstract": "We investigate the combined effects of carrier envelope phase and laser pulse shape on electron-positron pair production in the presence of an external asymmetric super-Gaussian electric field by solving the quantum Vlasov equation. By varying the field asymmetry, the pulse shape from Gaussian to super-Gaussian, and the carrier envelope phase, we show the momentum distribution and the number density of created pairs to exhibit extreme sensitivity to these field characteristics. The effects are also qualitatively explained by analyzing the turning-point structures within the WKB formalism. We observed that multiphoton pair production dominates in the case of long falling-pulse asymmetry. For a short falling pulse with a flat-top super-Gaussian laser profile, pair production is further facilitated. For certain field parameters, we demonstrate that the number density can be enhanced by two to three orders of magnitude.",
+    "authors": [
+      "Abhinav Jangir",
+      "Anees Ahmed"
+    ],
+    "published": "2025-10-15T05:58:06+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.17856v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:09.127991",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:53.420324",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.12869v1",
+    "title": "Unified kinetic theory of induced scattering: Compton, Brillouin, and Raman processes in magnetized electron and positron pair plasma",
+    "abstract": "We present a unified theoretical framework for induced (stimulated) scattering-parametric instabilities of electromagnetic waves, including induced Compton, stimulated Brillouin, and stimulated Raman scattering (SRS) in strongly magnetized electron-positron pair plasma. By solving the dispersion relations derived from kinetic theory, taking into account the ponderomotive force due to the beat of incident and scattered waves, we obtain analytical expressions for the linear growth rates of the ordinary, neutral, and charged modes of density fluctuations. Our results clarify which type of scattering dominates under different thermal coupling, resonance, and density conditions. In strong magnetic fields, scattering of perpendicularly polarized waves is generally suppressed, but by different powers of the cyclotron frequency. Moreover, SRS, which is forbidden in unmagnetized electron and positron pair plasma, becomes possible in the charged mode. This framework enables a comprehensive evaluation of induced scattering in extreme astrophysical and laboratory plasma, such as fast radio burst (FRB) emission and propagation in magnetar magnetospheres.",
+    "authors": [
+      "Rei Nishiura",
+      "Shoma F. Kamijima",
+      "Kunihito Ioka"
+    ],
+    "published": "2025-10-14T18:00:00+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.12869v1",
+    "categories": [
+      "astro-ph.HE",
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:09.631602",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:53.420504",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.12432v1",
+    "title": "Comparison of MHD and gyrokinetic simulations of linear instabilities at the q = 1 surface",
+    "abstract": "Accurate modeling of core instabilities in tokamak plasmas is essential to understand the underlying physical mechanisms and their impact on plasma confinement. The ideal stability of the internal kink mode and the m = 1 collisionless tearing mode are analyzed numerically both with gyrokinetic and MHD codes. We compare the different models implemented in the codes and show that the gyrokinetic equations without collisions inherently contain the ideal MHD limit. The simulation results show that the stability of the internal kink mode strongly depends on the choice of several setup parameters like the inclusion of parallel magnetic field fluctuations, the tokamak aspect ratio, the drift- or gyrokinetic treatment of the ions and the electron mass. Furthermore, we demonstrate the stabilization of the instabilities by diamagnetic effects. Our results indicate that gyrokinetic and MHD models can be reconciled in the description of the internal kink mode by careful consideration of the simulation setup and model assumptions, but instabilities like the collisionless tearing mode require a more advanced treatment beyond MHD.",
+    "authors": [
+      "F. N. Antlitz",
+      "X. Wang",
+      "M. Hoelzl",
+      "G. T. A. Huijsmans",
+      "H. Zhang",
+      "J. Puchmayr",
+      "Ph. Lauber",
+      "T. Hayward-Schneider",
+      "B. F. McMillan",
+      "A. Mishchenko",
+      "E. Poli",
+      "Z. X. Lu",
+      "JOREK team"
+    ],
+    "published": "2025-10-14T12:10:46+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.12432v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:10.136973",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:53.420651",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.15997v1",
+    "title": "Frequency domain laser ultrasound for inertial confinement fusion target wall thickness measurements",
+    "abstract": "In inertial confinement fusion experiments hollow, spherical mm-sized capsules are used as a container for nuclear fuel. To achieve maximum implosion efficiency, a perfect capsule geometry is required. This paper presents a wall thickness measurement method based on zero-group velocity guided elastic wave resonances. They are measured with a non-destructive, contactless frequency domain laser ultrasound microscopy system. Wall thickness measurements along the equator of a high-density carbon capsule with a diameter of around 2 mm and a wall thickness of around 80 $\\unicode{x00B5}$m excellently agree with infrared interferometry reference measurements. In addition, the multi-resonant nature of a spherical shell is studied by complementing experimental observations with plate dispersion calculations and finite element wave propagation simulations. The presented method is scalable and can be applied to a broad range of target materials, including metals, or metal-doped targets.",
+    "authors": [
+      "Martin Ryzy",
+      "Guqi Yan",
+      "Clemens Gr\u00fcnsteidl",
+      "Georg Watzl",
+      "Kevin Sequoia",
+      "Pavel Lapa",
+      "Haibo Huang"
+    ],
+    "published": "2025-10-14T08:56:55+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.15997v1",
+    "categories": [
+      "physics.ins-det",
+      "cond-mat.mtrl-sci",
+      "physics.app-ph",
+      "physics.optics",
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:10.641249",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:53.420779",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.12142v1",
+    "title": "Polar Filaments Capture High Latitude Solar Poloidal Field Interactions and can Foretell the Future Sunspot Cycle Amplitude before Polar Field Precursors",
+    "abstract": "Polar fields at the minimum of a sunspot cycle -- which are a manifestation of the radial component of the Sun's poloidal field -- are deemed to be the best indicator of the strength of the toroidal component, and hence the amplitude of the future sunspot cycle. However, the Sun's polar magnetic fields are difficult to constrain with ground-based or space-based observations from near the plane-of-ecliptic. In this context, polar filaments -- dark, elongated structures that overlie polarity inversion lines -- are known to offer critical insights into solar polar field dynamics. Through investigations of the long-term evolution of polar filament areas and length acquired from the Meudon Observatory and complimentary solar surface flux transport simulations, here we establish the common physical foundation connecting the Babcock-Leighton solar dynamo mechanism of solar polar field reversal and build-up with the origin and evolution of polar filaments. We discover a new relationship connecting the residual filament area of adjacent solar cycles with the amplitude of the next sunspot cycle -- which can serve as a new tool for solar cycle forecasts -- advancing the forecast window to earlier than polar field based precursors. We conclude that polar filament properties encapsulate the physics of interaction of the poloidal magnetic field of the previous and current sunspot cycles, the resultant of which is the net poloidal magnetic field at the end of the current cycle, thus encoding as a precursor the strength of the upcoming solar cycle.",
+    "authors": [
+      "Srinjana Routh",
+      "Shaonwita Pal",
+      "Dibyendu Nandy",
+      "Subhamoy Chatterjee",
+      "Dipankar Banerjee",
+      "Mohd. Saleem Khan"
+    ],
+    "published": "2025-10-14T04:49:00+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.12142v1",
+    "categories": [
+      "astro-ph.SR",
+      "physics.plasm-ph",
+      "physics.space-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:11.145629",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:53.420980",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.12068v1",
+    "title": "On three dimensional steady super-Alfv\u00e9nic magnetohydrodynamics shocks with aligned fields",
+    "abstract": "The coupled motion between the hydrodynamic flow and magnetic field introduces significant complexity into the structure of the magnetohydrodynamic (MHD) equations. A key factor contributing to this complexity is the presence of Alfv\\'en waves, which critically influences the character of the flow and makes the problem considerably more challenging. Within the framework where the magnetic field is everywhere parallel to the flow velocity, we give an effective decomposition of the steady MHD equations in terms of the deformation tensor and the modified vorticity, where the modification in the vorticity is to record the effect of the Lorentz force on the velocity field. The existence and structural stability of the super-Alfv\\'{e}nic cylindrical transonic shock solutions for the steady MHD equations are established under three-dimensional perturbations of the incoming flow and the exit total pressure (kinetic plus magnetic).",
+    "authors": [
+      "Shangkun Weng",
+      "Wengang Yang"
+    ],
+    "published": "2025-10-14T02:19:48+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.12068v1",
+    "categories": [
+      "math.AP",
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:11.651084",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:53.423482",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.11896v1",
+    "title": "Lagrangian Formulation of the Snowplow Model and Operating Point for Z pinch Devices",
+    "abstract": "We write down the lagrangian for the snowplow model of the Z pinch system. Then, we develop the Euler-Lagrange equations to find out the corresponding equations of motion. Next, we set a criterion for quantitatively estimating the performance of Z pinch devices. Finally, we apply this criterion to a specific Z pinch system.",
+    "authors": [
+      "Miguel C\u00e1rdenas",
+      "Alejandro Nettle",
+      "Leandro N\u00fa\u00f1ez"
+    ],
+    "published": "2025-10-13T19:57:49+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.11896v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:12.152451",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:53.423564",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.11890v1",
+    "title": "Loading non-Maxwellian Velocity Distributions in Particle Simulations",
+    "abstract": "Numerical procedures for generating non-Maxwellian velocity distributions in particle simulations are presented. First, Monte Carlo methods for an $(r,q)$ distribution that generalizes flattop and kappa distributions are discussed. Then, two rejection methods for the regularized kappa distribution are presented, followed by a comparison in the $\\kappa$ space. A simple recipe is proposed for the subtracted kappa distribution. Properties and numerical recipes for the ring and shell distributions with a finite Gaussian width are discussed. The ring and shell Maxwellians are further introduced as alternatives to the ring and shell distributions. Finally, the super-Gaussian and the filled-shell distributions are presented.",
+    "authors": [
+      "Seiji Zenitani",
+      "Shunsuke Usami",
+      "Shuichi Matsukiyo"
+    ],
+    "published": "2025-10-13T19:49:16+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.11890v1",
+    "categories": [
+      "physics.plasm-ph",
+      "physics.comp-ph",
+      "physics.space-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:12.662815",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:53.423663",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.11874v1",
+    "title": "Towards fully predictive gyrokinetic full-f simulations",
+    "abstract": "Designing economical magnetic confinement fusion power plants motivates computational tools that can estimate plasma behavior from engineering parameters without direct reliance on experimental measurement of the plasma profiles. In this work, we present full-$f$ global gyrokinetic (GK) turbulence simulations of edge and scrape-off layer turbulence in tokamaks that use only magnetic geometry, heating power, and particle inventory as inputs. Unlike many modeling approaches that employ free parameters fitted to experimental data, raising uncertainties when extrapolating to reactor scales, his approach directly simulates turbulence and resulting profiles through GK without such empirical adjustments. This is achieved via an adaptive sourcing algorithm in Gkeyll that strictly controls energy injection and emulates particle sourcing due to neutral recycling. We show that the simulated kinetic profiles compare reasonably well with Thomson scattering and Langmuir probe data for Tokamak \\`{a} Configuration Variable (TCV) discharge #65125, and that the simulations reproduce characteristic features such as blob transport and self-organized electric fields. Applying the same framework to study triangularity effects suggests mechanisms contributing to the improved confinement reported for negative triangularity (NT). Simulations of TCV discharges #65125 and #65130 indicate that NT increases the $E \\times B$ flow shear (by about 20% in these cases), which correlates with reduced turbulent losses and a modest change in the distribution of power exhaust to the vessel wall. While the physical models contain approximations that can be refined in future work, the predictive capability demonstrated here, evolving multiple profile relaxation times with kinetic electron and ion models in hundreds of GPU hours, indicates the feasibility of using Gkeyll to support design studies of fusion devices.",
+    "authors": [
+      "A. C. D. Hoffmann",
+      "T. N. Bernard",
+      "M. Francisquez",
+      "G. W. Hammett",
+      "A. Hakim",
+      "J. Boedo",
+      "R. Rizkallah",
+      "C. K. Tsui",
+      "the TCV team"
+    ],
+    "published": "2025-10-13T19:32:56+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.11874v1",
+    "categories": [
+      "physics.plasm-ph",
+      "physics.app-ph",
+      "physics.comp-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:13.167331",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:53.423924",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.11365v1",
+    "title": "Electromagnetic Observables of Weakly Collisional Black Hole Accretion",
+    "abstract": "The black holes in the Event Horizon Telescope sources Messier 87* and Sagittarius A* (SgrA*) are embedded in a hot, collisionless plasma that is fully described in kinetic theory yet is usually modeled as an ideal, magnetized fluid. In this Letter, we present results from a new set of weakly collisional fluid simulations in which leading order kinetic effects are modeled as viscosity and heat conduction. Consistent with earlier, lower-resolution studies, we find that overall flow dynamics remain very similar between ideal and non-ideal models. For the first time, we synthesize images and spectra of SgrA* from weakly collisional models -- assuming an isotropic, thermal population of electrons -- and find that these remain largely indistinguishable from ideal fluid predictions. However, most weakly collisional models exhibit lower light curve variability, with all magnetically dominated models showing a small but systematic decrease in variability.",
+    "authors": [
+      "Vedant Dhruv",
+      "Ben Prather",
+      "Mani Chandra",
+      "Abhishek V. Joshi",
+      "Charles F. Gammie"
+    ],
+    "published": "2025-10-13T13:06:49+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.11365v1",
+    "categories": [
+      "astro-ph.HE",
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:13.669450",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:53.424049",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.11174v1",
+    "title": "Machine Learning-Integrated Hybrid Fluid-Kinetic Framework for Quantum Electrodynamic Laser Plasma Simulations",
+    "abstract": "High-intensity laser plasma interactions create complex computational problems because they involve both fluid and kinetic regimes, which need models that maintain physical precision while keeping computational speed. The research introduces a machine learning-based three-dimensional hybrid fluid-particle-in-cell (PIC) system, which links relativistic plasma behavior to automatic regime transitions. The technique employs fluid approximations for stable areas but activates the PIC solver when SwitchNet directs it to unstable sections through its training on physics-based synthetic data. The model uses a smooth transition between Ammosov-Delone-Krainov (ADK) tunneling and multiphoton ionization rates to simulate ionization, while Airy-function approximations simulate quantum electrodynamic (QED) effects for radiation reaction and pair production. The convolutional neural network applies energy conservation through physics-based loss functions, which operate on normalized fields per channel. Monte Carlo dropout provides uncertainty measurement. The hybrid model produces precise predictions with coefficient of determination (R^2) values above 0.95 and mean squared errors below 10^-4 for all field components. This adaptive approach enhances the accuracy and scalability of laser-plasma simulations, providing a unified predictive framework for high-energy-density and particle acceleration applications.",
+    "authors": [
+      "Sadra Saremi",
+      "Amirhossein Ahmadkhan Kordbacheh"
+    ],
+    "published": "2025-10-13T09:07:59+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.11174v1",
+    "categories": [
+      "physics.plasm-ph",
+      "cs.LG"
+    ],
+    "collected_at": "2025-10-29T20:33:14.174920",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:53.424235",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.10112v1",
+    "title": "Thermal and Electrical Conductivities of Aluminum Up to 1000 eV: A First-Principles Prediction",
+    "abstract": "Accurate prediction of the thermal and electrical conductivities of materials under extremely high temperatures is essential in high-energy-density physics. These properties govern processes such as stellar core dynamics, planetary magnetic field generation, and laser-driven plasma evolution. However, first-principles methods like Kohn-Sham (KS) density functional theory (DFT) face challenges in predicting these properties due to prohibitively high computational costs. We propose a scheme that integrates the Kubo formalism with a mixed stochastic-deterministic DFT (mDFT) method, which substantially enhances efficiency in computing thermal and electrical conductivities of dense plasmas under extremely high temperatures. As a showcase, this approach enables {\\it ab initio} calculations of the thermal and electrical conductivities of Aluminum (Al) up to 1000 eV. Compared to traditional transport models, our first-principles results reveal significant deviations in the thermal and electrical conductivities of Al within the warm dense matter regime, underscoring the importance of accounting for quantum effects when investigating these transport properties of warm dense matter.",
+    "authors": [
+      "Qianrui Liu",
+      "Xiantu He",
+      "Mohan Chen"
+    ],
+    "published": "2025-10-11T08:43:18+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.10112v1",
+    "categories": [
+      "physics.plasm-ph",
+      "physics.comp-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:14.679415",
+    "parameters": {
+      "temperature": [
+        {
+          "type": "temperature",
+          "value": 1000.0,
+          "unit": "eV",
+          "context": "electrical conductivities of Aluminum (Al) up to 1000 eV. Compared to traditional transport models, our first-principles results reveal significant deviations in the thermal and electrical conductivities of Al within the warm dense matter regime, underscoring the importance of accounting for quantum effects when investigating these transport properties of warm dense matter.",
+          "confidence": "medium",
+          "is_correct": true
+        }
+      ],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:55.898562",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.09978v1",
+    "title": "Studying the properties of reconnection-driven turbulence",
+    "abstract": "Magnetic reconnection, often accompanied by turbulence interaction, is a ubiquitous phenomenon in astrophysical environments. However, the current understanding of the nature of turbulent magnetic reconnection remains insufficient. We investigate the statistical properties of reconnection turbulence in the framework of the self-driven reconnection. Using the open-source software package AMUN, we first perform numerical simulations of turbulent magnetic reconnection. We then obtain the statistical results of reconnection turbulence by traditional statistical methods such as the power spectrum and structure function. Our numerical results demonstrate: (1) the velocity spectrum of reconnection turbulence follows the classical Kolmogorov type of $E\\propto k^{-5/3}$, while the magnetic field spectrum is steeper than the Kolmogorov spectrum, which are independent of limited resistivity, guide field, and isothermal or adiabatic fluid states; (2) most of the simulations show the anisotropy cascade, except that the presence of a guide field leads to an isotropic cascade; (3) reconnection turbulence is incompressible in the adiabatic state, with energy distribution dominated by the velocity solenoidal component; (4) different from pure magnetohydrodynamic (MHD) turbulence, the intermittency of the velocity field is stronger than that of the magnetic field in reconnection turbulence. The steep magnetic field spectrum, together with the velocity spectrum of Kolmogorov type, can characterize the feature of the reconnection turbulence. In the case of the presence of the guide field, the isotropy of the reconnection turbulence cascade is also different from the cascade mode of pure MHD turbulence. Our experimental results provide new insights into the properties of reconnection turbulence, which will contribute to advancing the self-driven reconnection theory.",
+    "authors": [
+      "Shi-Min Liang",
+      "Jian-Fu Zhang",
+      "Na-Na Gao",
+      "Nian-Yu Yi"
+    ],
+    "published": "2025-10-11T03:14:25+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.09978v1",
+    "categories": [
+      "astro-ph.HE",
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:15.184765",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:55.899286",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.09579v1",
+    "title": "The impact of plasma turbulence on atomic reaction rates in detached divertors",
+    "abstract": "Numerical plasma models of the edge and scrape-off layer rely on reaction rates to describe key atomic processes such as ionization, recombination, charge-exchange, and line radiation. These rates depend non-linearly on local density and temperature, and are thus sensitive to turbulent fluctuations. We present an analysis of atomic rates and their dependence on turbulent fluctuations, obtained from GRILLIX edge turbulence simulations in detached divertor conditions. Ionization, recombination and radiation rates are evaluated in turbulent and corresponding mean-field states, and their differences are discussed. While the effect is minimal in attached conditions with low fluctuation amplitudes (< 50% of the background), pronounced discrepancies emerge in detached conditions with high fluctuation amplitudes (> 300% of the background). Local ionization and radiation rates obtained from turbulent inputs are up to a factor of ~2 lower than rates obtained from mean-field inputs. The rate reduction is the result of the particular anti-correlation of electron density and temperature in detached conditions. When factoring out correlations, the turbulent rate approximately recovers to the mean-field rate. When arranged to correlate positively, the turbulent ionization rate instead increases by a factor of ~3. Our results demonstrate that the common method of evaluating rates with mean-field plasma inputs can introduce systematic errors to particle and energy balances, particularly in detached conditions.",
+    "authors": [
+      "Konrad Eder",
+      "Wladimir Zholobenko",
+      "Andreas Stegmeir",
+      "Kaiyu Zhang",
+      "Frank Jenko"
+    ],
+    "published": "2025-10-10T17:34:48+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.09579v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:15.690128",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:55.900133",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.09524v1",
+    "title": "Si3N4 membrane as entrance window for plasma-generated vacuum ultraviolet (VUV) radiation",
+    "abstract": "Vacuum ultraviolet (VUV) radiation produced by an atmospheric pressure plasma was successfully measured down to wavelengths of 58.4nm utilizing a 20nm thin Si3N4 membrane to transfer the VUV radiation into a vacuum monochromator. This method allows measurements without disturbing the plasma or the spectra. He2 absorption could be observed by filling the monochromator with He. Transmission of the Si3N4 membrane in the region of the He2 excimer continua (58nm to 100 nm) could indirectly be measured and confirms literature values.",
+    "authors": [
+      "Luka Hansen",
+      "G\u00f6rkem Bilgin",
+      "Jan Benedikt"
+    ],
+    "published": "2025-10-10T16:36:15+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.09524v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:16.194712",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:55.900460",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.09491v2",
+    "title": "Investigating Solid-Fluid Phase Coexistence in DC Plasma Bilayer Crystals: The Role of Particle Pairing and Mode Coupling",
+    "abstract": "This article presents a detailed investigation of solid-fluid phase coexistence in a bilayer dusty plasma crystal subjected to varying confinement ring bias voltages in a DC glow discharge argon plasma. Melamine formaldehyde particles were employed to form a stable, hexagonally ordered bilayer crystal within a confinement ring electrically isolated from the grounded cathode. By systematically adjusting the confinement ring bias, a distinct phase coexistence emerged: it is characterized by a fluid-like melted core surrounded by a solid crystalline periphery. Crucially, analysis of the phonon spectra revealed frequency shifts that deviate significantly from the predictions of classical monolayer Mode-Coupling Instability (MCI) theory. Stability analysis further demonstrated that dynamic interlayer particle pairing and non-reciprocal interactions play a pivotal role in destabilizing the bilayer structure. These findings highlight previously underappreciated mechanisms driving the melting transition in bilayer dusty plasmas, offering a more comprehensive understanding of phase behavior in complex plasma systems. The results underscore the importance of interlayer coupling and confinement effects in tuning structural transitions.",
+    "authors": [
+      "Siddhartha Mangamuri",
+      "Surabhi Jaiswal",
+      "L\u00e9na\u00efc Cou\u00ebdel"
+    ],
+    "published": "2025-10-10T15:52:47+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.09491v2",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:16.697850",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:55.901130",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.09437v3",
+    "title": "Long Living Hot and Dense Plasma from Relativistic Laser-Nanowire Array Interaction",
+    "abstract": "Long-living, hot and dense plasmas generated by ultra-intense laser beams are of critical importance for laser-driven nuclear physics, bright hard X-ray sources, and laboratory astrophysics. We report the experimental observation of plasmas with nanosecond-scale lifetimes, near-solid density, and keV-level temperatures, produced by irradiating periodic arrays of composite nanowires with ultra-high contrast, relativistically intense femtosecond laser pulses. Jet-like plasma structures extending up to 1~mm from the nanowire surface were observed, emitting K-shell radiation from He-like Ti$^{20+}$ ions. High-resolution X-ray spectra were analyzed using 3D Particle-in-Cell (PIC) simulations of the laser-plasma interaction combined with collisional--radiative modeling (FLYCHK). The results indicate that the jets consist of plasma with densities of $10^{20}$-$10^{22}$ cm$^{-3}$ and keV-scale temperatures, persisting for several nanoseconds. We attribute the formation of these jets to the generation of kiloTesla-scale global magnetic fields during the laser interaction, as predicted by PIC simulations. These fields may drive long-timescale current instabilities that sustain magnetic fields of several hundred tesla, sufficient to confine hot, dense plasma over nanosecond durations.",
+    "authors": [
+      "Ehsan Eftekhari-Zadeh",
+      "Mikhail Gyrdymov",
+      "Parysatis Tavana",
+      "Robert Loetzsch",
+      "Ingo Uschmann",
+      "Thomas Siefke",
+      "Thomas K\u00e4sebier",
+      "Uwe Zeitner",
+      "Adriana Szeghalmi",
+      "Alexander Pukhov",
+      "Dmitri Serebryakov",
+      "Evgeni Nerush",
+      "Igor Kostyukov",
+      "Olga Rosmej",
+      "Christian Spielmann",
+      "Daniil Kartashov"
+    ],
+    "published": "2025-10-10T14:47:58+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.09437v3",
+    "categories": [
+      "physics.plasm-ph",
+      "hep-ex",
+      "physics.optics"
+    ],
+    "collected_at": "2025-10-29T20:33:17.198496",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:55.901724",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.09126v1",
+    "title": "Statistics of Current and Vorticity Structures in Relativistic Turbulence",
+    "abstract": "Coherent structures created through turbulent cascades play a key role in energy dissipation and particle acceleration. In this work, we investigate both current and vorticity sheets in 3D particle-in-cell simulations of decaying relativistic turbulence in pair plasma by training a self-organizing map to recognize these structures. We subsequently carry out an extensive statistical analysis to reveal their geometric and structural properties. This analysis is systematically applied across a range of magnetizations ($\\sigma$) and fluctuating-to-mean magnetic field strengths ($\\delta B_0/B_0$) to assess how these parameters influence the resulting structures. We find that the structures' geometric properties form power-law distributions in their probability density functions (PDFs), with the exception of the structure width, which generally exhibits an exponential distribution peaking around 2 electron skin depths. The measurements show weak dependence on $\\sigma$ but a strong dependence on $\\delta B_0/B_0$. Finally, we investigate the spatial relationship between current sheets and vorticity sheets. We find that most current sheets are directly associated with at least one vorticity sheet neighbor and are often situated between two vorticity sheets. These findings provide a detailed statistical framework for understanding the formation and organization of coherent structures in relativistic magnetized turbulence, allowing for their incorporation into updated theoretical models for structure-based energy dissipation and particle acceleration processes crucial for interpreting high-energy astrophysical observations.",
+    "authors": [
+      "Zachary Davis",
+      "Luca Comisso",
+      "Colby Haggerty",
+      "Joonas N\u00e4ttil\u00e4"
+    ],
+    "published": "2025-10-10T08:26:38+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.09126v1",
+    "categories": [
+      "physics.plasm-ph",
+      "astro-ph.HE"
+    ],
+    "collected_at": "2025-10-29T20:33:17.710149",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:55.902368",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.09113v2",
+    "title": "Influence of an external static magnetic field on prebreakdown electron emission and heating",
+    "abstract": "High magnetic fields can increase the occurrence of vacuum arcing, suggesting that both electric and magnetic fields can play a role in the vacuum arcing process. The mechanism of vacuum arcing in high magnetic fields is believed to involve both the cathode and the anode, with the cathode serving as the originator of field-emitting nanoprotrusions or tips, while the anode serves a secondary role. Significant heating of the anode surface can be achieved by magnetic focusing of the emitted electron beam, leading to increased heat flux due to greater current density. We simulated the emitted electron beam in different configurations of the electric and magnetic fields using the particle-in-cell (PIC) and finite element methods (FEM). The heating caused by the impacting electron beam was simulated for magnetic fields ranging from 0 T to 30 T. The directions of the electric and magnetic fields were found to play a major role in the focusing of the electron beam. We found that a sufficient temperature increase on the anode surface for evaporation can be reached at magnetic fields on the order of 10-30 T, suggesting the possibility of plasma initiation on the anode side.",
+    "authors": [
+      "Roni Koitermaa",
+      "Marzhan Toktaganova",
+      "Andreas Kyritsakis",
+      "Tauno Tiirats",
+      "Alexej Grudiev",
+      "Veronika Zadin",
+      "Flyura Djurabekova"
+    ],
+    "published": "2025-10-10T08:05:37+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.09113v2",
+    "categories": [
+      "physics.acc-ph",
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph",
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:18.212598",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:55.902863",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.08735v1",
+    "title": "Emergence of advection-diffusion transport structure and nonlinear amplitude evolution of strongly driven instabilities",
+    "abstract": "Instabilities driven by strong gradients appear in a wide variety of physical systems, including plasmas, neutral fluids, and self-gravitating systems. This work develops an analytic formulation to describe the transport structure and nonlinear amplitude evolution of a discrete, strongly driven instability in the presence of energy sources and sinks. Initially, the mode is found to evolve linearly until the gradient in the distribution has been exhausted. It then transitions to a nonlinear phase governed by a Bernoulli differential equation, for which a closed-form analytic solution is found, and continues to evolve until the energy sources and sinks reach equilibrium. During the nonlinear phase, the leading order distribution function is found to persistently satisfy an advection-diffusion equation in time and energy coordinates. These analytical results are shown to agree closely with nonlinear kinetic simulations and to be readily applicable in the study of resonant transport in plasmas, galaxies and viscous shear flows.",
+    "authors": [
+      "Emma G. Devin",
+      "Vin\u00edcius N. Duarte"
+    ],
+    "published": "2025-10-09T18:40:41+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.08735v1",
+    "categories": [
+      "physics.plasm-ph",
+      "astro-ph.GA",
+      "physics.flu-dyn"
+    ],
+    "collected_at": "2025-10-29T20:33:18.713886",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:55.903244",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.07875v1",
+    "title": "Ion Stochastic Heating by Low-frequency Alfv\u00e9n Wave Spectrum",
+    "abstract": "Finite-amplitude low-frequency Alfv\\'en waves are commonly found in plasma environments, such as space plasmas, and play a crucial role in ion heating. The nonlinear interaction between oblique Alfv\\'en wave spectra and ions has been studied. As the number of wave modes increases, ions are more likely to exhibit chaotic motion and experience stochastic heating. The stochastic heating threshold in the parameter space can be characterized by a single parameter, the effective relative curvature radius $P_{{eff.}}$. The results show excellent agreement with the chaotic regions identified through test particle simulations. The anisotropic characteristics of stochastic heating are explained using a uniform solid angle distribution model. The stochastic heating rate $Q=\\dot{T}$ is calculated, and its relationship with wave conditions is expressed as $Q/(\\Omega_i m_i v_A^2) = H(\\alpha) \\tilde{v}^3 \\tilde{B}_w^2 \\tilde{\\omega}_1$, where $\\alpha$ is propagating angle, $\\Omega_i$ is the gyrofrequency, $m_i$ is the ion mass, $v_A$ is the Alfv\\'en speed, $\\tilde{v}$ is the dimensionless speed, $\\tilde{B}_w$ is the dimensionless wave amplitude, and $\\tilde{\\omega}_1$ is the lowest dimensionless wave frequency.",
+    "authors": [
+      "Jingyu Peng",
+      "Jiansen He"
+    ],
+    "published": "2025-10-09T07:26:29+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.07875v1",
+    "categories": [
+      "physics.plasm-ph",
+      "physics.space-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:19.217282",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:55.903702",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.07849v1",
+    "title": "Full-wave computation of SUb-atmospheric Radio-frequency Engine (SURE)",
+    "abstract": "Near-space, which covers altitudes from 20 to 100 kilometers, has been receiving more and more attention because of its special strategic value. Airships and high-altitude balloons are two common types of low-speed vehicles that operate in this region. They can be used for jobs like monitoring, communication, and remote sensing, but they need efficient propulsion systems to work well. Earlier, we proposed a new type of electric propulsion system that can ionize the surrounding air to create plasma and produce thrust for near-space vehicles. However, in past experiments, not enough was known about how certain parameters affect power absorption and electromagnetic behavior. Therefore, in this study, we used computer simulations to examine how gas pressure (200 to 1000 Pa), input power (200 to 600 W), frequency (13.56 to 52.24 MHz), and different gas types ($Ar$, $N_2$, $H_2$, $He$) influence inductively coupled plasma inside a quartz tube. We especially focused on comparing two antenna designs: one with a single turn and one with five turns. In all the simulations, the single-turn antenna consistently absorbed power better than the five-turns antenna. Higher frequencies significantly influence both plasma power absorption and magnetic field characteristics. The optimal power absorption occurs at a filling gas pressure of 400 Pa. When varying the input power, we observed an initial decrease followed by an increasing trend, which may be related to ionization mechanisms. In comparisons among different gas types, the inelastic collision mechanisms in molecular gases lead to a notable reduction in plasma power absorption efficiency. The results from this work will help guide the design of future experiments for this electric propulsion concept.",
+    "authors": [
+      "Dingzhou Li",
+      "Lei Chang",
+      "Ye Tao"
+    ],
+    "published": "2025-10-09T06:48:28+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.07849v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:19.722727",
+    "parameters": {
+      "temperature": [
+        {
+          "type": "temperature",
+          "value": 100.0,
+          "unit": "k",
+          "context": "Near-space, which covers altitudes from 20 to 100 kilometers, has been receiving more and more attent",
+          "confidence": "medium",
+          "is_correct": true
+        }
+      ],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:57.748256",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.07502v1",
+    "title": "Does Turbulence at the Correlation Scale Regulate the Statistics of Magnetic Reconnection?",
+    "abstract": "We study the statistics of dynamical quantities associated with magnetic reconnection events embedded in a sea of strong background magnetohydrodynamic (MHD) turbulence using direct numerical simulations. We focus on the relationship of the reconnection properties to the statistics of global turbulent fields. For the first time, we show that the distribution in turbulence of reconnection rates (determined by upstream fields) is strongly correlated with the magnitude of the global turbulent magnetic field at the correlation scale. The average reconnection rates, and associated dissipation rates, during turbulence are thus much larger than predicted by using turbulent magnetic field fluctuation amplitudes at the dissipation or kinetic scales. Magnetic reconnection may therefore be playing a major role in energy dissipation in astrophysical and heliospheric turbulence.",
+    "authors": [
+      "M. B. Khan",
+      "M. A. Shay",
+      "S. Oughton",
+      "W. H. Matthaeus",
+      "C. C. Haggerty",
+      "S. Adhikari",
+      "P. A. Cassak",
+      "S. Fordin",
+      "D. O'Donnell",
+      "Y. Yang",
+      "R. Bandyopadhyay",
+      "S. Roy"
+    ],
+    "published": "2025-10-08T19:56:03+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.07502v1",
+    "categories": [
+      "physics.plasm-ph",
+      "physics.space-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:20.227049",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:57.748698",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.07314v2",
+    "title": "GyroSwin: 5D Surrogates for Gyrokinetic Plasma Turbulence Simulations",
+    "abstract": "Nuclear fusion plays a pivotal role in the quest for reliable and sustainable energy production. A major roadblock to viable fusion power is understanding plasma turbulence, which significantly impairs plasma confinement, and is vital for next-generation reactor design. Plasma turbulence is governed by the nonlinear gyrokinetic equation, which evolves a 5D distribution function over time. Due to its high computational cost, reduced-order models are often employed in practice to approximate turbulent transport of energy. However, they omit nonlinear effects unique to the full 5D dynamics. To tackle this, we introduce GyroSwin, the first scalable 5D neural surrogate that can model 5D nonlinear gyrokinetic simulations, thereby capturing the physical phenomena neglected by reduced models, while providing accurate estimates of turbulent heat transport. GyroSwin (i) extends hierarchical Vision Transformers to 5D, (ii) introduces cross-attention and integration modules for latent 3D$\\leftrightarrow$5D interactions between electrostatic potential fields and the distribution function, and (iii) performs channelwise mode separation inspired by nonlinear physics. We demonstrate that GyroSwin outperforms widely used reduced numerics on heat flux prediction, captures the turbulent energy cascade, and reduces the cost of fully resolved nonlinear gyrokinetics by three orders of magnitude while remaining physically verifiable. GyroSwin shows promising scaling laws, tested up to one billion parameters, paving the way for scalable neural surrogates for gyrokinetic simulations of plasma turbulence.",
+    "authors": [
+      "Fabian Paischer",
+      "Gianluca Galletti",
+      "William Hornsby",
+      "Paul Setinek",
+      "Lorenzo Zanisi",
+      "Naomi Carey",
+      "Stanislas Pamela",
+      "Johannes Brandstetter"
+    ],
+    "published": "2025-10-08T17:59:10+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.07314v2",
+    "categories": [
+      "physics.plasm-ph",
+      "cs.AI",
+      "stat.ML"
+    ],
+    "collected_at": "2025-10-29T20:33:20.729916",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:57.749291",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.07144v1",
+    "title": "Chaotic Motion of Ions In Finite-amplitude Low-frequency Alfv\u00e9n Waves",
+    "abstract": "Finite-amplitude low-frequency Alfv\\'en waves (AWs) are commonly found in plasma environments, such as space plasmas, and play a crucial role in ion heating. In this study, we examine the nonlinear interactions between monochromatic AWs and ions. When the wave amplitude and propagation angle lie within certain ranges, particle motion becomes chaotic. We quantify this chaotic behavior using the maximum Lyapunov exponent, $\\lambda_m$, and find that chaos depends on the particles' initial states. To characterize the proportion of chaotic particles across different initial states, we introduce the Chaos Ratio ($CR$). The threshold for the onset of global chaos is calculated as the contour line of $CR=0.01$. We analyze changes in the magnetic moment during particle motion and identify the physical image of chaos as pitch-angle scattering caused by wave-induced field line curvature (WFLC). Consequently, the condition for chaos can be expressed as the effective relative curvature radius $P_{eff.}<C$, with $C$ being a constant. We analytically determine the chaos region in the $(k_x,\\,k_z,\\,B_w)$ parameter space, and the results show excellent agreement with the global chaos threshold given by $CR=0.01$.",
+    "authors": [
+      "Jingyu Peng",
+      "Jiansen He"
+    ],
+    "published": "2025-10-08T15:45:40+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.07144v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:21.235447",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:33:57.749744",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.07042v1",
+    "title": "Experimental Results from Early Non-Planar NI-HTS Magnet Prototypes for the Columbia Stellarator eXperiment (CSX)",
+    "abstract": "The Columbia Stellarator eXperiment (CSX) is an upgrade of the Columbia Non-neutral Torus (CNT) that aims to demonstrate a university-scale, quasi-axisymmetric stellarator using high-temperature superconducting (HTS) technology at an on-axis magnetic field target of 0.5 T. Due to the strain sensitivity of ReBCO (Rare-earth Barium Copper Oxides), adapting it to non-planar stellarator geometries requires new winding, structural, and cooling strategies. We report on the results of a staged prototype program (P1, P2, P3) employing 3D-printed, sectional aluminum coil frames with winding channels, gimballed constant-tension winding mechanics, and solder potting for radial current redistribution and passive quench mitigation. The first prototype, P1 (planar elliptical, double-pancake) tested additive manufacture, sectional joining and baseline winding, achieving predicted fields at 77 K. P2 (non-planar, higher strain) was wound to 42 turns, energized at 30-40 K to produce expected magnetic fields, and studied thermal gradients and resistance at up to 4.5 kAt. Design evolution in P3 introduces concave geometry with dual double-pancakes, 200 turns, and approaches the 70 kAt target at 20 K. In parallel, sub-microhm lap joints have been developed. Together, these results de-risk manufacturing, cooling interfaces, quench management, and diagnostics, paving the way for full-size non-planar HTS stellarator coils for CSX.",
+    "authors": [
+      "D. Schmeling",
+      "M. Russo",
+      "B. T. Gebreamlak",
+      "T. J. Kiker",
+      "A. R. Skrypek",
+      "A. R. Hightower",
+      "J. Xue",
+      "S. Chen",
+      "S. Sohaib",
+      "C. Martinez",
+      "K. F. Richardson",
+      "L. Filor",
+      "S. Komatsu",
+      "L. Liu",
+      "C. Paz-Soldan"
+    ],
+    "published": "2025-10-08T14:08:08+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.07042v1",
+    "categories": [
+      "physics.ins-det",
+      "cond-mat.supr-con",
+      "physics.app-ph",
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:21.737941",
+    "parameters": {
+      "temperature": [
+        {
+          "type": "temperature",
+          "value": 77.0,
+          "unit": "K",
+          "context": "d baseline winding, achieving predicted fields at 77 K. P2 (non-planar, higher strain) was wound to 42 t",
+          "confidence": "medium",
+          "is_correct": true
+        },
+        {
+          "type": "temperature",
+          "value": 40.0,
+          "unit": "K",
+          "context": "er strain) was wound to 42 turns, energized at 30-40 K to produce expected magnetic fields, and studied",
+          "confidence": "medium",
+          "is_correct": true
+        },
+        {
+          "type": "temperature",
+          "value": 4.5,
+          "unit": "k",
+          "context": "studied thermal gradients and resistance at up to 4.5 kAt. Design evolution in P3 introduces concave geom",
+          "confidence": "medium",
+          "is_correct": true
+        },
+        {
+          "type": "temperature",
+          "value": 70.0,
+          "unit": "k",
+          "context": "al double-pancakes, 200 turns, and approaches the 70 kAt target at 20 K. In parallel, sub-microhm lap jo",
+          "confidence": "medium",
+          "is_correct": true
+        },
+        {
+          "type": "temperature",
+          "value": 20.0,
+          "unit": "K",
+          "context": "s, 200 turns, and approaches the 70 kAt target at 20 K. In parallel, sub-microhm lap joints have been de",
+          "confidence": "medium",
+          "is_correct": true
+        }
+      ],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:34:03.388030",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.06794v1",
+    "title": "3D simulations of negative streamers in CO$_2$ with admixtures of C$_4$F$_7$N",
+    "abstract": "CO$_2$ with an admixture of C$_4$F$_7$N could serve as an eco-friendly alternative to the extreme greenhouse gas SF$_6$ in high-voltage insulation. Streamer discharges in such gases are different from those in air due to the rapid conductivity decay in the streamer channels. Furthermore, since no effective photoionisation mechanism is known, we expect discharge growth to be more stochastic than in air. In this paper we investigate whether conventional fluid models can be used to simulate streamers in CO$_2$ with admixtures of C$_4$F$_7$N of 1 or 10%. We focus on 3D simulations of negative streamers. First we review cross section databases for C$_4$F$_7$N and CO$_2$. Then we compare a two-term Boltzmann solver with a Monte Carlo method to compute reaction and transport coefficients from the cross sections. Afterwards we compare 3D fluid simulations with the local field (LFA) or local energy approximation (LEA) against particle simulations. In general, we find that the results of particle and fluid models are quite similar. One difference we observe is that particle simulations are intrinsically stochastic, leading to more branching. Furthermore, the LEA model does not show better agreement with the particle simulations than the LFA model. We also discuss the effect and choice of different boundary conditions on the negative rod electrode.",
+    "authors": [
+      "Thomas J. G. Smits",
+      "Jannis Teunissen",
+      "Ute Ebert"
+    ],
+    "published": "2025-10-08T09:25:49+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.06794v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:22.242665",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:34:03.388818",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.06773v1",
+    "title": "Influence of coil geometry and coil-plasma distance on the magnetic field approximation error",
+    "abstract": "We investigate analytically two questions:   1) How does the coil geometry influence the effect of electric current noise on the induced magnetic field?   2) How does the coil-plasma distance influence our ability to control the pointwise magnetic field error in terms of the average magnetic field error?   Regarding (1), we argue that the main geometric quantities of interest are the notion of reach and the volume of the region enclosed by the coils. Our main finding is a quantitative formula which shows that the larger the reach and the smaller the volume of the region enclosed by the coils, the smaller is the influence of the electric current uncertainty on the magnetic fields.   Regarding (2), we show that the pointwise magnetic field error can be controlled (modulo an explicit constant) by the average square-magnetic field-error times $(\\text{coil-plasma distance})^{-\\frac{3}{2}}$.",
+    "authors": [
+      "Wadim Gerner"
+    ],
+    "published": "2025-10-08T08:56:24+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.06773v1",
+    "categories": [
+      "physics.plasm-ph",
+      "math-ph",
+      "math.MP"
+    ],
+    "collected_at": "2025-10-29T20:33:22.755544",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:34:03.389172",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.06510v1",
+    "title": "Influence of Solar Sails on Magnetic Field Measurements in Space Plasmas",
+    "abstract": "Solar sail technology is ready to be deployed in a satellite mission carrying a science-grade magnetometer. In preparation for such a mission, it is essential to characterize the interactions between the sail and the ambient plasma that could affect the magnetometer readings. The solar wind magnetic field is a key parameter in space weather prediction, because it governs the energy-releasing magnetic reconnection process at Earth's magnetopause. This paper investigates the influence of solar sails on the ambient magnetic field, particularly focusing on two critical electromagnetic effects: eddy currents and magnetic pileup. We find the induced eddy currents in the metallic sail can significantly perturb the local magnetic field at high frequencies. We also suggest that magnetic pileup can influence the spacecraft's environment when the sail size is comparable to the electron kinetic scales of the surrounding plasma. This research provides an initial guide for determining when sail-plasma interactions could impact magnetometer performance.",
+    "authors": [
+      "Konstantinos Horaites",
+      "Juan V. Rodriguez",
+      "Ying Liu"
+    ],
+    "published": "2025-10-07T23:04:15+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.06510v1",
+    "categories": [
+      "physics.space-ph",
+      "astro-ph.SR",
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:23.261406",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:34:03.389588",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.05954v1",
+    "title": "Kinetic collisionless model of the solar transition region and corona with spatially intermittent heating",
+    "abstract": "We develop a three-dimensional kinetic model of the solar transition region and corona in which the plasma above the chromosphere is collisionless and embedded in a uniform magnetic field. Heating occurs intermittently at discrete locations on the chromospheric surface, modeled through a surface coarse-graining procedure that produces non-thermal boundary conditions for the Vlasov equation. The resulting stationary distribution functions generate suprathermal particle populations and naturally lead to a temperature inversion via gravitational filtering, without any local coronal heating. The model reproduces realistic temperature and density profiles with a thin transition region and a hot corona, consistent with solar observations. These results demonstrate that the spatial intermittency of heating at the chromospheric interface is sufficient to account for the formation of the transition region and the high-temperature corona.",
+    "authors": [
+      "Luca Barbieri",
+      "Pascal D\u00e9moulin"
+    ],
+    "published": "2025-10-07T14:11:19+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.05954v1",
+    "categories": [
+      "astro-ph.SR",
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:23.764594",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:34:03.389945",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.05912v1",
+    "title": "Investigating the Lower Hybrid Drift Instability in Reconnecting Current Sheets Using a Hybrid Kinetic Model (ssV Code)",
+    "abstract": "We investigate the nonlinear evolution of the lower hybrid drift instability (LHDI) in reconnecting current sheets using a hybrid kinetic simulation model implemented in the Super Simple Vlasov (ssV) code. The model treats ions kinetically and electrons with a drift-kinetic approximation, solving self-consistent coupled electrostatic and electromagnetic fields. A parametric study explores the effects of mass ratio, temperature ratio, plasma beta, and sheet thickness. In electrostatic cases, LHDI remains localized at the sheet edges, flattening density gradients. In electromagnetic regimes, turbulence induced by LHDI generates magnetic perturbations that kink the current sheet and enhance anomalous resistivity. These dynamics may facilitate fast magnetic reconnection under certain conditions. Our results bridge prior theoretical predictions and simulations, emphasizing the importance of kinetic instabilities in reconnection physics.",
+    "authors": [
+      "S. Thatikonda",
+      "F. N. De Oliveira-Lopes",
+      "A. Mustonen",
+      "K. Pommois",
+      "D. Told",
+      "F. Jenko"
+    ],
+    "published": "2025-10-07T13:25:24+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.05912v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:24.266495",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:34:03.390306",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.05873v1",
+    "title": "Exploring Complexity Measures for Analysis of Solar Wind Structures and Streams",
+    "abstract": "In this paper we use statistical complexity and information theory metrics to study structure within solar wind time series. We explore this using entropy-complexity and information planes, where the measure for entropy is formed using either permutation entropy or the degree distribution of a horizontal visibility graph (HVG). The entropy is then compared to the Jensen complexity (Jensen-Shannon complexity plane) and Fisher information measure (Fisher-Shannon information plane), formed both from permutations and the HVG approach. Additionally we characterise the solar wind time series by studying the properties of the HVG degree distribution. Four types of solar wind intervals have been analysed, namely fast streams, slow streams, magnetic clouds and sheath regions, all of which have distinct origins and interplanetary characteristics. Our results show that, overall, different metrics give similar results but Fisher-Shannon, which gives a more local measure of complexity, leads to a larger spread of values in the entropy-complexity plane. Magnetic cloud intervals stood out in all approaches, in particular when analysing the magnetic field magnitude. Differences between solar wind types (except for magnetic clouds) were typically more distinct for larger time lags, suggesting universality in fluctuations for small scales. The fluctuations within the solar wind time series were generally found to be stochastic, in agreement with previous studies. The use of information theory tools in the analysis of solar wind time series can help to identify structures and provide insight into their origin and formation.",
+    "authors": [
+      "Venla Koikkalainen",
+      "Emilia Kilpua",
+      "Simon Good",
+      "Adnane Osmane"
+    ],
+    "published": "2025-10-07T12:40:54+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.05873v1",
+    "categories": [
+      "astro-ph.SR",
+      "physics.plasm-ph",
+      "physics.space-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:24.771834",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:34:03.390908",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.05656v1",
+    "title": "Deposition rate and energy to substrate in chopped and standard HiPIMS: identifying optimal pulse parameters",
+    "abstract": "High-Power Impulse Magnetron Sputtering (HiPIMS) offers higher ionized flux fractions at the cost of lower deposition rates compared to conventional DCMS. A fine optimization of the deposition conditions is crucial for specific applications. Chopped or multi-pulse HiPIMS (segmenting pulses into shorter micropulses) has been proposed to mitigate ion back-attraction and promote working gas recovery. This study investigates how micropulse length, delay time between segments, and magnetic field strength influence energy flux, deposition rate, and ionized flux fraction in chopped and standard HiPIMS. These quantities are evaluated by passive thermal probe, biasable QCM and mass spectrometer measurements at the substrate position. Deposition-averaged and pulse-averaged power is kept constant for all conditions to facilitate meaningful comparison. Results indicate that chopping the HiPIMS pulse consistently leads to higher energy flux and total deposition rate compared to standard HiPIMS at the same total pulse length, primarily due to increased ion flux. A weaker unbalanced magnetic field configuration enhances deposition rates and ion transport. In chopped HiPIMS, increasing micropulse length decreased energy flux and deposition rates, whereas increasing the delay time between micropulses substantially improved these parameters. Importantly, standard HiPIMS, which operated at higher frequencies and short pulse lengths, demonstrated superior performance (with higher total energy and particle fluxes) than chopped HiPIMS when compared at similar short pulse durations. This suggests that consistent short pulse durations and sufficient off-times for complete gas refill are paramount for maximizing ion fluxes and deposition rates.",
+    "authors": [
+      "Mina Farahani",
+      "Ji\u0159\u00ed \u010capek",
+      "Tom\u00e1\u0161 Koz\u00e1k"
+    ],
+    "published": "2025-10-07T08:06:15+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.05656v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:25.276867",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:34:03.391546",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.05287v1",
+    "title": "Difference in Neoclassical Edge Flows Between Strongly Negative and Positive Triangularities in the XGC Gyrokinetic Simulation",
+    "abstract": "The neoclassical baseline study of a strongly negative triangularity (NT) plasma and the corresponding positive triangularity plasma is performed using the edge-specialized, total-f gyrokinetic code XGC. A DIII-D-like plasma is used, based on the negative triangularity discharge of DIII-D \\#193793. An artificial positive triangularity (PT) equilibrium has been constructed to compare the edge rotation physics at the same triangularity strength, but with opposite sign, while keeping the same elongation and other geometric parameters. Carbon(+6) ions are added to the deuterium plasma at an experimentally relevant level. By using the experimental profile of carbon toroidal rotation profile as an input, XGC finds that the deuteron rotation is significantly different from the carbon rotation at the inboard and outboard midplanes, mostly caused by the difference in the Pfirsch-Schluter rotation. More importantly, significant difference in the X-point orbit loss physics, thus the rotation source, is found between the positive and negative triangularity equilibrium models. However, it is also found that the agreement between the present neoclassical simulation and the experimental NT data is validated only within the middle of pedestal slope, indicating the importance of edge turbulence. This study could establish baseline for the multiphysics, multiscale studies that include turbulence of negative triangularity plasmas.",
+    "authors": [
+      "S. Ku",
+      "C. S. Chang",
+      "R. Hager",
+      "L. W. Schmitz",
+      "A. O. Nelson"
+    ],
+    "published": "2025-10-06T18:55:01+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.05287v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:25.779344",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:34:03.392096",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.05274v1",
+    "title": "A note on thermal effects in non-linear models for plasma-based acceleration",
+    "abstract": "We investigate the impact of a non-negligible background temperature on relativistic plasma wakefields generated when a beam of charged particles passes through a neutral plasma at rest. Our analysis focuses on the blowout regime, where the plasma response is highly non-linear: plasma electrons are radially blown out and expelled away from the propagation axis of the beam particles, creating a region (bubble) of ions without electrons. Our study builds upon earlier investigations for non-linear models of plasma wakefields developed neglecting plasma temperature. In the presence of a non-zero background temperature, we characterize the bubble in terms of its transversal and longitudinal sizes as a function of the temperature. Model predictions and parametrizations are studied in combination with PIC simulations, and correctly reproduce the temperature induced contraction of both the longitudinal and transverse bubble sizes.",
+    "authors": [
+      "D. Simeoni",
+      "G. Parise",
+      "A. R. Rossi",
+      "A. Frazzitta",
+      "F. Guglietta",
+      "M. Sbragaglia"
+    ],
+    "published": "2025-10-06T18:42:15+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.05274v1",
+    "categories": [
+      "physics.plasm-ph",
+      "physics.acc-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:26.284840",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:34:03.392439",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.05084v1",
+    "title": "Electrospray Thruster Plume Impingement on CubeSat Solar Arrays: A Particle-Tracking Study",
+    "abstract": "Electrospray thrusters are emerging as a leading propulsion technology for CubeSats, offering high specific impulse ($I_{sp} > 1000$ s) and low power requirements. However, the divergent ion plumes can impinge on spacecraft surfaces, particularly body-mounted solar arrays, causing contamination and thrust efficiency losses. This study presents a validated particle-tracking simulation to quantify the effects of thruster placement on thrust efficiency and surface contamination for 1U, 3U, and 6U CubeSats. The plume model employs a cosine power distribution ($k=1.8$) with half-angle $46^\\circ$, validated against experimental data with errors below 7%. Results show that thrust efficiency ranges from 53.6% for rear-mounted thrusters on 3U body-mounted configurations to 100% for side-mounted configurations with deployable arrays. CubeSat size significantly affects impingement: 3U platforms experience 46.4% contamination with rear-mounted thrusters compared to 16.6% for 1U. Deployable solar arrays reduce contamination by 77% compared to body-mounted arrays, while side-mounted thrusters eliminate impingement entirely at the cost of only 1.6% efficiency loss. Corner-mounted configurations at $30^\\circ$ cant provide intermediate performance with 88.9% efficiency and 11.1% contamination. These quantitative design guidelines enable mission planners to optimize thruster integration based on power budget and propellant mass constraints, with statistical uncertainty below 0.15% across all configurations.",
+    "authors": [
+      "Ethan Kahn"
+    ],
+    "published": "2025-10-06T17:51:46+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.05084v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:26.786772",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:34:03.393017",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.05058v1",
+    "title": "Pushing the Frontiers of Light: Magnetized Plasma Lenses and Chirp Tailoring for Extreme Intensities",
+    "abstract": "In this work, an innovative scheme is proposed that exploits the response of magnetized plasmas to realize a refractive index exceeding unity for right circularly polarized (RCP) waves. Using two- and three-dimensional Particle-in-Cell (PIC) simulations with the OSIRIS 4.0 framework, it is shown that a shaped magnetized plasma lens (MPL) can act as a glass/solid-state-based convex lens, amplifying laser intensity via transverse focusing. Moreover, by integrating three key ingredients, a tailored plasma lens geometry, a spatially structured strong magnetic field, and a suitably chirped laser pulse, simultaneous focusing and compression of the pulse has been achieved. The simulations reveal up to a 100-fold increase in laser intensity, enabled by the combined action of the MPL and the chirped pulse profile. With recent advances in high-field magnet technology, shaped plasma targets, and controlled chirped laser systems, this approach offers a promising pathway toward experimentally reaching extreme intensities.",
+    "authors": [
+      "Trishul Dhalia",
+      "Rohit Juneja",
+      "Amita Das"
+    ],
+    "published": "2025-10-06T17:37:32+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.05058v1",
+    "categories": [
+      "physics.plasm-ph",
+      "physics.optics"
+    ],
+    "collected_at": "2025-10-29T20:33:27.291995",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:34:03.393394",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.04658v1",
+    "title": "Numerical Demonstration of Kolmogorov Scaling in Magnetohydrodynamic Turbulence",
+    "abstract": "The two leading models of isotropic magnetohydrodynamic (MHD) turbulence have competing predictions: $k^{-5/3}$ (Kolmogorov) and $k^{-3/2}$ (Iroshnikov-Kraichnan) scalings. This paper identifies the valid MHD turbulence model using high-resolution numerical and diagnostics-structure functions, intermittency exponents, and energy spectra and fluxes of imbalance MHD. The energy spectra of our forced MHD simulations on $8192^2$, $4096^2$, $1024^3$, and $512^3$ support Kolmogorov's k^{-5/3} spectrum over Iroshnikov-Kraichnan's k^{-3/2} spectrum, but the difference in the spectral exponents is small. However, the numerically computed third-order structure functions and intermittency exponents support Kolmogorov scaling in both two and three dimensions. Also, the energy fluxes of the imbalance MHD follow the predictions of Kolmogorov scaling. These results would help in better modelling of solar wind, solar corona, and dynamos.",
+    "authors": [
+      "Manthan Verma",
+      "Abhishek K. Jha",
+      "Shashwat Nirgudkar",
+      "Mahendra K. Verma"
+    ],
+    "published": "2025-10-06T10:02:52+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.04658v1",
+    "categories": [
+      "physics.plasm-ph",
+      "physics.flu-dyn"
+    ],
+    "collected_at": "2025-10-29T20:33:27.805923",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:34:03.393763",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.04385v2",
+    "title": "Structure-Preserving MHD-Driftkinetic Discretization for Wave-Particle Interactions",
+    "abstract": "We present a structure-preserving discretization of the hybrid magnetohydrodynamics (MHD)-driftkinetic system for simulations of low-frequency wave-particle interactions. The model equations are derived from a variational principle, assuring energetically consistent couplings between MHD fluids and driftkinetic particles. The spatial discretization is based on a finite-element-exterior-calculus (FEEC) framework for the MHD and a particle-in-cell (PIC) method for the driftkinetic. A key feature of the scheme is the inclusion of the non-quadratic particle magnetic moment energy term in the Hamiltonian, which is introduced by the guiding-center approximation. The resulting discrete Hamiltonian structure naturally organizes the dynamics into skew-symmetric subsystems, enabling balanced energy exchange. To handle the non-quadratic energy term, we develop energy-preserving time integrators based on discrete gradient methods. The algorithm is implemented in the open-source Python package $\\texttt{STRUPHY}$. Numerical experiments confirm the energy-conserving property of the scheme and demonstrate the capability to simulate energetic particles (EP) induced excitation of toroidal Alfv\\'en eigenmodes (TAE) without artificial dissipation or mode filtering. This capability highlights the potential of structure-preserving schemes for high-fidelity simulations of hybrid systems.",
+    "authors": [
+      "Byung Kyu Na",
+      "Stefan Possanner",
+      "Xin Wang"
+    ],
+    "published": "2025-10-05T22:34:28+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.04385v2",
+    "categories": [
+      "physics.comp-ph",
+      "cs.NA",
+      "math.NA",
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:28.311256",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:34:03.394285",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.04356v1",
+    "title": "Non-local transport in Radiation-Hydrodynamics codes for ICF by efficient coupling to an external Vlasov-Fokker-Planck code",
+    "abstract": "Accurately incorporating non-local transport into radiation-hydrodynamics codes, and indeed any fluid system, has long been elusive. To date, a simplified and accurate theory that can be easily integrated has not been available. This limitation affects modeling in inertial confinement fusion and magnetic confinement fusion systems, among others, where non-local transport is well-known to be present. Here, we present a coupling methodology between a full Vlasov-Fokker-Planck (VFP) electron kinetic code and radiation-hydrodynamics (rad-hydro) codes. The VFP code is used to adjust native electron transport in the rad-hydro code, thus enabling improved transport without the need to integrate a full electron VFP solver into the rad-hydro code. This approach necessitates only occasional invocation of the VFP code, reducing computational intensity compared to following the dynamic evolution entirely with the VFP code on fluid time scales. We illustrate that the methodology is more accurate than other simplified methods in thermal decay systems relevant to inertial confinement fusion and can replicate standard theoretical results with high accuracy.",
+    "authors": [
+      "Abetharan Antony",
+      "Robert Kingham",
+      "Stefan Mijin",
+      "Marty Marinak"
+    ],
+    "published": "2025-10-05T20:46:08+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.04356v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:28.816597",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:34:03.394750",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.04298v1",
+    "title": "A Particle-in-Cell Simulation Framework for Thomson Scattering Analysis in Inertial Confinement Fusion",
+    "abstract": "In inertial confinement fusion (ICF), Thomson scattering (TS) is a widely used diagnostic technique for probing plasma conditions. We present a first-principles numerical approach to obtaining scattered light signals of ion acoustic features with high resolution in angle and frequency space using particle-in-cell simulations under typical ICF conditions. Our method demonstrates good agreement with existing theories for thermal collective TS. In the super-thermal collective regime, the results align with theory when the driven plasma modes are well-matched in wave vectors to the probe and collecting beams. Moreover, we also find that TS signals can remain significant even under imperfect wave-vector matching-a result that contradicts the conventional expectation that the TS spectrum strictly follows the plasma density spectrum. We attribute this discrepancy to a beating wave mechanism arising from the interaction between the probe beam and driven plasma density modulations. Our work thus provides a practical framework for interpreting TS signals from driven ion modes, a common yet complex feature in ICF plasmas.",
+    "authors": [
+      "Ziang Zhu",
+      "Yifan Liu",
+      "Jun Li",
+      "Han Wen",
+      "Shihui Cao",
+      "Yin Shi",
+      "Qing Jia",
+      "Chaoxin Chen",
+      "Yaoyuan Liu",
+      "Hang Zhao",
+      "Tao Gong",
+      "Zhichao Li",
+      "Dong Yang",
+      "Jian Zheng"
+    ],
+    "published": "2025-10-05T17:25:25+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.04298v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:29.317127",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:34:03.395322",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.03960v1",
+    "title": "An Explicit Energy-Conserving Particle Method for the Vlasov-Fokker-Planck Equation",
+    "abstract": "We propose an explicit particle method for the Vlasov-Fokker-Planck equation that conserves energy at the fully discrete level. The method features two key components: a deterministic and conservative particle discretization for the nonlinear Fokker-Planck operator (also known as the Lenard-Bernstein or Dougherty operator), and a second-order explicit time integrator that ensures energy conservation through an accuracy-justifiable correction. We validate the method on several plasma benchmarks, including collisional Landau damping and two-stream instability, demonstrating its effectiveness.",
+    "authors": [
+      "Jiyoung Yoo",
+      "Jingwei Hu",
+      "Lee F. Ricketson"
+    ],
+    "published": "2025-10-04T22:03:14+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.03960v1",
+    "categories": [
+      "physics.plasm-ph",
+      "math-ph",
+      "math.MP"
+    ],
+    "collected_at": "2025-10-29T20:33:29.822488",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:34:03.395613",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.03414v1",
+    "title": "Spectroscopic measurements of graphite electrode erosion on the ZaP-HD sheared-flow-stabilized Z-pinch device",
+    "abstract": "The ionizations per photon, or S/XB, method uses spectroscopic measurements of radiating impurity ions to determine the influx from a solid surface. It is highly useful as a non-perturbing, in-situ measure of the gross erosion flux of plasma-facing components (PFCs). In sheared-flow-stabilized (SFS) Z-pinch devices, the electrode supplies the plasma current and directly contacts the core Z-pinch plasma. Electrode erosion due to the large particle and heat fluxes affects electrode durability, which is an important factor in existing and future devices. An improved understanding of these plasma-electrode interactions is required, in particular as energy density increases. Experiments on the ZaP-HD device investigate erosion of the graphite electrode by applying the S/XB method for C-III emission at 229.7 nm. The S/XB coefficients are determined from electron density and temperature profiles obtained from Digital Holographic Interferometry (DHI) measurements. An approach for expanding these profiles to represent plasma contacting the electrode is described. In both cases, the measured erosion fluxes are on the order of 10$^{30}$-10$^{31}$ atoms m$^{-2}$s$^{-1}$. These values are significantly larger than the expected erosion flux due to physical sputtering of H$^+$ ions on carbon, but are comparable to theoretical sublimation fluxes. This suggests that the source of carbon erosion flux is primarily from sublimation as opposed to sputtering. The dominance of sublimation over sputtering processes implies a difference in energy of the eroded neutrals which may provide insight on redeposition and net erosion behavior.",
+    "authors": [
+      "Amierul Aqil Khairi",
+      "Elyse Lian",
+      "Uri Shumlak"
+    ],
+    "published": "2025-10-03T18:23:16+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.03414v1",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:30.323927",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:34:03.396200",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.03388v1",
+    "title": "Mixed Stochastic-Deterministic Density Functional Theoretic Decomposition of Kubo-Greenwood Conductivities in the Projector Augmented Wave Formalism",
+    "abstract": "Pairing the accuracy of Kohn-Sham density-functional framework with the efficiency of a stochastic algorithmic approach, mixed stochastic-deterministic Density Functional Theory (mDFT) achieves a favorable computational scaling with system sizes and electronic temperatures. We employ the recently developed mDFT formalism to investigate the dynamic charge-transport properties of systems in the warm dense matter regime. The optical conductivity spectra are computed for single- and multi- component mixtures of carbon, hydrogen, and beryllium using two complementary approaches: Kubo-Greenwood in the mDFT picture and real-time Time-Dependent mDFT. We further devise a decomposition of the Onsager coefficients leading up to the Kubo-Greenwood spectra to exhibit contributions from the deterministic, stochastic, and mixed electronic state transitions at different incident photon energies.",
+    "authors": [
+      "Vidushi Sharma",
+      "Lee A. Collins",
+      "Alexander J. White"
+    ],
+    "published": "2025-10-03T17:57:29+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.03388v1",
+    "categories": [
+      "physics.chem-ph",
+      "astro-ph.HE",
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph",
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:30.827916",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:34:03.396488",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.03141v1",
+    "title": "Nonmodal growth and optimal perturbations in magnetohydrodynamic shear flows",
+    "abstract": "In astrophysical shear flows, the Kelvin-Helmholtz (KH) instability is generally suppressed by magnetic tension provided a sufficiently strong streamwise magnetic field. This is often used to infer upper (or lower) bounds on field strengths in systems where shear-driven fluctuations are (or are not) observed, on the basis that fluctuations cannot grow in the absence of linear instability. On the contrary, by calculating the maximum growth that small-amplitude perturbations can achieve in finite time for such a system, we show that perturbations can grow in energy by orders of magnitude even when the flow is sub-Alfv\\'enic, suggesting that shear-driven turbulence is possible even in the presence of strong magnetic fields, and challenging inferences from the observed presence or absence of shear-driven fluctuations. We further show that magnetic fields introduce additional nonmodal growth mechanisms relative to the hydrodynamic case, and that 2D simulations miss key aspects of these growth mechanisms.",
+    "authors": [
+      "Adrian E. Fraser",
+      "Alexis K. Kaminski",
+      "Jeffrey S. Oishi"
+    ],
+    "published": "2025-10-03T16:11:36+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.03141v1",
+    "categories": [
+      "physics.flu-dyn",
+      "astro-ph.SR",
+      "physics.plasm-ph",
+      "physics.space-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:31.333293",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:34:03.396795",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.02955v2",
+    "title": "On the existence of fibered three-dimensional perfect fluid equilibria without continuous Euclidean symmetry",
+    "abstract": "Following Lortz, we construct a family of smooth steady states of the ideal, incompressible Euler equation in three dimensions that possess no continuous Euclidean symmetry. As in Lortz, they do possess a planar reflection symmetry and, as such, all the orbits of the velocity are closed. Different from Lortz, our construction has a discrete m-fold symmetry and is foliated by invariant cylindrical level sets of a non-degenerate Bernoulli pressure. Such examples narrow the scope of validity of Grad's conjecture that the only solutions with a continuous symmetry can be fibered by pressure surfaces.",
+    "authors": [
+      "Theodore D. Drivas",
+      "Tarek M. Elgindi",
+      "Daniel Ginsberg"
+    ],
+    "published": "2025-10-03T12:47:27+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.02955v2",
+    "categories": [
+      "math.AP",
+      "physics.flu-dyn",
+      "physics.plasm-ph",
+      "35Q31, 76B03, 76W05"
+    ],
+    "collected_at": "2025-10-29T20:33:31.835636",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:34:03.397002",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "id": "2510.02659v1",
+    "title": "Holographic Gaseous Lenses for High-Power Lasers",
+    "abstract": "The capabilities of the world's highest energy and peak-power pulsed lasers are limited by optical damage, and further advances in high-intensity laser science will require optics that are substantially more robust than existing components. We describe here the experimental demonstration of off-axis diffractive gaseous lenses capable of withstanding extreme laser fluence and immune to cumulative damage. We used less than 8 mJ of energy from interfering ultraviolet laser pulses to holographically write millimeter-scale diffractive gas lenses into an ozone, oxygen, and carbon-dioxide gas mixture. These lenses allowed us to focus, defocus, and collimate 532-nm nanosecond laser pulses with up to 210 mJ of energy at efficiencies above 50% and fluences up to 35 J/cm$^2$. We also show that the gas lenses have sufficient bandwidth to efficiently diffract 35-fs 800-nm pulses and that beam pointing, divergence, and diffraction efficiency are stable while operating at 10 Hz. These diffractive lenses are simple holograms, and the principles demonstrated here could be extended to other types of optics, suggesting that gaseous optics may enable arbitrary, damage-resistant manipulation of intense light for next-generation ultra-high-power lasers.",
+    "authors": [
+      "Devdigvijay Singh",
+      "Ke Ou",
+      "Sida Cao",
+      "Victor M. Perez-Ramirez",
+      "Harsha Rajesh",
+      "Debolina Chakraborty",
+      "Caleb Redshaw",
+      "Pelin Dedeler",
+      "Albertine Oudin",
+      "Michelle M. Wang",
+      "Julia M. Mikhailova",
+      "Livia Lancia",
+      "Caterina Riconda",
+      "Pierre Michel",
+      "Matthew R. Edwards"
+    ],
+    "published": "2025-10-03T01:36:53+00:00",
+    "pdf_url": "http://arxiv.org/pdf/2510.02659v1",
+    "categories": [
+      "physics.optics",
+      "physics.plasm-ph"
+    ],
+    "collected_at": "2025-10-29T20:33:32.336404",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-29T20:34:03.397393",
+    "extraction_method": "regex+llm"
+  }
+]

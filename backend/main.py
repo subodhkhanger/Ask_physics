@@ -119,7 +119,9 @@ async def list_papers(
                 arxiv_id=binding.get('arxivId', {}).get('value', ''),
                 title=binding.get('title', {}).get('value', ''),
                 authors=binding.get('authors', {}).get('value'),
-                publication_date=binding.get('publicationDate', {}).get('value')
+                abstract=binding.get('abstract', {}).get('value'),
+                publication_date=binding.get('publicationDate', {}).get('value'),
+                pdf_url=binding.get('pdfUrl', {}).get('value')
             )
             papers.append(paper)
 
