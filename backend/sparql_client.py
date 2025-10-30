@@ -5,8 +5,12 @@ SPARQL client for querying the Fuseki triple store.
 import requests
 from requests.auth import HTTPBasicAuth
 from typing import Dict, List, Any, Optional
-from .config import settings
 import logging
+
+try:
+    from .config import settings
+except ImportError:
+    from config import settings
 
 logger = logging.getLogger(__name__)
 

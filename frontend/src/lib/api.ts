@@ -76,6 +76,34 @@ export interface HealthCheck {
   version: string;
 }
 
+// Natural Language Query Types
+export interface ParameterRange {
+  type: string;
+  min_value?: number;
+  max_value?: number;
+  unit: string;
+  normalized_min?: number;
+  normalized_max?: number;
+}
+
+export interface ParsedQuery {
+  intent: string;
+  parameters: Record<string, ParameterRange>;
+  keywords: string[];
+  temporal_constraint?: string;
+  confidence: number;
+  original_query: string;
+  raw_llm_response?: string;
+}
+
+export interface QueryResult {
+  parsed_query: ParsedQuery;
+  papers: Paper[];
+  total_results: number;
+  generated_sparql?: string;
+  execution_time_ms?: number;
+}
+
 // API functions
 export const ApiService = {
   // Health
@@ -141,6 +169,20 @@ export const ApiService = {
   // Statistics
   async getStatistics(): Promise<Statistics> {
     const { data } = await api.get<Statistics>('/statistics');
+    return data;
+  },
+
+  // Natural Language Query
+  async naturalLanguageQuery(
+    query: string,
+    limit = 20,
+    includeSparql = false
+  ): Promise<QueryResult> {
+    const { data } = await api.post<QueryResult>('/query/natural-language', {
+      query,
+      limit,
+      include_sparql: includeSparql,
+    });
     return data;
   },
 };

@@ -8,17 +8,34 @@ parameters extracted from scientific literature and stored in an RDF knowledge g
 from fastapi import FastAPI, HTTPException, Query as QueryParam, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
+from pydantic import BaseModel, Field
 from typing import Optional, List
 import logging
 
-from .config import settings
-from .sparql_client import SPARQLClient, Queries
-from .models import (
-    Paper, PaperList, TemperatureMeasurement, DensityMeasurement,
-    TemperatureStatistics, DensityStatistics, Statistics,
-    HealthCheck, ErrorResponse
-)
-from .cache import cache_response
+try:
+    # Try relative imports first (when used as a package)
+    from .config import settings
+    from .sparql_client import SPARQLClient, Queries
+    from .models import (
+        Paper, PaperList, TemperatureMeasurement, DensityMeasurement,
+        TemperatureStatistics, DensityStatistics, Statistics,
+        HealthCheck, ErrorResponse
+    )
+    from .cache import cache_response
+    from .nlp_query_processor import NLPQueryProcessor, ParsedQuery
+    from .query_builder import DynamicSPARQLBuilder
+except ImportError:
+    # Fall back to absolute imports (when run directly)
+    from config import settings
+    from sparql_client import SPARQLClient, Queries
+    from models import (
+        Paper, PaperList, TemperatureMeasurement, DensityMeasurement,
+        TemperatureStatistics, DensityStatistics, Statistics,
+        HealthCheck, ErrorResponse
+    )
+    from cache import cache_response
+    from nlp_query_processor import NLPQueryProcessor, ParsedQuery
+    from query_builder import DynamicSPARQLBuilder
 
 # Configure logging
 logging.basicConfig(
@@ -48,6 +65,12 @@ app.add_middleware(
 
 # Initialize SPARQL client
 sparql_client = SPARQLClient()
+
+# Initialize NLP query processor
+nlp_processor = NLPQueryProcessor()
+
+# Initialize SPARQL query builder
+query_builder = DynamicSPARQLBuilder()
 
 
 # ============================================
@@ -457,6 +480,106 @@ async def get_statistics(
     except Exception as e:
         logger.error(f"Failed to get statistics: {e}")
         raise HTTPException(status_code=500, detail=str(e))
+
+
+# ============================================
+# Unified Natural Language Query
+# ============================================
+
+class NaturalLanguageQuery(BaseModel):
+    """Natural language query request."""
+    query: str = Field(..., min_length=3, description="Natural language query")
+    limit: int = Field(20, ge=1, le=100, description="Maximum results")
+    include_sparql: bool = Field(False, description="Include generated SPARQL in response")
+
+
+class QueryResult(BaseModel):
+    """Unified query result."""
+    parsed_query: ParsedQuery
+    papers: List[Paper]
+    total_results: int
+    generated_sparql: Optional[str] = None
+    execution_time_ms: Optional[float] = None
+
+
+@app.post(
+    "/query/natural-language",
+    response_model=QueryResult,
+    tags=["Query"],
+    summary="Natural language query interface"
+)
+async def natural_language_query(
+    request: NaturalLanguageQuery,
+    client: SPARQLClient = Depends(get_sparql_client)
+):
+    """
+    Process natural language queries and return matching papers.
+
+    **Example queries:**
+    - "Show me recent research on electron density between 10^16 and 10^18 m^-3"
+    - "Find papers with temperature above 10 keV"
+    - "Recent tokamak experiments"
+    - "Papers with both high temperature and high density"
+
+    **How it works:**
+    1. Parses natural language using LLM
+    2. Extracts parameters (temp/density ranges, keywords, dates)
+    3. Generates SPARQL query dynamically
+    4. Returns matching papers with context
+
+    **Returns:**
+    - Parsed query showing what was understood
+    - List of matching papers
+    - Optional: Generated SPARQL query (for debugging)
+    """
+    import time
+    start_time = time.time()
+
+    try:
+        # Step 1: Parse natural language query
+        logger.info(f"Processing query: {request.query}")
+        parsed = nlp_processor.parse(request.query)
+        logger.info(f"Parsed parameters: {parsed.parameters}")
+
+        # Step 2: Build SPARQL query
+        if parsed.intent == "statistics":
+            sparql_query = query_builder.build_statistics_query(parsed)
+        else:
+            sparql_query = query_builder.build_search_query(parsed, limit=request.limit)
+
+        logger.debug(f"Generated SPARQL:\n{sparql_query}")
+
+        # Step 3: Execute query
+        results = client.query(sparql_query)
+        bindings = client.get_bindings(results)
+
+        # Step 4: Format results
+        papers = []
+        for binding in bindings:
+            paper = Paper(
+                arxiv_id=binding.get('paper', {}).get('value', '').split('/')[-1],
+                title=binding.get('title', {}).get('value', ''),
+                authors=binding.get('authors', {}).get('value'),
+                publication_date=binding.get('publicationDate', {}).get('value')
+            )
+            papers.append(paper)
+
+        execution_time = (time.time() - start_time) * 1000  # Convert to ms
+
+        return QueryResult(
+            parsed_query=parsed,
+            papers=papers,
+            total_results=len(papers),
+            generated_sparql=sparql_query if request.include_sparql else None,
+            execution_time_ms=round(execution_time, 2)
+        )
+
+    except Exception as e:
+        logger.error(f"Query processing failed: {e}", exc_info=True)
+        raise HTTPException(
+            status_code=500,
+            detail=f"Failed to process query: {str(e)}"
+        )
 
 
 # ============================================

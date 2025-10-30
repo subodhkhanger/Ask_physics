@@ -9,7 +9,10 @@ import json
 from cachetools import TTLCache
 import logging
 
-from .config import settings
+try:
+    from .config import settings
+except ImportError:
+    from config import settings
 
 logger = logging.getLogger(__name__)
 

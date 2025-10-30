@@ -1,6 +1,8 @@
 import { useQuery } from '@tanstack/react-query';
 import { Link } from 'react-router-dom';
 import { ApiService } from '../lib/api';
+import { UnifiedSearch } from '../components/UnifiedSearch';
+import '../components/UnifiedSearch.css';
 
 export default function HomePage() {
   const { data: stats, isLoading } = useQuery({
@@ -21,10 +23,12 @@ export default function HomePage() {
           Plasma Physics Literature Search
         </h1>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-          Search and explore plasma physics experimental parameters from scientific literature.
-          Query temperature, density, and other measurements extracted from arXiv papers.
+          Ask questions in natural language and find research papers with specific plasma parameters.
         </p>
       </div>
+
+      {/* Unified Search Component */}
+      <UnifiedSearch />
 
       {/* Status Indicator */}
       {health && (
