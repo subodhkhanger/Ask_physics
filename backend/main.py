@@ -136,17 +136,22 @@ async def list_papers(
         results = client.query(papers_query)
         bindings = client.get_bindings(results)
 
-        papers = []
+        # Deduplicate papers by arxiv_id
+        papers_dict = {}
         for binding in bindings:
-            paper = Paper(
-                arxiv_id=binding.get('arxivId', {}).get('value', ''),
-                title=binding.get('title', {}).get('value', ''),
-                authors=binding.get('authors', {}).get('value'),
-                abstract=binding.get('abstract', {}).get('value'),
-                publication_date=binding.get('publicationDate', {}).get('value'),
-                pdf_url=binding.get('pdfUrl', {}).get('value')
-            )
-            papers.append(paper)
+            arxiv_id = binding.get('arxivId', {}).get('value', '')
+            if arxiv_id not in papers_dict:
+                paper = Paper(
+                    arxiv_id=arxiv_id,
+                    title=binding.get('title', {}).get('value', ''),
+                    authors=binding.get('authors', {}).get('value'),
+                    abstract=binding.get('abstract', {}).get('value'),
+                    publication_date=binding.get('publicationDate', {}).get('value'),
+                    pdf_url=binding.get('pdfUrl', {}).get('value')
+                )
+                papers_dict[arxiv_id] = paper
+
+        papers = list(papers_dict.values())
 
         return PaperList(total=total, count=len(papers), offset=offset, papers=papers)
 
@@ -224,16 +229,19 @@ async def search_papers(
         results = client.query(query)
         bindings = client.get_bindings(results)
 
-        papers = []
+        # Deduplicate papers by arxiv_id
+        papers_dict = {}
         for binding in bindings:
-            paper = Paper(
-                arxiv_id=binding.get('arxivId', {}).get('value', ''),
-                title=binding.get('title', {}).get('value', ''),
-                authors=binding.get('authors', {}).get('value')
-            )
-            papers.append(paper)
+            arxiv_id = binding.get('arxivId', {}).get('value', '')
+            if arxiv_id not in papers_dict:
+                paper = Paper(
+                    arxiv_id=arxiv_id,
+                    title=binding.get('title', {}).get('value', ''),
+                    authors=binding.get('authors', {}).get('value')
+                )
+                papers_dict[arxiv_id] = paper
 
-        return papers
+        return list(papers_dict.values())
 
     except Exception as e:
         logger.error(f"Search failed for '{q}': {e}")
@@ -553,16 +561,24 @@ async def natural_language_query(
         results = client.query(sparql_query)
         bindings = client.get_bindings(results)
 
-        # Step 4: Format results
-        papers = []
+        # Step 4: Format results and deduplicate by arxiv_id
+        papers_dict = {}  # Use dict to deduplicate by arxiv_id
         for binding in bindings:
+            arxiv_id = binding.get('paper', {}).get('value', '').split('/')[-1]
+
+            # Skip if we've already added this paper
+            if arxiv_id in papers_dict:
+                continue
+
             paper = Paper(
-                arxiv_id=binding.get('paper', {}).get('value', '').split('/')[-1],
+                arxiv_id=arxiv_id,
                 title=binding.get('title', {}).get('value', ''),
                 authors=binding.get('authors', {}).get('value'),
                 publication_date=binding.get('publicationDate', {}).get('value')
             )
-            papers.append(paper)
+            papers_dict[arxiv_id] = paper
+
+        papers = list(papers_dict.values())
 
         execution_time = (time.time() - start_time) * 1000  # Convert to ms
 

@@ -1,12 +1,72 @@
 [
   {
+    "paper_id": "2510.25673v1",
+    "title": "Spatiotemporal control of laser intensity using differentiable programming",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:48.912089",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.25636v1",
+    "title": "Observations of the Relationship between Magnetic Anisotropy and Mode Composition in Low-$\u03b2$ Solar Wind Turbulence",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:48.912251",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.25532v1",
+    "title": "Global Non-Axisymmetric Hall Instabilities in a Rotating Plasma",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:48.912368",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.25376v1",
+    "title": "Robust direct laser acceleration of electrons with flying-focus laser pulses",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:48.912510",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.25047v1",
+    "title": "Magnetic Field Line Chaos, Cantori, and Turnstiles in Toroidal Plasmas",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:48.912571",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.24861v1",
+    "title": "A Semi-Lagrangian Adaptive Rank (SLAR) Method for High-Dimensional Vlasov Dynamics",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:48.912797",
+    "extraction_method": "regex+llm"
+  },
+  {
     "paper_id": "2510.24567v1",
     "title": "Phase-Space Shaping in Wakefield Accelerators due to Betatron Cooling",
     "parameters": {
       "temperature": [],
       "density": []
     },
-    "extraction_date": "2025-10-29T19:47:16.261805",
+    "extraction_date": "2025-10-30T16:31:48.912926",
     "extraction_method": "regex+llm"
   },
   {
@@ -16,17 +76,17 @@
       "temperature": [],
       "density": []
     },
-    "extraction_date": "2025-10-29T19:47:16.262026",
+    "extraction_date": "2025-10-30T16:31:48.913134",
     "extraction_method": "regex+llm"
   },
   {
-    "paper_id": "2510.24121v1",
+    "paper_id": "2510.24121v2",
     "title": "Effect of flow-aligned external magnetic fields on mushroom instability",
     "parameters": {
       "temperature": [],
       "density": []
     },
-    "extraction_date": "2025-10-29T19:47:16.262185",
+    "extraction_date": "2025-10-30T16:31:48.913306",
     "extraction_method": "regex+llm"
   },
   {
@@ -36,7 +96,7 @@
       "temperature": [],
       "density": []
     },
-    "extraction_date": "2025-10-29T19:47:16.262388",
+    "extraction_date": "2025-10-30T16:31:48.913508",
     "extraction_method": "regex+llm"
   },
   {
@@ -46,7 +106,3155 @@
       "temperature": [],
       "density": []
     },
-    "extraction_date": "2025-10-29T19:47:16.262550",
+    "extraction_date": "2025-10-30T16:31:48.913668",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.23088v1",
+    "title": "Machine Learning approach to modeling of neutral particles transport in plasma",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:48.913775",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.24782v1",
+    "title": "Accurate Reporting of Ion Time-of-Flight during HiPIMS with Gated Front-End Mass Spectrometry",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:48.913982",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.22226v1",
+    "title": "A DSMC-PIC coupling method for the Vlasov-Maxwell-Landau system",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:48.914141",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.22203v1",
+    "title": "Revealing Liquid-Gas Transitions with Finite-Size Scaling in Confined Systems",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:48.914260",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.22091v1",
+    "title": "High-Harmonic Optical Vortex Generation from a Plasma Aperture",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:48.914440",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.22061v1",
+    "title": "Quasi-Biennial Oscillations and Rieger-type Periodicities in a Babcock-Leighton Solar Dynamo",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:48.914633",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.21676v1",
+    "title": "Constructing Field Aligned Coordinate Systems for Gyrokinetic Simulations of Tokamaks in X-point Geometries",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:48.914750",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.21675v1",
+    "title": "Counter-Streaming Beams in Collisionless Pair Plasma Instability Systems III: Collisionless Heating, Acceleration, and Radiation",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:48.914842",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.21666v1",
+    "title": "Counter-Streaming Beams in Collisionless Pair Plasma Instability Systems II: Spectral Cone and Spectral Wave Mode Analysis",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:48.914910",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.24771v1",
+    "title": "Cold atmospheric microplasma jet-water interactions: physicochemical analysis and growth effects in flowering plants",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:48.915111",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.21261v1",
+    "title": "Benchmark for two-dimensional large scale coherent structures in partially magnetized ExB plasmas -- Community collaboration & lessons learned",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:48.915297",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.21239v2",
+    "title": "Laboratory formation of scaled astrophysical outflows",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:48.915433",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.21187v1",
+    "title": "Dissipation and particle acceleration at intermittent structures with velocity and magnetic shear: Interaction of Kelvin-Helmholtz and Drift-Kink instabilities",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:48.915650",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.21170v1",
+    "title": "Inhomogeneous mixing: From microscopic dynamics to mesoscopic staircases",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:48.915808",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.20980v1",
+    "title": "Grain Boundary Diffusion in Yukawa Crystals",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:48.915933",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.20977v1",
+    "title": "Significant Amplification of Turbulent Energy Dissipation through the Shock Transition at Mars",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:48.916075",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.20775v1",
+    "title": "The Opacity Project: R-Matrix Calculations for Opacities of High-Energy-Density Astrophysical and Laboratory Plasmas",
+    "parameters": {
+      "temperature": [
+        {
+          "type": "temperature",
+          "value": 2110000.0,
+          "unit": "K",
+          "context": "ment fusion (ICF) device at the Sandia Z facility 2.11 x 10^6 K, N_e = 3.16 x 10^{22}/cc. We calculate Rosseland",
+          "confidence": "medium",
+          "is_correct": true
+        }
+      ],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:51.260425",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.20628v1",
+    "title": "Magnetic Field-Line Curvature and Its Role in Particle Acceleration by Magnetically Dominated Turbulence",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:51.261014",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.20105v1",
+    "title": "High Gain Fusion Target Design using Generative Artificial Intelligence",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:51.261395",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.19786v1",
+    "title": "First Observation of Dispersive Shock Waves in an Electron Beam",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:51.261700",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.19729v1",
+    "title": "Coupling of neutrino beam-driven MHD waves and resonant instabilities in rotating magnetoplasmas with neutrino two-flavor oscillations",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:51.261956",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.19690v1",
+    "title": "Modification of ion-temperature-gradient turbulence by impurities in stellarator plasmas",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:51.262255",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.19543v1",
+    "title": "Microtearing Turbulence and Its Role in High-Density-Gradient Plasmas in Wendelstein 7-X",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:51.262500",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.18838v1",
+    "title": "PCMS: Parallel Coupler For Multimodel Simulations",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:51.262712",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.18487v1",
+    "title": "Experimental and numerical investigation of suprathermal electron dynamics using vertical electron cyclotron emission",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:51.263097",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.18384v1",
+    "title": "Diagnostics of a Multicusp-Assisted Inductively-Coupled Radio-Frequency Plasma Source for Plasma Immersion Ion Implantation",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:51.263359",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.18182v1",
+    "title": "Electron Acceleration via Lower-Hybrid Drift Instability in Astrophysical Plasmas: Dependence on Plasma Beta and Suprathermal Electron Distributions",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:51.263879",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.17531v1",
+    "title": "Plasma Shape Control via Zero-shot Generative Reinforcement Learning",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:51.264213",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.16950v1",
+    "title": "Probing Flying-Focus Wakefields",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:51.264491",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.16542v1",
+    "title": "Extended phase-space symplectic integration for electron dynamics",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:51.264791",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.16362v1",
+    "title": "Relativistic Magnetohydrodynamic Wave Excitation by Laser Pulse in a Magnetized Plasma",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:51.265169",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.16361v1",
+    "title": "Hamiltonian estimation of island width threshold for stochasticity onset on edge pedestal top in presence of a resonant magnetic perturbation",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:51.265330",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.16243v1",
+    "title": "A flexible and differentiable coil proxy for stellarator equilibrium optimization",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:51.265642",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.16199v1",
+    "title": "Physics insights from a large-scale 2D UEDGE simulation database for detachment control in KSTAR",
+    "parameters": {
+      "temperature": [
+        {
+          "type": "temperature",
+          "value": 4.0,
+          "unit": "eV",
+          "context": "ture at detachment onset consistently Te around 3-4 eV, largely insensitive to upstream conditions. Scal",
+          "confidence": "medium",
+          "is_correct": true
+        }
+      ],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:52.371481",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.15641v1",
+    "title": "Formation of a Tungsten Co-deposition Layer with Microparticles Using Pulsed Laser Deposition",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:52.371840",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.15504v1",
+    "title": "Modelling-driven requirements for Error Field Control Coil application to initial JT-60SA plasmas",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:52.372505",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.15156v1",
+    "title": "Magnetohydrodynamic-guiding-center-particle-in-cell Method for Multiscale Plasma Kinetic Simulations",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:52.373018",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.15062v2",
+    "title": "Geometric scaling of laser-driven proton focusing from hemispherical foils",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:52.373387",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.14575v1",
+    "title": "Linear damping of magneto-acoustic waves in two-fluid partially ionized plasmas",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:52.373939",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.14521v1",
+    "title": "Influence of kinetic effects in large-scale magnetic reconnection with multi-hierarchy simulation code KAMMUY",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:52.374683",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.14324v1",
+    "title": "Dust-ion-acoustic solitons in an ion-beam-driven dusty magnetoplasma with adiabatic and nonadiabatic dust charge variations",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:52.375337",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.14280v1",
+    "title": "Flux Jamming, Phase Transitions and Layering in Turbulent Magnetized Plasma",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:52.375967",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.14258v1",
+    "title": "Kinetic Scale Energy Budget in Turbulent Plasmas: Role of Electron to Ion Temperature Ratio",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:52.376903",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.14212v2",
+    "title": "Three-dimensional unmagnetized Mach probe analysis and initial flow measurements in reversed-field pinch experiments",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:52.377688",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.14195v1",
+    "title": "A Flying Focus with Arbitrary Directionality",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:52.378279",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.14078v1",
+    "title": "Plasma Confinement State Classification via FPP Relevant Microwave Diagnostics",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:52.378862",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.14076v1",
+    "title": "Structure of self-generated magnetic fields in laser-solid interaction from proton tomography",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:52.379306",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.13956v1",
+    "title": "No cosmological constraints on dark photon dark matter from resonant conversion: Impact of nonlinear plasma dynamics",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:52.379827",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.13946v1",
+    "title": "Bell Instability and Cosmic-Ray Acceleration in AGN Ultrafast Outflow Shocks",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:52.380382",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.13521v1",
+    "title": "Narrow Operator Models of Stellarator Equilibria in Fourier Zernike Basis",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:52.380708",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.17856v1",
+    "title": "Carrier envelope phase and laser pulse shape effects on Schwinger vacuum pair production in super-Gaussian asymmetric electric fields",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:52.381056",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.12869v1",
+    "title": "Unified kinetic theory of induced scattering: Compton, Brillouin, and Raman processes in magnetized electron and positron pair plasma",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:52.381488",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.12432v1",
+    "title": "Comparison of MHD and gyrokinetic simulations of linear instabilities at the q = 1 surface",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:52.381915",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.15997v1",
+    "title": "Frequency domain laser ultrasound for inertial confinement fusion target wall thickness measurements",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:52.382290",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.12142v1",
+    "title": "Polar Filaments Capture High Latitude Solar Poloidal Field Interactions and can Foretell the Future Sunspot Cycle Amplitude before Polar Field Precursors",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:52.382880",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.12068v1",
+    "title": "On three dimensional steady super-Alfv\u00e9nic magnetohydrodynamics shocks with aligned fields",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:52.383250",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.11896v1",
+    "title": "Lagrangian Formulation of the Snowplow Model and Operating Point for Z pinch Devices",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:52.383398",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.11890v1",
+    "title": "Loading non-Maxwellian Velocity Distributions in Particle Simulations",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:52.383676",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.11874v1",
+    "title": "Towards fully predictive gyrokinetic full-f simulations",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:52.384454",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.11365v1",
+    "title": "Electromagnetic Observables of Weakly Collisional Black Hole Accretion",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:52.384811",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.11174v1",
+    "title": "Machine Learning-Integrated Hybrid Fluid-Kinetic Framework for Quantum Electrodynamic Laser Plasma Simulations",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:52.385348",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.10112v1",
+    "title": "Thermal and Electrical Conductivities of Aluminum Up to 1000 eV: A First-Principles Prediction",
+    "parameters": {
+      "temperature": [
+        {
+          "type": "temperature",
+          "value": 1000.0,
+          "unit": "eV",
+          "context": "electrical conductivities of Aluminum (Al) up to 1000 eV. Compared to traditional transport models, our first-principles results reveal significant deviations in the thermal and electrical conductivities of Al within the warm dense matter regime, underscoring the importance of accounting for quantum effects when investigating these transport properties of warm dense matter.",
+          "confidence": "medium",
+          "is_correct": true
+        }
+      ],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:54.150353",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.09978v1",
+    "title": "Studying the properties of reconnection-driven turbulence",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:54.151849",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.09579v1",
+    "title": "The impact of plasma turbulence on atomic reaction rates in detached divertors",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:54.152775",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.09524v1",
+    "title": "Si3N4 membrane as entrance window for plasma-generated vacuum ultraviolet (VUV) radiation",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:54.153103",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.09491v2",
+    "title": "Investigating Solid-Fluid Phase Coexistence in DC Plasma Bilayer Crystals: The Role of Particle Pairing and Mode Coupling",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:54.153809",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.09437v3",
+    "title": "Long Living Hot and Dense Plasma from Relativistic Laser-Nanowire Array Interaction",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:54.154461",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.09126v1",
+    "title": "Statistics of Current and Vorticity Structures in Relativistic Turbulence",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:54.155214",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.09113v2",
+    "title": "Influence of an external static magnetic field on prebreakdown electron emission and heating",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:54.155808",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.08735v1",
+    "title": "Emergence of advection-diffusion transport structure and nonlinear amplitude evolution of strongly driven instabilities",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:54.156261",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.07875v1",
+    "title": "Ion Stochastic Heating by Low-frequency Alfv\u00e9n Wave Spectrum",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:54.156743",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.07849v1",
+    "title": "Full-wave computation of SUb-atmospheric Radio-frequency Engine (SURE)",
+    "parameters": {
+      "temperature": [
+        {
+          "type": "temperature",
+          "value": 100.0,
+          "unit": "k",
+          "context": "Near-space, which covers altitudes from 20 to 100 kilometers, has been receiving more and more attent",
+          "confidence": "medium",
+          "is_correct": true
+        }
+      ],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:55.289557",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.07502v1",
+    "title": "Does Turbulence at the Correlation Scale Regulate the Statistics of Magnetic Reconnection?",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:55.290162",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.07314v2",
+    "title": "GyroSwin: 5D Surrogates for Gyrokinetic Plasma Turbulence Simulations",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:55.291053",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.07144v1",
+    "title": "Chaotic Motion of Ions In Finite-amplitude Low-frequency Alfv\u00e9n Waves",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:55.291607",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.07042v1",
+    "title": "Experimental Results from Early Non-Planar NI-HTS Magnet Prototypes for the Columbia Stellarator eXperiment (CSX)",
+    "parameters": {
+      "temperature": [
+        {
+          "type": "temperature",
+          "value": 77.0,
+          "unit": "K",
+          "context": "d baseline winding, achieving predicted fields at 77 K. P2 (non-planar, higher strain) was wound to 42 t",
+          "confidence": "medium",
+          "is_correct": true
+        },
+        {
+          "type": "temperature",
+          "value": 40.0,
+          "unit": "K",
+          "context": "er strain) was wound to 42 turns, energized at 30-40 K to produce expected magnetic fields, and studied",
+          "confidence": "medium",
+          "is_correct": true
+        },
+        {
+          "type": "temperature",
+          "value": 20.0,
+          "unit": "K",
+          "context": "s, 200 turns, and approaches the 70 kAt target at 20 K. In parallel, sub-microhm lap joints have been de",
+          "confidence": "medium",
+          "is_correct": true
+        }
+      ],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:58.007322",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.06794v1",
+    "title": "3D simulations of negative streamers in CO$_2$ with admixtures of C$_4$F$_7$N",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:58.008196",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.06773v1",
+    "title": "Influence of coil geometry and coil-plasma distance on the magnetic field approximation error",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:58.008597",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.06510v1",
+    "title": "Influence of Solar Sails on Magnetic Field Measurements in Space Plasmas",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:58.009053",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.05954v1",
+    "title": "Kinetic collisionless model of the solar transition region and corona with spatially intermittent heating",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:58.009472",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.05912v1",
+    "title": "Investigating the Lower Hybrid Drift Instability in Reconnecting Current Sheets Using a Hybrid Kinetic Model (ssV Code)",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:58.009886",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.05873v1",
+    "title": "Exploring Complexity Measures for Analysis of Solar Wind Structures and Streams",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:58.010499",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.05656v1",
+    "title": "Deposition rate and energy to substrate in chopped and standard HiPIMS: identifying optimal pulse parameters",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:58.011127",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.05287v1",
+    "title": "Difference in Neoclassical Edge Flows Between Strongly Negative and Positive Triangularities in the XGC Gyrokinetic Simulation",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:58.011642",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.05274v1",
+    "title": "A note on thermal effects in non-linear models for plasma-based acceleration",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:58.011974",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.05084v1",
+    "title": "Electrospray Thruster Plume Impingement on CubeSat Solar Arrays: A Particle-Tracking Study",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:58.012810",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.05058v1",
+    "title": "Pushing the Frontiers of Light: Magnetized Plasma Lenses and Chirp Tailoring for Extreme Intensities",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:58.013355",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.04658v1",
+    "title": "Numerical Demonstration of Kolmogorov Scaling in Magnetohydrodynamic Turbulence",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:58.013835",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.04385v2",
+    "title": "Structure-Preserving MHD-Driftkinetic Discretization for Wave-Particle Interactions",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:58.014408",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.04356v1",
+    "title": "Non-local transport in Radiation-Hydrodynamics codes for ICF by efficient coupling to an external Vlasov-Fokker-Planck code",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:58.014844",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.04298v1",
+    "title": "A Particle-in-Cell Simulation Framework for Thomson Scattering Analysis in Inertial Confinement Fusion",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:58.015277",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.03960v1",
+    "title": "An Explicit Energy-Conserving Particle Method for the Vlasov-Fokker-Planck Equation",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:58.015517",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.03414v1",
+    "title": "Spectroscopic measurements of graphite electrode erosion on the ZaP-HD sheared-flow-stabilized Z-pinch device",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:58.016130",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.03388v1",
+    "title": "Mixed Stochastic-Deterministic Density Functional Theoretic Decomposition of Kubo-Greenwood Conductivities in the Projector Augmented Wave Formalism",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:58.016473",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.03141v1",
+    "title": "Nonmodal growth and optimal perturbations in magnetohydrodynamic shear flows",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:58.016851",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.02955v2",
+    "title": "On the existence of fibered three-dimensional perfect fluid equilibria without continuous Euclidean symmetry",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:58.017079",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.02659v1",
+    "title": "Holographic Gaseous Lenses for High-Power Lasers",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:58.017561",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.02301v1",
+    "title": "Relativistic Jets and Winds in Radio-Identified Supermassive Black Hole Binary Candidates",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:58.018050",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.02088v1",
+    "title": "A neural network approach to kinetic Mie polarimetry for particle size diagnostics in nanodusty plasmas",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:58.018460",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.01977v1",
+    "title": "Accelerating kinetic plasma simulations with machine learning generated initial conditions",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:58.018985",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.01957v1",
+    "title": "Numerical tests of formulae for volume enclosed by flux surfaces of integrable magnetic fields",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:58.019085",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.01875v2",
+    "title": "Enhancing the Efficiency of Time-Dependent Density Functional Theory Calculations of Dynamic Response Properties",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:58.019608",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.01573v1",
+    "title": "Suppression of inverse magnetic energy transfer in collisionless marginally magnetized plasmas",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:58.020026",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.01060v2",
+    "title": "Do plasmoids induce fast magnetic reconnection in well-resolved current sheets in 2D MHD simulations?",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:58.020608",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.00493v1",
+    "title": "Correlation function metrology for warm dense matter: Recent developments and practical guidelines",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:31:58.021021",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.01289v1",
+    "title": "Detailed Derivation of the Scalar Explicit Expressions Governing the Electric Field, Current Density, and Volumetric Power Density in the Four Types of Linear Divergent MHD Channels Under a Unidirectional Applied Magnetic Field",
+    "parameters": {
+      "temperature": [
+        {
+          "type": "temperature",
+          "value": 5.0,
+          "unit": "k",
+          "context": "ectric field (across the external electric load): 5 kV/m, useful electric current-density (between the",
+          "confidence": "medium",
+          "is_correct": true
+        },
+        {
+          "type": "temperature",
+          "value": 12.5,
+          "unit": "k",
+          "context": "ween the terminal electrodes within the channel): 12.5 kA/m2 , volumetric power density (dissipated by the",
+          "confidence": "medium",
+          "is_correct": true
+        },
+        {
+          "type": "temperature",
+          "value": 25.0,
+          "unit": "k",
+          "context": "f 5), these quantitative performance values become25 kV/m, 4.808 kA/m2, 120.19 MW/m3, and 46.30%.",
+          "confidence": "medium",
+          "is_correct": true
+        },
+        {
+          "type": "temperature",
+          "value": 4.808,
+          "unit": "k",
+          "context": "se quantitative performance values become25 kV/m, 4.808 kA/m2, 120.19 MW/m3, and 46.30%.",
+          "confidence": "medium",
+          "is_correct": true
+        }
+      ],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.182290",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.00388v2",
+    "title": "A study of the electronic and ionic structure, for co-existing states of fully and partially ionized hydrogen, using the neutral pseudo-atom method as well as a classical map for the electron subsystem",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.183194",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2510.00282v1",
+    "title": "Electron neural closure for turbulent magnetosheath simulations: energy channels",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.183970",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.26586v2",
+    "title": "Supergranulation and poleward migration of the magnetic field at high latitudes of the Sun",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.184387",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.26357v1",
+    "title": "Validation of ERMES 20.0 finite element code for MAST Upgrade O-X mode conversion",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.184656",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.26174v1",
+    "title": "BABY 1L: First Tritium Breeding Campaign Results",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.185289",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.25870v1",
+    "title": "All-Optical Generation of Dense, Multi-GeV, Longitudinally-Polarized Positron Beams",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.185811",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.25506v1",
+    "title": "Persistence of Deuterium and Tritium Nuclear Spin-Polarization in Presence of High-Frequency Plasma Waves",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.186369",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.25066v1",
+    "title": "Avalanches in Magnetohydrodynamical simulations",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.187044",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.24775v1",
+    "title": "Attosecond electron bunch generation by an intense high-order harmonic pulse interacting with a thin target",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.187725",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.24750v1",
+    "title": "Is Turbulence able to Generate Magnetic Islands in Tokamaks? Gyrokinetic Simulations of Turbulence-Driven Magnetic Islands in Toroidal Geometry",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.188097",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.24513v1",
+    "title": "Flow Crossover and Parallel Outflow during Collisionless Magnetic Reconnection",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.188645",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.23294v1",
+    "title": "Programmable Focal Elongation and Shaping of High-Intensity Laser Pulses using Adaptive Optics",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.189024",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.23080v1",
+    "title": "Control of kinetic plasma instabilities by laser fields",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.189423",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.22948v1",
+    "title": "On the mechanism of Pedestal Relaxation Events -- Insights gained by turbulence simulations with GRILLIX",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.189924",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.22503v1",
+    "title": "A Quantum Algorithm for Nonlinear Electromagnetic Fluid Dynamics via Koopman-von Neumann Linearization",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.190585",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.22172v1",
+    "title": "Tunable Transmissive Metagratings Using Single Layer Cylindrical Plasma Discharges",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.190855",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.22031v1",
+    "title": "Understanding the oxidation of pure Tungsten in air and its impact on the lifecycle of a fusion power plant",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.191304",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.21680v1",
+    "title": "Saturation of the kinetic ballooning instability due to the electron parallel nonlinearity",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.191554",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.21645v1",
+    "title": "Generation of directed electron beams by tight focusing of an ultrashort IR laser in a near-critical plasma",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.192015",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.21506v2",
+    "title": "Electrostatic waves in astrophysical Druyvesteyn plasmas: I. Langmuir waves",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.192490",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.21098v1",
+    "title": "First Electron Acceleration in a Tunable-Velocity Laser Wakefield",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.192793",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.21048v1",
+    "title": "Reply to \"Comments to Marvel Fusions Mixed Fuels Reactor Concept\"",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.193244",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.21417v2",
+    "title": "Coherently Enhanced Axion-Photon Conversion via Seeded Photons for Short-Pulse Axion Detection",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.193664",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.20654v1",
+    "title": "Stochastic Heating in the Sub-Alfv\u00e9nic Solar Wind",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.194177",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.20594v1",
+    "title": "Anderson self-localization of light in pair plasmas",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.194574",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.20535v1",
+    "title": "Characterizing Nanoflare Energy and Frequency through Field Line Analysis",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.195002",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.20261v1",
+    "title": "Thermal resilience of the ITER tungsten first wall to runaway electron impact",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.195351",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.20096v1",
+    "title": "Residual energy of magnetohydrodynamic shocks",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.195950",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.19769v1",
+    "title": "Toward a Theory of Gravitational Wave Turbulence",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.196316",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.19763v1",
+    "title": "Energy transfer from MHD-scale slow-mode waves to kinetic-scale ion acoustic waves",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.196606",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.19656v1",
+    "title": "Anisotropic momentum distributions due to radiation recoil in relativistic plasmas with electric and magnetic fields",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.197123",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.19605v2",
+    "title": "Graph-based Neural Space Weather Forecasting",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.197435",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.19603v1",
+    "title": "The periodicity of three-dimensional oscillatory reconnection",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.197933",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.19553v1",
+    "title": "Generalized mixed variable-pullback scheme with non-ideal Ohm's law for electromagnetic gyrokinetic simulations",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.198391",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.19534v1",
+    "title": "Nature of Transonic Sub-Alfv\u00e9nic Turbulence and Density Fluctuations in the Near-Sun Solar Wind: Insights from Magnetohydrodynamic Simulations and Nearly-Incompressible Models",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.198860",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.19178v2",
+    "title": "A noise-robust Monte Carlo method for electric field calculations in EMC3",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.199427",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.18794v1",
+    "title": "Wall damage due to oblique high velocity dust impacts",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.199738",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.18616v1",
+    "title": "Intermittent Viscoelastic Turbulence in Strongly Coupled Plasmas",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.200127",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.18532v2",
+    "title": "Conceptual design of a Doppler Backscattering diagnostic for the EXL-50U spherical tokamak",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.200621",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.18448v1",
+    "title": "Stability and optical quality of liquid crystal films as high repetition rate plasma mirrors in staged laser-plasma accelerators",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.201153",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.18374v1",
+    "title": "Efficient Particle Acceleration in 2.5-Dimensional, Hybrid-Kinetic Simulations of Decaying, Supersonic, Plasma Turbulence",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.201625",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.18365v1",
+    "title": "Lie-transform derivation of oscillation-center quasilinear theory",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.201694",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.18336v1",
+    "title": "Single shot multi-time frame imaging of plasmas with a frequency tagged GHz pulse train",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.201879",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.18032v1",
+    "title": "Impact of nonthermal electron distributions on the triggering of the ion-ion acoustic instability near the Sun: Kinetic simulations",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.202303",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.17861v1",
+    "title": "Ion-scale Turbulence and Energy Cascade Rate in the Solar Corona and Inner Heliosphere",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.202749",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.17716v2",
+    "title": "Experimental and numerical study on Following Streamer mechanism for SF6 breakdown induced by floating linear metal particles",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.203136",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.17547v1",
+    "title": "Numerical Analysis of Ground Testing for the Intake Device of an Atmosphere-Breathing Electric Propulsion",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.203540",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.17521v1",
+    "title": "Delta-Doped Diamond via in-situ Plasma-Distance Control",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.203914",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.17453v1",
+    "title": "Modeling stopping power of ions in plasmas using parametric potentials",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.204214",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.17379v2",
+    "title": "Negative charge acquisition by isolated single microdroplets from plasma exposure at atmospheric pressure",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.204482",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.17288v1",
+    "title": "Nonlinear anisotropic equilibrium reconstruction in axisymmetric magnetic mirrors",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.204795",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.17245v1",
+    "title": "Relativistically-strong electromagnetic waves in magnetized plasmas",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.205042",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.17061v1",
+    "title": "The Nature of Turbulence at Sub-Electron Scales in the Solar Wind",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:03.205346",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.16849v1",
+    "title": "Magnetic flux ropes within reconnection exhausts close to the centers of heliospheric current sheets near the Sun",
+    "parameters": {
+      "temperature": [
+        {
+          "type": "temperature",
+          "value": 10.0,
+          "unit": "k",
+          "context": "nent, travel speed slightly faster (typically by <10km/s) than surrounding outflows, and often accompan",
+          "confidence": "medium",
+          "is_correct": true
+        }
+      ],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:04.883714",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.16793v2",
+    "title": "Galilean Electromagnetic Particle-in-Cell Code",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:04.884095",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.16574v1",
+    "title": "Measuring the locations and properties of VHF sources emitted from an aircraft flying through high clouds",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:04.884585",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.16535v1",
+    "title": "Data-Driven Reduced-Order Modeling of Phase Mixing Dynamics from Particle Kinetic Simulation",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:04.885433",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.16401v2",
+    "title": "Quantifying the Effects of Parameters in Widespread SEP Events with EPREM",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:04.886094",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.16320v1",
+    "title": "Exponential Spectral Scaling: Robust and Efficient Stellarator Boundary Optimization via Mode-Dependent Scaling",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:04.886811",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.16159v1",
+    "title": "A novel agile THz Pulsed Spectropolarimeter measuring 2D distributions of the magnetic field, density and ion temperature of fusion reactor equilibria",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:04.887629",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.16130v1",
+    "title": "On the enhanced Balmer emission of hydrogen in helium Capacitively Coupled Radio Frequency (CCRF) plasma",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:04.888348",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.15853v1",
+    "title": "Electron-positron pair generation using a single kJ-class laser pulse in a foam-reflector setup",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:04.888771",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.15821v1",
+    "title": "Modeling of runaway electron induced damage on boron-nitride tiles in WEST",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:04.889208",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.15729v1",
+    "title": "The Role of Phase and Spatial Modes in Wave-Induced Plasma Transport",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:04.889750",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.15721v1",
+    "title": "Runaway electrons during a coil quench in stellarators",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:04.890253",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.15425v1",
+    "title": "Structure-preserving long-time simulations of turbulence in magnetized ideal fluids",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:04.891048",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.15329v1",
+    "title": "The hot-electron closure of the moment-based gyrokinetic plasma model",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:04.891537",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.15320v1",
+    "title": "Anisotropic Cosmic Ray Transport resulting from Magnetic Mirroring and Resonant Curvature Scattering",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:04.892159",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.14400v2",
+    "title": "Electron Inertia and Magnetic Reconnection",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:04.892558",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.13937v1",
+    "title": "Generating 10 GW-class isolated zeptosecond x-ray bursts through bootstrapping two plasma-based accelerator stages",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:04.893062",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.13472v1",
+    "title": "The effect of parameter drift in the transport of magnetized plasma particles",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:04.893495",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.13272v1",
+    "title": "Ionization and temperature measurements in warm dense copper using x-ray absorption spectroscopy",
+    "parameters": {
+      "temperature": [
+        {
+          "type": "temperature",
+          "value": 21.0,
+          "unit": "eV",
+          "context": "ity (15 to 25 g/cm$^3$) and temperatures of 10 to 21 eV. Experiments performed at the OMEGA Laser Facilit",
+          "confidence": "medium",
+          "is_correct": true
+        },
+        {
+          "type": "temperature",
+          "value": 30.0,
+          "unit": "eV",
+          "context": "ially ionized plasmas have K-edge shifts of 12 to 30 eV and bound-bound resonance 1s$\\rightarrow$3p absor",
+          "confidence": "medium",
+          "is_correct": true
+        },
+        {
+          "type": "temperature",
+          "value": 26.0,
+          "unit": "eV",
+          "context": "nance 1s$\\rightarrow$3p absorption shifts of 4 to 26 eV with respect to the cold K-edge. This study provi",
+          "confidence": "medium",
+          "is_correct": true
+        }
+      ],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:09.458009",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.13271v1",
+    "title": "Runaway electron interactions with whistler waves in tokamak plasmas: energy-dependent transport scaling",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:09.458736",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.13206v2",
+    "title": "Virtual states and exponential decay in small-scale dynamo",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:09.459118",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.12945v1",
+    "title": "FusionMAE: large-scale pretrained model to optimize and simplify diagnostic and control of fusion plasma",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:09.459912",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.12608v2",
+    "title": "The impact of Alfvenic shear flow on magnetic reconnection and turbulence",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:09.460844",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.12599v1",
+    "title": "Validation of the GFS model for Gyrokinetic Stability of NSTX Pedestal Data",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:09.461482",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.12397v1",
+    "title": "Shock wave bending around a dusty plasma void",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:09.461973",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.12164v1",
+    "title": "Anomalous electron heating in laboratory magnetized quasi-perpendicular collisionless shocks",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:09.462488",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.12015v1",
+    "title": "Probing laser-driven surface and subsurface dynamics via grazing-incidence XFEL scattering and diffraction",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:09.463050",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.11831v1",
+    "title": "A high-performance elliptic solver for plasma boundary turbulence codes",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:09.463531",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.11749v1",
+    "title": "Helical Core Formation and MHD Stability in ITER-Scale Plasmas with Fusion-born Alpha Particles",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:09.464243",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.18142v1",
+    "title": "A Wendelstein-7X Profile Database for Informed Transport Studies",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:09.464935",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.11576v1",
+    "title": "Reconstructing High-fidelity Plasma Turbulence with Data-driven Tuning of Diffusion in Low Resolution Grids",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:09.465454",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.11484v3",
+    "title": "The impact of kinetic and global effects on ballooning 2nd stable pedestals of conventional and low aspect ratio tokamaks",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:09.466135",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.11416v1",
+    "title": "Role of magnetic shear distribution on the formation of eruptive flux ropes",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:09.466865",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.11317v1",
+    "title": "Taylor series perspective on ab initio path integral Monte Carlo simulations with Fermi-Dirac statistics",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:09.467586",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.11302v1",
+    "title": "Glow discharge induced reactions in mixtures of ozone and chlorodifluoromethane with atmospheric gases",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:09.467972",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.11286v2",
+    "title": "Magnitude of Short-Wavelength Electric Field Fluctuations in Simulations of Collisionless Plasma Shocks",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:09.468352",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.11160v1",
+    "title": "On the Poisson brackets of hybrid plasma models with kinetic ions and massless electrons",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:09.468678",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.11122v1",
+    "title": "Dynamical generation of macroscale magnetic fields and fast flows in a four-component astrophysical plasma",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:09.468999",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.11100v1",
+    "title": "Energetic spectra from semi-implicit particle-in-cell simulations of magnetic reconnection",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:09.469457",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.10986v1",
+    "title": "Temperature and mean axial momentum vs. laser intensity of electrons released from O$_2$ by an 800 nm ultrashort pulsed laser",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:09.469744",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.10319v2",
+    "title": "The merger of spinning, accreting supermassive black hole binaries",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:09.470234",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.10276v1",
+    "title": "Power coupled to the slow wave resonance cone in cold plasma",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:09.470454",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.10244v1",
+    "title": "Technical Aspects of Plasma Operational Simulation (POPSIM): A Framework for Data-Driven Simulation and Control",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:09.470700",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.10107v1",
+    "title": "Experimental validation of electron correlation models in warm dense matter",
+    "parameters": {
+      "temperature": [
+        {
+          "type": "temperature",
+          "value": 0.6,
+          "unit": "eV",
+          "context": "3.75-4.5 g/cm$^3$ and a temperature of approximately 0.6 eV, performed at the HED-HiBEF instrument of the European XFEL using the DiPOLE-100X drive laser.",
+          "confidence": "medium",
+          "is_correct": true
+        }
+      ],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:11.146684",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.10042v1",
+    "title": "Helical Field-Driven Translational-Rotational Conversion in Conductors",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:11.147227",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.09949v1",
+    "title": "The growth of magnetic energy during the nonlinear phase of the subsonic and supersonic small-scale dynamo",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:11.147494",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.09487v1",
+    "title": "Vorticity Packing Effects on Turbulent Transport in Decaying 2D Incompressible Navier-Stokes Fluids",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:11.148075",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.09126v1",
+    "title": "Exploration on the Two-stream Instability in the Polar Cusp Under Solar Storm Disturbances and its Potential Impacts on Spacecraft",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:11.148600",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.09104v1",
+    "title": "Exploration of novel ICP using helicon antennas with zero magnetic field",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:11.149071",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.09057v1",
+    "title": "Unraveling the emission mechanism powering long period radio transients from interacting white dwarf binaries via kinetic plasma simulations",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:11.149572",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.09040v2",
+    "title": "Suppression of pair beam instabilities in a laboratory analogue of blazar pair cascades",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:11.149940",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.08525v1",
+    "title": "Optimal Landau-type closure parameters for two-fluid simulations of plasma turbulence at kinetic scales",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:11.150380",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.08474v2",
+    "title": "Restarting the Numerical Flow Iteration through low rank tensor approximations",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:11.150835",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.08420v1",
+    "title": "Slice Emittance Preservation and Focus Control in a Passive Plasma Lens",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:11.151078",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.08178v1",
+    "title": "Modeling of convective cells, turbulence, and transport induced by a radio-frequency antenna in the tokamak boundary plasma",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:11.151551",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.10558v1",
+    "title": "Development of a national thrust test facility for electric propulsion at Robinson Research Institute, New Zealand",
+    "parameters": {
+      "temperature": [
+        {
+          "type": "temperature",
+          "value": 30.0,
+          "unit": "k",
+          "context": "uilt to withstands static thruster loads of up to 30 kg and measure thrust forces up to 200 mN. It is al",
+          "confidence": "medium",
+          "is_correct": true
+        }
+      ],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:12.415701",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.08106v1",
+    "title": "Proton-Acoustic Wave Effects on the Relaxation of Proton Transverse Heating in Magnetized Plasmas",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:12.417180",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.08098v1",
+    "title": "Geometrical optics in phase space",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:12.418321",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.08081v1",
+    "title": "Particle-In-Cell Informed Kinetic Modeling of Nonlinear Skin Effects in Low-Frequency Inductively Coupled Plasmas",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:12.419253",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.08063v1",
+    "title": "Modeling Low-Temperature Plasmas Simulating Titan's Atmosphere",
+    "parameters": {
+      "temperature": [
+        {
+          "type": "temperature",
+          "value": 150.0,
+          "unit": "K",
+          "context": "y induced by plasma discharge at low temperature (150 K) in the NASA Ames COSmIC Simulation Chamber (COSm",
+          "confidence": "medium",
+          "is_correct": true
+        }
+      ],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:14.237756",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.08061v1",
+    "title": "Acceleration of Heavy Ions at Non-Relativistic Collisionless Shocks",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:14.238455",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.07927v1",
+    "title": "Unifying Kappa Distribution Models for Non-Equilibrium Space Plasmas: A Superstatistical Approach Based on Moments",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:14.239240",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.07880v1",
+    "title": "Measurement of ion acceleration and diffusion in a laser-driven magnetized plasma",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:14.239586",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.07621v1",
+    "title": "Comparing Simulated and Observed Particle Energy Distributions through Magnetic Reconnection in Earth's Magnetotail",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:14.240113",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.07116v1",
+    "title": "Imaging and Radio Signatures of Shock-Plasmoid Interaction",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:14.240772",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.07104v1",
+    "title": "Cosmic Rays on Galaxy Scales: Progress and Pitfalls for CR-MHD Dynamical Models",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:14.241662",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.06437v1",
+    "title": "Particle acceleration up to the synchrotron burn-off limit in relativistic magnetized turbulence",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:14.242572",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.06432v1",
+    "title": "Study of a coaxial vacuum arc thruster plume and its interaction with applied magnetic field",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:14.242858",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.06366v1",
+    "title": "Effect of superthermal electrons on the Quantum electron acoustic double layers in dense astrophysical plasmas",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:14.243323",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.06230v2",
+    "title": "Complete reflection of nonlinear electromagnetic waves in underdense pair plasmas enabled by dynamically formed Bragg-like structures",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:14.243659",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.06088v1",
+    "title": "Time-Embedded Convolutional Neural Networks for Modeling Plasma Heat Transport",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:14.244293",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.06021v1",
+    "title": "Resonance density range of absolute two-plasmon decay instability",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:14.244674",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.07024v1",
+    "title": "TGLF-SINN: Deep Learning Surrogate Model for Accelerating Turbulent Transport Modeling in Fusion",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:14.245338",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.05859v1",
+    "title": "Dissociative recombination of NeH+ with low-energy electrons: Multichannel quantum defect theory including non-adiabatic couplings",
+    "parameters": {
+      "temperature": [
+        {
+          "type": "temperature",
+          "value": 4.5,
+          "unit": "eV",
+          "context": "tal data and fill a gap in theoretical data below 4.5 eV, where no detailed quantum calculations are currently available.",
+          "confidence": "medium",
+          "is_correct": true
+        }
+      ],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:16.016322",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.05799v1",
+    "title": "Hybrid Fourier Neural Operator-Plasma Fluid Model for Fast and Accurate Multiscale Simulations of High Power Microwave Breakdown",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:16.017086",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.05791v1",
+    "title": "Energy partitioning in electrostatic discharge with variable series load resistor",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:16.017556",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.05518v1",
+    "title": "Perpendicular ion heating in turbulence and reconnection: magnetic moment breaking by coherent fluctuations",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:16.017905",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.04728v1",
+    "title": "Discharge structure hierarchy of highly electronegative plasma at low pressure and quasi-cold ion approximation",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:16.018044",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.06999v1",
+    "title": "Modulated deuteron spectra observed with the Magnetic Recoil neutron Spectrometer at the National Ignition Facility",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:16.018756",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.04566v1",
+    "title": "Measuring the properties of homogeneous turbulence in curved spacetimes",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:16.019560",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.04374v1",
+    "title": "Estimation of Effective Viscosity to Quantify Collisional Behavior in Collisionless Plasma",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:16.020190",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.04360v1",
+    "title": "Sensitivities of time-dependent temperature profile predictions for NSTX with the Multi-Mode Model",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:16.021113",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.04359v1",
+    "title": "Assessing time-dependent temperature profile predictions using reduced transport models for high performing NSTX plasmas",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:16.022033",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.04279v2",
+    "title": "Energy Confinement Time Scaling Law Derived from Paz-Soldan NF 2024",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:16.022379",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.04132v1",
+    "title": "Lagrangian features of turbulent transport in tokamak plasmas",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:16.022598",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.03880v1",
+    "title": "Plasma wakefield: from accelerators to black holes",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:16.023054",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.03664v1",
+    "title": "Pressure dependence of magnetron sputtering: 2D-RZ particle-in-cell and 1D fluid modeling",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:16.023609",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.03641v2",
+    "title": "Is There an Exact Magnetic-Moment for Charged Particle Motion in a Homogeneous, Time-Dependent Magnetic Field?",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:16.023918",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.03429v1",
+    "title": "The properties of resistive MHD modes and unstable spectra in advanced tokamak regimes",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:16.024424",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.03326v1",
+    "title": "Numerical Modeling of Galactic Cosmic Ray Modulation in the Heliosphere",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:16.024976",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.03229v1",
+    "title": "Wakefield acceleration of self-injected bunch in a conical plasma channels",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:16.025212",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.03225v1",
+    "title": "Plasma lens for the focusing of positron bunches",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:16.025511",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.03149v1",
+    "title": "Extended temporal coarse-graining in a stratified and confined plasma under thermal fluctuations",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:16.026105",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.03142v1",
+    "title": "Self-consistent generation of the ambipolar electric field in collisionless plasmas via multi-mode electrostatics",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:16.026488",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.03092v1",
+    "title": "Collision operator for electron runaway in cold weakly-ionized plasmas",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:16.026782",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.02895v1",
+    "title": "Solar Vortices as Conduits for Magnetoacoustic Waves: Multi-Layer Coupling and Their Role in Atmospheric Heating",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:16.027261",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.02455v1",
+    "title": "SOLPS-ITER Numerical Simulations of ITER-scale Snowflake Divertors: Low-Field-Side SF-/SF+ and High-Field-Side SF-/SF+ Configurations",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:16.027965",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.02390v1",
+    "title": "One--Component Plasma Equation of State Revisited via Angular--Averaged Ewald Potential",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:16.028398",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.02214v1",
+    "title": "Hot-Ion Modes in Globus-M2 and Saturation of Energy Confinement Time Scaling in Spherical Tokamaks with Toroidal Magnetic Field of 1 T and Above",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:16.028842",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.01789v1",
+    "title": "Real-Time Applicability of Emulated Virtual Circuits for Tokamak Plasma Shape Control",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:16.029464",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.01747v1",
+    "title": "Demonstration of a tandem lens for producing shaped laser-ionized plasmas for plasma wakefield acceleration",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:16.029747",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.01741v1",
+    "title": "Forward and Backward Electron Acceleration by Radially Polarized Ultra-Intense Laser Focus Seeded By Field Ionization of High Charge States of Neon",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:16.030366",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.01502v1",
+    "title": "Effects of reversed magnetic shear on the plasma rotation stabilization of resistive wall modes in tokamaks",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:16.030889",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.01273v1",
+    "title": "Ionization/dissociation-driven first order phase transitions: on a new class of first order phase transitions",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:16.031148",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.01237v1",
+    "title": "Solar Flare Ion Temperatures",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:16.031522",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.01171v1",
+    "title": "Multi-diagnostic characterization of inductively coupled discharges with tailored waveform substrate bias for precise control of plasma etching",
+    "parameters": {
+      "temperature": [
+        {
+          "type": "temperature",
+          "value": 100.0,
+          "unit": "k",
+          "context": "plasma processes. In this work, a low frequency (100 kHz) tailored pulse-wave-shaped bias voltage wavefo",
+          "confidence": "medium",
+          "is_correct": true
+        },
+        {
+          "type": "temperature",
+          "value": 10.0,
+          "unit": "eV",
+          "context": "Fs with a full width at half maximum (FWHM) below 10 eV are realized with mean ion energies ranging from",
+          "confidence": "medium",
+          "is_correct": true
+        },
+        {
+          "type": "temperature",
+          "value": 20.0,
+          "unit": "eV",
+          "context": "are realized with mean ion energies ranging from 20 eV to 100 eV in both argon and SF6. Such monoenerget",
+          "confidence": "medium",
+          "is_correct": true
+        },
+        {
+          "type": "temperature",
+          "value": 100.0,
+          "unit": "eV",
+          "context": "ized with mean ion energies ranging from 20 eV to 100 eV in both argon and SF6. Such monoenergetic IEDFs a",
+          "confidence": "medium",
+          "is_correct": true
+        },
+        {
+          "type": "temperature",
+          "value": 23.0,
+          "unit": "eV",
+          "context": "es of amorphous silicon and silicon dioxide to be 23 eV and 37 eV, respectively, and to realize selective",
+          "confidence": "medium",
+          "is_correct": true
+        },
+        {
+          "type": "temperature",
+          "value": 37.0,
+          "unit": "eV",
+          "context": "phous silicon and silicon dioxide to be 23 eV and 37 eV, respectively, and to realize selective etching o",
+          "confidence": "medium",
+          "is_correct": true
+        }
+      ],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:24.540180",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.00915v1",
+    "title": "Local extraction of three-dimensional magnetic reconnection X-lines",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:24.541319",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.00878v1",
+    "title": "Simulation study of neutral tungsten emissions for fusion applications",
+    "parameters": {
+      "temperature": [
+        {
+          "type": "temperature",
+          "value": 30.0,
+          "unit": "keV",
+          "context": "Cross-sections are computed for incident electron energy up to 30 keV.",
+          "confidence": "medium",
+          "is_correct": true
+        }
+      ],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:25.891519",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.00659v1",
+    "title": "Ultrashort Time-Integrated Diagnosis of Laser-Heated Deuterium Ions in Dense Plasma via Fusion Neutron Spectra",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:25.892201",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.00358v1",
+    "title": "PRISM: A MATLAB-Based Application for Structured Probe Data Management and Visualization in Tokamak Diagnostics",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:25.892755",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.00207v1",
+    "title": "Corrections to radiative rates between atomic configurations",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:25.893721",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.00206v1",
+    "title": "Particle swarm optimization of divertor targets for heat load control",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:25.893984",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2508.21532v1",
+    "title": "Quantifying Reconnection and it's Dynamical Role in 2D Magnetic Rayleigh-Taylor Turbulence",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:25.894534",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2508.21293v1",
+    "title": "Coherent attosecond pulses generated by a relativistic electron beam interacting with an intense laser at a grazing angle",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:25.894960",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2508.21173v1",
+    "title": "X-ray diffraction strains in laser-ablated aluminum, nickel, sodium and Invar: pressures to 475 GPa",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:25.895688",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2508.20878v1",
+    "title": "Automated simulation-based design via multi-fidelity active learning and optimisation for laser direct drive implosions",
+    "parameters": {
+      "temperature": [
+        {
+          "type": "temperature",
+          "value": 25.0,
+          "unit": "kJ",
+          "context": "yesian optimisation to find optimal designs for a 25 kJ laser driver. We perform hydrodynamic scaling on",
+          "confidence": "medium",
+          "is_correct": true
+        }
+      ],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:27.908930",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2508.20714v1",
+    "title": "Ultrafast solid-state chemical synthesis of BaTiO3 initiated by gyrotron microwave radiation",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:27.909534",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2508.20678v1",
+    "title": "Start-to-end modelling of laser-plasma acceleration, beam transport and dose deposition of very high-energy electrons for radiotherapy",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:27.910359",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2508.20627v1",
+    "title": "Monte Carlo simulation method for incoherent Thomson scattering spectra from arbitrary electron distribution functions",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:27.910944",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2508.20502v1",
+    "title": "Assessment of the Runaway Electrons induced damage to the Tokamak First Wall",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:27.911478",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2509.02583v1",
+    "title": "Measured Properties of an Antihydrogen Beam",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:27.911810",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2508.20391v1",
+    "title": "On the Regulation of the Solar Wind Helium Abundance by the Hydrogen Compressibility",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:27.912618",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2508.20303v1",
+    "title": "Efficient ion re-acceleration in laboratory-produced interpenetrating collisionless shocks",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:27.913258",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2508.20299v3",
+    "title": "Magnetic Centrifuge Effects in Ultrafast Laser Ablation Plasmas",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:27.913926",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2508.19820v1",
+    "title": "Molecular dynamics of nondegenerate hydrogen plasma using improved Kelbg pseudopotential with electron finite-size correction",
+    "parameters": {
+      "temperature": [
+        {
+          "type": "temperature",
+          "value": 50.0,
+          "unit": "k",
+          "context": "nphysical cluster formation at temperatures below 50 kK, which was first reported by A.V. Filinov [Phys.",
+          "confidence": "medium",
+          "is_correct": true
+        }
+      ],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:28.999482",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2508.19662v1",
+    "title": "Transition of blue-core helicon discharge",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:29.000716",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2508.17963v1",
+    "title": "Enhanced Terahertz Generation via Oblique Incidence of Unipolar Laser Pulses on Plasma",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:29.001488",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2508.17810v1",
+    "title": "Kinetic contribution to the arbitrary order odd frequency moments of the dynamic structure factor",
+    "parameters": {
+      "temperature": [],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:29.001836",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2508.17691v2",
+    "title": "Design and initial results from the \"Junior\" Levitated Dipole Experiment",
+    "parameters": {
+      "temperature": [
+        {
+          "type": "temperature",
+          "value": 50.0,
+          "unit": "k",
+          "context": "acuum chamber, with plasma heating achieved via < 50 kW of electron cyclotron resonance heating power.",
+          "confidence": "medium",
+          "is_correct": true
+        }
+      ],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:30.388690",
+    "extraction_method": "regex+llm"
+  },
+  {
+    "paper_id": "2508.17443v1",
+    "title": "Pulsed laser synthesis of mesoporous metal chalcogenide thin films",
+    "parameters": {
+      "temperature": [
+        {
+          "type": "temperature",
+          "value": 0.5,
+          "unit": "eV",
+          "context": "s dominated by species with kinetic energies $\\le$0.5 eV/atom. X-ray reflectivity and atomic force microsc",
+          "confidence": "medium",
+          "is_correct": true
+        }
+      ],
+      "density": []
+    },
+    "extraction_date": "2025-10-30T16:32:45.432299",
     "extraction_method": "regex+llm"
   }
 ]

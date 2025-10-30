@@ -1,0 +1,525 @@
+@prefix : <http://example.org/plasma#> .
+@prefix paper: <http://example.org/plasma/paper/> .
+@prefix meas: <http://example.org/plasma/measurement/> .
+@prefix param: <http://example.org/plasma/parameter/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# ============================================
+# Plasma Physics Knowledge Graph Data
+# Generated: 2025-10-30T18:20:29.993286
+# Papers: 18
+# ============================================
+
+# Paper: The Opacity Project: R-Matrix Calculations for Opacities of ...
+<http://example.org/plasma/paper/2510.20775v1> a :Paper ;
+    :arxivId "2510.20775v1" ;
+    :title "The Opacity Project: R-Matrix Calculations for Opacities of High-Energy-Density Astrophysical and Laboratory Plasmas" ;
+    :reports <http://example.org/plasma/measurement/m1> .
+
+# Paper: Physics insights from a large-scale 2D UEDGE simulation data...
+<http://example.org/plasma/paper/2510.16199v1> a :Paper ;
+    :arxivId "2510.16199v1" ;
+    :title "Physics insights from a large-scale 2D UEDGE simulation database for detachment control in KSTAR" ;
+    :reports <http://example.org/plasma/measurement/m2> .
+
+# Paper: Thermal and Electrical Conductivities of Aluminum Up to 1000...
+<http://example.org/plasma/paper/2510.10112v1> a :Paper ;
+    :arxivId "2510.10112v1" ;
+    :title "Thermal and Electrical Conductivities of Aluminum Up to 1000 eV: A First-Principles Prediction" ;
+    :reports <http://example.org/plasma/measurement/m3> .
+
+# Paper: Full-wave computation of SUb-atmospheric Radio-frequency Eng...
+<http://example.org/plasma/paper/2510.07849v1> a :Paper ;
+    :arxivId "2510.07849v1" ;
+    :title "Full-wave computation of SUb-atmospheric Radio-frequency Engine (SURE)" ;
+    :reports <http://example.org/plasma/measurement/m4> .
+
+# Paper: Experimental Results from Early Non-Planar NI-HTS Magnet Pro...
+<http://example.org/plasma/paper/2510.07042v1> a :Paper ;
+    :arxivId "2510.07042v1" ;
+    :title "Experimental Results from Early Non-Planar NI-HTS Magnet Prototypes for the Columbia Stellarator eXperiment (CSX)" ;
+    :reports <http://example.org/plasma/measurement/m5> ;
+    :reports <http://example.org/plasma/measurement/m6> ;
+    :reports <http://example.org/plasma/measurement/m7> .
+
+# Paper: Detailed Derivation of the Scalar Explicit Expressions Gover...
+<http://example.org/plasma/paper/2510.01289v1> a :Paper ;
+    :arxivId "2510.01289v1" ;
+    :title "Detailed Derivation of the Scalar Explicit Expressions Governing the Electric Field, Current Density, and Volumetric Power Density in the Four Types of Linear Divergent MHD Channels Under a Unidirectional Applied Magnetic Field" ;
+    :reports <http://example.org/plasma/measurement/m8> ;
+    :reports <http://example.org/plasma/measurement/m9> ;
+    :reports <http://example.org/plasma/measurement/m10> ;
+    :reports <http://example.org/plasma/measurement/m11> .
+
+# Paper: Magnetic flux ropes within reconnection exhausts close to th...
+<http://example.org/plasma/paper/2509.16849v1> a :Paper ;
+    :arxivId "2509.16849v1" ;
+    :title "Magnetic flux ropes within reconnection exhausts close to the centers of heliospheric current sheets near the Sun" ;
+    :reports <http://example.org/plasma/measurement/m12> .
+
+# Paper: Ionization and temperature measurements in warm dense copper...
+<http://example.org/plasma/paper/2509.13272v1> a :Paper ;
+    :arxivId "2509.13272v1" ;
+    :title "Ionization and temperature measurements in warm dense copper using x-ray absorption spectroscopy" ;
+    :reports <http://example.org/plasma/measurement/m13> ;
+    :reports <http://example.org/plasma/measurement/m14> ;
+    :reports <http://example.org/plasma/measurement/m15> .
+
+# Paper: Experimental validation of electron correlation models in wa...
+<http://example.org/plasma/paper/2509.10107v1> a :Paper ;
+    :arxivId "2509.10107v1" ;
+    :title "Experimental validation of electron correlation models in warm dense matter" ;
+    :reports <http://example.org/plasma/measurement/m16> .
+
+# Paper: Development of a national thrust test facility for electric ...
+<http://example.org/plasma/paper/2509.10558v1> a :Paper ;
+    :arxivId "2509.10558v1" ;
+    :title "Development of a national thrust test facility for electric propulsion at Robinson Research Institute, New Zealand" ;
+    :reports <http://example.org/plasma/measurement/m17> .
+
+# Paper: Modeling Low-Temperature Plasmas Simulating Titan's Atmosphe...
+<http://example.org/plasma/paper/2509.08063v1> a :Paper ;
+    :arxivId "2509.08063v1" ;
+    :title "Modeling Low-Temperature Plasmas Simulating Titan's Atmosphere" ;
+    :reports <http://example.org/plasma/measurement/m18> .
+
+# Paper: Dissociative recombination of NeH+ with low-energy electrons...
+<http://example.org/plasma/paper/2509.05859v1> a :Paper ;
+    :arxivId "2509.05859v1" ;
+    :title "Dissociative recombination of NeH+ with low-energy electrons: Multichannel quantum defect theory including non-adiabatic couplings" ;
+    :reports <http://example.org/plasma/measurement/m19> .
+
+# Paper: Multi-diagnostic characterization of inductively coupled dis...
+<http://example.org/plasma/paper/2509.01171v1> a :Paper ;
+    :arxivId "2509.01171v1" ;
+    :title "Multi-diagnostic characterization of inductively coupled discharges with tailored waveform substrate bias for precise control of plasma etching" ;
+    :reports <http://example.org/plasma/measurement/m20> ;
+    :reports <http://example.org/plasma/measurement/m21> ;
+    :reports <http://example.org/plasma/measurement/m22> ;
+    :reports <http://example.org/plasma/measurement/m23> ;
+    :reports <http://example.org/plasma/measurement/m24> ;
+    :reports <http://example.org/plasma/measurement/m25> .
+
+# Paper: Simulation study of neutral tungsten emissions for fusion ap...
+<http://example.org/plasma/paper/2509.00878v1> a :Paper ;
+    :arxivId "2509.00878v1" ;
+    :title "Simulation study of neutral tungsten emissions for fusion applications" ;
+    :reports <http://example.org/plasma/measurement/m26> .
+
+# Paper: Automated simulation-based design via multi-fidelity active ...
+<http://example.org/plasma/paper/2508.20878v1> a :Paper ;
+    :arxivId "2508.20878v1" ;
+    :title "Automated simulation-based design via multi-fidelity active learning and optimisation for laser direct drive implosions" ;
+    :reports <http://example.org/plasma/measurement/m27> .
+
+# Paper: Molecular dynamics of nondegenerate hydrogen plasma using im...
+<http://example.org/plasma/paper/2508.19820v1> a :Paper ;
+    :arxivId "2508.19820v1" ;
+    :title "Molecular dynamics of nondegenerate hydrogen plasma using improved Kelbg pseudopotential with electron finite-size correction" ;
+    :reports <http://example.org/plasma/measurement/m28> .
+
+# Paper: Design and initial results from the \"Junior\" Levitated Dip...
+<http://example.org/plasma/paper/2508.17691v2> a :Paper ;
+    :arxivId "2508.17691v2" ;
+    :title "Design and initial results from the \"Junior\" Levitated Dipole Experiment" ;
+    :reports <http://example.org/plasma/measurement/m29> .
+
+# Paper: Pulsed laser synthesis of mesoporous metal chalcogenide thin...
+<http://example.org/plasma/paper/2508.17443v1> a :Paper ;
+    :arxivId "2508.17443v1" ;
+    :title "Pulsed laser synthesis of mesoporous metal chalcogenide thin films" ;
+    :reports <http://example.org/plasma/measurement/m30> .
+
+<http://example.org/plasma/measurement/m1> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p1> ;
+    :confidence "medium" ;
+    :extractionMethod "regex+llm" ;
+    :context "ment fusion (ICF) device at the Sandia Z facility 2.11 x 10^6 K, N_e = 3.16 x 10^{22}/cc. We calcula" ;
+    .
+
+<http://example.org/plasma/parameter/p1> a :Temperature ;
+    :value 2110000.0 ;
+    :unitString "K" ;
+    :normalizedValue 0.1818187 ;
+    .
+
+<http://example.org/plasma/measurement/m2> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p2> ;
+    :confidence "medium" ;
+    :extractionMethod "regex+llm" ;
+    :context "ture at detachment onset consistently Te around 3-4 eV, largely insensitive to upstream conditions. " ;
+    .
+
+<http://example.org/plasma/parameter/p2> a :Temperature ;
+    :value 4.0 ;
+    :unitString "eV" ;
+    :normalizedValue 0.004 ;
+    .
+
+<http://example.org/plasma/measurement/m3> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p3> ;
+    :confidence "medium" ;
+    :extractionMethod "regex+llm" ;
+    :context "electrical conductivities of Aluminum (Al) up to 1000 eV. Compared to traditional transport models, " ;
+    .
+
+<http://example.org/plasma/parameter/p3> a :Temperature ;
+    :value 1000.0 ;
+    :unitString "eV" ;
+    :normalizedValue 1.0 ;
+    .
+
+<http://example.org/plasma/measurement/m4> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p4> ;
+    :confidence "medium" ;
+    :extractionMethod "regex+llm" ;
+    :context "Near-space, which covers altitudes from 20 to 100 kilometers, has been receiving more and more atten" ;
+    .
+
+<http://example.org/plasma/parameter/p4> a :Temperature ;
+    :value 100.0 ;
+    :unitString "k" ;
+    :normalizedValue 8.616999999999999e-06 ;
+    .
+
+<http://example.org/plasma/measurement/m5> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p5> ;
+    :confidence "medium" ;
+    :extractionMethod "regex+llm" ;
+    :context "d baseline winding, achieving predicted fields at 77 K. P2 (non-planar, higher strain) was wound to " ;
+    .
+
+<http://example.org/plasma/parameter/p5> a :Temperature ;
+    :value 77.0 ;
+    :unitString "K" ;
+    :normalizedValue 6.6350899999999995e-06 ;
+    .
+
+<http://example.org/plasma/measurement/m6> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p6> ;
+    :confidence "medium" ;
+    :extractionMethod "regex+llm" ;
+    :context "er strain) was wound to 42 turns, energized at 30-40 K to produce expected magnetic fields, and stud" ;
+    .
+
+<http://example.org/plasma/parameter/p6> a :Temperature ;
+    :value 40.0 ;
+    :unitString "K" ;
+    :normalizedValue 3.4467999999999998e-06 ;
+    .
+
+<http://example.org/plasma/measurement/m7> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p7> ;
+    :confidence "medium" ;
+    :extractionMethod "regex+llm" ;
+    :context "s, 200 turns, and approaches the 70 kAt target at 20 K. In parallel, sub-microhm lap joints have bee" ;
+    .
+
+<http://example.org/plasma/parameter/p7> a :Temperature ;
+    :value 20.0 ;
+    :unitString "K" ;
+    :normalizedValue 1.7233999999999999e-06 ;
+    .
+
+<http://example.org/plasma/measurement/m8> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p8> ;
+    :confidence "medium" ;
+    :extractionMethod "regex+llm" ;
+    :context "ectric field (across the external electric load): 5 kV/m, useful electric current-density (between t" ;
+    .
+
+<http://example.org/plasma/parameter/p8> a :Temperature ;
+    :value 5.0 ;
+    :unitString "k" ;
+    :normalizedValue 4.3084999999999997e-07 ;
+    .
+
+<http://example.org/plasma/measurement/m9> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p9> ;
+    :confidence "medium" ;
+    :extractionMethod "regex+llm" ;
+    :context "ween the terminal electrodes within the channel): 12.5 kA/m2 , volumetric power density (dissipated " ;
+    .
+
+<http://example.org/plasma/parameter/p9> a :Temperature ;
+    :value 12.5 ;
+    :unitString "k" ;
+    :normalizedValue 1.0771249999999999e-06 ;
+    .
+
+<http://example.org/plasma/measurement/m10> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p10> ;
+    :confidence "medium" ;
+    :extractionMethod "regex+llm" ;
+    :context "f 5), these quantitative performance values become25 kV/m, 4.808 kA/m2, 120.19 MW/m3, and 46.30%." ;
+    .
+
+<http://example.org/plasma/parameter/p10> a :Temperature ;
+    :value 25.0 ;
+    :unitString "k" ;
+    :normalizedValue 2.1542499999999997e-06 ;
+    .
+
+<http://example.org/plasma/measurement/m11> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p11> ;
+    :confidence "medium" ;
+    :extractionMethod "regex+llm" ;
+    :context "se quantitative performance values become25 kV/m, 4.808 kA/m2, 120.19 MW/m3, and 46.30%." ;
+    .
+
+<http://example.org/plasma/parameter/p11> a :Temperature ;
+    :value 4.808 ;
+    :unitString "k" ;
+    :normalizedValue 4.1430535999999996e-07 ;
+    .
+
+<http://example.org/plasma/measurement/m12> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p12> ;
+    :confidence "medium" ;
+    :extractionMethod "regex+llm" ;
+    :context "nent, travel speed slightly faster (typically by <10km/s) than surrounding outflows, and often accom" ;
+    .
+
+<http://example.org/plasma/parameter/p12> a :Temperature ;
+    :value 10.0 ;
+    :unitString "k" ;
+    :normalizedValue 8.616999999999999e-07 ;
+    .
+
+<http://example.org/plasma/measurement/m13> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p13> ;
+    :confidence "medium" ;
+    :extractionMethod "regex+llm" ;
+    :context "ity (15 to 25 g/cm$^3$) and temperatures of 10 to 21 eV. Experiments performed at the OMEGA Laser Fa" ;
+    .
+
+<http://example.org/plasma/parameter/p13> a :Temperature ;
+    :value 21.0 ;
+    :unitString "eV" ;
+    :normalizedValue 0.021 ;
+    .
+
+<http://example.org/plasma/measurement/m14> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p14> ;
+    :confidence "medium" ;
+    :extractionMethod "regex+llm" ;
+    :context "ially ionized plasmas have K-edge shifts of 12 to 30 eV and bound-bound resonance 1s$\\rightarrow$3p " ;
+    .
+
+<http://example.org/plasma/parameter/p14> a :Temperature ;
+    :value 30.0 ;
+    :unitString "eV" ;
+    :normalizedValue 0.03 ;
+    .
+
+<http://example.org/plasma/measurement/m15> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p15> ;
+    :confidence "medium" ;
+    :extractionMethod "regex+llm" ;
+    :context "nance 1s$\\rightarrow$3p absorption shifts of 4 to 26 eV with respect to the cold K-edge. This study " ;
+    .
+
+<http://example.org/plasma/parameter/p15> a :Temperature ;
+    :value 26.0 ;
+    :unitString "eV" ;
+    :normalizedValue 0.026 ;
+    .
+
+<http://example.org/plasma/measurement/m16> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p16> ;
+    :confidence "medium" ;
+    :extractionMethod "regex+llm" ;
+    :context "3.75-4.5 g/cm$^3$ and a temperature of approximately 0.6 eV, performed at the HED-HiBEF instrument o" ;
+    .
+
+<http://example.org/plasma/parameter/p16> a :Temperature ;
+    :value 0.6 ;
+    :unitString "eV" ;
+    :normalizedValue 0.0006 ;
+    .
+
+<http://example.org/plasma/measurement/m17> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p17> ;
+    :confidence "medium" ;
+    :extractionMethod "regex+llm" ;
+    :context "uilt to withstands static thruster loads of up to 30 kg and measure thrust forces up to 200 mN. It i" ;
+    .
+
+<http://example.org/plasma/parameter/p17> a :Temperature ;
+    :value 30.0 ;
+    :unitString "k" ;
+    :normalizedValue 2.5851e-06 ;
+    .
+
+<http://example.org/plasma/measurement/m18> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p18> ;
+    :confidence "medium" ;
+    :extractionMethod "regex+llm" ;
+    :context "y induced by plasma discharge at low temperature (150 K) in the NASA Ames COSmIC Simulation Chamber " ;
+    .
+
+<http://example.org/plasma/parameter/p18> a :Temperature ;
+    :value 150.0 ;
+    :unitString "K" ;
+    :normalizedValue 1.29255e-05 ;
+    .
+
+<http://example.org/plasma/measurement/m19> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p19> ;
+    :confidence "medium" ;
+    :extractionMethod "regex+llm" ;
+    :context "tal data and fill a gap in theoretical data below 4.5 eV, where no detailed quantum calculations are" ;
+    .
+
+<http://example.org/plasma/parameter/p19> a :Temperature ;
+    :value 4.5 ;
+    :unitString "eV" ;
+    :normalizedValue 0.0045 ;
+    .
+
+<http://example.org/plasma/measurement/m20> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p20> ;
+    :confidence "medium" ;
+    :extractionMethod "regex+llm" ;
+    :context "plasma processes. In this work, a low frequency (100 kHz) tailored pulse-wave-shaped bias voltage wa" ;
+    .
+
+<http://example.org/plasma/parameter/p20> a :Temperature ;
+    :value 100.0 ;
+    :unitString "k" ;
+    :normalizedValue 8.616999999999999e-06 ;
+    .
+
+<http://example.org/plasma/measurement/m21> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p21> ;
+    :confidence "medium" ;
+    :extractionMethod "regex+llm" ;
+    :context "Fs with a full width at half maximum (FWHM) below 10 eV are realized with mean ion energies ranging " ;
+    .
+
+<http://example.org/plasma/parameter/p21> a :Temperature ;
+    :value 10.0 ;
+    :unitString "eV" ;
+    :normalizedValue 0.01 ;
+    .
+
+<http://example.org/plasma/measurement/m22> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p22> ;
+    :confidence "medium" ;
+    :extractionMethod "regex+llm" ;
+    :context "are realized with mean ion energies ranging from 20 eV to 100 eV in both argon and SF6. Such monoene" ;
+    .
+
+<http://example.org/plasma/parameter/p22> a :Temperature ;
+    :value 20.0 ;
+    :unitString "eV" ;
+    :normalizedValue 0.02 ;
+    .
+
+<http://example.org/plasma/measurement/m23> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p23> ;
+    :confidence "medium" ;
+    :extractionMethod "regex+llm" ;
+    :context "ized with mean ion energies ranging from 20 eV to 100 eV in both argon and SF6. Such monoenergetic I" ;
+    .
+
+<http://example.org/plasma/parameter/p23> a :Temperature ;
+    :value 100.0 ;
+    :unitString "eV" ;
+    :normalizedValue 0.1 ;
+    .
+
+<http://example.org/plasma/measurement/m24> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p24> ;
+    :confidence "medium" ;
+    :extractionMethod "regex+llm" ;
+    :context "es of amorphous silicon and silicon dioxide to be 23 eV and 37 eV, respectively, and to realize sele" ;
+    .
+
+<http://example.org/plasma/parameter/p24> a :Temperature ;
+    :value 23.0 ;
+    :unitString "eV" ;
+    :normalizedValue 0.023 ;
+    .
+
+<http://example.org/plasma/measurement/m25> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p25> ;
+    :confidence "medium" ;
+    :extractionMethod "regex+llm" ;
+    :context "phous silicon and silicon dioxide to be 23 eV and 37 eV, respectively, and to realize selective etch" ;
+    .
+
+<http://example.org/plasma/parameter/p25> a :Temperature ;
+    :value 37.0 ;
+    :unitString "eV" ;
+    :normalizedValue 0.037 ;
+    .
+
+<http://example.org/plasma/measurement/m26> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p26> ;
+    :confidence "medium" ;
+    :extractionMethod "regex+llm" ;
+    :context "Cross-sections are computed for incident electron energy up to 30 keV." ;
+    .
+
+<http://example.org/plasma/parameter/p26> a :Temperature ;
+    :value 30.0 ;
+    :unitString "keV" ;
+    :normalizedValue 30.0 ;
+    .
+
+<http://example.org/plasma/measurement/m27> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p27> ;
+    :confidence "medium" ;
+    :extractionMethod "regex+llm" ;
+    :context "yesian optimisation to find optimal designs for a 25 kJ laser driver. We perform hydrodynamic scalin" ;
+    .
+
+<http://example.org/plasma/parameter/p27> a :Temperature ;
+    :value 25.0 ;
+    :unitString "kJ" ;
+    :normalizedValue 25.0 ;
+    .
+
+<http://example.org/plasma/measurement/m28> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p28> ;
+    :confidence "medium" ;
+    :extractionMethod "regex+llm" ;
+    :context "nphysical cluster formation at temperatures below 50 kK, which was first reported by A.V. Filinov [P" ;
+    .
+
+<http://example.org/plasma/parameter/p28> a :Temperature ;
+    :value 50.0 ;
+    :unitString "k" ;
+    :normalizedValue 4.3084999999999995e-06 ;
+    .
+
+<http://example.org/plasma/measurement/m29> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p29> ;
+    :confidence "medium" ;
+    :extractionMethod "regex+llm" ;
+    :context "acuum chamber, with plasma heating achieved via < 50 kW of electron cyclotron resonance heating powe" ;
+    .
+
+<http://example.org/plasma/parameter/p29> a :Temperature ;
+    :value 50.0 ;
+    :unitString "k" ;
+    :normalizedValue 4.3084999999999995e-06 ;
+    .
+
+<http://example.org/plasma/measurement/m30> a :Measurement ;
+    :measuresParameter <http://example.org/plasma/parameter/p30> ;
+    :confidence "medium" ;
+    :extractionMethod "regex+llm" ;
+    :context "s dominated by species with kinetic energies $\\le$0.5 eV/atom. X-ray reflectivity and atomic force m" ;
+    .
+
+<http://example.org/plasma/parameter/p30> a :Temperature ;
+    :value 0.5 ;
+    :unitString "eV" ;
+    :normalizedValue 0.0005 ;
+    .
+
+# End of data

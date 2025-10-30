@@ -49,9 +49,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         query += f"SELECT DISTINCT {' '.join(select_vars)}\n"
         query += "WHERE {\n"
         query += "  ?paper a :Paper ;\n"
-        query += "         :title ?title ;\n"
-        query += "         :authors ?authors ;\n"
-        query += "         :publicationDate ?publicationDate .\n\n"
+        query += "         :title ?title .\n"
+        query += "  OPTIONAL { ?paper :authors ?authors }\n"
+        query += "  OPTIONAL { ?paper :publicationDate ?publicationDate }\n\n"
 
         # Add temperature filter
         if "temperature" in parsed.parameters:
@@ -70,7 +70,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
             query += self._build_keyword_filter(parsed.keywords)
 
         query += "}\n"
-        query += "ORDER BY DESC(?publicationDate)\n"
+        # Only order by publication date if it exists, otherwise order by title
+        if parsed.temporal_constraint:
+            query += "ORDER BY DESC(?publicationDate)\n"
+        else:
+            query += "ORDER BY ?title\n"
         query += f"LIMIT {limit}"
 
         return query
