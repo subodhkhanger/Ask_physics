@@ -1,0 +1,62 @@
+FROM openjdk:11-jre-slim
+
+# Install dependencies
+RUN apt-get update && \
+    apt-get install -y wget curl && \
+    rm -rf /var/lib/apt/lists/*
+
+# Download and install Fuseki
+WORKDIR /opt
+RUN wget -q https://dlcdn.apache.org/jena/binaries/apache-jena-fuseki-4.10.0.tar.gz && \
+    tar -xzf apache-jena-fuseki-4.10.0.tar.gz && \
+    mv apache-jena-fuseki-4.10.0 fuseki && \
+    rm apache-jena-fuseki-4.10.0.tar.gz
+
+WORKDIR /opt/fuseki
+
+# Copy data files
+COPY data/plasma_data.ttl /opt/fuseki/data/plasma_data.ttl
+COPY ontology/plasma_physics.ttl /opt/fuseki/ontology/plasma_physics.ttl
+
+# Create data directory for persistence
+RUN mkdir -p /fuseki-data
+
+# Create startup script that loads data on startup
+RUN echo '#!/bin/bash\n\
+set -e\n\
+\n\
+echo "Starting Fuseki..."\n\
+\n\
+# Start Fuseki in background with in-memory dataset\n\
+./fuseki-server --port=${PORT:-3030} --update --mem /plasma &\n\
+FUSEKI_PID=$!\n\
+\n\
+echo "Waiting for Fuseki to start..."\n\
+sleep 15\n\
+\n\
+echo "Loading ontology..."\n\
+curl -f -X POST \
+  -H "Content-Type: text/turtle" \
+  --data-binary "@/opt/fuseki/ontology/plasma_physics.ttl" \
+  http://localhost:${PORT:-3030}/plasma/data || echo "Ontology load failed (may be ok)"\n\
+\n\
+echo "Loading data..."\n\
+curl -f -X POST \
+  -H "Content-Type: text/turtle" \
+  --data-binary "@/opt/fuseki/data/plasma_data.ttl" \
+  http://localhost:${PORT:-3030}/plasma/data || echo "Data load failed"\n\
+\n\
+echo "Fuseki ready!"\n\
+\n\
+# Keep Fuseki running in foreground\n\
+wait $FUSEKI_PID\n\
+' > /opt/fuseki/start.sh && chmod +x /opt/fuseki/start.sh
+
+# Expose port (Railway will assign PORT env var)
+EXPOSE 3030
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
+  CMD curl -f http://localhost:${PORT:-3030}/$/ping || exit 1
+
+CMD ["/opt/fuseki/start.sh"]
