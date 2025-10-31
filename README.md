@@ -1,248 +1,228 @@
-# Plasma Physics Parameter-Aware Literature Search
+# askPhysics - Semantic Search for Plasma Physics Literature
 
-A proof-of-concept system demonstrating parameter-aware literature search for plasma physics research. This prototype implements three key technical approaches: LoRA-adapted LLM for domain understanding, LLM-to-SPARQL translation for structured queries, and unit-aware physical parameter searching.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
+[![React 18](https://img.shields.io/badge/react-18-blue.svg)](https://reactjs.org/)
 
-**Status**: ✅ Phase 3 Complete - REST API Ready | 🚧 Phase 4 - Frontend (Next)
+A semantic search system for plasma physics literature that combines **natural language processing** with **knowledge graphs** to enable intuitive queries like "Show me papers about electron density between 10^17 and 10^18 m^-3".
 
-## Quick Start
+## 🌟 Features
+
+### Natural Language Queries
+- **Plain English input**: "Find research on plasma temperature in tokamaks"
+- **Unit-aware search**: Automatically normalizes eV, keV, m^-3, cm^-3
+- **Range queries**: "temperature between 1 and 10 keV"
+- **Temporal filters**: "recent papers on electron density"
+
+### Semantic Knowledge Graph
+- **RDF-based ontology** for plasma physics concepts
+- **SPARQL backend** for complex queries
+- **Apache Jena Fuseki** triple store
+- **547 triples** covering 100 research papers
+
+### LLM Integration
+- **GPT-4o-mini** for parameter extraction
+- Translates natural language → structured parameters
+- **Fallback regex parsing** when LLM unavailable
+- Dynamic SPARQL query generation
+
+### Full-Stack Application
+- **React + TypeScript** frontend with modern UI
+- **FastAPI** backend with auto-generated API docs
+- **RESTful API** for easy integration
+- **Firebase Analytics** support (optional)
+
+## 🚀 Quick Start
 
 ### Prerequisites
-- Python 3.10+
-- pip
-- Docker Desktop (for Fuseki triple store)
-- (Optional) OpenAI API key for LLM-enhanced extraction
+
+- Python 3.9+
+- Node.js 18+
+- Java 11+ (for Fuseki)
+- OpenAI API key (optional, for NLP features)
 
 ### Installation
 
 ```bash
-# Clone/navigate to project
+# Clone the repository
+git clone https://github.com/subodhkhanger/askPhysics.git
 cd askPhysics
 
-# Install dependencies
+# Install backend dependencies
+cd backend
 pip install -r requirements.txt
 
-# Set up environment (optional but recommended for better accuracy)
-cp .env.example .env
-# Edit .env and add your OPENAI_API_KEY
+# Install frontend dependencies
+cd ../frontend
+npm install
+
+# Start the system
+cd ..
+./start_demo.sh
 ```
 
-### Quick Demo (5 Minutes)
+See [INSTALLATION_GUIDE.md](INSTALLATION_GUIDE.md) for detailed instructions.
 
-See [QUICK_START.md](QUICK_START.md) for a complete walkthrough.
+## 📖 Usage
+
+### Via Web Interface
+
+1. Start the application: `./start_demo.sh`
+2. Open browser: `http://localhost:3000`
+3. Try these example queries:
+   - "Show me papers about electron density"
+   - "plasma temperature between 1 and 10 keV"
+   - "recent research on low-temperature plasmas"
+
+### Via API
 
 ```bash
-# 1. Start the knowledge graph (Fuseki)
-bash scripts/setup_fuseki.sh
+# Natural language query
+curl -X POST http://localhost:8000/query/natural-language \
+  -H "Content-Type: application/json" \
+  -d '{"query": "electron density 10^17 m^-3", "limit": 10}'
 
-# 2. Start the REST API
-cd backend
-python run.py
+# Direct SPARQL
+curl "http://localhost:8000/papers?limit=20"
 
-# 3. Access API documentation
-open http://localhost:8000/docs
-
-# 4. Test API endpoints
-curl http://localhost:8000/statistics
-curl "http://localhost:8000/temperatures?min_temp=10"
+# Temperature range
+curl "http://localhost:8000/temperatures?min_temp=1.0&max_temp=10.0"
 ```
 
-### Full Pipeline
+API documentation: `http://localhost:8000/docs`
 
-```bash
-# Phase 1: Collect papers and extract parameters
-python scripts/collect_papers.py --limit 20
-python scripts/extract_parameters.py --input data/papers.json --no-llm
-
-# Phase 2: Build knowledge graph
-python scripts/convert_to_rdf.py \
-  --input data/extracted_params.json \
-  --output data/plasma_data.ttl
-
-bash scripts/setup_fuseki.sh
-
-# Query the knowledge graph
-python scripts/test_sparql.py
-```
-
-## Project Structure
+## 🏗 Architecture
 
 ```
-askPhysics/
-├── data/                          # Data files
-│   ├── papers.json                # Raw papers from arXiv
-│   ├── sample_extracted_params.json # Sample extracted parameters ✅
-│   └── plasma_data.ttl            # RDF knowledge graph (373 triples) ✅
-├── scripts/                       # Processing scripts
-│   ├── collect_papers.py          # Fetch papers from arXiv ✅
-│   ├── extract_parameters.py      # Extract temp/density ✅
-│   ├── convert_to_rdf.py          # Convert to RDF ✅
-│   ├── setup_fuseki.sh            # Setup triple store ✅
-│   └── test_sparql.py             # Test SPARQL queries ✅
-├── ontology/
-│   └── plasma_physics.ttl         # Domain ontology (15+ classes) ✅
-├── queries/
-│   └── example_queries.sparql     # 12 example queries ✅
-├── docker-compose.yml             # Fuseki deployment ✅
-├── backend/                       # FastAPI REST API ✅
-│   ├── main.py                    # API routes (14 endpoints)
-│   ├── sparql_client.py           # SPARQL integration
-│   ├── models.py                  # Pydantic schemas
-│   ├── tests/test_api.py          # Unit tests (25+)
-│   └── README.md                  # Backend docs
-├── frontend/                      # Streamlit UI (Phase 4)
-├── models/                        # LoRA adapters (Phase 4)
-├── PHASE1_COMPLETE.md             # Phase 1 documentation ✅
-├── PHASE2_COMPLETE.md             # Phase 2 documentation ✅
-├── PHASE3_COMPLETE.md             # Phase 3 documentation ✅
-├── QUICK_START.md                 # Quick start guide ✅
-└── README.md                      # This file
+┌─────────────────┐
+│   Frontend      │  React + TypeScript
+│   (Port 3000)   │  Natural language input
+└────────┬────────┘
+         │
+         v
+┌─────────────────┐
+│   Backend       │  FastAPI + Python
+│   (Port 8000)   │  NLP + SPARQL generation
+└────────┬────────┘
+         │
+         ├─> OpenAI GPT-4o-mini (parameter extraction)
+         │
+         v
+┌─────────────────┐
+│   Fuseki        │  Apache Jena Fuseki
+│   (Port 3030)   │  RDF triple store
+└─────────────────┘
+         │
+         v
+   Knowledge Graph
+   (547 triples)
 ```
 
-## Features
+## 🔬 Example Queries
 
-### Phase 1: Data Collection & Parameter Extraction ✅ Complete
-- [x] Collect papers from arXiv physics.plasm-ph
-- [x] Extract electron temperature (Te) values
-- [x] Extract density (ne) values
-- [x] Hybrid regex + LLM extraction pipeline
-- [x] Manual validation (100% accuracy on 10 papers)
-- [x] Context preservation for validation
-- [x] Confidence scoring
-
-**See**: [PHASE1_COMPLETE.md](PHASE1_COMPLETE.md)
-
-### Phase 2: Knowledge Graph Construction ✅ Complete
-- [x] Apache Jena Fuseki setup with Docker
-- [x] RDF ontology design (15+ classes, 25+ properties)
-- [x] Convert extracted data to RDF triples (373 triples)
-- [x] SPARQL query interface (12 example queries)
-- [x] Value normalization (keV, m⁻³)
-- [x] Automated setup and testing scripts
-
-**See**: [PHASE2_COMPLETE.md](PHASE2_COMPLETE.md) | [QUICK_START.md](QUICK_START.md)
-
-### Phase 3: REST API ✅ Complete
-- [x] FastAPI backend with 14 endpoints
-- [x] Query parameter filtering (temperature, density ranges)
-- [x] In-memory caching (300s TTL, 20-35x speedup)
-- [x] OpenAPI/Swagger documentation
-- [x] Unit tests (25+ tests, ~90% coverage)
-- [x] SPARQL client with error handling
-- [x] Pydantic models for type safety
-
-**See**: [PHASE3_COMPLETE.md](PHASE3_COMPLETE.md) | [backend/README.md](backend/README.md)
-
-### Phase 4: Web Application
-- [ ] Streamlit frontend
-- [ ] Interactive query builder
-- [ ] Data visualization (temp vs density plots)
-- [ ] End-to-end query flow
-
-## Example SPARQL Queries
-
-### Find High-Temperature Plasmas (> 10 keV)
-
-```sparql
-PREFIX : <http://example.org/plasma#>
-
-SELECT ?title ?temp ?unit
-WHERE {
-  ?paper :title ?title ;
-         :reports ?meas .
-  ?meas :measuresParameter ?param .
-  ?param a :Temperature ;
-         :value ?temp ;
-         :normalizedValue ?normTemp .
-  FILTER(?normTemp > 10)
-}
-ORDER BY DESC(?normTemp)
+### Simple Keyword Search
+```
+"papers about electron density"
+→ Returns papers containing "electron density"
 ```
 
-### Get Temperature Statistics
-
-```sparql
-PREFIX : <http://example.org/plasma#>
-
-SELECT
-  (COUNT(?temp) as ?count)
-  (AVG(?normValue) as ?avgKeV)
-  (MAX(?normValue) as ?maxKeV)
-WHERE {
-  ?temp a :Temperature ;
-        :normalizedValue ?normValue .
-}
+### Unit-Aware Range Query
+```
+"temperature between 1 and 10 keV"
+→ Finds papers with temp measurements in that range
+→ Automatically normalizes eV → keV
 ```
 
-**More examples**: See [queries/example_queries.sparql](queries/example_queries.sparql) for 12 queries
+### Scientific Notation
+```
+"density 10^17 m^-3"
+→ Handles scientific notation
+→ Normalizes cm^-3 → m^-3
+```
 
-## Technical Approach
+### Combined Constraints
+```
+"recent papers on plasma temperature 1-5 keV in tokamaks"
+→ Temporal: last 2 years
+→ Parameter: temperature 1-5 keV
+→ Keywords: plasma, tokamaks
+```
 
-Following the guidance from [PRD_PlasmaSearch.md](.claude/skills/PRD_PlasmaSearch.md) and [SKILLS.md](.claude/skills/SKILLS.md):
+See [QUERY_EXAMPLES.md](QUERY_EXAMPLES.md) for more examples.
 
-1. **Parameter Extraction**: Hybrid regex + LLM validation approach
-   - Regex: Fast structure detection (~70% accuracy)
-   - LLM: Contextual validation (~90% accuracy)
+## 📊 Knowledge Graph
 
-2. **Knowledge Graph**: RDF with QUDT units in Apache Jena Fuseki
+The system includes:
 
-3. **Query Translation**: Few-shot prompting for natural language → SPARQL
+- **100 plasma physics papers** from arXiv
+- **Temperature measurements** (keV normalized)
+- **Density measurements** (m^-3 normalized)
+- **Paper metadata** (title, authors, abstract, DOI)
+- **Custom ontology** for plasma physics concepts
 
-4. **Unit Conversion**: Automatic normalization (eV ↔ keV ↔ K)
+### Ontology Classes
 
-## Development Progress
+- `Paper` - Scientific publications
+- `Measurement` - Experimental measurements
+- `Temperature` - Temperature parameters
+- `Density` - Density parameters
 
-**Phase 1**: ✅ Complete (100%)
-- [x] Project structure created
-- [x] Paper collection script (arXiv API)
-- [x] Parameter extraction pipeline (regex + LLM ready)
-- [x] Initial dataset validation (10 papers, 100% accuracy)
-- [x] Sample dataset created
+See [KNOWLEDGE_GRAPH_PIPELINE.md](KNOWLEDGE_GRAPH_PIPELINE.md) for details.
 
-**Phase 2**: ✅ Complete (100%)
-- [x] Knowledge graph construction (RDF/OWL)
-- [x] Apache Jena Fuseki deployment
-- [x] SPARQL query interface
-- [x] Ontology design (15+ classes, 25+ properties)
-- [x] RDF data conversion (373 triples)
-- [x] Query testing tools
+## 🛠 Technology Stack
 
-**Phase 3**: ✅ Complete (100%)
-- [x] REST API backend (FastAPI)
-- [x] 14 endpoints with filtering
-- [x] OpenAPI/Swagger documentation
-- [x] SPARQL integration
-- [x] Caching layer
-- [x] Unit tests (25+, ~90% coverage)
+| Component | Technology |
+|-----------|-----------|
+| **Frontend** | React 18, TypeScript, Tailwind CSS |
+| **Backend** | FastAPI, Python 3.9+, Pydantic |
+| **Knowledge Graph** | Apache Jena Fuseki, RDF/Turtle |
+| **NLP** | OpenAI GPT-4o-mini, Regex fallback |
+| **API** | REST, OpenAPI/Swagger |
+| **Deployment** | Docker, Railway.app |
 
-**Phase 4**: 🚧 Next (0%)
-- [ ] Web interface (Streamlit)
-- [ ] Data visualization
-- [ ] Interactive query builder
+## 📚 Documentation
 
-**Current Dataset**:
-- Papers: 10 sample papers
-- Temperature measurements: 24
-- Density measurements: 4
-- RDF triples: 373
-- Query coverage: 100%
+- **[INSTALLATION_GUIDE.md](INSTALLATION_GUIDE.md)** - Setup instructions
+- **[DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md)** - Production deployment
+- **[UNIFIED_QUERY_GUIDE.md](UNIFIED_QUERY_GUIDE.md)** - Technical architecture
+- **[KNOWLEDGE_GRAPH_PIPELINE.md](KNOWLEDGE_GRAPH_PIPELINE.md)** - Data processing
+- **[FIREBASE_SETUP.md](FIREBASE_SETUP.md)** - Analytics configuration
+- **[QUERY_EXAMPLES.md](QUERY_EXAMPLES.md)** - Query patterns
+- **[CONTRIBUTING.md](CONTRIBUTING.md)** - Contribution guidelines
 
-## Built For
+## 🤝 Contributing
 
-TIB FID Physik Research Software Engineer position application.
+We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
-Demonstrates expertise in:
-- LLM fine-tuning (LoRA)
-- Semantic web (RDF, SPARQL, knowledge graphs)
-- Scientific information systems
-- Full-stack development
-- Parameter extraction from scientific literature
+### Areas for Contribution
 
-## License
+- 🔍 **Search improvements** - Better NLP, more query types
+- 📊 **Knowledge graph expansion** - More papers, more parameters
+- 🎨 **UI/UX** - Design improvements, visualizations
+- 🧪 **Testing** - Unit tests, integration tests
+- 📖 **Documentation** - Examples, tutorials, translations
 
-MIT
+## 📝 License
 
-## References
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-- [arXiv API Documentation](https://info.arxiv.org/help/api/index.html)
-- [QUDT Ontology](http://www.qudt.org/)
-- [Apache Jena Fuseki](https://jena.apache.org/documentation/fuseki2/)
+## 🙏 Acknowledgments
+
+- **ArXiv** for plasma physics papers
+- **Apache Jena** for Fuseki triple store
+- **OpenAI** for GPT models
+- **FastAPI** and **React** communities
+
+## 🔗 Links
+
+- **Live Demo**: [https://frontend-production-585a.up.railway.app](https://frontend-production-585a.up.railway.app)
+- **API Docs**: [https://askphysics-production.up.railway.app/docs](https://askphysics-production.up.railway.app/docs)
+- **GitHub**: [https://github.com/subodhkhanger/askPhysics](https://github.com/subodhkhanger/askPhysics)
+
+## 📧 Contact
+
+For questions or suggestions, please [open an issue](https://github.com/subodhkhanger/askPhysics/issues).
+
+---
+
+**Built with ❤️ for the physics research community**
