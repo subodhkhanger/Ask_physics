@@ -1,10 +1,16 @@
 import { useQuery } from '@tanstack/react-query';
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 import { ApiService } from '../lib/api';
 import { UnifiedSearch } from '../components/UnifiedSearch';
+import { analyticsEvents } from '../lib/firebase';
 import '../components/UnifiedSearch.css';
 
 export default function HomePage() {
+  // Track page view
+  useEffect(() => {
+    analyticsEvents.viewPage('home');
+  }, []);
   const { data: stats, isLoading } = useQuery({
     queryKey: ['statistics'],
     queryFn: () => ApiService.getStatistics(),
