@@ -5,10 +5,10 @@ set -e
 FUSEKI_PORT=${PORT:-3030}
 echo "Starting Fuseki on port $FUSEKI_PORT..."
 
-# Start Fuseki in background with in-memory dataset
+# Start Fuseki in background with configuration file
 # IMPORTANT: Set FUSEKI_HOST to bind to all interfaces (0.0.0.0) for Railway
 export FUSEKI_HOST=0.0.0.0
-./fuseki-server --port=$FUSEKI_PORT --update --mem /plasma &
+./fuseki-server --port=$FUSEKI_PORT --config=/opt/fuseki/config.ttl &
 FUSEKI_PID=$!
 
 echo "Waiting for Fuseki to start..."
