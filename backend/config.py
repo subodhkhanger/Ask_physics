@@ -32,7 +32,7 @@ class Settings(BaseSettings):
     debug: bool = True
 
     # CORS Configuration
-    cors_origins: list = ["http://localhost:3000", "http://localhost:8501"]  # Frontend URLs
+    cors_origins: str = "http://localhost:3000,http://localhost:8501,https://frontend-production-585a.up.railway.app"
     cors_allow_credentials: bool = True
     cors_allow_methods: list = ["*"]
     cors_allow_headers: list = ["*"]
