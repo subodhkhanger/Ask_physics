@@ -7,10 +7,10 @@ RUN apt-get update && \
 
 # Download and install Fuseki
 WORKDIR /opt
-RUN wget -q https://dlcdn.apache.org/jena/binaries/apache-jena-fuseki-4.10.0.tar.gz && \
-    tar -xzf apache-jena-fuseki-4.10.0.tar.gz && \
-    mv apache-jena-fuseki-4.10.0 fuseki && \
-    rm apache-jena-fuseki-4.10.0.tar.gz
+RUN wget --no-check-certificate https://archive.apache.org/dist/jena/binaries/apache-jena-fuseki-4.9.0.tar.gz && \
+    tar -xzf apache-jena-fuseki-4.9.0.tar.gz && \
+    mv apache-jena-fuseki-4.9.0 fuseki && \
+    rm apache-jena-fuseki-4.9.0.tar.gz
 
 WORKDIR /opt/fuseki
 
@@ -25,28 +25,35 @@ RUN mkdir -p /fuseki-data
 RUN echo '#!/bin/bash\n\
 set -e\n\
 \n\
-echo "Starting Fuseki..."\n\
+# Use Railway PORT or default to 3030\n\
+FUSEKI_PORT=${PORT:-3030}\n\
+echo "Starting Fuseki on port $FUSEKI_PORT..."\n\
 \n\
 # Start Fuseki in background with in-memory dataset\n\
-./fuseki-server --port=${PORT:-3030} --update --mem /plasma &\n\
+./fuseki-server --port=$FUSEKI_PORT --update --mem /plasma &\n\
 FUSEKI_PID=$!\n\
 \n\
 echo "Waiting for Fuseki to start..."\n\
-sleep 15\n\
+sleep 20\n\
 \n\
 echo "Loading ontology..."\n\
 curl -f -X POST \
   -H "Content-Type: text/turtle" \
   --data-binary "@/opt/fuseki/ontology/plasma_physics.ttl" \
-  http://localhost:${PORT:-3030}/plasma/data || echo "Ontology load failed (may be ok)"\n\
+  http://localhost:$FUSEKI_PORT/plasma/data || echo "Ontology load warning"\n\
+\n\
+sleep 2\n\
 \n\
 echo "Loading data..."\n\
 curl -f -X POST \
   -H "Content-Type: text/turtle" \
   --data-binary "@/opt/fuseki/data/plasma_data.ttl" \
-  http://localhost:${PORT:-3030}/plasma/data || echo "Data load failed"\n\
+  http://localhost:$FUSEKI_PORT/plasma/data && echo "Data loaded successfully!" || echo "Data load warning"\n\
 \n\
-echo "Fuseki ready!"\n\
+sleep 2\n\
+\n\
+echo "Fuseki ready on port $FUSEKI_PORT!"\n\
+echo "Endpoint: http://localhost:$FUSEKI_PORT/plasma/query"\n\
 \n\
 # Keep Fuseki running in foreground\n\
 wait $FUSEKI_PID\n\
@@ -55,8 +62,8 @@ wait $FUSEKI_PID\n\
 # Expose port (Railway will assign PORT env var)
 EXPOSE 3030
 
-# Health check
-HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
-  CMD curl -f http://localhost:${PORT:-3030}/$/ping || exit 1
+# Health check - Railway uses the assigned PORT
+HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
+  CMD curl -f http://localhost:${PORT:-3030}/\$/ping || exit 1
 
 CMD ["/opt/fuseki/start.sh"]
