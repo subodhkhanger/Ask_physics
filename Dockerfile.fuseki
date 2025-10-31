@@ -30,7 +30,8 @@ FUSEKI_PORT=${PORT:-3030}\n\
 echo "Starting Fuseki on port $FUSEKI_PORT..."\n\
 \n\
 # Start Fuseki in background with in-memory dataset\n\
-./fuseki-server --port=$FUSEKI_PORT --update --mem /plasma &\n\
+# IMPORTANT: Bind to 0.0.0.0 for Railway to access it\n\
+./fuseki-server --port=$FUSEKI_PORT --host=0.0.0.0 --update --mem /plasma &\n\
 FUSEKI_PID=$!\n\
 \n\
 echo "Waiting for Fuseki to start..."\n\
