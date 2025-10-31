@@ -36,21 +36,37 @@ export FUSEKI_HOST=0.0.0.0\n\
 FUSEKI_PID=$!\n\
 \n\
 echo "Waiting for Fuseki to start..."\n\
-sleep 20\n\
+# Wait for Fuseki to be ready by checking the ping endpoint\n\
+for i in {1..30}; do\n\
+  if curl -s http://localhost:$FUSEKI_PORT/\$/ping > /dev/null 2>&1; then\n\
+    echo "Fuseki is ready!"\n\
+    break\n\
+  fi\n\
+  echo "Attempt $i: Fuseki not ready yet, waiting..."\n\
+  sleep 2\n\
+done\n\
+\n\
+sleep 3\n\
 \n\
 echo "Loading ontology..."\n\
-curl -f -X POST \
-  -H "Content-Type: text/turtle" \
-  --data-binary "@/opt/fuseki/ontology/plasma_physics.ttl" \
-  http://localhost:$FUSEKI_PORT/plasma/data || echo "Ontology load warning"\n\
+if curl -f -X POST -H "Content-Type: text/turtle" \\\n\
+  --data-binary "@/opt/fuseki/ontology/plasma_physics.ttl" \\\n\
+  http://localhost:$FUSEKI_PORT/plasma/data 2>&1; then\n\
+  echo "✓ Ontology loaded successfully!"\n\
+else\n\
+  echo "✗ Warning: Ontology load failed"\n\
+fi\n\
 \n\
 sleep 2\n\
 \n\
 echo "Loading data..."\n\
-curl -f -X POST \
-  -H "Content-Type: text/turtle" \
-  --data-binary "@/opt/fuseki/data/plasma_data.ttl" \
-  http://localhost:$FUSEKI_PORT/plasma/data && echo "Data loaded successfully!" || echo "Data load warning"\n\
+if curl -f -X POST -H "Content-Type: text/turtle" \\\n\
+  --data-binary "@/opt/fuseki/data/plasma_data.ttl" \\\n\
+  http://localhost:$FUSEKI_PORT/plasma/data 2>&1; then\n\
+  echo "✓ Data loaded successfully!"\n\
+else\n\
+  echo "✗ Warning: Data load failed"\n\
+fi\n\
 \n\
 sleep 2\n\
 \n\
