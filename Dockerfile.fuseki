@@ -18,6 +18,9 @@ WORKDIR /opt/fuseki
 COPY data/plasma_data.ttl /opt/fuseki/data/plasma_data.ttl
 COPY ontology/plasma_physics.ttl /opt/fuseki/ontology/plasma_physics.ttl
 
+# Copy Fuseki configuration
+COPY fuseki-config.ttl /opt/fuseki/config.ttl
+
 # Copy startup script
 COPY fuseki-start.sh /opt/fuseki/start.sh
 RUN chmod +x /opt/fuseki/start.sh
