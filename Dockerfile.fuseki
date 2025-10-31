@@ -48,6 +48,11 @@ done\n\
 \n\
 sleep 3\n\
 \n\
+echo "Checking available datasets..."\n\
+curl -s http://localhost:$FUSEKI_PORT/\$/datasets || echo "Could not list datasets"\n\
+\n\
+sleep 2\n\
+\n\
 echo "Loading ontology..."\n\
 if curl -f -X POST -H "Content-Type: text/turtle" \\\n\
   --data-binary "@/opt/fuseki/ontology/plasma_physics.ttl" \\\n\
@@ -70,8 +75,25 @@ fi\n\
 \n\
 sleep 2\n\
 \n\
+echo "Verifying data loaded..."\n\
+TRIPLE_COUNT=$(curl -s -X POST http://localhost:$FUSEKI_PORT/plasma/query \\\n\
+  -H "Accept: application/sparql-results+json" \\\n\
+  --data-urlencode "query=SELECT (COUNT(*) as ?count) WHERE { ?s ?p ?o }" \\\n\
+  | grep -o \'"value":"[0-9]*"\' | grep -o \'[0-9]*\' || echo "0")\n\
+echo "Total triples in dataset: $TRIPLE_COUNT"\n\
+\n\
+if [ "$TRIPLE_COUNT" -gt "0" ]; then\n\
+  echo "✓ Dataset verification successful!"\n\
+else\n\
+  echo "✗ Warning: No triples found in dataset"\n\
+fi\n\
+\n\
+echo ""\n\
+echo "================================================"\n\
 echo "Fuseki ready on port $FUSEKI_PORT!"\n\
-echo "Endpoint: http://localhost:$FUSEKI_PORT/plasma/query"\n\
+echo "Public endpoint: http://0.0.0.0:$FUSEKI_PORT/plasma/query"\n\
+echo "Datasets available: /plasma"\n\
+echo "================================================"\n\
 \n\
 # Keep Fuseki running in foreground\n\
 wait $FUSEKI_PID\n\
