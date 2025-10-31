@@ -18,86 +18,9 @@ WORKDIR /opt/fuseki
 COPY data/plasma_data.ttl /opt/fuseki/data/plasma_data.ttl
 COPY ontology/plasma_physics.ttl /opt/fuseki/ontology/plasma_physics.ttl
 
-# Create data directory for persistence
-RUN mkdir -p /fuseki-data
-
-# Create startup script that loads data on startup
-RUN echo '#!/bin/bash\n\
-set -e\n\
-\n\
-# Use Railway PORT or default to 3030\n\
-FUSEKI_PORT=${PORT:-3030}\n\
-echo "Starting Fuseki on port $FUSEKI_PORT..."\n\
-\n\
-# Start Fuseki in background with in-memory dataset\n\
-# IMPORTANT: Set FUSEKI_HOST to bind to all interfaces (0.0.0.0) for Railway\n\
-export FUSEKI_HOST=0.0.0.0\n\
-./fuseki-server --port=$FUSEKI_PORT --update --mem /plasma &\n\
-FUSEKI_PID=$!\n\
-\n\
-echo "Waiting for Fuseki to start..."\n\
-# Wait for Fuseki to be ready by checking the ping endpoint\n\
-for i in {1..30}; do\n\
-  if curl -s http://localhost:$FUSEKI_PORT/\$/ping > /dev/null 2>&1; then\n\
-    echo "Fuseki is ready!"\n\
-    break\n\
-  fi\n\
-  echo "Attempt $i: Fuseki not ready yet, waiting..."\n\
-  sleep 2\n\
-done\n\
-\n\
-sleep 3\n\
-\n\
-echo "Checking available datasets..."\n\
-curl -s http://localhost:$FUSEKI_PORT/\$/datasets || echo "Could not list datasets"\n\
-\n\
-sleep 2\n\
-\n\
-echo "Loading ontology..."\n\
-if curl -f -X POST -H "Content-Type: text/turtle" \\\n\
-  --data-binary "@/opt/fuseki/ontology/plasma_physics.ttl" \\\n\
-  http://localhost:$FUSEKI_PORT/plasma/data 2>&1; then\n\
-  echo "✓ Ontology loaded successfully!"\n\
-else\n\
-  echo "✗ Warning: Ontology load failed"\n\
-fi\n\
-\n\
-sleep 2\n\
-\n\
-echo "Loading data..."\n\
-if curl -f -X POST -H "Content-Type: text/turtle" \\\n\
-  --data-binary "@/opt/fuseki/data/plasma_data.ttl" \\\n\
-  http://localhost:$FUSEKI_PORT/plasma/data 2>&1; then\n\
-  echo "✓ Data loaded successfully!"\n\
-else\n\
-  echo "✗ Warning: Data load failed"\n\
-fi\n\
-\n\
-sleep 2\n\
-\n\
-echo "Verifying data loaded..."\n\
-TRIPLE_COUNT=$(curl -s -X POST http://localhost:$FUSEKI_PORT/plasma/query \\\n\
-  -H "Accept: application/sparql-results+json" \\\n\
-  --data-urlencode "query=SELECT (COUNT(*) as ?count) WHERE { ?s ?p ?o }" \\\n\
-  | grep -o \'"value":"[0-9]*"\' | grep -o \'[0-9]*\' || echo "0")\n\
-echo "Total triples in dataset: $TRIPLE_COUNT"\n\
-\n\
-if [ "$TRIPLE_COUNT" -gt "0" ]; then\n\
-  echo "✓ Dataset verification successful!"\n\
-else\n\
-  echo "✗ Warning: No triples found in dataset"\n\
-fi\n\
-\n\
-echo ""\n\
-echo "================================================"\n\
-echo "Fuseki ready on port $FUSEKI_PORT!"\n\
-echo "Public endpoint: http://0.0.0.0:$FUSEKI_PORT/plasma/query"\n\
-echo "Datasets available: /plasma"\n\
-echo "================================================"\n\
-\n\
-# Keep Fuseki running in foreground\n\
-wait $FUSEKI_PID\n\
-' > /opt/fuseki/start.sh && chmod +x /opt/fuseki/start.sh
+# Copy startup script
+COPY fuseki-start.sh /opt/fuseki/start.sh
+RUN chmod +x /opt/fuseki/start.sh
 
 # Expose port (Railway will assign PORT env var)
 EXPOSE 3030
