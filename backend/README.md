@@ -7,9 +7,48 @@ REST API for querying plasma physics experimental parameters from scientific lit
 - **FastAPI** - Modern, fast web framework
 - **SPARQL Integration** - Query Apache Jena Fuseki triple store
 - **Parameter Filtering** - Search by temperature and density ranges
+- **NLP Query Processing** - Natural language query extraction (currently OpenAI GPT-4o-mini, migrating to QLoRA fine-tuned OSS model)
 - **Caching** - In-memory caching for improved performance
 - **OpenAPI Documentation** - Interactive Swagger UI
 - **Unit Tests** - Comprehensive test coverage
+
+## NLP Model Migration (Roadmap)
+
+**Current**: OpenAI GPT-4o-mini API for parameter extraction from natural language queries
+
+**Future**: Open-source fine-tuned model using QLoRA (Quantized Low-Rank Adaptation) for complete platform independence
+
+### Why QLoRA?
+- **No external API dependencies** - Full control and privacy
+- **Cost-effective** - No per-query API costs
+- **Customizable** - Fine-tuned specifically for plasma physics queries
+- **Low resource requirements** - 4-bit quantization enables deployment on modest hardware
+- **Open-source** - Complete transparency and community contributions
+
+### Planned Architecture
+```
+Natural Language Query → QLoRA Fine-tuned Model (Local) → Structured Parameters → SPARQL Query
+```
+
+Base models under consideration:
+- **Llama 2 7B** / **Llama 3 8B** - Strong instruction following
+- **Mistral 7B** - Excellent reasoning capabilities
+- **Phi-3** - Efficient for specialized tasks
+
+Fine-tuning approach:
+- QLoRA with 4-bit quantization
+- LoRA rank: 16-32
+- Training data: Physics domain queries + parameter extraction pairs
+- Framework: HuggingFace PEFT + bitsandbytes
+
+### Current Implementation
+Location: `nlp_query_processor.py`
+- Uses OpenAI GPT-4o-mini via API (line 120)
+- Fallback to regex-based parsing when unavailable
+- See `.env.example` for configuration
+
+### Migration Timeline
+The system is designed with abstraction layers to make model swapping seamless. When the QLoRA model is ready, only the `nlp_query_processor.py` file will need updates - no API changes required.
 
 ## Quick Start
 

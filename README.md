@@ -21,7 +21,8 @@ A semantic search system for plasma physics literature that combines **natural l
 - **547 triples** covering 100 research papers
 
 ### LLM Integration
-- **GPT-4o-mini** for parameter extraction
+- **Current**: GPT-4o-mini for parameter extraction
+- **Roadmap**: Migration to QLoRA fine-tuned open-source model for complete platform independence
 - Translates natural language → structured parameters
 - **Fallback regex parsing** when LLM unavailable
 - Dynamic SPARQL query generation
@@ -93,6 +94,7 @@ API documentation: `http://localhost:8000/docs`
 
 ## 🏗 Architecture
 
+### Current Architecture
 ```
 ┌─────────────────┐
 │   Frontend      │  React + TypeScript
@@ -117,6 +119,43 @@ API documentation: `http://localhost:8000/docs`
    Knowledge Graph
    (547 triples)
 ```
+
+### Future Architecture (Platform Independent)
+```
+┌─────────────────┐
+│   Frontend      │  React + TypeScript
+│   (Port 3000)   │  Natural language input
+└────────┬────────┘
+         │
+         v
+┌─────────────────┐
+│   Backend       │  FastAPI + Python
+│   (Port 8000)   │  NLP + SPARQL generation
+└────────┬────────┘
+         │
+         ├─> QLoRA Fine-tuned OSS Model (Local)
+         │   • Llama 3 / Mistral / Phi-3
+         │   • 4-bit quantization
+         │   • Physics domain specialized
+         │   • No external API dependencies
+         │
+         v
+┌─────────────────┐
+│   Fuseki        │  Apache Jena Fuseki
+│   (Port 3030)   │  RDF triple store
+└─────────────────┘
+         │
+         v
+   Knowledge Graph
+   (547 triples)
+```
+
+**Platform Independence Benefits**:
+- ✅ No external API costs or rate limits
+- ✅ Complete data privacy and control
+- ✅ Customizable for domain-specific physics terminology
+- ✅ Deployable in air-gapped or restricted environments
+- ✅ Lower latency with local inference
 
 ## 🔬 Example Queries
 
@@ -176,7 +215,8 @@ See [KNOWLEDGE_GRAPH_PIPELINE.md](KNOWLEDGE_GRAPH_PIPELINE.md) for details.
 | **Frontend** | React 18, TypeScript, Tailwind CSS |
 | **Backend** | FastAPI, Python 3.9+, Pydantic |
 | **Knowledge Graph** | Apache Jena Fuseki, RDF/Turtle |
-| **NLP** | OpenAI GPT-4o-mini, Regex fallback |
+| **NLP (Current)** | OpenAI GPT-4o-mini, Regex fallback |
+| **NLP (Roadmap)** | QLoRA fine-tuned OSS model (Llama/Mistral/Phi-3) |
 | **API** | REST, OpenAPI/Swagger |
 | **Deployment** | Docker, Railway.app |
 
@@ -197,6 +237,7 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 ### Areas for Contribution
 
 - 🔍 **Search improvements** - Better NLP, more query types
+- 🤖 **QLoRA Model Development** - Help build and fine-tune the open-source NLP model
 - 📊 **Knowledge graph expansion** - More papers, more parameters
 - 🎨 **UI/UX** - Design improvements, visualizations
 - 🧪 **Testing** - Unit tests, integration tests
