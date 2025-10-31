@@ -129,6 +129,20 @@ const temps = await ApiService.getTemperatures(minTemp, maxTemp);
 const stats = await ApiService.getStatistics();
 ```
 
+### Natural Language Processing (NLP)
+
+The backend currently uses **OpenAI GPT-4o-mini** for natural language query processing. Users can enter queries like:
+- "Show me papers about electron density between 10^17 and 10^18 m^-3"
+- "Recent research on plasma temperature in tokamaks"
+
+**Future Enhancement**: The backend will migrate to a **QLoRA fine-tuned open-source model** for complete platform independence. This change will be transparent to the frontend - no code changes required on the UI side. Benefits include:
+- No external API dependencies
+- Improved privacy and data control
+- Reduced operational costs
+- Customizable for physics-specific queries
+
+See [Backend README](../backend/README.md) for technical details on the NLP model migration roadmap.
+
 ## 🎯 Key Features
 
 ### React Query Integration
