@@ -266,4 +266,3 @@ For questions or suggestions, please [open an issue](https://github.com/subodhkh
 
 ---
 
-**Built with ❤️ for the physics research community**
