@@ -25,7 +25,32 @@ done
 sleep 3
 
 echo "Checking available datasets..."
-curl -s http://localhost:$FUSEKI_PORT/\$/datasets || echo "Could not list datasets"
+DATASETS_JSON=$(curl -s http://localhost:$FUSEKI_PORT/\$/datasets)
+echo "$DATASETS_JSON"
+
+# Check if /plasma dataset exists
+if echo "$DATASETS_JSON" | grep -q '"ds.name" : "/plasma"'; then
+  echo "✓ /plasma dataset found"
+else
+  echo "✗ WARNING: /plasma dataset NOT found!"
+  echo "Available datasets:"
+  echo "$DATASETS_JSON" | grep -o '"ds.name" : "[^"]*"' || echo "No datasets found"
+fi
+
+sleep 2
+
+echo "Testing /plasma/query endpoint..."
+TEST_RESPONSE=$(curl -s -w "\nHTTP_CODE:%{http_code}" -X POST http://localhost:$FUSEKI_PORT/plasma/query \
+  -H "Accept: application/sparql-results+json" \
+  --data-urlencode "query=SELECT * WHERE { ?s ?p ?o } LIMIT 1")
+HTTP_CODE=$(echo "$TEST_RESPONSE" | grep "HTTP_CODE:" | cut -d: -f2)
+echo "Query endpoint returned HTTP $HTTP_CODE"
+
+if [ "$HTTP_CODE" = "200" ]; then
+  echo "✓ /plasma/query endpoint is accessible"
+else
+  echo "✗ WARNING: /plasma/query endpoint returned HTTP $HTTP_CODE"
+fi
 
 sleep 2
 
