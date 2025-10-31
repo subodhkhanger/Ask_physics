@@ -77,16 +77,25 @@ fi
 sleep 2
 
 echo "Verifying data loaded..."
-TRIPLE_COUNT=$(curl -s -X POST http://localhost:$FUSEKI_PORT/plasma/query \
+QUERY_RESPONSE=$(curl -s -X POST http://localhost:$FUSEKI_PORT/plasma/query \
   -H "Accept: application/sparql-results+json" \
-  --data-urlencode "query=SELECT (COUNT(*) as ?count) WHERE { ?s ?p ?o }" \
-  | grep -o '"value":"[0-9]*"' | grep -o '[0-9]*' | head -1 || echo "0")
-echo "Total triples in dataset: $TRIPLE_COUNT"
+  --data-urlencode "query=SELECT (COUNT(*) as ?count) WHERE { ?s ?p ?o }")
 
-if [ "$TRIPLE_COUNT" -gt "0" ]; then
-  echo "✓ Dataset verification successful!"
+# Extract the count value from JSON response
+TRIPLE_COUNT=$(echo "$QUERY_RESPONSE" | grep -oP '"value"\s*:\s*"\K[0-9]+' | head -1)
+
+# Fallback if grep -P not available
+if [ -z "$TRIPLE_COUNT" ]; then
+  TRIPLE_COUNT=$(echo "$QUERY_RESPONSE" | sed -n 's/.*"value"[[:space:]]*:[[:space:]]*"\([0-9]*\)".*/\1/p' | head -1)
+fi
+
+echo "Total triples in dataset: ${TRIPLE_COUNT:-0}"
+
+if [ -n "$TRIPLE_COUNT" ] && [ "$TRIPLE_COUNT" -gt "0" ]; then
+  echo "✓ Dataset verification successful! ($TRIPLE_COUNT triples)"
 else
   echo "✗ Warning: No triples found in dataset"
+  echo "Query response: $QUERY_RESPONSE"
 fi
 
 echo ""
