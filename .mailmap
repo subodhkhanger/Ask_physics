@@ -1,0 +1,3 @@
+# Hide Claude from GitHub contributors
+# Format: Proper Name <commit-email> Bad Name <bad-email>
+Subodh Singh <subodh.khanger@gmail.com> Claude <noreply@anthropic.com>
