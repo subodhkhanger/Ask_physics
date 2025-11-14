@@ -6,7 +6,7 @@
 
 A semantic search system for plasma physics literature that combines **natural language processing** with **knowledge graphs** to enable intuitive queries like "Show me papers about electron density between 10^17 and 10^18 m^-3".
 
-## 🌟 Features
+## Features
 
 ### Natural Language Queries
 - **Plain English input**: "Find research on plasma temperature in tokamaks"
@@ -33,7 +33,7 @@ A semantic search system for plasma physics literature that combines **natural l
 - **RESTful API** for easy integration
 - **Firebase Analytics** support (optional)
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -92,7 +92,7 @@ curl "http://localhost:8000/temperatures?min_temp=1.0&max_temp=10.0"
 
 API documentation: `http://localhost:8000/docs`
 
-## 🏗 Architecture
+## Architecture
 
 ### Current Architecture
 ```
@@ -151,11 +151,11 @@ API documentation: `http://localhost:8000/docs`
 ```
 
 **Platform Independence Benefits**:
-- ✅ No external API costs or rate limits
-- ✅ Complete data privacy and control
-- ✅ Customizable for domain-specific physics terminology
-- ✅ Deployable in air-gapped or restricted environments
-- ✅ Lower latency with local inference
+- No external API costs or rate limits
+- Complete data privacy and control
+- Customizable for domain-specific physics terminology
+- Deployable in air-gapped or restricted environments
+- Lower latency with local inference
 
 ## 🔬 Example Queries
 
@@ -189,7 +189,7 @@ API documentation: `http://localhost:8000/docs`
 
 See [QUERY_EXAMPLES.md](QUERY_EXAMPLES.md) for more examples.
 
-## 📊 Knowledge Graph
+##  Knowledge Graph
 
 The system includes:
 
@@ -220,7 +220,7 @@ See [KNOWLEDGE_GRAPH_PIPELINE.md](KNOWLEDGE_GRAPH_PIPELINE.md) for details.
 | **API** | REST, OpenAPI/Swagger |
 | **Deployment** | Docker, Railway.app |
 
-## 📚 Documentation
+##  Documentation
 
 - **[INSTALLATION_GUIDE.md](INSTALLATION_GUIDE.md)** - Setup instructions
 - **[DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md)** - Production deployment
@@ -230,24 +230,24 @@ See [KNOWLEDGE_GRAPH_PIPELINE.md](KNOWLEDGE_GRAPH_PIPELINE.md) for details.
 - **[QUERY_EXAMPLES.md](QUERY_EXAMPLES.md)** - Query patterns
 - **[CONTRIBUTING.md](CONTRIBUTING.md)** - Contribution guidelines
 
-## 🤝 Contributing
+##  Contributing
 
 We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ### Areas for Contribution
 
-- 🔍 **Search improvements** - Better NLP, more query types
-- 🤖 **QLoRA Model Development** - Help build and fine-tune the open-source NLP model
-- 📊 **Knowledge graph expansion** - More papers, more parameters
-- 🎨 **UI/UX** - Design improvements, visualizations
-- 🧪 **Testing** - Unit tests, integration tests
-- 📖 **Documentation** - Examples, tutorials, translations
+-  **Search improvements** - Better NLP, more query types
+-  **QLoRA Model Development** - Help build and fine-tune the open-source NLP model
+-  **Knowledge graph expansion** - More papers, more parameters
+-  **UI/UX** - Design improvements, visualizations
+-  **Testing** - Unit tests, integration tests
+-  **Documentation** - Examples, tutorials, translations
 
-## 📝 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **ArXiv** for plasma physics papers
 - **Apache Jena** for Fuseki triple store
@@ -258,7 +258,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **Live Demo**: [https://frontend-production-585a.up.railway.app](https://frontend-production-585a.up.railway.app)
 - **API Docs**: [https://askphysics-production.up.railway.app/docs](https://askphysics-production.up.railway.app/docs)
-- **GitHub**: [https://github.com/subodhkhanger/askPhysics](https://github.com/subodhkhanger/askPhysics)
+
 
 ## 📧 Contact
 
