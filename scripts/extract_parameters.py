@@ -58,12 +58,15 @@ class ParameterExtractor:
         # Explicit density with scientific notation and units
         r'(?:electron density|n_?e|ion density|n_?i|plasma density)[\s:=~]*'
         r'(?:of|about|approximately|around)?[\s]*'
-        r'(\d+\.?\d*)[\s]*[×x]\s*10[¹²³⁴⁵⁶⁷⁸⁹⁰\^]?([+-]?\d+)[\s]*(m\^?-?3|cm\^?-?3|per cubic meter|per cubic centimeter)',
+        r'(\d+\.?\d*)[\s]*(?:[×x]\s*)?10(?:\^|\{|\^\{)?([+-]?\d+)\}?[\s]*(m\^?-?3|m-\s?3|m\^\{-3\}|cm\^?-?3|cm-\s?3|cm\^\{-3\}|per cubic meter|per cubic centimeter)',
 
         # Density with scientific notation (more permissive)
-        r'density[\s:=~]*'
-        r'(?:of|about|approximately|around)?[\s]*'
-        r'(\d+\.?\d*)[\s]*[×x]\s*10[¹²³⁴⁵⁶⁷⁸⁹⁰\^]?([+-]?\d+)[\s]*(m\^?-?3|cm\^?-?3)',
+        r'densit(?:y|ies)[\s\w,;:~=-]{0,80}?'
+        r'(\d+\.?\d*)[\s]*(?:[×x]\s*)?10(?:\^|\{|\^\{)?([+-]?\d+)\}?[\s]*(m\^?-?3|m-\s?3|m\^\{-3\}|cm\^?-?3|cm-\s?3|cm\^\{-3\})',
+
+        # Engineering notation such as "10E20 m-3"
+        r'densit(?:y|ies)[\s\w,;:~=-]{0,80}?'
+        r'(\d+\.?\d*)E([+-]?\d+)[\s]*(m\^?-?3|m-\s?3|m\^\{-3\}|cm\^?-?3|cm-\s?3|cm\^\{-3\})',
     ]
 
     def __init__(self, use_llm: bool = True, api_key: Optional[str] = None):
