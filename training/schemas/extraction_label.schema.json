@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ask-physics.local/schemas/extraction_label.schema.json",
+  "title": "Ask Physics Extraction Label",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "paper_id",
+    "title",
+    "abstract",
+    "measurements",
+    "label_provenance"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "extraction_label.v1"
+    },
+    "paper_id": {
+      "type": "string",
+      "pattern": "^arxiv:"
+    },
+    "title": {
+      "type": "string"
+    },
+    "abstract": {
+      "type": "string"
+    },
+    "measurements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "type",
+          "value",
+          "unit",
+          "normalized_value",
+          "normalized_unit",
+          "context",
+          "confidence"
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["temperature", "density"]
+          },
+          "value": {
+            "type": "number"
+          },
+          "unit": {
+            "type": "string"
+          },
+          "normalized_value": {
+            "type": ["number", "null"]
+          },
+          "normalized_unit": {
+            "type": ["string", "null"]
+          },
+          "context": {
+            "type": "string"
+          },
+          "confidence": {
+            "type": ["number", "string"]
+          }
+        }
+      }
+    },
+    "label_provenance": {
+      "type": "object",
+      "required": ["method", "created_at"],
+      "properties": {
+        "method": {
+          "type": "string",
+          "enum": ["regex", "teacher", "human"]
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "tool": {
+          "type": ["string", "null"]
+        }
+      }
+    }
+  }
+}

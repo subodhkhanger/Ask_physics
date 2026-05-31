@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ask-physics.local/schemas/paper_metadata.schema.json",
+  "title": "Ask Physics Paper Metadata",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "paper_id",
+    "title",
+    "abstract",
+    "authors",
+    "published",
+    "categories",
+    "source_url",
+    "provenance"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "paper_metadata.v1"
+    },
+    "paper_id": {
+      "type": "string",
+      "pattern": "^arxiv:"
+    },
+    "arxiv_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "abstract": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "published": {
+      "type": "string"
+    },
+    "updated": {
+      "type": ["string", "null"]
+    },
+    "categories": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "primary_category": {
+      "type": ["string", "null"]
+    },
+    "source_url": {
+      "type": "string"
+    },
+    "pdf_url": {
+      "type": ["string", "null"]
+    },
+    "comment": {
+      "type": ["string", "null"]
+    },
+    "journal_ref": {
+      "type": ["string", "null"]
+    },
+    "doi": {
+      "type": ["string", "null"]
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["source", "query", "collected_at"],
+      "properties": {
+        "source": {
+          "type": "string",
+          "const": "arxiv"
+        },
+        "query": {
+          "type": "string"
+        },
+        "collected_at": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
