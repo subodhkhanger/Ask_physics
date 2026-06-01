@@ -84,9 +84,9 @@ python3 training/scripts/prepare_sft_dataset.py \
   --output-dir training/data/sft
 ```
 
-## Gemma QLoRA Training
+## Gemma 4 QLoRA Training
 
-The runnable Gemma QLoRA package is:
+The runnable Gemma 4 QLoRA package is:
 
 ```text
 training/configs/gemma_qlora.yaml
@@ -98,7 +98,7 @@ training/run_gemma_cuda.sh
 training/GEMMA_QLORA_RUNBOOK.md
 ```
 
-Run this on a CUDA-compatible PyTorch GPU runtime. Gemma model access may require accepting the model terms on Hugging Face and authenticating with `huggingface-cli login` or `huggingface_hub.login()`.
+Run this on a CUDA-compatible PyTorch GPU runtime. Gemma 4 model access may require accepting the model terms on Hugging Face and authenticating with `hf auth login` or `huggingface_hub.login()`.
 
 Install CUDA PyTorch for your machine first, then:
 

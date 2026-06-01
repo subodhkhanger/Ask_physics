@@ -21,7 +21,7 @@ import json
 from pathlib import Path
 from typing import Dict, Iterable, List
 
-from transformers import AutoTokenizer
+from transformers import AutoProcessor, AutoTokenizer
 
 
 def read_jsonl(path: Path) -> Iterable[Dict]:
@@ -44,29 +44,45 @@ def write_jsonl(records: Iterable[Dict], path: Path) -> int:
     return count
 
 
-def render_messages(tokenizer: AutoTokenizer, messages: List[Dict[str, str]]) -> str:
+def load_template_renderer(model_name: str) -> AutoProcessor:
+    """Load Gemma's processor when available, falling back to tokenizer."""
+    try:
+        return AutoProcessor.from_pretrained(model_name)
+    except Exception:
+        return AutoTokenizer.from_pretrained(model_name)
+
+
+def render_messages(renderer: AutoProcessor, messages: List[Dict[str, str]]) -> str:
     """Render messages with the Gemma tokenizer chat template."""
-    return tokenizer.apply_chat_template(
-        messages,
-        tokenize=False,
-        add_generation_prompt=False,
-    )
+    try:
+        return renderer.apply_chat_template(
+            messages,
+            tokenize=False,
+            add_generation_prompt=False,
+            enable_thinking=False,
+        )
+    except TypeError:
+        return renderer.apply_chat_template(
+            messages,
+            tokenize=False,
+            add_generation_prompt=False,
+        )
 
 
-def format_record(tokenizer: AutoTokenizer, record: Dict) -> Dict:
+def format_record(renderer: AutoProcessor, record: Dict) -> Dict:
     """Convert one model-neutral SFT record into one Gemma text record."""
     return {
         "schema_version": "gemma_sft_text.v1",
         "source_schema_version": record.get("schema_version"),
         "paper_id": record["paper_id"],
         "task": record["task"],
-        "text": render_messages(tokenizer, record["messages"]),
+        "text": render_messages(renderer, record["messages"]),
     }
 
 
-def format_file(tokenizer: AutoTokenizer, input_path: Path, output_path: Path) -> int:
+def format_file(renderer: AutoProcessor, input_path: Path, output_path: Path) -> int:
     """Format one split file."""
-    records = (format_record(tokenizer, record) for record in read_jsonl(input_path))
+    records = (format_record(renderer, record) for record in read_jsonl(input_path))
     return write_jsonl(records, output_path)
 
 
@@ -74,7 +90,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Format Ask Physics SFT JSONL for Gemma.")
     parser.add_argument(
         "--model",
-        default="google/gemma-2-2b-it",
+        default="google/gemma-4-E4B-it",
         help="Gemma tokenizer/model ID.",
     )
     parser.add_argument(
@@ -89,9 +105,7 @@ def main() -> int:
     )
     args = parser.parse_args()
 
-    tokenizer = AutoTokenizer.from_pretrained(args.model)
-    if tokenizer.pad_token is None:
-        tokenizer.pad_token = tokenizer.eos_token
+    renderer = load_template_renderer(args.model)
 
     input_dir = Path(args.input_dir)
     output_dir = Path(args.output_dir)
@@ -103,7 +117,7 @@ def main() -> int:
 
     for split, (input_name, output_name) in split_map.items():
         count = format_file(
-            tokenizer,
+            renderer,
             input_dir / input_name,
             output_dir / output_name,
         )

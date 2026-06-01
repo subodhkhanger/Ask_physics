@@ -80,7 +80,7 @@ def evaluate(args: argparse.Namespace) -> Dict[str, Any]:
     """Run model evaluation over an SFT JSONL file."""
     config = load_config(Path(args.config))
     generation = config.get("generation", {})
-    model, tokenizer = load_model(config, args.adapter_dir)
+    model, processor, tokenizer = load_model(config, args.adapter_dir)
     records = list(read_jsonl(Path(args.eval_file)))
     if args.limit:
         records = records[: args.limit]
@@ -97,6 +97,7 @@ def evaluate(args: argparse.Namespace) -> Dict[str, Any]:
         abstract = user["content"].split("\nAbstract:", 1)[1]
         text = generate(
             model,
+            processor,
             tokenizer,
             [system, *build_messages(title, abstract)[1:]],
             max_new_tokens=int(generation.get("max_new_tokens", 512)),

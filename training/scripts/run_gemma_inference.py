@@ -11,7 +11,7 @@ from typing import Any, Dict, List, Optional
 import torch
 import yaml
 from peft import PeftModel
-from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
+from transformers import AutoModelForCausalLM, AutoProcessor, AutoTokenizer, BitsAndBytesConfig
 
 from train_gemma_qlora import dtype_from_name
 
@@ -42,9 +42,10 @@ def build_quantization_config(config: Dict[str, Any]) -> BitsAndBytesConfig:
     )
 
 
-def load_model(config: Dict[str, Any], adapter_dir: Optional[str]) -> tuple[AutoModelForCausalLM, AutoTokenizer]:
+def load_model(config: Dict[str, Any], adapter_dir: Optional[str]) -> tuple[AutoModelForCausalLM, AutoProcessor, AutoTokenizer]:
     """Load base model and optional PEFT adapter."""
     model_name = config["model"]["base_model"]
+    processor = AutoProcessor.from_pretrained(model_name)
     tokenizer = AutoTokenizer.from_pretrained(adapter_dir or model_name)
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
@@ -60,7 +61,7 @@ def load_model(config: Dict[str, Any], adapter_dir: Optional[str]) -> tuple[Auto
     if adapter_dir:
         model = PeftModel.from_pretrained(model, adapter_dir)
     model.eval()
-    return model, tokenizer
+    return model, processor, tokenizer
 
 
 def build_messages(title: str, abstract: str) -> List[Dict[str, str]]:
@@ -73,6 +74,7 @@ def build_messages(title: str, abstract: str) -> List[Dict[str, str]]:
 
 def generate(
     model: AutoModelForCausalLM,
+    processor: AutoProcessor,
     tokenizer: AutoTokenizer,
     messages: List[Dict[str, str]],
     max_new_tokens: int,
@@ -80,12 +82,20 @@ def generate(
     top_p: float,
 ) -> str:
     """Generate assistant text."""
-    prompt = tokenizer.apply_chat_template(
-        messages,
-        tokenize=False,
-        add_generation_prompt=True,
-    )
-    inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
+    try:
+        prompt = processor.apply_chat_template(
+            messages,
+            tokenize=False,
+            add_generation_prompt=True,
+            enable_thinking=False,
+        )
+    except TypeError:
+        prompt = processor.apply_chat_template(
+            messages,
+            tokenize=False,
+            add_generation_prompt=True,
+        )
+    inputs = processor(text=prompt, return_tensors="pt").to(model.device)
     generation_kwargs = {
         "max_new_tokens": max_new_tokens,
         "pad_token_id": tokenizer.eos_token_id,
@@ -119,9 +129,10 @@ def main() -> int:
 
     config = load_config(Path(args.config))
     generation = config.get("generation", {})
-    model, tokenizer = load_model(config, args.adapter_dir)
+    model, processor, tokenizer = load_model(config, args.adapter_dir)
     text = generate(
         model,
+        processor,
         tokenizer,
         build_messages(args.title, args.abstract),
         max_new_tokens=args.max_new_tokens or int(generation.get("max_new_tokens", 512)),

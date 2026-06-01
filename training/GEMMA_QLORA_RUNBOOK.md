@@ -1,14 +1,12 @@
 # Gemma QLoRA CLI Runbook
 
-This runbook trains a Gemma QLoRA adapter for Ask Physics on a CUDA-compatible PyTorch GPU machine.
+This runbook trains a Gemma 4 QLoRA adapter for Ask Physics on a CUDA-compatible PyTorch GPU machine.
 
-## 1. Prepare Environment
+## 1. Prepare Lightning Environment
 
-From the repo root:
+Lightning Studios use the default Studio environment. Do not create a new venv inside the Studio.
 
 ```bash
-python -m venv .venv-qlora
-source .venv-qlora/bin/activate
 python -m pip install --upgrade pip
 ```
 
@@ -39,12 +37,13 @@ PY
 
 If this prints `cuda available: False`, fix PyTorch/CUDA before training.
 
-## 3. Authenticate For Gemma
+## 3. Authenticate For Gemma 4
 
-Gemma models may require accepting the model terms on Hugging Face.
+Gemma 4 models may require accepting the model terms on Hugging Face.
 
 ```bash
-huggingface-cli login
+hf auth login
+hf auth whoami
 ```
 
 ## 4. Verify Dataset
@@ -72,7 +71,7 @@ If you want to materialize the exact Gemma training text first, run:
 
 ```bash
 python training/scripts/format_sft_for_gemma.py \
-  --model google/gemma-2-2b-it \
+  --model google/gemma-4-E4B-it \
   --input-dir training/data/sft_balanced \
   --output-dir training/data/gemma_sft_balanced
 ```
@@ -185,7 +184,14 @@ For a stronger model, change:
 
 ```yaml
 model:
-  base_model: google/gemma-2-9b-it
+  base_model: google/gemma-4-26B-A4B-it
+```
+
+For a smaller model, change:
+
+```yaml
+model:
+  base_model: google/gemma-4-E2B-it
 ```
 
 ## 9. What Counts As Success

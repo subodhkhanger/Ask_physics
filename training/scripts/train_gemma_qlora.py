@@ -19,6 +19,7 @@ from datasets import Dataset
 from peft import LoraConfig, prepare_model_for_kbit_training
 from transformers import (
     AutoModelForCausalLM,
+    AutoProcessor,
     AutoTokenizer,
     BitsAndBytesConfig,
     DataCollatorForLanguageModeling,
@@ -56,8 +57,31 @@ def read_jsonl(path: Path) -> Iterable[Dict[str, Any]]:
                 yield json.loads(line)
 
 
-def messages_to_text(tokenizer: AutoTokenizer, messages: List[Dict[str, str]]) -> str:
+def load_template_renderer(model_name: str) -> Any:
+    """Load Gemma 4 processor for chat templating when available."""
+    try:
+        return AutoProcessor.from_pretrained(model_name)
+    except Exception:
+        return AutoTokenizer.from_pretrained(model_name)
+
+
+def messages_to_text(renderer: Any, tokenizer: AutoTokenizer, messages: List[Dict[str, str]]) -> str:
     """Apply the model chat template to one SFT message list."""
+    if hasattr(renderer, "apply_chat_template"):
+        try:
+            return renderer.apply_chat_template(
+                messages,
+                tokenize=False,
+                add_generation_prompt=False,
+                enable_thinking=False,
+            )
+        except TypeError:
+            return renderer.apply_chat_template(
+                messages,
+                tokenize=False,
+                add_generation_prompt=False,
+            )
+
     if hasattr(tokenizer, "apply_chat_template") and tokenizer.chat_template:
         return tokenizer.apply_chat_template(
             messages,
@@ -71,7 +95,7 @@ def messages_to_text(tokenizer: AutoTokenizer, messages: List[Dict[str, str]]) -
     return "\n".join(rendered) + tokenizer.eos_token
 
 
-def load_sft_dataset(path: Path, tokenizer: AutoTokenizer) -> Dataset:
+def load_sft_dataset(path: Path, renderer: Any, tokenizer: AutoTokenizer) -> Dataset:
     """Load SFT JSONL.
 
     Supports either:
@@ -82,7 +106,7 @@ def load_sft_dataset(path: Path, tokenizer: AutoTokenizer) -> Dataset:
     for record in read_jsonl(path):
         text = record.get("text")
         if text is None:
-            text = messages_to_text(tokenizer, record["messages"])
+            text = messages_to_text(renderer, tokenizer, record["messages"])
         rows.append(
             {
                 "paper_id": record["paper_id"],
@@ -205,8 +229,9 @@ def train(config: Dict[str, Any]) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
 
     model, tokenizer = load_model_and_tokenizer(config)
-    train_dataset = load_sft_dataset(Path(config["data"]["train_file"]), tokenizer)
-    eval_dataset = load_sft_dataset(Path(config["data"]["eval_file"]), tokenizer)
+    renderer = load_template_renderer(config["model"]["base_model"])
+    train_dataset = load_sft_dataset(Path(config["data"]["train_file"]), renderer, tokenizer)
+    eval_dataset = load_sft_dataset(Path(config["data"]["eval_file"]), renderer, tokenizer)
     lora_config = build_lora_config(config)
     training_args = build_training_args(config)
     max_seq_length = int(config["data"].get("max_seq_length", 2048))
