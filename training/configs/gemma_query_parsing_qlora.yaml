@@ -11,6 +11,7 @@ data:
   eval_file: training/data/query_parsing/dev.jsonl
   max_seq_length: 768
   preprocessing_num_workers: 1
+  train_on_assistant_only: true
 
 output:
   output_dir: training/runs/gemma-query-parsing-qlora

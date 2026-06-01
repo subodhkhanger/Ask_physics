@@ -22,7 +22,6 @@ from transformers import (
     AutoProcessor,
     AutoTokenizer,
     BitsAndBytesConfig,
-    DataCollatorForLanguageModeling,
     Trainer,
     TrainingArguments,
     set_seed,
@@ -94,6 +93,38 @@ def messages_to_text(renderer: Any, tokenizer: AutoTokenizer, messages: List[Dic
     return "\n".join(rendered) + tokenizer.eos_token
 
 
+def messages_to_prompt_text(renderer: Any, tokenizer: AutoTokenizer, messages: List[Dict[str, str]]) -> str:
+    """Render the prompt prefix up to the assistant generation marker."""
+    prompt_messages = messages[:-1]
+    if hasattr(renderer, "apply_chat_template"):
+        try:
+            return renderer.apply_chat_template(
+                prompt_messages,
+                tokenize=False,
+                add_generation_prompt=True,
+                enable_thinking=False,
+            )
+        except TypeError:
+            return renderer.apply_chat_template(
+                prompt_messages,
+                tokenize=False,
+                add_generation_prompt=True,
+            )
+
+    if hasattr(tokenizer, "apply_chat_template") and tokenizer.chat_template:
+        return tokenizer.apply_chat_template(
+            prompt_messages,
+            tokenize=False,
+            add_generation_prompt=True,
+        )
+
+    rendered = []
+    for message in prompt_messages:
+        rendered.append(f"{message['role'].upper()}: {message['content']}")
+    rendered.append("ASSISTANT:")
+    return "\n".join(rendered)
+
+
 def load_sft_dataset(path: Path, renderer: Any, tokenizer: AutoTokenizer) -> Dataset:
     """Load SFT JSONL.
 
@@ -104,16 +135,47 @@ def load_sft_dataset(path: Path, renderer: Any, tokenizer: AutoTokenizer) -> Dat
     rows = []
     for record in read_jsonl(path):
         text = record.get("text")
+        prompt_text = record.get("prompt_text")
         if text is None:
             text = messages_to_text(renderer, tokenizer, record["messages"])
+            prompt_text = messages_to_prompt_text(renderer, tokenizer, record["messages"])
         rows.append(
             {
                 "example_id": record.get("paper_id") or record.get("example_id"),
                 "task": record["task"],
                 "text": text,
+                "prompt_text": prompt_text,
             }
         )
     return Dataset.from_list(rows)
+
+
+def build_completion_collator(tokenizer: AutoTokenizer):
+    """Pad causal-LM batches while preserving assistant-only labels."""
+
+    def collate(features: List[Dict[str, Any]]) -> Dict[str, torch.Tensor]:
+        max_length = max(len(feature["input_ids"]) for feature in features)
+        pad_id = tokenizer.pad_token_id
+        if pad_id is None:
+            pad_id = tokenizer.eos_token_id
+
+        input_ids = []
+        attention_mask = []
+        labels = []
+        for feature in features:
+            length = len(feature["input_ids"])
+            pad_length = max_length - length
+            input_ids.append(feature["input_ids"] + [pad_id] * pad_length)
+            attention_mask.append(feature["attention_mask"] + [0] * pad_length)
+            labels.append(feature["labels"] + [-100] * pad_length)
+
+        return {
+            "input_ids": torch.tensor(input_ids, dtype=torch.long),
+            "attention_mask": torch.tensor(attention_mask, dtype=torch.long),
+            "labels": torch.tensor(labels, dtype=torch.long),
+        }
+
+    return collate
 
 
 def build_quantization_config(config: Dict[str, Any]) -> BitsAndBytesConfig:
@@ -234,14 +296,30 @@ def train(config: Dict[str, Any]) -> None:
     lora_config = build_lora_config(config)
     training_args = build_training_args(config)
     max_seq_length = int(config["data"].get("max_seq_length", 2048))
+    train_on_assistant_only = bool(config["data"].get("train_on_assistant_only", True))
 
     def tokenize(batch: Dict[str, List[str]]) -> Dict[str, Any]:
-        return tokenizer(
+        encoded = tokenizer(
             batch["text"],
             truncation=True,
             max_length=max_seq_length,
             padding=False,
         )
+        if train_on_assistant_only:
+            prompt_encoded = tokenizer(
+                batch["prompt_text"],
+                truncation=True,
+                max_length=max_seq_length,
+                padding=False,
+            )
+            labels = []
+            for input_ids, prompt_ids in zip(encoded["input_ids"], prompt_encoded["input_ids"]):
+                row_labels = list(input_ids)
+                prompt_len = min(len(prompt_ids), len(row_labels))
+                row_labels[:prompt_len] = [-100] * prompt_len
+                labels.append(row_labels)
+            encoded["labels"] = labels
+        return encoded
 
     train_tokenized = train_dataset.map(
         tokenize,
@@ -265,7 +343,7 @@ def train(config: Dict[str, Any]) -> None:
         "args": training_args,
         "train_dataset": train_tokenized,
         "eval_dataset": eval_tokenized,
-        "data_collator": DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False),
+        "data_collator": build_completion_collator(tokenizer),
     }
     try:
         trainer = Trainer(
