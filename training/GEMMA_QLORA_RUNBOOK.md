@@ -205,3 +205,25 @@ For the first run:
 - Evaluation reports a nonzero JSON validity rate.
 
 Do not claim final extraction quality until the gold review queue has been manually reviewed.
+
+## 10. Troubleshooting
+
+If training fails with:
+
+```text
+TypeError: Trainer.__init__() got an unexpected keyword argument 'tokenizer'
+```
+
+the script is using an old Hugging Face `Trainer` argument. Verify that there is no standalone `tokenizer=tokenizer,` argument in `Trainer(...)`:
+
+```bash
+grep -n "^[[:space:]]*tokenizer=tokenizer," training/scripts/train_gemma_qlora.py || echo "ok: no standalone Trainer tokenizer arg"
+```
+
+It is correct for this to remain:
+
+```python
+DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False)
+```
+
+The data collator still needs the tokenizer for causal language modeling batch padding.
