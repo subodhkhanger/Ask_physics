@@ -27,7 +27,6 @@ from transformers import (
     TrainingArguments,
     set_seed,
 )
-from trl import SFTTrainer
 
 
 def load_config(path: Path) -> Dict[str, Any]:
@@ -236,51 +235,39 @@ def train(config: Dict[str, Any]) -> None:
     training_args = build_training_args(config)
     max_seq_length = int(config["data"].get("max_seq_length", 2048))
 
-    try:
-        trainer = SFTTrainer(
-            model=model,
-            args=training_args,
-            train_dataset=train_dataset,
-            eval_dataset=eval_dataset,
-            peft_config=lora_config,
-            dataset_text_field="text",
-            max_seq_length=max_seq_length,
-            tokenizer=tokenizer,
-            packing=False,
+    def tokenize(batch: Dict[str, List[str]]) -> Dict[str, Any]:
+        return tokenizer(
+            batch["text"],
+            truncation=True,
+            max_length=max_seq_length,
+            padding=False,
         )
-    except TypeError:
-        # Fallback for TRL/HF combinations where SFTTrainer signatures changed.
-        def tokenize(batch: Dict[str, List[str]]) -> Dict[str, Any]:
-            return tokenizer(
-                batch["text"],
-                truncation=True,
-                max_length=max_seq_length,
-                padding=False,
-            )
 
-        train_tokenized = train_dataset.map(
-            tokenize,
-            batched=True,
-            remove_columns=train_dataset.column_names,
-            num_proc=int(config["data"].get("preprocessing_num_workers", 1)),
-        )
-        eval_tokenized = eval_dataset.map(
-            tokenize,
-            batched=True,
-            remove_columns=eval_dataset.column_names,
-            num_proc=int(config["data"].get("preprocessing_num_workers", 1)),
-        )
-        from peft import get_peft_model
+    train_tokenized = train_dataset.map(
+        tokenize,
+        batched=True,
+        remove_columns=train_dataset.column_names,
+        num_proc=int(config["data"].get("preprocessing_num_workers", 1)),
+    )
+    eval_tokenized = eval_dataset.map(
+        tokenize,
+        batched=True,
+        remove_columns=eval_dataset.column_names,
+        num_proc=int(config["data"].get("preprocessing_num_workers", 1)),
+    )
 
-        model = get_peft_model(model, lora_config)
-        trainer = Trainer(
-            model=model,
-            args=training_args,
-            train_dataset=train_tokenized,
-            eval_dataset=eval_tokenized,
-            tokenizer=tokenizer,
-            data_collator=DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False),
-        )
+    from peft import get_peft_model
+
+    model = get_peft_model(model, lora_config)
+    model.print_trainable_parameters()
+    trainer = Trainer(
+        model=model,
+        args=training_args,
+        train_dataset=train_tokenized,
+        eval_dataset=eval_tokenized,
+        tokenizer=tokenizer,
+        data_collator=DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False),
+    )
 
     train_result = trainer.train()
     trainer.save_model(str(output_dir / "adapter"))
