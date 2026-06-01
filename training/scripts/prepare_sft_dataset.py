@@ -7,7 +7,7 @@ import argparse
 import hashlib
 import json
 from pathlib import Path
-from typing import Dict, Iterable, List
+from typing import Dict, Iterable, List, Optional
 
 
 SYSTEM_PROMPT = (
@@ -38,6 +38,11 @@ def split_for_paper(paper_id: str, dev_percent: int, test_percent: int) -> str:
     return "train"
 
 
+def stable_hash(paper_id: str) -> str:
+    """Return a deterministic hash for sampling."""
+    return hashlib.sha256(paper_id.encode("utf-8")).hexdigest()
+
+
 def assistant_payload(label: Dict) -> str:
     """Build strict JSON assistant output for SFT."""
     payload = {"measurements": label.get("measurements", [])}
@@ -57,6 +62,18 @@ def build_sft_record(label: Dict) -> Dict:
             {"role": "assistant", "content": assistant_payload(label)},
         ],
     }
+
+
+def limit_negative_ratio(labels: List[Dict], max_negative_ratio: Optional[float]) -> List[Dict]:
+    """Keep all positive labels and optionally cap negatives deterministically."""
+    if max_negative_ratio is None:
+        return labels
+
+    positives = [label for label in labels if label.get("measurements")]
+    negatives = [label for label in labels if not label.get("measurements")]
+    max_negatives = int(len(positives) * max_negative_ratio)
+    negatives = sorted(negatives, key=lambda label: stable_hash(label["paper_id"]))[:max_negatives]
+    return positives + negatives
 
 
 def write_splits(records: Iterable[Dict], output_dir: Path, dev_percent: int, test_percent: int) -> Dict[str, int]:
@@ -109,9 +126,17 @@ def main() -> int:
         default=10,
         help="Percent of paper IDs assigned to test.",
     )
+    parser.add_argument(
+        "--max-negative-ratio",
+        type=float,
+        default=None,
+        help="Optional cap for negatives relative to positive labels, e.g. 1.0 keeps at most one negative per positive.",
+    )
     args = parser.parse_args()
 
-    records = (build_sft_record(label) for label in read_jsonl(Path(args.labels)))
+    labels = list(read_jsonl(Path(args.labels)))
+    labels = limit_negative_ratio(labels, args.max_negative_ratio)
+    records = (build_sft_record(label) for label in labels)
     counts = write_splits(records, Path(args.output_dir), args.dev_percent, args.test_percent)
 
     print(

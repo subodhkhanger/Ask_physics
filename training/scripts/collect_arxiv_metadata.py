@@ -80,11 +80,14 @@ def collect_query(query: str, max_results: int, delay_seconds: float) -> Iterabl
         sort_by=arxiv.SortCriterion.SubmittedDate,
         sort_order=arxiv.SortOrder.Descending,
     )
+    client = arxiv.Client(
+        page_size=min(max_results, 100),
+        delay_seconds=delay_seconds,
+        num_retries=3,
+    )
 
-    for result in search.results():
+    for result in client.results(search):
         yield result_to_record(result, query)
-        if delay_seconds > 0:
-            time.sleep(delay_seconds)
 
 
 def write_jsonl(records: List[Dict], output_path: Path) -> None:
@@ -144,12 +147,18 @@ def main() -> int:
 
     print(f"Collecting up to {args.max_results} records for each of {len(queries)} queries")
     for query in queries:
-        print(f"- {query}")
+        print(f"- {query}", flush=True)
+        query_count = 0
         for record in collect_query(query, args.max_results, args.delay_seconds):
+            query_count += 1
             if record["paper_id"] in seen:
                 continue
             seen.add(record["paper_id"])
             records.append(record)
+            if len(records) % 50 == 0:
+                write_jsonl(records, Path(args.output))
+                print(f"  saved {len(records)} deduplicated records", flush=True)
+        print(f"  query returned {query_count} records; corpus size is {len(records)}", flush=True)
 
     output_path = Path(args.output)
     write_jsonl(records, output_path)

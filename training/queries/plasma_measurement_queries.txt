@@ -1,0 +1,25 @@
+# Plasma measurement-focused arXiv queries for Ask Physics QLoRA data.
+# Keep these targeted. Broad terms produce many useful negatives but weak
+# positive measurement yield.
+
+cat:physics.plasm-ph
+cat:physics.plasm-ph AND all:keV
+cat:physics.plasm-ph AND all:eV
+cat:physics.plasm-ph AND all:"electron temperature"
+cat:physics.plasm-ph AND all:"ion temperature"
+cat:physics.plasm-ph AND all:"plasma temperature"
+cat:physics.plasm-ph AND all:"electron density"
+cat:physics.plasm-ph AND all:"plasma density"
+cat:physics.plasm-ph AND all:"number density"
+cat:physics.plasm-ph AND all:density
+cat:physics.plasm-ph AND all:"m^-3"
+cat:physics.plasm-ph AND all:"m-3"
+cat:physics.plasm-ph AND all:"cm^-3"
+cat:physics.plasm-ph AND all:"cm-3"
+cat:physics.plasm-ph AND all:tokamak
+cat:physics.plasm-ph AND all:stellarator
+cat:physics.plasm-ph AND all:"spherical tokamak"
+cat:physics.plasm-ph AND all:"low temperature plasma"
+cat:physics.plasm-ph AND all:"fusion plasma"
+cat:physics.plasm-ph AND all:"laser plasma"
+cat:physics.plasm-ph AND all:"plasma diagnostics"

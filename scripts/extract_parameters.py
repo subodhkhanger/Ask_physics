@@ -56,9 +56,11 @@ class ParameterExtractor:
 
     DENSITY_PATTERNS = [
         # Explicit density with scientific notation and units
-        r'(?:electron density|n_?e|ion density|n_?i|plasma density)[\s:=~]*'
+        r'(?:electron density|electron number density|number density|n_?e|ion density|n_?i|plasma density)[\s\w,;:~=-]{0,80}?'
         r'(?:of|about|approximately|around)?[\s]*'
-        r'(\d+\.?\d*)[\s]*(?:[×x]\s*)?10(?:\^|\{|\^\{)?([+-]?\d+)\}?[\s]*(m\^?-?3|m-\s?3|m\^\{-3\}|cm\^?-?3|cm-\s?3|cm\^\{-3\}|per cubic meter|per cubic centimeter)',
+        r'(\d+\.?\d*)[\s]*(?:[×x]\s*)?10(?:\^|\{|\^\{)?([+-]?\d+)\}?'
+        r'(?:\s*(?:-|to|÷|–|and)\s*\d+\.?\d*[\s]*(?:[×x]\s*)?10(?:\^|\{|\^\{)?[+-]?\d+\}?)?[\s]*'
+        r'(m\^?-?3|m-\s?3|m\^\{-3\}|cm\^?-?3|cm-\s?3|cm\^\{-3\}|per cubic meter|per cubic centimeter)',
 
         # Density with scientific notation (more permissive)
         r'densit(?:y|ies)[\s\w,;:~=-]{0,80}?'
@@ -67,6 +69,14 @@ class ParameterExtractor:
         # Engineering notation such as "10E20 m-3"
         r'densit(?:y|ies)[\s\w,;:~=-]{0,80}?'
         r'(\d+\.?\d*)E([+-]?\d+)[\s]*(m\^?-?3|m-\s?3|m\^\{-3\}|cm\^?-?3|cm-\s?3|cm\^\{-3\})',
+
+        # Compact notation such as "3x1019 m-3" seen in abstracts.
+        r'densit(?:y|ies)[\s\w,;:~=-]{0,80}?'
+        r'(\d+\.?\d*)[\s]*[×x]\s*10([+-]?\d+)[\s]*(m\^?-?3|m-\s?3|m\^\{-3\}|cm\^?-?3|cm-\s?3|cm\^\{-3\})',
+
+        # Value before phrase, e.g. "10^20 m-3 density range".
+        r'(\d+\.?\d*)?[\s]*(?:[×x]\s*)?10(?:\^|\{|\^\{)?([+-]?\d+)\}?[\s]*'
+        r'(m\^?-?3|m-\s?3|m\^\{-3\}|cm\^?-?3|cm-\s?3|cm\^\{-3\})[\s\w,;:~=-]{0,80}?densit(?:y|ies)',
     ]
 
     def __init__(self, use_llm: bool = True, api_key: Optional[str] = None):
@@ -94,19 +104,20 @@ class ParameterExtractor:
     def extract_with_regex(self, text: str, param_type: str) -> List[Dict]:
         """First pass: regex extraction."""
         patterns = self.TEMP_PATTERNS if param_type == 'temperature' else self.DENSITY_PATTERNS
+        search_text = self._prepare_text_for_regex(text)
         matches = []
 
         for pattern in patterns:
-            for match in re.finditer(pattern, text, re.IGNORECASE):
+            for match in re.finditer(pattern, search_text, re.IGNORECASE):
                 # Extract context (50 chars before and after)
                 start = max(0, match.start() - 50)
-                end = min(len(text), match.end() + 50)
-                context = text[start:end].strip()
+                end = min(len(search_text), match.end() + 50)
+                context = search_text[start:end].strip()
 
                 # Parse value
                 try:
                     groups = match.groups()
-                    value = float(groups[0])
+                    value = float(groups[0]) if groups[0] is not None else 1.0
 
                     # Handle scientific notation if present (group 2)
                     if len(groups) > 1 and groups[1]:
@@ -143,6 +154,42 @@ class ParameterExtractor:
                 unique_matches.append(match)
 
         return unique_matches
+
+    def _prepare_text_for_regex(self, text: str) -> str:
+        """Normalize common LaTeX scientific notation before regex matching."""
+        normalized = text
+
+        replacements = {
+            r'\times': 'x',
+            r'\cdot': 'x',
+            r'{\cdot}': 'x',
+            r'\,': ' ',
+            r'\;': ' ',
+            r'\ ': ' ',
+            r'\lesssim': ' ',
+            r'\gtrsim': ' ',
+            r'\sim': ' ',
+            '$': '',
+            '~': ' ',
+        }
+        for old, new in replacements.items():
+            normalized = normalized.replace(old, new)
+
+        # Convert exponent braces used for powers and units.
+        normalized = re.sub(r'10\s*\^\s*\{\s*([+-]?\d+)\s*\}', r'10^\1', normalized)
+        normalized = re.sub(r'(c?m)\s*\^\s*\{\s*(-?3)\s*\}', r'\1^\2', normalized)
+        normalized = re.sub(r'n_\s*\{\s*e\s*\}', 'ne', normalized)
+        normalized = re.sub(r'n_\\(?:mathrm|rm|text)\{\s*e\s*\}', 'ne', normalized)
+
+        # Strip common LaTeX wrappers after exponent/unit normalization.
+        normalized = re.sub(r'\\(?:mathrm|rm|text)\{', '', normalized)
+        normalized = normalized.replace('}', '')
+        normalized = normalized.replace('{', '')
+
+        # Handle compact forms such as 3x1019 m-3.
+        normalized = re.sub(r'(\d+(?:\.\d+)?)\s*[x×]\s*10([+-]?\d{1,3})', r'\1 x 10^\2', normalized)
+
+        return normalized
 
     def validate_with_llm(self, text: str, regex_results: List[Dict], param_type: str) -> List[Dict]:
         """
