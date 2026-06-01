@@ -165,9 +165,13 @@ For a smaller GPU:
 ```yaml
 data:
   max_seq_length: 1024
+  preprocessing_num_workers: 1
 training:
   per_device_train_batch_size: 1
   gradient_accumulation_steps: 16
+lora:
+  r: 8
+  lora_alpha: 16
 ```
 
 For a larger GPU:
@@ -227,3 +231,37 @@ DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False)
 ```
 
 The data collator still needs the tokenizer for causal language modeling batch padding.
+
+If training fails with:
+
+```text
+RuntimeError: CUDA error: CUBLAS_STATUS_ALLOC_FAILED
+```
+
+the model loaded, but the first training step ran out of usable GPU memory. Use the L4-safe defaults:
+
+```yaml
+data:
+  max_seq_length: 1024
+  preprocessing_num_workers: 1
+lora:
+  r: 8
+  lora_alpha: 16
+training:
+  per_device_train_batch_size: 1
+  gradient_accumulation_steps: 16
+```
+
+If it still fails, lower `max_seq_length` to `768` or switch to:
+
+```yaml
+model:
+  base_model: google/gemma-4-E2B-it
+```
+
+There is also a ready-made L4 smoke config:
+
+```bash
+python training/scripts/train_gemma_qlora.py \
+  --config training/configs/gemma_qlora_l4_smoke.yaml
+```
