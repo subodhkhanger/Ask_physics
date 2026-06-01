@@ -108,7 +108,7 @@ def load_sft_dataset(path: Path, renderer: Any, tokenizer: AutoTokenizer) -> Dat
             text = messages_to_text(renderer, tokenizer, record["messages"])
         rows.append(
             {
-                "paper_id": record["paper_id"],
+                "example_id": record.get("paper_id") or record.get("example_id"),
                 "task": record["task"],
                 "text": text,
             }

@@ -74,7 +74,7 @@ def format_record(renderer: AutoProcessor, record: Dict) -> Dict:
     return {
         "schema_version": "gemma_sft_text.v1",
         "source_schema_version": record.get("schema_version"),
-        "paper_id": record["paper_id"],
+        "example_id": record.get("paper_id") or record.get("example_id"),
         "task": record["task"],
         "text": render_messages(renderer, record["messages"]),
     }

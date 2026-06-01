@@ -47,7 +47,7 @@ Acceptance criteria:
 - Labels include context snippets and normalized units where possible.
 - Label provenance is `regex`.
 
-## Milestone 3: SFT Dataset
+## Milestone 3: Extraction SFT Dataset
 
 Convert labels into chat-style supervised fine-tuning records.
 
@@ -65,6 +65,27 @@ Acceptance criteria:
 - Splits are by `paper_id`.
 - Assistant output is strict JSON.
 - Dataset remains model-neutral for Gemma and Mistral.
+
+## Milestone 3b: Query Parsing SFT Dataset
+
+Convert natural-language search queries into structured JSON compatible with
+`backend.nlp_query_processor.ParsedQuery`.
+
+Artifacts:
+
+```text
+training/data/query_parsing/train.jsonl
+training/data/query_parsing/dev.jsonl
+training/data/query_parsing/test.jsonl
+```
+
+Acceptance criteria:
+
+- Covers keyword-only search, temporal constraints, temperature ranges, density ranges, combined temperature+density filters, and statistics intents.
+- Assistant output is strict JSON with `intent`, `parameters`, `keywords`, `temporal_constraint`, and `confidence`.
+- Uses `example_id` records instead of `paper_id` because examples are query-level rather than paper-level.
+- Dataset remains model-neutral for Gemma and Mistral.
+- The default generator writes a stratified 3,000-example split for v0.1 fine-tuning.
 
 ## Milestone 4: Silver Labels
 
@@ -110,6 +131,7 @@ Future files:
 training/scripts/train_qlora.py
 training/scripts/evaluate_extraction.py
 training/configs/gemma_qlora.yaml
+training/configs/gemma_query_parsing_qlora.yaml
 training/configs/mistral_qlora.yaml
 ```
 

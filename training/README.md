@@ -19,7 +19,7 @@ The dataset targets two Ask Physics tasks:
 1. Abstract extraction: extract plasma physics measurements from title and abstract text.
 2. Query parsing: convert user search queries into structured JSON for SPARQL generation.
 
-This first project implements the abstract extraction path. Query parsing examples should be added in a later phase after the extraction dataset format is stable.
+The abstract extraction path and a first query parsing SFT dataset are now both present.
 
 ## Data Levels
 
@@ -50,6 +50,7 @@ training/
     collect_arxiv_metadata.py
     build_bronze_labels.py
     prepare_sft_dataset.py
+    prepare_query_parsing_dataset.py
 ```
 
 ## Quick Start
@@ -84,16 +85,28 @@ python3 training/scripts/prepare_sft_dataset.py \
   --output-dir training/data/sft
 ```
 
+Prepare model-neutral query parsing SFT data:
+
+```bash
+python3 training/scripts/prepare_query_parsing_dataset.py \
+  --output-dir training/data/query_parsing
+```
+
+The default query parsing build writes a stratified 3,000-example dataset. Use
+`--max-examples 0` to write every generated synthetic example.
+
 ## Gemma 4 QLoRA Training
 
 The runnable Gemma 4 QLoRA package is:
 
 ```text
 training/configs/gemma_qlora.yaml
+training/configs/gemma_query_parsing_qlora.yaml
 training/scripts/train_gemma_qlora.py
 training/scripts/format_sft_for_gemma.py
 training/scripts/run_gemma_inference.py
 training/scripts/evaluate_gemma_extraction.py
+training/scripts/evaluate_gemma_query_parsing.py
 training/run_gemma_cuda.sh
 training/GEMMA_QLORA_RUNBOOK.md
 ```
@@ -118,6 +131,22 @@ Start training:
 
 ```bash
 bash training/run_gemma_cuda.sh
+```
+
+To fine-tune the query parser adapter that replaces the OpenAI-backed runtime parser:
+
+```bash
+python training/scripts/train_gemma_qlora.py \
+  --config training/configs/gemma_query_parsing_qlora.yaml
+```
+
+Evaluate the query parser adapter:
+
+```bash
+python training/scripts/evaluate_gemma_query_parsing.py \
+  --config training/configs/gemma_query_parsing_qlora.yaml \
+  --adapter-dir training/runs/gemma-query-parsing-qlora/adapter \
+  --eval-file training/data/query_parsing/test.jsonl
 ```
 
 For the full command-line runbook:
