@@ -140,6 +140,18 @@ python training/scripts/train_gemma_qlora.py \
   --config training/configs/gemma_query_parsing_qlora.yaml
 ```
 
+On Lightning AI, use the guarded run script from the repo root:
+
+```bash
+bash training/run_gemma_query_parsing_lightning.sh
+```
+
+For a fresh Lightning Studio where dependencies are not installed yet:
+
+```bash
+INSTALL_DEPS=1 bash training/run_gemma_query_parsing_lightning.sh
+```
+
 Evaluate the query parser adapter:
 
 ```bash
