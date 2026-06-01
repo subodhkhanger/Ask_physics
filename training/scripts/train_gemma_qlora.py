@@ -260,14 +260,20 @@ def train(config: Dict[str, Any]) -> None:
 
     model = get_peft_model(model, lora_config)
     model.print_trainable_parameters()
-    trainer = Trainer(
-        model=model,
-        args=training_args,
-        train_dataset=train_tokenized,
-        eval_dataset=eval_tokenized,
-        tokenizer=tokenizer,
-        data_collator=DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False),
-    )
+    trainer_kwargs = {
+        "model": model,
+        "args": training_args,
+        "train_dataset": train_tokenized,
+        "eval_dataset": eval_tokenized,
+        "data_collator": DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False),
+    }
+    try:
+        trainer = Trainer(
+            **trainer_kwargs,
+            processing_class=tokenizer,
+        )
+    except TypeError:
+        trainer = Trainer(**trainer_kwargs)
 
     train_result = trainer.train()
     trainer.save_model(str(output_dir / "adapter"))
