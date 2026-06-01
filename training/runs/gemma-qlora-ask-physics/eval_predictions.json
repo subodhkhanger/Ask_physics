@@ -1,0 +1,2459 @@
+{
+  "metrics": {
+    "records": 50,
+    "schema_valid_rate": 0.94,
+    "type_match": {
+      "f1": 0.3859649122807018,
+      "fn": 54,
+      "fp": 16,
+      "precision": 0.5789473684210527,
+      "recall": 0.2894736842105263,
+      "tp": 22
+    },
+    "valid_json_rate": 0.94
+  },
+  "rows": [
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "s goal: obtaining average ion energies well above 100keV and minimizing losses by bremsstrahlung x-rays. R",
+            "normalized_unit": "keV",
+            "normalized_value": 100.0,
+            "type": "temperature",
+            "unit": "keV",
+            "value": 100.0
+          },
+          {
+            "confidence": 0.65,
+            "context": "nsity-confinement-time-energy products as high as 5.0 x10^15 keVsec/cm^3. In these experiments we clearly distingu",
+            "normalized_unit": "keV",
+            "normalized_value": 5000000000000000.0,
+            "type": "temperature",
+            "unit": "keV",
+            "value": 5000000000000000.0
+          }
+        ]
+      },
+      "paper_id": "arxiv:0401126v2",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 0.9,
+            "context": "Target ion energy for p11B fusion",
+            "normalized_unit": "keV",
+            "normalized_value": 1,
+            "type": "ion average energy",
+            "unit": "keV",
+            "value": 100
+          },
+          {
+            "confidence": 0.9,
+            "context": "Achieved ion average energy in DPF hot-spots",
+            "normalized_unit": "keV",
+            "normalized_value": 1,
+            "type": "ion average energy",
+            "unit": "keV",
+            "value": 100
+          },
+          {
+            "confidence": 0.9,
+            "context": "Achieved product in DPF experiments",
+            "normalized_unit": "x10^15 keVsec/cm^3",
+            "normalized_value": 1,
+            "type": "density-confinement-time-energy product",
+            "unit": "x10^15 keVsec/cm^3",
+            "value": 5.0
+          },
+          {
+            "confidence": 0.8,
+            "context": "Field strength where Landau level effect becomes major",
+            "normalized_unit": "gigagauss",
+            "normalized_value": 1,
+            "type": "magnetic field",
+            "unit": "gigagauss",
+            "value": 5
+          },
+          {
+            "confidence": 0.9,
+            "context": "Demonstrated magnetic field strength with DPF",
+            "normalized_unit": "gigagauss",
+            "normalized_value": 1,
+            "type": "magnetic field",
+            "unit": "gigagauss",
+            "value": 0.4
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"ion average energy\",\n      \"value\": 100,\n      \"unit\": \"keV\",\n      \"normalized_value\": 1,\n      \"normalized_unit\": \"keV\",\n      \"context\": \"Target ion energy for p11B fusion\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"ion average energy\",\n      \"value\": 100,\n      \"unit\": \"keV\",\n      \"normalized_value\": 1,\n      \"normalized_unit\": \"keV\",\n      \"context\": \"Achieved ion average energy in DPF hot-spots\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"density-confinement-time-energy product\",\n      \"value\": 5.0,\n      \"unit\": \"x10^15 keVsec/cm^3\",\n      \"normalized_value\": 1,\n      \"normalized_unit\": \"x10^15 keVsec/cm^3\",\n      \"context\": \"Achieved product in DPF experiments\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"magnetic field\",\n      \"value\": 5,\n      \"unit\": \"gigagauss\",\n      \"normalized_value\": 1,\n      \"normalized_unit\": \"gigagauss\",\n      \"context\": \"Field strength where Landau level effect becomes major\",\n      \"confidence\": 0.8\n    },\n    {\n      \"type\": \"magnetic field\",\n      \"value\": 0.4,\n      \"unit\": \"gigagauss\",\n      \"normalized_value\": 1,\n      \"normalized_unit\": \"gigagauss\",\n      \"context\": \"Demonstrated magnetic field strength with DPF\",\n      \"confidence\": 0.9\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.85,
+            "context": "asma heating by the electron beam results in peak electron temperature  2 keV. To this time the ions are also collectively heat",
+            "normalized_unit": "keV",
+            "normalized_value": 2.0,
+            "type": "temperature",
+            "unit": "keV",
+            "value": 2.0
+          },
+          {
+            "confidence": 0.65,
+            "context": "istic electron beam (peak parameters are  1 MeV,  25 kA,  8 \u03bcs,  120 kJ). Magnetic system of the facilit",
+            "normalized_unit": "keV",
+            "normalized_value": 2.1542499999999997e-06,
+            "type": "temperature",
+            "unit": "k",
+            "value": 25.0
+          },
+          {
+            "confidence": 0.65,
+            "context": "beam (peak parameters are  1 MeV,  25 kA,  8 \u03bcs,  120 kJ). Magnetic system of the facility is a 12-meter-",
+            "normalized_unit": "keV",
+            "normalized_value": 1.03404e-05,
+            "type": "temperature",
+            "unit": "k",
+            "value": 120.0
+          },
+          {
+            "confidence": 0.65,
+            "context": "ells of the trap. Ion temperature increases above 1 keV and confines at the high level for  1 ms. Dense h",
+            "normalized_unit": "keV",
+            "normalized_value": 1.0,
+            "type": "temperature",
+            "unit": "keV",
+            "value": 1.0
+          },
+          {
+            "confidence": 0.65,
+            "context": "rror trap GOL-3 are presented. Deuterium plasma of  10^21 m^-3 density is heated by a high power relativistic electron b",
+            "normalized_unit": "m^-3",
+            "normalized_value": 1e+21,
+            "type": "density",
+            "unit": "m^-3",
+            "value": 1e+21
+          }
+        ]
+      },
+      "paper_id": "arxiv:0410116v2",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 1.0,
+            "context": "Deuterium plasma density",
+            "normalized_unit": null,
+            "normalized_value": null,
+            "type": "density",
+            "unit": "m^-3",
+            "value": 1e+21
+          },
+          {
+            "confidence": 1.0,
+            "context": "Peak electron temperature",
+            "normalized_unit": null,
+            "normalized_value": null,
+            "type": "temperature",
+            "unit": "keV",
+            "value": 2
+          },
+          {
+            "confidence": 1.0,
+            "context": "Ion temperature threshold",
+            "normalized_unit": null,
+            "normalized_value": null,
+            "type": "temperature",
+            "unit": "keV",
+            "value": 1
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"density\",\n      \"value\": 1e21,\n      \"unit\": \"m^-3\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"Deuterium plasma density\",\n      \"confidence\": 1.0\n    },\n    {\n      \"type\": \"temperature\",\n      \"value\": 2,\n      \"unit\": \"keV\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"Peak electron temperature\",\n      \"confidence\": 1.0\n    },\n    {\n      \"type\": \"temperature\",\n      \"value\": 1,\n      \"unit\": \"keV\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"Ion temperature threshold\",\n      \"confidence\": 1.0\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "ns: stored energy of the capacitive storage - 140-450 kJ, charging voltage - 8.0-14.0 kV, discharge curre",
+            "normalized_unit": "keV",
+            "normalized_value": 3.87765e-05,
+            "type": "temperature",
+            "unit": "k",
+            "value": 450.0
+          },
+          {
+            "confidence": 0.65,
+            "context": "tive storage - 140-450 kJ, charging voltage - 8.0-14.0 kV, discharge current amplitude- 200-600 kA, curren",
+            "normalized_unit": "keV",
+            "normalized_value": 1.2063799999999999e-06,
+            "type": "temperature",
+            "unit": "k",
+            "value": 14.0
+          },
+          {
+            "confidence": 0.65,
+            "context": "e - 8.0-14.0 kV, discharge current amplitude- 200-600 kA, current rise rate - 10^9-10^10 A/s. The maximum",
+            "normalized_unit": "keV",
+            "normalized_value": 5.1702e-05,
+            "type": "temperature",
+            "unit": "k",
+            "value": 600.0
+          },
+          {
+            "confidence": 0.65,
+            "context": "rise rate - 10^9-10^10 A/s. The maximum particle density nmax, achieved just before the discharge, was about 2.0x10^22 cm-3. It was observed one or several compression of th",
+            "normalized_unit": "m^-3",
+            "normalized_value": 2e+28,
+            "type": "density",
+            "unit": "cm-3",
+            "value": 2e+22
+          }
+        ]
+      },
+      "paper_id": "arxiv:0410214v1",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 0.9,
+            "context": "maximum particle density achieved just before the discharge",
+            "normalized_unit": "cm^-3",
+            "normalized_value": 2e+22,
+            "type": "particle density",
+            "unit": "cm^-3",
+            "value": 2e+22
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"particle density\",\n      \"value\": 2.0e22,\n      \"unit\": \"cm^-3\",\n      \"normalized_value\": 2.0e22,\n      \"normalized_unit\": \"cm^-3\",\n      \"context\": \"maximum particle density achieved just before the discharge\",\n      \"confidence\": 0.9\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "y of about +- 3.5% has been demonstrated. The channels had a density of 1.2x10^19 cm-3 with a radius of 15 um and with length >= 2.5 mm.",
+            "normalized_unit": "m^-3",
+            "normalized_value": 1.2e+25,
+            "type": "density",
+            "unit": "cm-3",
+            "value": 1.2e+19
+          }
+        ]
+      },
+      "paper_id": "arxiv:0508020v1",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 0.9,
+            "context": "plasma channel density",
+            "normalized_unit": "cm^-3",
+            "normalized_value": 1.2e+19,
+            "type": "electron density",
+            "unit": "cm^-3",
+            "value": 1.2e+19
+          },
+          {
+            "confidence": 0.8,
+            "context": "plasma channel density range",
+            "normalized_unit": "cm^-3",
+            "normalized_value": 1e+18,
+            "type": "electron density",
+            "unit": "cm^-3",
+            "value": 1e+18
+          },
+          {
+            "confidence": 0.8,
+            "context": "plasma channel density range",
+            "normalized_unit": "cm^-3",
+            "normalized_value": 1e+19,
+            "type": "electron density",
+            "unit": "cm^-3",
+            "value": 1e+19
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"electron density\",\n      \"value\": 1.2e19,\n      \"unit\": \"cm^-3\",\n      \"normalized_value\": 1.2e19,\n      \"normalized_unit\": \"cm^-3\",\n      \"context\": \"plasma channel density\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"electron density\",\n      \"value\": 1e18,\n      \"unit\": \"cm^-3\",\n      \"normalized_value\": 1e18,\n      \"normalized_unit\": \"cm^-3\",\n      \"context\": \"plasma channel density range\",\n      \"confidence\": 0.8\n    },\n    {\n      \"type\": \"electron density\",\n      \"value\": 1e19,\n      \"unit\": \"cm^-3\",\n      \"normalized_value\": 1e19,\n      \"normalized_unit\": \"cm^-3\",\n      \"context\": \"plasma channel density range\",\n      \"confidence\": 0.8\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "l magnetic field strength B_0 10^9 T and particle density n_0 10^36 m^-3), where the SPF strongly dominates over the CPF.",
+            "normalized_unit": "m^-3",
+            "normalized_value": 0.0,
+            "type": "density",
+            "unit": "m^-3",
+            "value": 0.0
+          }
+        ]
+      },
+      "paper_id": "arxiv:1010.3114v2",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 0.9,
+            "context": "Strongly magnetized dense plasma regime",
+            "normalized_unit": "10^9 T",
+            "normalized_value": 1,
+            "type": "magnetic_field_strength",
+            "unit": "T",
+            "value": 10
+          },
+          {
+            "confidence": 0.9,
+            "context": "Strongly magnetized dense plasma regime",
+            "normalized_unit": "10^36 m^-3",
+            "normalized_value": 10,
+            "type": "particle_density",
+            "unit": "m^-3",
+            "value": 1
+          },
+          {
+            "confidence": 0.9,
+            "context": "Lower magnetic field regime",
+            "normalized_unit": "10^8 T",
+            "normalized_value": 10,
+            "type": "magnetic_field_strength",
+            "unit": "T",
+            "value": 1
+          },
+          {
+            "confidence": 0.9,
+            "context": "Lower magnetic field regime",
+            "normalized_unit": "10^35 m^-3",
+            "normalized_value": 1,
+            "type": "particle_density",
+            "unit": "m^-3",
+            "value": 1
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"magnetic_field_strength\",\n      \"value\": 10,\n      \"unit\": \"T\",\n      \"normalized_value\": 1,\n      \"normalized_unit\": \"10^9 T\",\n      \"context\": \"Strongly magnetized dense plasma regime\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"particle_density\",\n      \"value\": 1,\n      \"unit\": \"m^-3\",\n      \"normalized_value\": 10,\n      \"normalized_unit\": \"10^36 m^-3\",\n      \"context\": \"Strongly magnetized dense plasma regime\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"magnetic_field_strength\",\n      \"value\": 1,\n      \"unit\": \"T\",\n      \"normalized_value\": 10,\n      \"normalized_unit\": \"10^8 T\",\n      \"context\": \"Lower magnetic field regime\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"particle_density\",\n      \"value\": 1,\n      \"unit\": \"m^-3\",\n      \"normalized_value\": 1,\n      \"normalized_unit\": \"10^35 m^-3\",\n      \"context\": \"Lower magnetic field regime\",\n      \"confidence\": 0.9\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "ion recombination in the collision energy range 0-140 eV. The measured rate coefficient is dominated by st",
+            "normalized_unit": "keV",
+            "normalized_value": 0.14,
+            "type": "temperature",
+            "unit": "eV",
+            "value": 140.0
+          }
+        ]
+      },
+      "paper_id": "arxiv:1101.0719v1",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 0.9,
+            "context": "collision energy range for recombination rate coefficient",
+            "normalized_unit": "eV",
+            "normalized_value": 140,
+            "type": "collision energy",
+            "unit": "eV",
+            "value": 140
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"collision energy\",\n      \"value\": 140,\n      \"unit\": \"eV\",\n      \"normalized_value\": 140,\n      \"normalized_unit\": \"eV\",\n      \"context\": \"collision energy range for recombination rate coefficient\",\n      \"confidence\": 0.9\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "ities N_e   10^19cm^-3 and temperatures T \\approx 2x 10^4K. A key parameter of the used procedure is determi",
+            "normalized_unit": "keV",
+            "normalized_value": 0.0017234,
+            "type": "temperature",
+            "unit": "K",
+            "value": 20000.0
+          }
+        ]
+      },
+      "paper_id": "arxiv:1208.2413v1",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 1.0,
+            "context": "dense partially ionized hydrogen plasma",
+            "normalized_unit": "cm^-3",
+            "normalized_value": 1e+19,
+            "type": "electron density",
+            "unit": "cm^-3",
+            "value": 1e+19
+          },
+          {
+            "confidence": 1.0,
+            "context": "partially ionized hydrogen plasma",
+            "normalized_unit": "K",
+            "normalized_value": 20000.0,
+            "type": "temperature",
+            "unit": "K",
+            "value": 20000.0
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"electron density\",\n      \"value\": 1e19,\n      \"unit\": \"cm^-3\",\n      \"normalized_value\": 1e19,\n      \"normalized_unit\": \"cm^-3\",\n      \"context\": \"dense partially ionized hydrogen plasma\",\n      \"confidence\": 1.0\n    },\n    {\n      \"type\": \"temperature\",\n      \"value\": 2e4,\n      \"unit\": \"K\",\n      \"normalized_value\": 2e4,\n      \"normalized_unit\": \"K\",\n      \"context\": \"partially ionized hydrogen plasma\",\n      \"confidence\": 1.0\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "a in emission and in absorption for conditions at T_e   1 eV, n_e   10^17 cm^-3. These will be used to compare",
+            "normalized_unit": "keV",
+            "normalized_value": 0.001,
+            "type": "temperature",
+            "unit": "eV",
+            "value": 1.0
+          }
+        ]
+      },
+      "paper_id": "arxiv:1210.0832v1",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 1.0,
+            "context": "pure hydrogen plasma",
+            "normalized_unit": "eV",
+            "normalized_value": 1,
+            "type": "electron temperature",
+            "unit": "eV",
+            "value": 1
+          },
+          {
+            "confidence": 1.0,
+            "context": "pure hydrogen plasma",
+            "normalized_unit": "cm^-3",
+            "normalized_value": 1e+17,
+            "type": "electron density",
+            "unit": "cm^-3",
+            "value": 1e+17
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"electron temperature\",\n      \"value\": 1,\n      \"unit\": \"eV\",\n      \"normalized_value\": 1,\n      \"normalized_unit\": \"eV\",\n      \"context\": \"pure hydrogen plasma\",\n      \"confidence\": 1.0\n    },\n    {\n      \"type\": \"electron density\",\n      \"value\": 1e17,\n      \"unit\": \"cm^-3\",\n      \"normalized_value\": 1e17,\n      \"normalized_unit\": \"cm^-3\",\n      \"context\": \"pure hydrogen plasma\",\n      \"confidence\": 1.0\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "A) spectrometer, the effects of low-frequency (20-50 kHz) chirping energetic particle modes with toroida",
+            "normalized_unit": "keV",
+            "normalized_value": 4.3084999999999995e-06,
+            "type": "temperature",
+            "unit": "k",
+            "value": 50.0
+          }
+        ]
+      },
+      "paper_id": "arxiv:1304.1300v2",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 0.8,
+            "context": "maximum fast ion energy reached during fishbone evolution",
+            "normalized_unit": "1",
+            "normalized_value": 0.95,
+            "type": "energy",
+            "unit": "% of primary beam injection energy",
+            "value": 95
+          },
+          {
+            "confidence": 0.8,
+            "context": "transient reduction in FIDA signal caused by a fishbone",
+            "normalized_unit": "1",
+            "normalized_value": 0.5,
+            "type": "signal intensity",
+            "unit": "% of signal intensity",
+            "value": 50
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"energy\",\n      \"value\": 95,\n      \"unit\": \"% of primary beam injection energy\",\n      \"normalized_value\": 0.95,\n      \"normalized_unit\": \"1\",\n      \"context\": \"maximum fast ion energy reached during fishbone evolution\",\n      \"confidence\": 0.8\n    },\n    {\n      \"type\": \"signal intensity\",\n      \"value\": 50,\n      \"unit\": \"% of signal intensity\",\n      \"normalized_value\": 0.5,\n      \"normalized_unit\": \"1\",\n      \"context\": \"transient reduction in FIDA signal caused by a fishbone\",\n      \"confidence\": 0.8\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "on. The hereby generated electron beam features a 1.5 kA peak current, 1.5 \u03bcm transverse normalized emitt",
+            "normalized_unit": "keV",
+            "normalized_value": 1.29255e-07,
+            "type": "temperature",
+            "unit": "k",
+            "value": 1.5
+          },
+          {
+            "confidence": 0.65,
+            "context": "sma waves in the blow-out regime inside a fully-ionized hydrogen plasma of density 5x10^17 cm^-3. Within an embedded 100 \u03bcm long plasma column con",
+            "normalized_unit": "m^-3",
+            "normalized_value": 5e+23,
+            "type": "density",
+            "unit": "cm^-3",
+            "value": 5e+17
+          }
+        ]
+      },
+      "paper_id": "arxiv:1309.1900v3",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 1.0,
+            "context": "fully-ionized hydrogen plasma density",
+            "normalized_unit": null,
+            "normalized_value": null,
+            "type": "density",
+            "unit": "cm^-3",
+            "value": 5e+17
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"density\",\n      \"value\": 5e17,\n      \"unit\": \"cm^-3\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"fully-ionized hydrogen plasma density\",\n      \"confidence\": 1.0\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "d is extracted which is shown to be of the order  1kV/m and increases with plasma current. Corrections",
+            "normalized_unit": "keV",
+            "normalized_value": 8.617e-08,
+            "type": "temperature",
+            "unit": "k",
+            "value": 1.0
+          }
+        ]
+      },
+      "paper_id": "arxiv:1411.7298v1",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 0.8,
+            "context": "radial electric field",
+            "normalized_unit": "kV/m",
+            "normalized_value": 1,
+            "type": "electric field",
+            "unit": "kV/m",
+            "value": 1
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"electric field\",\n      \"value\": 1,\n      \"unit\": \"kV/m\",\n      \"normalized_value\": 1,\n      \"normalized_unit\": \"kV/m\",\n      \"context\": \"radial electric field\",\n      \"confidence\": 0.8\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "beam sustained discharge is presented in which a 12keV electron beam is combined with a 2.45GHz microwav",
+            "normalized_unit": "keV",
+            "normalized_value": 12.0,
+            "type": "temperature",
+            "unit": "keV",
+            "value": 12.0
+          }
+        ]
+      },
+      "paper_id": "arxiv:1511.08394v1",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 1.0,
+            "context": "Electron beam energy",
+            "normalized_unit": null,
+            "normalized_value": null,
+            "type": "Electron Beam Energy",
+            "unit": "keV",
+            "value": 12
+          },
+          {
+            "confidence": 1.0,
+            "context": "Microwave excitation frequency",
+            "normalized_unit": null,
+            "normalized_value": null,
+            "type": "Microwave Frequency",
+            "unit": "GHz",
+            "value": 2.45
+          },
+          {
+            "confidence": 1.0,
+            "context": "Gas pressure",
+            "normalized_unit": null,
+            "normalized_value": null,
+            "type": "Pressure",
+            "unit": "atm",
+            "value": 1
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"Electron Beam Energy\",\n      \"value\": 12,\n      \"unit\": \"keV\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"Electron beam energy\",\n      \"confidence\": 1.0\n    },\n    {\n      \"type\": \"Microwave Frequency\",\n      \"value\": 2.45,\n      \"unit\": \"GHz\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"Microwave excitation frequency\",\n      \"confidence\": 1.0\n    },\n    {\n      \"type\": \"Pressure\",\n      \"value\": 1,\n      \"unit\": \"atm\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"Gas pressure\",\n      \"confidence\": 1.0\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "-distribution function from DFT+MD simulations at 0.86 eV and 3.7 g/cm^3 etc., are recovered accurately in",
+            "normalized_unit": "keV",
+            "normalized_value": 0.00086,
+            "type": "temperature",
+            "unit": "eV",
+            "value": 0.86
+          },
+          {
+            "confidence": 0.65,
+            "context": "ts abruptly to a disordered mono-atomic vapour at 7 eV, with Z eq 3. Other cases where Z drops abruptly",
+            "normalized_unit": "keV",
+            "normalized_value": 0.007,
+            "type": "temperature",
+            "unit": "eV",
+            "value": 7.0
+          }
+        ]
+      },
+      "paper_id": "arxiv:1607.07511v3",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 0.9,
+            "context": "DFT+MD simulations",
+            "normalized_unit": "g/cm^3",
+            "normalized_value": 1.0,
+            "type": "density",
+            "unit": "g/cm^3",
+            "value": 3.7
+          },
+          {
+            "confidence": 0.9,
+            "context": "DFT+MD simulations",
+            "normalized_unit": "eV",
+            "normalized_value": 1.0,
+            "type": "energy",
+            "unit": "eV",
+            "value": 0.86
+          },
+          {
+            "confidence": 0.9,
+            "context": "Metallic-liquid state",
+            "normalized_unit": "g/cm^3",
+            "normalized_value": 1.0,
+            "type": "density",
+            "unit": "g/cm^3",
+            "value": 1.0
+          },
+          {
+            "confidence": 0.9,
+            "context": "Metallic-liquid state",
+            "normalized_unit": "Z",
+            "normalized_value": 1.0,
+            "type": "ionization_state",
+            "unit": "Z",
+            "value": 4
+          },
+          {
+            "confidence": 0.9,
+            "context": "Transition to vapor",
+            "normalized_unit": "eV",
+            "normalized_value": 1.0,
+            "type": "energy",
+            "unit": "eV",
+            "value": 7
+          },
+          {
+            "confidence": 0.9,
+            "context": "Vapor state",
+            "normalized_unit": "Z",
+            "normalized_value": 1.0,
+            "type": "ionization_state",
+            "unit": "Z",
+            "value": 3
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"density\",\n      \"value\": 3.7,\n      \"unit\": \"g/cm^3\",\n      \"normalized_value\": 1.0,\n      \"normalized_unit\": \"g/cm^3\",\n      \"context\": \"DFT+MD simulations\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"energy\",\n      \"value\": 0.86,\n      \"unit\": \"eV\",\n      \"normalized_value\": 1.0,\n      \"normalized_unit\": \"eV\",\n      \"context\": \"DFT+MD simulations\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"density\",\n      \"value\": 1.0,\n      \"unit\": \"g/cm^3\",\n      \"normalized_value\": 1.0,\n      \"normalized_unit\": \"g/cm^3\",\n      \"context\": \"Metallic-liquid state\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"ionization_state\",\n      \"value\": 4,\n      \"unit\": \"Z\",\n      \"normalized_value\": 1.0,\n      \"normalized_unit\": \"Z\",\n      \"context\": \"Metallic-liquid state\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"energy\",\n      \"value\": 7,\n      \"unit\": \"eV\",\n      \"normalized_value\": 1.0,\n      \"normalized_unit\": \"eV\",\n      \"context\": \"Transition to vapor\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"ionization_state\",\n      \"value\": 3,\n      \"unit\": \"Z\",\n      \"normalized_value\": 1.0,\n      \"normalized_unit\": \"Z\",\n      \"context\": \"Vapor state\",\n      \"confidence\": 0.9\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "nor disruptions and have a frequency range of 150-500 kHz. The mode structure analysis indicates the exis",
+            "normalized_unit": "keV",
+            "normalized_value": 4.3085e-05,
+            "type": "temperature",
+            "unit": "k",
+            "value": 500.0
+          }
+        ]
+      },
+      "paper_id": "arxiv:1612.04257v1",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 0.8,
+            "context": "Toroidal Alfven eigenmodes (TAEs) frequency range",
+            "normalized_unit": null,
+            "normalized_value": null,
+            "type": "frequency",
+            "unit": "kHz",
+            "value": 150
+          },
+          {
+            "confidence": 0.8,
+            "context": "Toroidal Alfven eigenmodes (TAEs) frequency range",
+            "normalized_unit": null,
+            "normalized_value": null,
+            "type": "frequency",
+            "unit": "kHz",
+            "value": 500
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"frequency\",\n      \"value\": 150,\n      \"unit\": \"kHz\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"Toroidal Alfven eigenmodes (TAEs) frequency range\",\n      \"confidence\": 0.8\n    },\n    {\n      \"type\": \"frequency\",\n      \"value\": 500,\n      \"unit\": \"kHz\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"Toroidal Alfven eigenmodes (TAEs) frequency range\",\n      \"confidence\": 0.8\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "aum requires about 2.5 MJ laser energy to achieve 306 eV peak drive temperature while the low-z plasma ele",
+            "normalized_unit": "keV",
+            "normalized_value": 0.306,
+            "type": "temperature",
+            "unit": "eV",
+            "value": 306.0
+          }
+        ]
+      },
+      "paper_id": "arxiv:1706.02011v1",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 0.9,
+            "context": "moderate gas-fill density for conventional cylindrical hohlraum",
+            "normalized_unit": null,
+            "normalized_value": null,
+            "type": "gas density",
+            "unit": "mg/cm3",
+            "value": 0.6
+          },
+          {
+            "confidence": 0.9,
+            "context": "lower gas-fill density for peanut hohlraum",
+            "normalized_unit": null,
+            "normalized_value": null,
+            "type": "gas density",
+            "unit": "mg/cm3",
+            "value": 0.3
+          },
+          {
+            "confidence": 0.9,
+            "context": "peak drive temperature achieved by peanut hohlraum",
+            "normalized_unit": null,
+            "normalized_value": null,
+            "type": "drive temperature",
+            "unit": "eV",
+            "value": 306
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"gas density\",\n      \"value\": 0.6,\n      \"unit\": \"mg/cm3\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"moderate gas-fill density for conventional cylindrical hohlraum\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"gas density\",\n      \"value\": 0.3,\n      \"unit\": \"mg/cm3\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"lower gas-fill density for peanut hohlraum\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"drive temperature\",\n      \"value\": 306,\n      \"unit\": \"eV\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"peak drive temperature achieved by peanut hohlraum\",\n      \"confidence\": 0.9\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "compressed plasma can reach 1-3*10^22/m^3 and 15-25keV, respectively. Alternating current with adiabatic",
+            "normalized_unit": "keV",
+            "normalized_value": 25.0,
+            "type": "temperature",
+            "unit": "keV",
+            "value": 25.0
+          }
+        ]
+      },
+      "paper_id": "arxiv:1804.06538v2",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 0.9,
+            "context": "compressed plasma density",
+            "normalized_unit": "10^22/m^3",
+            "normalized_value": 1.0,
+            "type": "density",
+            "unit": "m^-3",
+            "value": 3e+22
+          },
+          {
+            "confidence": 0.9,
+            "context": "compressed plasma temperature",
+            "normalized_unit": "keV",
+            "normalized_value": 1.0,
+            "type": "temperature",
+            "unit": "keV",
+            "value": 20.0
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"density\",\n      \"value\": 3.0e22,\n      \"unit\": \"m^-3\",\n      \"normalized_value\": 1.0,\n      \"normalized_unit\": \"10^22/m^3\",\n      \"context\": \"compressed plasma density\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"temperature\",\n      \"value\": 20.0,\n      \"unit\": \"keV\",\n      \"normalized_value\": 1.0,\n      \"normalized_unit\": \"keV\",\n      \"context\": \"compressed plasma temperature\",\n      \"confidence\": 0.9\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "g cm^-3) so that electrons are degenerate even at 100 eV temperature. Whereas in the non-degenerate region",
+            "normalized_unit": "keV",
+            "normalized_value": 0.1,
+            "type": "temperature",
+            "unit": "eV",
+            "value": 100.0
+          }
+        ]
+      },
+      "paper_id": "arxiv:1811.12912v1",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 0.9,
+            "context": "carbon plasma density",
+            "normalized_unit": null,
+            "normalized_value": null,
+            "type": "density",
+            "unit": "g cm^-3",
+            "value": 50
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"density\",\n      \"value\": 50,\n      \"unit\": \"g cm^-3\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"carbon plasma density\",\n      \"confidence\": 0.9\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "rformed in previous studies for peak levels up to 100 kA. Eleven high-current waveforms with peak value r",
+            "normalized_unit": "keV",
+            "normalized_value": 8.616999999999999e-06,
+            "type": "temperature",
+            "unit": "k",
+            "value": 100.0
+          },
+          {
+            "confidence": 0.65,
+            "context": "rrent waveforms with peak value ranging from 100--250 kA with different growth rates and action integrals",
+            "normalized_unit": "keV",
+            "normalized_value": 2.15425e-05,
+            "type": "temperature",
+            "unit": "k",
+            "value": 250.0
+          },
+          {
+            "confidence": 0.65,
+            "context": "ibrium. For a 250 kA waveform, temperatures up to 43000K are found, with pressures in the order of 50 bar.",
+            "normalized_unit": "keV",
+            "normalized_value": 0.00370531,
+            "type": "temperature",
+            "unit": "K",
+            "value": 43000.0
+          }
+        ]
+      },
+      "paper_id": "arxiv:1904.01273v1",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 0.9,
+            "context": "temperature found for 250 kA waveform",
+            "normalized_unit": "K",
+            "normalized_value": 43000,
+            "type": "temperature",
+            "unit": "K",
+            "value": 43000
+          },
+          {
+            "confidence": 0.9,
+            "context": "pressure found for 250 kA waveform",
+            "normalized_unit": "bar",
+            "normalized_value": 50,
+            "type": "pressure",
+            "unit": "bar",
+            "value": 50
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"temperature\",\n      \"value\": 43000,\n      \"unit\": \"K\",\n      \"normalized_value\": 43000,\n      \"normalized_unit\": \"K\",\n      \"context\": \"temperature found for 250 kA waveform\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"pressure\",\n      \"value\": 50,\n      \"unit\": \"bar\",\n      \"normalized_value\": 50,\n      \"normalized_unit\": \"bar\",\n      \"context\": \"pressure found for 250 kA waveform\",\n      \"confidence\": 0.9\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "mJ-class optical lasers and an XFEL repetition rate of 10 kHz, the NEEC excitation number can reach   1 deple",
+            "normalized_unit": "keV",
+            "normalized_value": 8.616999999999999e-07,
+            "type": "temperature",
+            "unit": "k",
+            "value": 10.0
+          }
+        ]
+      },
+      "paper_id": "arxiv:1910.05326v2",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 0.8,
+            "context": "Plasma temperature where inner-shell hole generation allows optimal NEEC conditions",
+            "normalized_unit": null,
+            "normalized_value": null,
+            "type": "Plasma Temperature",
+            "unit": "eV",
+            "value": "few hundred"
+          },
+          {
+            "confidence": 0.8,
+            "context": "Plasma temperature required for steady-state thermodynamic equilibrium",
+            "normalized_unit": null,
+            "normalized_value": null,
+            "type": "Plasma Temperature",
+            "unit": "keV",
+            "value": "few"
+          },
+          {
+            "confidence": 1.0,
+            "context": "Transition energy considered for NEEC",
+            "normalized_unit": null,
+            "normalized_value": null,
+            "type": "Transition Energy",
+            "unit": "keV",
+            "value": "4.85"
+          },
+          {
+            "confidence": 1.0,
+            "context": "Energy of the long-lived ${}^{93m}\text{Mo}$ isomer",
+            "normalized_unit": null,
+            "normalized_value": null,
+            "type": "Isomer Energy",
+            "unit": "MeV",
+            "value": "2.4"
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"Plasma Temperature\",\n      \"value\": \"few hundred\",\n      \"unit\": \"eV\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"Plasma temperature where inner-shell hole generation allows optimal NEEC conditions\",\n      \"confidence\": 0.8\n    },\n    {\n      \"type\": \"Plasma Temperature\",\n      \"value\": \"few\",\n      \"unit\": \"keV\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"Plasma temperature required for steady-state thermodynamic equilibrium\",\n      \"confidence\": 0.8\n    },\n    {\n      \"type\": \"Transition Energy\",\n      \"value\": \"4.85\",\n      \"unit\": \"keV\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"Transition energy considered for NEEC\",\n      \"confidence\": 1.0\n    },\n    {\n      \"type\": \"Isomer Energy\",\n      \"value\": \"2.4\",\n      \"unit\": \"MeV\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"Energy of the long-lived ${}^{93m}\\text{Mo}$ isomer\",\n      \"confidence\": 1.0\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "n the vibrational and gas temperatures, being 1.5-1.7 eV in order of magnitude. The electron density measu",
+            "normalized_unit": "keV",
+            "normalized_value": 0.0017,
+            "type": "temperature",
+            "unit": "eV",
+            "value": 1.7
+          }
+        ]
+      },
+      "paper_id": "arxiv:2003.02034v1",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 0.9,
+            "context": "electron temperature of argon atoms",
+            "normalized_unit": "eV",
+            "normalized_value": 1.5,
+            "type": "electron temperature",
+            "unit": "eV",
+            "value": 1.5
+          },
+          {
+            "confidence": 0.9,
+            "context": "electron temperature of argon atoms",
+            "normalized_unit": "eV",
+            "normalized_value": 1.7,
+            "type": "electron temperature",
+            "unit": "eV",
+            "value": 1.7
+          },
+          {
+            "confidence": 0.8,
+            "context": "electron density measured by the Stark broadening hydrogen lines",
+            "normalized_unit": "unitless",
+            "normalized_value": null,
+            "type": "electron density",
+            "unit": "unitless",
+            "value": null
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"electron temperature\",\n      \"value\": 1.5,\n      \"unit\": \"eV\",\n      \"normalized_value\": 1.5,\n      \"normalized_unit\": \"eV\",\n      \"context\": \"electron temperature of argon atoms\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"electron temperature\",\n      \"value\": 1.7,\n      \"unit\": \"eV\",\n      \"normalized_value\": 1.7,\n      \"normalized_unit\": \"eV\",\n      \"context\": \"electron temperature of argon atoms\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"electron density\",\n      \"value\": null,\n      \"unit\": \"unitless\",\n      \"normalized_value\": null,\n      \"normalized_unit\": \"unitless\",\n      \"context\": \"electron density measured by the Stark broadening hydrogen lines\",\n      \"confidence\": 0.8\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "density of 10^23 cm^-3 is efficiently heated from 100 eV to 1 keV within depth of around 20 \u03bcm in one nano",
+            "normalized_unit": "keV",
+            "normalized_value": 0.1,
+            "type": "temperature",
+            "unit": "eV",
+            "value": 100.0
+          },
+          {
+            "confidence": 0.65,
+            "context": "10^23 cm^-3 is efficiently heated from 100 eV to 1 keV within depth of around 20 \u03bcm in one nanosecond by",
+            "normalized_unit": "keV",
+            "normalized_value": 1.0,
+            "type": "temperature",
+            "unit": "keV",
+            "value": 1.0
+          }
+        ]
+      },
+      "paper_id": "arxiv:2006.14174v2",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 1.0,
+            "context": "plasma density",
+            "normalized_unit": null,
+            "normalized_value": null,
+            "type": "density",
+            "unit": "cm^-3",
+            "value": 1e+23
+          },
+          {
+            "confidence": 1.0,
+            "context": "initial plasma temperature",
+            "normalized_unit": null,
+            "normalized_value": null,
+            "type": "temperature",
+            "unit": "eV",
+            "value": 100
+          },
+          {
+            "confidence": 1.0,
+            "context": "final plasma temperature",
+            "normalized_unit": null,
+            "normalized_value": null,
+            "type": "temperature",
+            "unit": "keV",
+            "value": 1
+          },
+          {
+            "confidence": 1.0,
+            "context": "laser irradiance",
+            "normalized_unit": null,
+            "normalized_value": null,
+            "type": "intensity",
+            "unit": "Wcm^-2",
+            "value": 100000000000000.0
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"density\",\n      \"value\": 1e23,\n      \"unit\": \"cm^-3\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"plasma density\",\n      \"confidence\": 1.0\n    },\n    {\n      \"type\": \"temperature\",\n      \"value\": 100,\n      \"unit\": \"eV\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"initial plasma temperature\",\n      \"confidence\": 1.0\n    },\n    {\n      \"type\": \"temperature\",\n      \"value\": 1,\n      \"unit\": \"keV\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"final plasma temperature\",\n      \"confidence\": 1.0\n    },\n    {\n      \"type\": \"intensity\",\n      \"value\": 1e14,\n      \"unit\": \"Wcm^-2\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"laser irradiance\",\n      \"confidence\": 1.0\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "ferent targets and laser energies as long as T_r> 160 eV, where B is the constant depending on ablator mat",
+            "normalized_unit": "keV",
+            "normalized_value": 0.16,
+            "type": "temperature",
+            "unit": "eV",
+            "value": 160.0
+          },
+          {
+            "confidence": 0.65,
+            "context": "terials, E_DD in kJ is DD laser energy and T_r in 100 eV is radiation temperature depending on ID laser en",
+            "normalized_unit": "keV",
+            "normalized_value": 0.1,
+            "type": "temperature",
+            "unit": "eV",
+            "value": 100.0
+          },
+          {
+            "confidence": 0.65,
+            "context": "ation ablation pressure for CH ablator using E_ID=43 kJ (T_r  eq200 eV) and E_DD=3.6 kJ, also shown that",
+            "normalized_unit": "keV",
+            "normalized_value": 3.7053099999999998e-06,
+            "type": "temperature",
+            "unit": "k",
+            "value": 43.0
+          },
+          {
+            "confidence": 0.65,
+            "context": "pressure for CH ablator using E_ID=43 kJ (T_r  eq200 eV) and E_DD=3.6 kJ, also shown that both backscatte",
+            "normalized_unit": "keV",
+            "normalized_value": 0.2,
+            "type": "temperature",
+            "unit": "eV",
+            "value": 200.0
+          },
+          {
+            "confidence": 0.65,
+            "context": "ablator using E_ID=43 kJ (T_r  eq200 eV) and E_DD=3.6 kJ, also shown that both backscattering fraction an",
+            "normalized_unit": "keV",
+            "normalized_value": 3.1021199999999997e-07,
+            "type": "temperature",
+            "unit": "k",
+            "value": 3.6
+          }
+        ]
+      },
+      "paper_id": "arxiv:2011.09082v1",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 0.9,
+            "context": "maximal HD pressure",
+            "normalized_unit": "unitless",
+            "normalized_value": 1,
+            "type": "pressure",
+            "unit": "Mbar",
+            "value": 650
+          },
+          {
+            "confidence": 0.9,
+            "context": "requested for hotspot ignition",
+            "normalized_unit": "unitless",
+            "normalized_value": 1,
+            "type": "pressure",
+            "unit": "Mbar",
+            "value": 450
+          },
+          {
+            "confidence": 0.8,
+            "context": "minimum radiation temperature for scaling",
+            "normalized_unit": "unitless",
+            "normalized_value": 1,
+            "type": "temperature",
+            "unit": "eV",
+            "value": 160
+          },
+          {
+            "confidence": 0.9,
+            "context": "radiation temperature during experiment verification",
+            "normalized_unit": "unitless",
+            "normalized_value": 1,
+            "type": "temperature",
+            "unit": "eV",
+            "value": 200
+          },
+          {
+            "confidence": 0.9,
+            "context": "DD laser intensity",
+            "normalized_unit": "unitless",
+            "normalized_value": 1,
+            "type": "intensity",
+            "unit": "W/cm^2",
+            "value": 1800000000000000.0
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"pressure\",\n      \"value\": 650,\n      \"unit\": \"Mbar\",\n      \"normalized_value\": 1,\n      \"normalized_unit\": \"unitless\",\n      \"context\": \"maximal HD pressure\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"pressure\",\n      \"value\": 450,\n      \"unit\": \"Mbar\",\n      \"normalized_value\": 1,\n      \"normalized_unit\": \"unitless\",\n      \"context\": \"requested for hotspot ignition\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"temperature\",\n      \"value\": 160,\n      \"unit\": \"eV\",\n      \"normalized_value\": 1,\n      \"normalized_unit\": \"unitless\",\n      \"context\": \"minimum radiation temperature for scaling\",\n      \"confidence\": 0.8\n    },\n    {\n      \"type\": \"temperature\",\n      \"value\": 200,\n      \"unit\": \"eV\",\n      \"normalized_value\": 1,\n      \"normalized_unit\": \"unitless\",\n      \"context\": \"radiation temperature during experiment verification\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"intensity\",\n      \"value\": 1.8e15,\n      \"unit\": \"W/cm^2\",\n      \"normalized_value\": 1,\n      \"normalized_unit\": \"unitless\",\n      \"context\": \"DD laser intensity\",\n      \"confidence\": 0.9\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "semi-analytic model, we find a spread of \\approx 40eV in the T_Rad(D_S) curve, as a function of the tem",
+            "normalized_unit": "keV",
+            "normalized_value": 0.04,
+            "type": "temperature",
+            "unit": "eV",
+            "value": 40.0
+          }
+        ]
+      },
+      "paper_id": "arxiv:2101.07688v2",
+      "predicted": null,
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"temperature\",\n      \"value\": 40,\n      \"unit\": \"eV\",\n      \"normalized_value\": 40,\n      \"normalized_unit\": \"eV\",\n      \"context\": \"spread in the $T_{\\mathrm{Rad}}(D_S)$ curve\",\n      \"confidence\": 0.8\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": ") from around 10^-5 to 10^7g/cm^3 and 10^-4 to 10^6eV for elements relevant to white dwarf (WD) stars.",
+            "normalized_unit": "keV",
+            "normalized_value": 0.006,
+            "type": "temperature",
+            "unit": "eV",
+            "value": 6.0
+          }
+        ]
+      },
+      "paper_id": "arxiv:2103.03371v1",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 0.9,
+            "context": "Equation of state range",
+            "normalized_unit": "g/cm^3",
+            "normalized_value": 1e-05,
+            "type": "density",
+            "unit": "g/cm^3",
+            "value": 1e-05
+          },
+          {
+            "confidence": 0.9,
+            "context": "Equation of state range",
+            "normalized_unit": "g/cm^3",
+            "normalized_value": 10000000.0,
+            "type": "density",
+            "unit": "g/cm^3",
+            "value": 10000000.0
+          },
+          {
+            "confidence": 0.9,
+            "context": "Equation of state range",
+            "normalized_unit": "eV",
+            "normalized_value": 0.0001,
+            "type": "energy",
+            "unit": "eV",
+            "value": 0.0001
+          },
+          {
+            "confidence": 0.9,
+            "context": "Equation of state range",
+            "normalized_unit": "eV",
+            "normalized_value": 1000000.0,
+            "type": "energy",
+            "unit": "eV",
+            "value": 1000000.0
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"density\",\n      \"value\": 1e-5,\n      \"unit\": \"g/cm^3\",\n      \"normalized_value\": 1e-5,\n      \"normalized_unit\": \"g/cm^3\",\n      \"context\": \"Equation of state range\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"density\",\n      \"value\": 1e7,\n      \"unit\": \"g/cm^3\",\n      \"normalized_value\": 1e7,\n      \"normalized_unit\": \"g/cm^3\",\n      \"context\": \"Equation of state range\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"energy\",\n      \"value\": 1e-4,\n      \"unit\": \"eV\",\n      \"normalized_value\": 1e-4,\n      \"normalized_unit\": \"eV\",\n      \"context\": \"Equation of state range\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"energy\",\n      \"value\": 1e6,\n      \"unit\": \"eV\",\n      \"normalized_value\": 1e6,\n      \"normalized_unit\": \"eV\",\n      \"context\": \"Equation of state range\",\n      \"confidence\": 0.9\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "g/cm^3 to 16 g/cm^3 and temperatures ranging from 100 kK to 10 MK using the Spectral Quadrature (SQ) meth",
+            "normalized_unit": "keV",
+            "normalized_value": 8.616999999999999e-06,
+            "type": "temperature",
+            "unit": "k",
+            "value": 100.0
+          }
+        ]
+      },
+      "paper_id": "arxiv:2110.01034v3",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 1.0,
+            "context": "temperature range for carbon EOS calculation",
+            "normalized_unit": "kK",
+            "normalized_value": 100,
+            "type": "temperature",
+            "unit": "kK",
+            "value": 100
+          },
+          {
+            "confidence": 1.0,
+            "context": "temperature range for carbon EOS calculation",
+            "normalized_unit": "MK",
+            "normalized_value": 10,
+            "type": "temperature",
+            "unit": "MK",
+            "value": 10
+          },
+          {
+            "confidence": 1.0,
+            "context": "density range for carbon EOS calculation",
+            "normalized_unit": "g/cm^3",
+            "normalized_value": 8,
+            "type": "density",
+            "unit": "g/cm^3",
+            "value": 8
+          },
+          {
+            "confidence": 1.0,
+            "context": "density range for carbon EOS calculation",
+            "normalized_unit": "g/cm^3",
+            "normalized_value": 16,
+            "type": "density",
+            "unit": "g/cm^3",
+            "value": 16
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"temperature\",\n      \"value\": 100,\n      \"unit\": \"kK\",\n      \"normalized_value\": 100,\n      \"normalized_unit\": \"kK\",\n      \"context\": \"temperature range for carbon EOS calculation\",\n      \"confidence\": 1.0\n    },\n    {\n      \"type\": \"temperature\",\n      \"value\": 10,\n      \"unit\": \"MK\",\n      \"normalized_value\": 10,\n      \"normalized_unit\": \"MK\",\n      \"context\": \"temperature range for carbon EOS calculation\",\n      \"confidence\": 1.0\n    },\n    {\n      \"type\": \"density\",\n      \"value\": 8,\n      \"unit\": \"g/cm^3\",\n      \"normalized_value\": 8,\n      \"normalized_unit\": \"g/cm^3\",\n      \"context\": \"density range for carbon EOS calculation\",\n      \"confidence\": 1.0\n    },\n    {\n      \"type\": \"density\",\n      \"value\": 16,\n      \"unit\": \"g/cm^3\",\n      \"normalized_value\": 16,\n      \"normalized_unit\": \"g/cm^3\",\n      \"context\": \"density range for carbon EOS calculation\",\n      \"confidence\": 1.0\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "with an intense x-ray laser pulse (photon energy: 8.70 keV; pulse duration: 6 fs; fluence: 8x10^2 J/cm^2) ha",
+            "normalized_unit": "keV",
+            "normalized_value": 8.7,
+            "type": "temperature",
+            "unit": "keV",
+            "value": 8.7
+          }
+        ]
+      },
+      "paper_id": "arxiv:2112.05430v2",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 1.0,
+            "context": "x-ray laser pulse",
+            "normalized_unit": "keV",
+            "normalized_value": 1,
+            "type": "photon energy",
+            "unit": "keV",
+            "value": 8.7
+          },
+          {
+            "confidence": 1.0,
+            "context": "x-ray laser pulse",
+            "normalized_unit": "fs",
+            "normalized_value": 1,
+            "type": "pulse duration",
+            "unit": "fs",
+            "value": 6
+          },
+          {
+            "confidence": 1.0,
+            "context": "x-ray laser pulse",
+            "normalized_unit": "J/cm^2",
+            "normalized_value": 1,
+            "type": "fluence",
+            "unit": "J/cm^2",
+            "value": 800.0
+          },
+          {
+            "context": "structural analysis accuracy",
+            "normalized_unit": "\u00c5",
+            "normalized_value": 1,
+            "type": "displacement magnitude",
+            "unit": "\u00c5",
+            "value": 0.01
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"photon energy\",\n      \"value\": 8.70,\n      \"unit\": \"keV\",\n      \"normalized_value\": 1,\n      \"normalized_unit\": \"keV\",\n      \"context\": \"x-ray laser pulse\",\n      \"confidence\": 1.0\n    },\n    {\n      \"type\": \"pulse duration\",\n      \"value\": 6,\n      \"unit\": \"fs\",\n      \"normalized_value\": 1,\n      \"normalized_unit\": \"fs\",\n      \"context\": \"x-ray laser pulse\",\n      \"confidence\": 1.0\n    },\n    {\n      \"type\": \"fluence\",\n      \"value\": 8e2,\n      \"unit\": \"J/cm^2\",\n      \"normalized_value\": 1,\n      \"normalized_unit\": \"J/cm^2\",\n      \"context\": \"x-ray laser pulse\",\n      \"confidence\": 1.0\n    },\n    {\n      \"type\": \"displacement magnitude\",\n      \"value\": 0.01,\n      \"unit\": \"\u00c5\",\n      \"normalized_value\": 1,\n      \"normalized_unit\": \"\u00c5\",\n      \"context\": \"structural analysis accuracy\"\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "olar radii with a temperature of 55 plus or minus 5 eV, independent of the solar wind speed which varied",
+            "normalized_unit": "keV",
+            "normalized_value": 0.005,
+            "type": "temperature",
+            "unit": "eV",
+            "value": 5.0
+          },
+          {
+            "confidence": 0.65,
+            "context": "of the solar wind speed which varied from 300 to 800 km/sec. After leaving 15 solar radii and in the abs",
+            "normalized_unit": "keV",
+            "normalized_value": 6.893599999999999e-05,
+            "type": "temperature",
+            "unit": "k",
+            "value": 800.0
+          },
+          {
+            "confidence": 0.65,
+            "context": "tor of two above the minimum temperature, 1900R-4/3 eV. Triggered ion acoustic waves were the only waves",
+            "normalized_unit": "keV",
+            "normalized_value": 0.003,
+            "type": "temperature",
+            "unit": "eV",
+            "value": 3.0
+          }
+        ]
+      },
+      "paper_id": "arxiv:2202.10345v1",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 1.0,
+            "context": "core electron temperature at 15 solar radii",
+            "normalized_unit": null,
+            "normalized_value": null,
+            "type": "temperature",
+            "unit": "eV",
+            "value": 55
+          },
+          {
+            "confidence": 1.0,
+            "context": "minimum core electron perpendicular temperature dependence on radial distance",
+            "normalized_unit": null,
+            "normalized_value": null,
+            "type": "temperature",
+            "unit": "R-4/3",
+            "value": 1900
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"temperature\",\n      \"value\": 55,\n      \"unit\": \"eV\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"core electron temperature at 15 solar radii\",\n      \"confidence\": 1.0\n    },\n    {\n      \"type\": \"temperature\",\n      \"value\": 1900,\n      \"unit\": \"R-4/3\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"minimum core electron perpendicular temperature dependence on radial distance\",\n      \"confidence\": 1.0\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "es to incident electron energies from 10^-3 up to 2.7 eV, and to electron temperatures between 100 and 500",
+            "normalized_unit": "keV",
+            "normalized_value": 0.0027,
+            "type": "temperature",
+            "unit": "eV",
+            "value": 2.7
+          },
+          {
+            "confidence": 0.65,
+            "context": "eV, and to electron temperatures between 100 and 5000 K, respectively. Together with our earlier and clos",
+            "normalized_unit": "keV",
+            "normalized_value": 0.00043085,
+            "type": "temperature",
+            "unit": "K",
+            "value": 5000.0
+          }
+        ]
+      },
+      "paper_id": "arxiv:2203.04122v1",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 1.0,
+            "context": "maximum electron temperature considered for rate coefficients",
+            "normalized_unit": "K",
+            "normalized_value": 5000,
+            "type": "electron temperature",
+            "unit": "K",
+            "value": 5000
+          },
+          {
+            "confidence": 1.0,
+            "context": "minimum electron temperature considered for rate coefficients",
+            "normalized_unit": "K",
+            "normalized_value": 100,
+            "type": "electron temperature",
+            "unit": "K",
+            "value": 100
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"electron temperature\",\n      \"value\": 5000,\n      \"unit\": \"K\",\n      \"normalized_value\": 5000,\n      \"normalized_unit\": \"K\",\n      \"context\": \"maximum electron temperature considered for rate coefficients\",\n      \"confidence\": 1.0\n    },\n    {\n      \"type\": \"electron temperature\",\n      \"value\": 100,\n      \"unit\": \"K\",\n      \"normalized_value\": 100,\n      \"normalized_unit\": \"K\",\n      \"context\": \"minimum electron temperature considered for rate coefficients\",\n      \"confidence\": 1.0\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "cted relativistic electron beam with an energy of 611 keV (v_b=0.9c) and a pitch-angle distribution is stud",
+            "normalized_unit": "keV",
+            "normalized_value": 611.0,
+            "type": "temperature",
+            "unit": "keV",
+            "value": 611.0
+          }
+        ]
+      },
+      "paper_id": "arxiv:2208.06786v2",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 1.0,
+            "context": "initial relativistic electron beam energy",
+            "normalized_unit": "keV",
+            "normalized_value": 1,
+            "type": "electron beam energy",
+            "unit": "keV",
+            "value": 611
+          },
+          {
+            "confidence": 1.0,
+            "context": "relativistic electron beam velocity",
+            "normalized_unit": "c",
+            "normalized_value": 1,
+            "type": "electron velocity",
+            "unit": "c",
+            "value": 0.9
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"electron beam energy\",\n      \"value\": 611,\n      \"unit\": \"keV\",\n      \"normalized_value\": 1,\n      \"normalized_unit\": \"keV\",\n      \"context\": \"initial relativistic electron beam energy\",\n      \"confidence\": 1.0\n    },\n    {\n      \"type\": \"electron velocity\",\n      \"value\": 0.9,\n      \"unit\": \"c\",\n      \"normalized_value\": 1,\n      \"normalized_unit\": \"c\",\n      \"context\": \"relativistic electron beam velocity\",\n      \"confidence\": 1.0\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "itromethane was recorded at an electron energy of 50 eV. New dissociative excitation channels were discov",
+            "normalized_unit": "keV",
+            "normalized_value": 0.05,
+            "type": "temperature",
+            "unit": "eV",
+            "value": 50.0
+          }
+        ]
+      },
+      "paper_id": "arxiv:2212.04449v1",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 1.0,
+            "context": "Electron impact excitation energy",
+            "normalized_unit": null,
+            "normalized_value": null,
+            "type": "Electron Energy",
+            "unit": "eV",
+            "value": 50
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"Electron Energy\",\n      \"value\": 50,\n      \"unit\": \"eV\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"Electron impact excitation energy\",\n      \"confidence\": 1.0\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "ical range N_e = 10^21-24cc along isotherms T = 1-2 x 10^6K, and its impact on Rosseland Mean opacities. The",
+            "normalized_unit": "keV",
+            "normalized_value": 0.17234,
+            "type": "temperature",
+            "unit": "K",
+            "value": 2000000.0
+          }
+        ]
+      },
+      "paper_id": "arxiv:2301.07734v1",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 0.9,
+            "context": "neon-like Fe XVII plasma",
+            "normalized_unit": "log",
+            "normalized_value": 1,
+            "type": "electron density",
+            "unit": "21-24",
+            "value": 10
+          },
+          {
+            "confidence": 0.9,
+            "context": "neon-like Fe XVII plasma",
+            "normalized_unit": "10^6 K",
+            "normalized_value": 1,
+            "type": "temperature",
+            "unit": "10^6 K",
+            "value": 1
+          },
+          {
+            "confidence": 0.9,
+            "context": "neon-like Fe XVII plasma",
+            "normalized_unit": "10^6 K",
+            "normalized_value": 1,
+            "type": "temperature",
+            "unit": "10^6 K",
+            "value": 2
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"electron density\",\n      \"value\": 10,\n      \"unit\": \"21-24\",\n      \"normalized_value\": 1,\n      \"normalized_unit\": \"log\",\n      \"context\": \"neon-like Fe XVII plasma\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"temperature\",\n      \"value\": 1,\n      \"unit\": \"10^6 K\",\n      \"normalized_value\": 1,\n      \"normalized_unit\": \"10^6 K\",\n      \"context\": \"neon-like Fe XVII plasma\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"temperature\",\n      \"value\": 2,\n      \"unit\": \"10^6 K\",\n      \"normalized_value\": 1,\n      \"normalized_unit\": \"10^6 K\",\n      \"context\": \"neon-like Fe XVII plasma\",\n      \"confidence\": 0.9\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "y n_e 4x10^25 cm^-3 ) at moderate temperatures (T 200 eV), i.e., to conditions, which are relevant to the",
+            "normalized_unit": "keV",
+            "normalized_value": 0.2,
+            "type": "temperature",
+            "unit": "eV",
+            "value": 200.0
+          },
+          {
+            "confidence": 0.85,
+            "context": "to extreme densities (up to  800x solid density, electron number density n_e 4x10^25 cm^-3 ) at moderate temperatures (T 200 eV), i.e., to c",
+            "normalized_unit": "m^-3",
+            "normalized_value": 4.0000000000000003e+31,
+            "type": "density",
+            "unit": "cm^-3",
+            "value": 4e+25
+          }
+        ]
+      },
+      "paper_id": "arxiv:2301.08610v1",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 0.9,
+            "context": "Hydrogen plasma density in red dwarf interiors",
+            "normalized_unit": "1",
+            "normalized_value": 1,
+            "type": "electron number density",
+            "unit": "cm^-3",
+            "value": 4e+25
+          },
+          {
+            "confidence": 0.9,
+            "context": "Hydrogen plasma temperature in red dwarf interiors",
+            "normalized_unit": "1",
+            "normalized_value": 1,
+            "type": "temperature",
+            "unit": "eV",
+            "value": 200
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"electron number density\",\n      \"value\": 4e25,\n      \"unit\": \"cm^-3\",\n      \"normalized_value\": 1,\n      \"normalized_unit\": \"1\",\n      \"context\": \"Hydrogen plasma density in red dwarf interiors\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"temperature\",\n      \"value\": 200,\n      \"unit\": \"eV\",\n      \"normalized_value\": 1,\n      \"normalized_unit\": \"1\",\n      \"context\": \"Hydrogen plasma temperature in red dwarf interiors\",\n      \"confidence\": 0.9\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "nsity of 100 g/cc, initial thermal temperature of 70 eV, and counter-propagating velocity at 300 km/s is",
+            "normalized_unit": "keV",
+            "normalized_value": 0.07,
+            "type": "temperature",
+            "unit": "eV",
+            "value": 70.0
+          },
+          {
+            "confidence": 0.65,
+            "context": "ure of 70 eV, and counter-propagating velocity at 300 km/s is investigated using this new method. Quantit",
+            "normalized_unit": "keV",
+            "normalized_value": 2.5851e-05,
+            "type": "temperature",
+            "unit": "k",
+            "value": 300.0
+          }
+        ]
+      },
+      "paper_id": "arxiv:2303.03011v1",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 1.0,
+            "context": "initial density of plasma jets",
+            "normalized_unit": null,
+            "normalized_value": null,
+            "type": "density",
+            "unit": "g/cc",
+            "value": 100
+          },
+          {
+            "confidence": 1.0,
+            "context": "initial thermal temperature of plasma jets",
+            "normalized_unit": null,
+            "normalized_value": null,
+            "type": "temperature",
+            "unit": "eV",
+            "value": 70
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"density\",\n      \"value\": 100,\n      \"unit\": \"g/cc\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"initial density of plasma jets\",\n      \"confidence\": 1.0\n    },\n    {\n      \"type\": \"temperature\",\n      \"value\": 70,\n      \"unit\": \"eV\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"initial thermal temperature of plasma jets\",\n      \"confidence\": 1.0\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "D for Al plasmas with wide-range conditions of 70-700 eV temperature and 0.2-3 times of solid density, as",
+            "normalized_unit": "keV",
+            "normalized_value": 0.7000000000000001,
+            "type": "temperature",
+            "unit": "eV",
+            "value": 700.0
+          }
+        ]
+      },
+      "paper_id": "arxiv:2305.09371v1",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 0.8,
+            "context": "temperature range for Al plasmas",
+            "normalized_unit": null,
+            "normalized_value": null,
+            "type": "temperature",
+            "unit": "eV",
+            "value": 70
+          },
+          {
+            "confidence": 0.8,
+            "context": "temperature range for Al plasmas",
+            "normalized_unit": null,
+            "normalized_value": null,
+            "type": "temperature",
+            "unit": "eV",
+            "value": 700
+          },
+          {
+            "confidence": 0.8,
+            "context": "density range for Al plasmas",
+            "normalized_unit": null,
+            "normalized_value": null,
+            "type": "density",
+            "unit": "times of solid density",
+            "value": 0.2
+          },
+          {
+            "confidence": 0.8,
+            "context": "density range for Al plasmas",
+            "normalized_unit": null,
+            "normalized_value": null,
+            "type": "density",
+            "unit": "times of solid density",
+            "value": 3
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"temperature\",\n      \"value\": 70,\n      \"unit\": \"eV\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"temperature range for Al plasmas\",\n      \"confidence\": 0.8\n    },\n    {\n      \"type\": \"temperature\",\n      \"value\": 700,\n      \"unit\": \"eV\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"temperature range for Al plasmas\",\n      \"confidence\": 0.8\n    },\n    {\n      \"type\": \"density\",\n      \"value\": 0.2,\n      \"unit\": \"times of solid density\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"density range for Al plasmas\",\n      \"confidence\": 0.8\n    },\n    {\n      \"type\": \"density\",\n      \"value\": 3,\n      \"unit\": \"times of solid density\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"density range for Al plasmas\",\n      \"confidence\": 0.8\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "uterium) plasma, for temperatures in the range 15,000K \\leq T \\leq 400,000K and densities 7 x 10^-7g/cm^",
+            "normalized_unit": "keV",
+            "normalized_value": 0.0,
+            "type": "temperature",
+            "unit": "K",
+            "value": 0.0
+          },
+          {
+            "confidence": 0.65,
+            "context": "to be small, but for the lowest temperature, T=15,640 K they reach several percent. We present detailed t",
+            "normalized_unit": "keV",
+            "normalized_value": 5.5148799999999996e-05,
+            "type": "temperature",
+            "unit": "K",
+            "value": 640.0
+          }
+        ]
+      },
+      "paper_id": "arxiv:2308.02314v1",
+      "predicted": null,
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"Temperature\",\n      \"value\": 15000,\n      \"unit\": \"K\",\n      \"normalized_value\": 15000,\n      \"normalized_unit\": \"K\",\n      \"context\": \"Lower bound of temperature range for hydrogen/deuterium plasma\",\n      \"confidence\": 1.0\n    },\n    {\n      \"type\": \"Temperature\",\n      \"value\": 400000,\n      \"unit\": \"K\",\n      \"normalized_value\": 400000,\n      \"normalized_unit\": \"K\",\n      \"context\": \"Upper bound of temperature range for hydrogen/deuterium plasma\",\n      \"confidence\": 1.0\n    },\n    {\n      \"type\": \"Density\",\n      \"value\": 7e-7,\n      \"unit\": \"g/cm^3\",\n      \"normalized_value\": 7e-7,\n      \"normalized_unit\": \"g/cm^3\",\n      \"context\": \"Lower bound of density range for hydrogen plasma\",\n      \"confidence\": 1.0\n    },\n    {\n      \"type\": \"Density\",\n      \"value\": 0.085,\n      \"unit\": \"g/cm^3\",\n      \"normalized_value\": 0.085,\n      \"normalized_unit\": \"g/cm^3\",\n      \"context\": \"Upper bound of density range for hydrogen plasma\",\n      \"confidence\": 1.0\n    },\n    {\n      \"type\": \"Density\",\n      \"value\": 1.4e-6,\n      \"unit\": \"g/cm^3\",\n      \"normalized_value\": 1.4e-6,\n      \"normalized_unit\": \"g/cm^3\",\n      \"context\": \"Lower bound of density range for deuterium plasma\",\n      \"confidence\": 1.0\n    },\n    {\n      \"type\": \"Density\",\n      \"value\": 0.17,\n      \"unit\": \"g/cm^3\",\n      \"normalized_value\": 0.17,\n      \"normalized_unit\": \"g/"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "t being hotter in the NT scenario (with T_e, NT   5   eV) than in the PT counterpart.",
+            "normalized_unit": "keV",
+            "normalized_value": 0.005,
+            "type": "temperature",
+            "unit": "eV",
+            "value": 5.0
+          }
+        ]
+      },
+      "paper_id": "arxiv:2401.03782v1",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 0.8,
+            "context": "outer target temperature in NT scenario",
+            "normalized_unit": null,
+            "normalized_value": null,
+            "type": "temperature",
+            "unit": "eV",
+            "value": 5
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"temperature\",\n      \"value\": 5,\n      \"unit\": \"eV\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"outer target temperature in NT scenario\",\n      \"confidence\": 0.8\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "mperature of 5.5 MeV and X-ray critical energy of 5 keV. Two-dimensional (2D) particle-in-cell (PIC) simu",
+            "normalized_unit": "keV",
+            "normalized_value": 5.0,
+            "type": "temperature",
+            "unit": "keV",
+            "value": 5.0
+          }
+        ]
+      },
+      "paper_id": "arxiv:2404.06862v1",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 0.9,
+            "context": "optimized electron temperature",
+            "normalized_unit": null,
+            "normalized_value": null,
+            "type": "electron temperature",
+            "unit": "MeV",
+            "value": 5.5
+          },
+          {
+            "confidence": 0.9,
+            "context": "X-ray critical energy",
+            "normalized_unit": null,
+            "normalized_value": null,
+            "type": "X-ray critical energy",
+            "unit": "keV",
+            "value": 5
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"electron temperature\",\n      \"value\": 5.5,\n      \"unit\": \"MeV\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"optimized electron temperature\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"X-ray critical energy\",\n      \"value\": 5,\n      \"unit\": \"keV\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"X-ray critical energy\",\n      \"confidence\": 0.9\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "was found to increase toward downstream from 0.52-0.62 keV to 0.82-0.95 keV on a length scale of 60 arcsec (",
+            "normalized_unit": "keV",
+            "normalized_value": 0.62,
+            "type": "temperature",
+            "unit": "keV",
+            "value": 0.62
+          },
+          {
+            "confidence": 0.65,
+            "context": "ease toward downstream from 0.52-0.62 keV to 0.82-0.95 keV on a length scale of 60 arcsec (or 0.64 pc). This",
+            "normalized_unit": "keV",
+            "normalized_value": 0.95,
+            "type": "temperature",
+            "unit": "keV",
+            "value": 0.95
+          }
+        ]
+      },
+      "paper_id": "arxiv:2405.09040v1",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 0.9,
+            "context": "initial postshock temperature",
+            "normalized_unit": "keV",
+            "normalized_value": 0.52,
+            "type": "electron temperature",
+            "unit": "keV",
+            "value": 0.52
+          },
+          {
+            "confidence": 0.9,
+            "context": "intermediate postshock temperature",
+            "normalized_unit": "keV",
+            "normalized_value": 0.62,
+            "type": "electron temperature",
+            "unit": "keV",
+            "value": 0.62
+          },
+          {
+            "confidence": 0.9,
+            "context": "final postshock temperature",
+            "normalized_unit": "keV",
+            "normalized_value": 0.82,
+            "type": "electron temperature",
+            "unit": "keV",
+            "value": 0.82
+          },
+          {
+            "confidence": 0.9,
+            "context": "final postshock temperature",
+            "normalized_unit": "keV",
+            "normalized_value": 0.95,
+            "type": "electron temperature",
+            "unit": "keV",
+            "value": 0.95
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"electron temperature\",\n      \"value\": 0.52,\n      \"unit\": \"keV\",\n      \"normalized_value\": 0.52,\n      \"normalized_unit\": \"keV\",\n      \"context\": \"initial postshock temperature\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"electron temperature\",\n      \"value\": 0.62,\n      \"unit\": \"keV\",\n      \"normalized_value\": 0.62,\n      \"normalized_unit\": \"keV\",\n      \"context\": \"intermediate postshock temperature\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"electron temperature\",\n      \"value\": 0.82,\n      \"unit\": \"keV\",\n      \"normalized_value\": 0.82,\n      \"normalized_unit\": \"keV\",\n      \"context\": \"final postshock temperature\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"electron temperature\",\n      \"value\": 0.95,\n      \"unit\": \"keV\",\n      \"normalized_value\": 0.95,\n      \"normalized_unit\": \"keV\",\n      \"context\": \"final postshock temperature\",\n      \"confidence\": 0.9\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "nts. The incident electron energy range is 10^-5--2.7 eV and the electron temperature range is 100--5000 K",
+            "normalized_unit": "keV",
+            "normalized_value": 0.0027,
+            "type": "temperature",
+            "unit": "eV",
+            "value": 2.7
+          },
+          {
+            "confidence": 0.65,
+            "context": "2.7 eV and the electron temperature range is 100--5000 K. The vibrational dependence of these collisional",
+            "normalized_unit": "keV",
+            "normalized_value": 0.00043085,
+            "type": "temperature",
+            "unit": "K",
+            "value": 5000.0
+          }
+        ]
+      },
+      "paper_id": "arxiv:2405.19792v1",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 1.0,
+            "context": "electron temperature range",
+            "normalized_unit": "K",
+            "normalized_value": 100,
+            "type": "electron temperature",
+            "unit": "K",
+            "value": 100
+          },
+          {
+            "confidence": 1.0,
+            "context": "electron temperature range",
+            "normalized_unit": "K",
+            "normalized_value": 5000,
+            "type": "electron temperature",
+            "unit": "K",
+            "value": 5000
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"electron temperature\",\n      \"value\": 100,\n      \"unit\": \"K\",\n      \"normalized_value\": 100,\n      \"normalized_unit\": \"K\",\n      \"context\": \"electron temperature range\",\n      \"confidence\": 1.0\n    },\n    {\n      \"type\": \"electron temperature\",\n      \"value\": 5000,\n      \"unit\": \"K\",\n      \"normalized_value\": 5000,\n      \"normalized_unit\": \"K\",\n      \"context\": \"electron temperature range\",\n      \"confidence\": 1.0\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "across the spectrometer in an energy range of 6.7-8.6 keV. Notably, we find a strong asymmetry in the shape",
+            "normalized_unit": "keV",
+            "normalized_value": 8.6,
+            "type": "temperature",
+            "unit": "keV",
+            "value": 8.6
+          },
+          {
+            "confidence": 0.65,
+            "context": "n the temperature inferred via XRTS for simulated 80 eV CH plasmas, and find that the temperature can be",
+            "normalized_unit": "keV",
+            "normalized_value": 0.08,
+            "type": "temperature",
+            "unit": "eV",
+            "value": 80.0
+          }
+        ]
+      },
+      "paper_id": "arxiv:2406.03301v2",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 0.9,
+            "context": "Energy range of interest for IF consideration",
+            "normalized_unit": "keV",
+            "normalized_value": 1,
+            "type": "energy_range",
+            "unit": "keV",
+            "value": 6.7
+          },
+          {
+            "confidence": 0.9,
+            "context": "Energy range of interest for IF consideration",
+            "normalized_unit": "keV",
+            "normalized_value": 1,
+            "type": "energy_range",
+            "unit": "keV",
+            "value": 8.6
+          },
+          {
+            "confidence": 0.8,
+            "context": "Simulated plasma temperature for XRTS effect study",
+            "normalized_unit": "eV",
+            "normalized_value": 1,
+            "type": "temperature",
+            "unit": "eV",
+            "value": 80
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"energy_range\",\n      \"value\": 6.7,\n      \"unit\": \"keV\",\n      \"normalized_value\": 1,\n      \"normalized_unit\": \"keV\",\n      \"context\": \"Energy range of interest for IF consideration\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"energy_range\",\n      \"value\": 8.6,\n      \"unit\": \"keV\",\n      \"normalized_value\": 1,\n      \"normalized_unit\": \"keV\",\n      \"context\": \"Energy range of interest for IF consideration\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"temperature\",\n      \"value\": 80,\n      \"unit\": \"eV\",\n      \"normalized_value\": 1,\n      \"normalized_unit\": \"eV\",\n      \"context\": \"Simulated plasma temperature for XRTS effect study\",\n      \"confidence\": 0.8\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "from a laser heated germanium foil at E_x \\approx 1.4 keV, corresponding to an invariant mass of \\sqrts = 1",
+            "normalized_unit": "keV",
+            "normalized_value": 1.4,
+            "type": "temperature",
+            "unit": "keV",
+            "value": 1.4
+          }
+        ]
+      },
+      "paper_id": "arxiv:2407.12915v2",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 0.9,
+            "context": "Upper limit of gamma photon spectrum",
+            "normalized_unit": "MeV",
+            "normalized_value": 1,
+            "type": "Energy",
+            "unit": "MeV",
+            "value": 200
+          },
+          {
+            "confidence": 0.9,
+            "context": "Energy of x-ray field",
+            "normalized_unit": "keV",
+            "normalized_value": 1,
+            "type": "Energy",
+            "unit": "keV",
+            "value": 1.4
+          },
+          {
+            "confidence": 0.95,
+            "context": "Invariant mass sqrt(s)",
+            "normalized_unit": "MeV",
+            "normalized_value": 1,
+            "type": "Energy",
+            "unit": "MeV",
+            "value": 1.22
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"Energy\",\n      \"value\": 200,\n      \"unit\": \"MeV\",\n      \"normalized_value\": 1,\n      \"normalized_unit\": \"MeV\",\n      \"context\": \"Upper limit of gamma photon spectrum\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"Energy\",\n      \"value\": 1.4,\n      \"unit\": \"keV\",\n      \"normalized_value\": 1,\n      \"normalized_unit\": \"keV\",\n      \"context\": \"Energy of x-ray field\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"Energy\",\n      \"value\": 1.22,\n      \"unit\": \"MeV\",\n      \"normalized_value\": 1,\n      \"normalized_unit\": \"MeV\",\n      \"context\": \"Invariant mass sqrt(s)\",\n      \"confidence\": 0.95\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "recovery to  2.8 days. At geosynchronous orbit,  76 keV to  1.5 MeV electrons exhibited  1-3 orders of ma",
+            "normalized_unit": "keV",
+            "normalized_value": 76.0,
+            "type": "temperature",
+            "unit": "keV",
+            "value": 76.0
+          }
+        ]
+      },
+      "paper_id": "arxiv:2408.14799v1",
+      "predicted": null,
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"magnetic field strength\",\n      \"value\": 88,\n      \"unit\": \"nT\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"SI+ amplitude\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"magnetic field strength\",\n      \"value\": 183,\n      \"unit\": \"nT\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"peak SYM-H intensity (negative value)\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"magnetic field strength\",\n      \"value\": 354,\n      \"unit\": \"nT\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"SYM-H intensity\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"magnetic field strength\",\n      \"value\": 518,\n      \"unit\": \"nT\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"SYM-H intensity\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"magnetic field strength\",\n      \"value\": 40,\n      \"unit\": \"nT\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"southward interplanetary magnetic field component Bs (first phase)\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"magnetic field strength\",\n      \"value\": 43,\n      \"unit\": \"nT\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"southward interplanetary magnetic field component Bs (second phase)\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"magnetic field strength\",\n      \"value\": 71,\n      \"unit\": \"nT\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"high magnetic field"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "nited for \u03c1_DT R \\geq 0.35   gcm^-2 and kT_e \\geq 14   keV, i.e., parameters which are more stringent but st",
+            "normalized_unit": "keV",
+            "normalized_value": 14.0,
+            "type": "temperature",
+            "unit": "keV",
+            "value": 14.0
+          },
+          {
+            "confidence": 0.65,
+            "context": ". Here, we show that at temperatures greater than 10 keV, ionic stopping power is not negligible compared",
+            "normalized_unit": "keV",
+            "normalized_value": 10.0,
+            "type": "temperature",
+            "unit": "keV",
+            "value": 10.0
+          }
+        ]
+      },
+      "paper_id": "arxiv:2409.13488v1",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 0.9,
+            "context": "Ignition parameter for non-cryogenic DTs",
+            "normalized_unit": "g/cm^2",
+            "normalized_value": 1,
+            "type": "density",
+            "unit": "g/cm^2",
+            "value": 0.35
+          },
+          {
+            "confidence": 0.9,
+            "context": "Ignition temperature threshold",
+            "normalized_unit": "keV",
+            "normalized_value": 1,
+            "type": "temperature",
+            "unit": "keV",
+            "value": 14
+          },
+          {
+            "confidence": 0.9,
+            "context": "Temperature threshold for ionic stopping power consideration",
+            "normalized_unit": "keV",
+            "normalized_value": 1,
+            "type": "temperature",
+            "unit": "keV",
+            "value": 10
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"density\",\n      \"value\": 0.35,\n      \"unit\": \"g/cm^2\",\n      \"normalized_value\": 1,\n      \"normalized_unit\": \"g/cm^2\",\n      \"context\": \"Ignition parameter for non-cryogenic DTs\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"temperature\",\n      \"value\": 14,\n      \"unit\": \"keV\",\n      \"normalized_value\": 1,\n      \"normalized_unit\": \"keV\",\n      \"context\": \"Ignition temperature threshold\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"temperature\",\n      \"value\": 10,\n      \"unit\": \"keV\",\n      \"normalized_value\": 1,\n      \"normalized_unit\": \"keV\",\n      \"context\": \"Temperature threshold for ionic stopping power consideration\",\n      \"confidence\": 0.9\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "tor to the discrepancy. X-ray emission in the 2 - 4 keV range is found to be approximately 30% lower than",
+            "normalized_unit": "keV",
+            "normalized_value": 4.0,
+            "type": "temperature",
+            "unit": "keV",
+            "value": 4.0
+          },
+          {
+            "confidence": 0.65,
+            "context": "opacity multiplier of 0.87 on energy groups above 1.8 keV improves agreement with experimental data, reduci",
+            "normalized_unit": "keV",
+            "normalized_value": 1.8,
+            "type": "temperature",
+            "unit": "keV",
+            "value": 1.8
+          }
+        ]
+      },
+      "paper_id": "arxiv:2501.10350v3",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 0.9,
+            "context": "X-ray emission in the 2 - 4 keV range compared to simulations",
+            "normalized_unit": "",
+            "normalized_value": 0.7,
+            "type": "X-ray emission ratio",
+            "unit": "",
+            "value": 0.7
+          },
+          {
+            "confidence": 0.9,
+            "context": "Multiplier applied to energy groups above 1.8 keV to improve agreement",
+            "normalized_unit": "",
+            "normalized_value": 0.87,
+            "type": "Opacity multiplier",
+            "unit": "",
+            "value": 0.87
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"X-ray emission ratio\",\n      \"value\": 0.70,\n      \"unit\": \"\",\n      \"normalized_value\": 0.70,\n      \"normalized_unit\": \"\",\n      \"context\": \"X-ray emission in the 2 - 4 keV range compared to simulations\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"Opacity multiplier\",\n      \"value\": 0.87,\n      \"unit\": \"\",\n      \"normalized_value\": 0.87,\n      \"normalized_unit\": \"\",\n      \"context\": \"Multiplier applied to energy groups above 1.8 keV to improve agreement\",\n      \"confidence\": 0.9\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "ly studied using imagers sensitive to energetic (>1 keV) electron precipitation, such as all-sky imagers",
+            "normalized_unit": "keV",
+            "normalized_value": 1.0,
+            "type": "temperature",
+            "unit": "keV",
+            "value": 1.0
+          }
+        ]
+      },
+      "paper_id": "arxiv:2502.18692v1",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 0.9,
+            "context": "energetic electron precipitation threshold",
+            "normalized_unit": "keV",
+            "normalized_value": 1,
+            "type": "electron energy",
+            "unit": "keV",
+            "value": 1
+          },
+          {
+            "confidence": 0.9,
+            "context": "low-energy red-line precipitation threshold",
+            "normalized_unit": "keV",
+            "normalized_value": 1,
+            "type": "electron energy",
+            "unit": "keV",
+            "value": 1
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"electron energy\",\n      \"value\": 1,\n      \"unit\": \"keV\",\n      \"normalized_value\": 1,\n      \"normalized_unit\": \"keV\",\n      \"context\": \"energetic electron precipitation threshold\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"electron energy\",\n      \"value\": 1,\n      \"unit\": \"keV\",\n      \"normalized_value\": 1,\n      \"normalized_unit\": \"keV\",\n      \"context\": \"low-energy red-line precipitation threshold\",\n      \"confidence\": 0.9\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "'s performance. Thea Energy operated the array at 20 K, generating several stellarator-relevant magnetic",
+            "normalized_unit": "keV",
+            "normalized_value": 1.7233999999999999e-06,
+            "type": "temperature",
+            "unit": "K",
+            "value": 20.0
+          }
+        ]
+      },
+      "paper_id": "arxiv:2503.18960v1",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 1.0,
+            "context": "Operating temperature of the Canis magnet array",
+            "normalized_unit": "K",
+            "normalized_value": 20,
+            "type": "Temperature",
+            "unit": "K",
+            "value": 20
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"Temperature\",\n      \"value\": 20,\n      \"unit\": \"K\",\n      \"normalized_value\": 20,\n      \"normalized_unit\": \"K\",\n      \"context\": \"Operating temperature of the Canis magnet array\",\n      \"confidence\": 1.0\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "erating synchronized electron and X-ray pulses at 1 kHz using just 2 mJ per pulse. A structured methano",
+            "normalized_unit": "keV",
+            "normalized_value": 8.617e-08,
+            "type": "temperature",
+            "unit": "k",
+            "value": 1.0
+          }
+        ]
+      },
+      "paper_id": "arxiv:2504.17560v1",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 1.0,
+            "context": "synchronized electron and X-ray pulses",
+            "normalized_unit": "kHz",
+            "normalized_value": 1,
+            "type": "repetition rate",
+            "unit": "kHz",
+            "value": 1
+          },
+          {
+            "confidence": 1.0,
+            "context": "per pulse",
+            "normalized_unit": "mJ",
+            "normalized_value": 2,
+            "type": "energy",
+            "unit": "mJ",
+            "value": 2
+          },
+          {
+            "confidence": 1.0,
+            "context": "electron imaging",
+            "normalized_unit": "um",
+            "normalized_value": 13.6,
+            "type": "resolution",
+            "unit": "um",
+            "value": 13.6
+          },
+          {
+            "confidence": 1.0,
+            "context": "X-ray imaging",
+            "normalized_unit": "um",
+            "normalized_value": 21,
+            "type": "resolution",
+            "unit": "um",
+            "value": 21
+          },
+          {
+            "confidence": 1.0,
+            "context": "tomographic reconstruction",
+            "normalized_unit": "",
+            "normalized_value": 35,
+            "type": "number of projections",
+            "unit": "",
+            "value": 35
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"repetition rate\",\n      \"value\": 1,\n      \"unit\": \"kHz\",\n      \"normalized_value\": 1,\n      \"normalized_unit\": \"kHz\",\n      \"context\": \"synchronized electron and X-ray pulses\",\n      \"confidence\": 1.0\n    },\n    {\n      \"type\": \"energy\",\n      \"value\": 2,\n      \"unit\": \"mJ\",\n      \"normalized_value\": 2,\n      \"normalized_unit\": \"mJ\",\n      \"context\": \"per pulse\",\n      \"confidence\": 1.0\n    },\n    {\n      \"type\": \"resolution\",\n      \"value\": 13.6,\n      \"unit\": \"um\",\n      \"normalized_value\": 13.6,\n      \"normalized_unit\": \"um\",\n      \"context\": \"electron imaging\",\n      \"confidence\": 1.0\n    },\n    {\n      \"type\": \"resolution\",\n      \"value\": 21,\n      \"unit\": \"um\",\n      \"normalized_value\": 21,\n      \"normalized_unit\": \"um\",\n      \"context\": \"X-ray imaging\",\n      \"confidence\": 1.0\n    },\n    {\n      \"type\": \"number of projections\",\n      \"value\": 35,\n      \"unit\": \"\",\n      \"normalized_value\": 35,\n      \"normalized_unit\": \"\",\n      \"context\": \"tomographic reconstruction\",\n      \"confidence\": 1.0\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "pled at an energy higher than E_\\rm beam by a few 0.1 eVs. This is resolved by postulating a positive spac",
+            "normalized_unit": "keV",
+            "normalized_value": 0.0001,
+            "type": "temperature",
+            "unit": "eV",
+            "value": 0.1
+          }
+        ]
+      },
+      "paper_id": "arxiv:2505.07771v1",
+      "predicted": {
+        "measurements": []
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": []\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "urations, both with a surface dipolar strength of 6 kG, and we explore different obliquity angles \u03b2 (th",
+            "normalized_unit": "keV",
+            "normalized_value": 5.1702e-07,
+            "type": "temperature",
+            "unit": "k",
+            "value": 6.0
+          },
+          {
+            "confidence": 0.65,
+            "context": "typical magnetic field strengths between 105 and 172 kG, where the strength has an inverse relation with",
+            "normalized_unit": "keV",
+            "normalized_value": 1.4821239999999999e-05,
+            "type": "temperature",
+            "unit": "k",
+            "value": 172.0
+          }
+        ]
+      },
+      "paper_id": "arxiv:2506.01017v1",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 1.0,
+            "context": "Mass of the simulated A-type star",
+            "normalized_unit": null,
+            "normalized_value": null,
+            "type": "stellar mass",
+            "unit": "M_sun",
+            "value": 2.2
+          },
+          {
+            "confidence": 1.0,
+            "context": "Fraction of stellar radius encompassed by the core",
+            "normalized_unit": null,
+            "normalized_value": null,
+            "type": "core radius fraction",
+            "unit": "R_star",
+            "value": 0.2
+          },
+          {
+            "confidence": 1.0,
+            "context": "Initial surface dipolar strength imposed on the simulation",
+            "normalized_unit": null,
+            "normalized_value": null,
+            "type": "surface magnetic field strength (initial condition)",
+            "unit": "kG",
+            "value": 6
+          },
+          {
+            "confidence": 0.9,
+            "context": "Typical enhanced surface magnetic field strength",
+            "normalized_unit": null,
+            "normalized_value": null,
+            "type": "surface magnetic field strength (enhanced dynamo)",
+            "unit": "kG",
+            "value": 105
+          },
+          {
+            "confidence": 0.9,
+            "context": "Typical enhanced surface magnetic field strength",
+            "normalized_unit": null,
+            "normalized_value": null,
+            "type": "surface magnetic field strength (enhanced dynamo)",
+            "unit": "kG",
+            "value": 172
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"stellar mass\",\n      \"value\": 2.2,\n      \"unit\": \"M_sun\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"Mass of the simulated A-type star\",\n      \"confidence\": 1.0\n    },\n    {\n      \"type\": \"core radius fraction\",\n      \"value\": 0.20,\n      \"unit\": \"R_star\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"Fraction of stellar radius encompassed by the core\",\n      \"confidence\": 1.0\n    },\n    {\n      \"type\": \"surface magnetic field strength (initial condition)\",\n      \"value\": 6,\n      \"unit\": \"kG\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"Initial surface dipolar strength imposed on the simulation\",\n      \"confidence\": 1.0\n    },\n    {\n      \"type\": \"surface magnetic field strength (enhanced dynamo)\",\n      \"value\": 105,\n      \"unit\": \"kG\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"Typical enhanced surface magnetic field strength\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"surface magnetic field strength (enhanced dynamo)\",\n      \"value\": 172,\n      \"unit\": \"kG\",\n      \"normalized_value\": null,\n      \"normalized_unit\": null,\n      \"context\": \"Typical enhanced surface magnetic field strength\",\n      \"confidence\": 0.9\n    }\n  ]\n}\n```"
+    },
+    {
+      "expected": {
+        "measurements": [
+          {
+            "confidence": 0.65,
+            "context": "e been investigated from a frequency of 500 Hz to 500 kHz, and by applying a constant voltage of 2 kV, ha",
+            "normalized_unit": "keV",
+            "normalized_value": 4.3085e-05,
+            "type": "temperature",
+            "unit": "k",
+            "value": 500.0
+          },
+          {
+            "confidence": 0.65,
+            "context": "to 500 kHz, and by applying a constant voltage of 2 kV, have been investigated. For this purpose, 87 di",
+            "normalized_unit": "keV",
+            "normalized_value": 1.7234e-07,
+            "type": "temperature",
+            "unit": "k",
+            "value": 2.0
+          }
+        ]
+      },
+      "paper_id": "arxiv:2507.03396v1",
+      "predicted": {
+        "measurements": [
+          {
+            "confidence": 0.9,
+            "context": "Applied voltage frequency range",
+            "normalized_unit": "Hz",
+            "normalized_value": 500,
+            "type": "frequency",
+            "unit": "Hz",
+            "value": 500
+          },
+          {
+            "confidence": 0.9,
+            "context": "Applied voltage frequency range",
+            "normalized_unit": "kHz",
+            "normalized_value": 500,
+            "type": "frequency",
+            "unit": "kHz",
+            "value": 500
+          },
+          {
+            "context": "Constant applied voltage",
+            "normalized_unit": "kV",
+            "normalized_value": 2,
+            "type": "voltage",
+            "unit": "kV",
+            "value": 2
+          }
+        ]
+      },
+      "raw_prediction": "```json\n{\n  \"measurements\": [\n    {\n      \"type\": \"frequency\",\n      \"value\": 500,\n      \"unit\": \"Hz\",\n      \"normalized_value\": 500,\n      \"normalized_unit\": \"Hz\",\n      \"context\": \"Applied voltage frequency range\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"frequency\",\n      \"value\": 500,\n      \"unit\": \"kHz\",\n      \"normalized_value\": 500,\n      \"normalized_unit\": \"kHz\",\n      \"context\": \"Applied voltage frequency range\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"voltage\",\n      \"value\": 2,\n      \"unit\": \"kV\",\n      \"normalized_value\": 2,\n      \"normalized_unit\": \"kV\",\n      \"context\": \"Constant applied voltage\"\n    }\n  ]\n}\n```"
+    }
+  ]
+}
