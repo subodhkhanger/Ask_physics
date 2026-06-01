@@ -84,6 +84,68 @@ python3 training/scripts/prepare_sft_dataset.py \
   --output-dir training/data/sft
 ```
 
+## Gemma QLoRA Training
+
+The runnable Gemma QLoRA package is:
+
+```text
+training/configs/gemma_qlora.yaml
+training/scripts/train_gemma_qlora.py
+training/scripts/format_sft_for_gemma.py
+training/scripts/run_gemma_inference.py
+training/scripts/evaluate_gemma_extraction.py
+training/run_gemma_cuda.sh
+training/GEMMA_QLORA_RUNBOOK.md
+```
+
+Run this on a CUDA-compatible PyTorch GPU runtime. Gemma model access may require accepting the model terms on Hugging Face and authenticating with `huggingface-cli login` or `huggingface_hub.login()`.
+
+Install CUDA PyTorch for your machine first, then:
+
+```bash
+python -m pip install -r training/requirements-qlora.txt
+```
+
+For the first training run, use the balanced split:
+
+```text
+training/data/sft_balanced/train.jsonl
+training/data/sft_balanced/dev.jsonl
+training/data/sft_balanced/test.jsonl
+```
+
+Start training:
+
+```bash
+bash training/run_gemma_cuda.sh
+```
+
+For the full command-line runbook:
+
+```text
+training/GEMMA_QLORA_RUNBOOK.md
+```
+
+After training, run a smoke inference:
+
+```bash
+python training/scripts/run_gemma_inference.py \
+  --config training/configs/gemma_qlora.yaml \
+  --adapter-dir training/runs/gemma-qlora-ask-physics/adapter \
+  --title "Example plasma diagnostic paper" \
+  --abstract "The electron temperature reached 5.2 keV and the electron density was 7.1 x 10^19 m^-3 during the discharge."
+```
+
+Evaluate JSON and coarse extraction quality:
+
+```bash
+python training/scripts/evaluate_gemma_extraction.py \
+  --config training/configs/gemma_qlora.yaml \
+  --adapter-dir training/runs/gemma-qlora-ask-physics/adapter \
+  --eval-file training/data/sft_balanced/test.jsonl \
+  --limit 50
+```
+
 ## Model Formatting
 
 The SFT output uses a generic `messages` JSONL structure:

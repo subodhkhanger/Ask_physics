@@ -1,0 +1,70 @@
+run_name: ask-physics-gemma-qlora-v0.1
+
+model:
+  # Good first target for a smoke run. For stronger runs, switch to
+  # google/gemma-2-2b-it, google/gemma-2-9b-it, or another accepted Gemma repo.
+  base_model: google/gemma-2-2b-it
+  trust_remote_code: false
+  torch_dtype: bfloat16
+  attn_implementation: eager
+
+data:
+  train_file: training/data/sft_balanced/train.jsonl
+  eval_file: training/data/sft_balanced/dev.jsonl
+  max_seq_length: 2048
+  preprocessing_num_workers: 2
+
+output:
+  output_dir: training/runs/gemma-qlora-ask-physics
+  save_total_limit: 2
+  push_to_hub: false
+  hub_model_id: null
+
+quantization:
+  load_in_4bit: true
+  bnb_4bit_quant_type: nf4
+  bnb_4bit_compute_dtype: bfloat16
+  bnb_4bit_use_double_quant: true
+
+lora:
+  r: 16
+  lora_alpha: 32
+  lora_dropout: 0.05
+  bias: none
+  task_type: CAUSAL_LM
+  target_modules:
+    - q_proj
+    - k_proj
+    - v_proj
+    - o_proj
+    - gate_proj
+    - up_proj
+    - down_proj
+
+training:
+  num_train_epochs: 2
+  per_device_train_batch_size: 1
+  per_device_eval_batch_size: 1
+  gradient_accumulation_steps: 8
+  learning_rate: 0.0002
+  lr_scheduler_type: cosine
+  warmup_ratio: 0.03
+  weight_decay: 0.0
+  optim: paged_adamw_8bit
+  logging_steps: 10
+  eval_strategy: steps
+  eval_steps: 50
+  save_strategy: steps
+  save_steps: 50
+  bf16: true
+  fp16: false
+  gradient_checkpointing: true
+  max_grad_norm: 0.3
+  report_to:
+    - tensorboard
+  seed: 42
+
+generation:
+  max_new_tokens: 512
+  temperature: 0.0
+  top_p: 1.0
